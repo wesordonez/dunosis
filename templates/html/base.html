@@ -11,18 +11,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="shortcut icon" href="{% static 'assets/logos/logo.png' %}" type="image/png">
+    <link rel="shortcut icon" href="{% static 'assets/logos/dunosis-logo.png' %}" type="image/png">
     
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#f5f5f5">
 
     <title>{% block title %}{% endblock title %} {% settings_value "PROJECT_TITLE" %}</title>
     <meta name="description" 
-            content="{% block description %}Building websites that brings you business{% endblock description %}">
+            content="{% block description %}Where knowledge meets power - Dunosis{% endblock description %}">
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="{% block socialTitle %}{% endblock socialTitle %} Project" />
+    <meta property="og:title" content="{% block socialTitle %}{% endblock socialTitle %} Dunosis" />
     <meta property="og:description" 
-                        content="{% block socialDescription %}Description Here{% endblock socialDescription %}" />
+                        content="{% block socialDescription %}Web Development, Marketing, and Consulting{% endblock socialDescription %}" />
     <meta property="og:type" content="{% block pageType %}website{% endblock pageType %}" />
     <meta property="og:url" content="{% block pageLink %}{{request.build_absolute_uri}}{% endblock pageLink %}" />
     <meta property="og:image" content="{% block pageImage %}{{ request.scheme }}://{{request.get_host}}{% static "./assets/images/home/hiking4.jpg" %}{% endblock pageImage %}" />
@@ -65,7 +65,7 @@
 </head>
     
 {% comment %} <body class="tw-min-h-[100vh]" data-bs-theme="dark"> {% endcomment %}
-<body class="tw-min-h-[100vh] tw-w-full tw-bg-[#ffffff] tw-flex tw-flex-col">
+<body class="tw-min-h-[100vh] tw-w-full tw-bg-[#f5f5f5] tw-flex tw-flex-col">
     
     <div id="toast" class="tw-p-2 tw-px-4 tw-bg-black tw-h-max tw-z-[5000] tw-fixed 
                             tw-top-[5%] tw-left-[50%] tw-translate-x-[-50%] 
@@ -86,12 +86,12 @@
                     lg:tw-justify-around
                     tw-absolute tw-top-0 tw-px-[10%]
                     max-lg:tw-mr-auto
-                    tw-bg-white
+                    tw-bg-[#f5f5f5]
                     tw-text-black
                     ">
 
         <a class="tw-w-[50px] tw-h-[50px] tw-p-[4px]" href="{% url "home" %}">
-            <img src="{% static "assets/logos/logo1.png" %}" 
+            <img src="{% static "assets/logos/dunosis-logo.png" %}" 
                   alt="logo" class="tw-w-full tw-h-full tw-object-contain">
 
         </a>
@@ -129,7 +129,7 @@
                         max-lg:tw-w-full
                          max-lg:tw-place-items-start
                          ">
-                <a href="https://www.facebook.com/" 
+                <a href="https://www.facebook.com/profile.php?id=61565984502377" 
                         target="_blank" 
                         rel="noreferrer"
                         aria-label="facebook"
@@ -141,7 +141,7 @@
                     <i class="bi bi-facebook"></i>
                 </a>
 
-                <a href="https://www.instagram.com/"
+                <a href="https://www.instagram.com/dunosis.usa"
                         target="_blank"
                         rel="noreferrer"
                         aria-label="instagram"
@@ -152,16 +152,16 @@
                             >
                     <i class="bi bi-instagram"></i>
                 </a>
-                <a href="https://github.com/PaulleDemon"
+                <a href="https://www.linkedin.com/company/104785338/"
                         target="_blank"
                         rel="noreferrer"
-                        aria-label="github"
+                        aria-label="linkedin"
                         class="header-links
                                 tw-transition-colors
                                 tw-duration-[0.3s]
                                 "
                             >
-                    <i class="bi bi-github"></i>
+                    <i class="bi bi-linkedin"></i>
                 </a>
             </div>
         </div>
@@ -180,18 +180,17 @@
     </div>
     <footer class="tw-flex max-md:tw-flex-col tw-w-full tw-p-[5%]
                     tw-px-[10%] tw-place-content-around tw-gap-3 
-                    tw-text-black
+                    tw-bg-white
+                    tw-text-[#f5f5f5]
                     tw-mt-auto
                     ">
         <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
                     tw-gap-6 tw-place-items-center max-md:tw-w-full">
             
-            <img src="{% static "assets/logos/logo1.png" %}" 
+            <img src="{% static "assets/logos/dunosis-logo.png" %}" 
                 alt="logo"  class="tw-max-w-[150px] max-md:tw-max-w-[120px]">
             <div>
-                2 Lord Edward St,   
-                <br>
-                D02 P634,
+                Chicago, IL   
                 <br>
                 United States
             </div>
@@ -199,14 +198,14 @@
                 Follow us
             </div>
             <div class="tw-flex tw-gap-4 tw-text-2xl">
-                <a href="https://facebook.com/" aria-label="Facebook">
+                <a href="https://www.facebook.com/profile.php?id=61565984502377" aria-label="Facebook">
                     <i class="bi bi-facebook"></i>
                 </a>
-                <a href="https://twitter.com/pauls_freeman" aria-label="Twitter">
-                    <i class="bi bi-twitter"></i>
-                </a>
-                <a href="https://instagram.com/" class="tw-w-[40px] tw-h-[40px]" aria-label="Instagram">
+                <a href="https://instagram.com/dunosis.usa" aria-label="Instagram">
                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/104785338/" class="tw-w-[40px] tw-h-[40px]" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
                 </a>
             </div>
         </div>
