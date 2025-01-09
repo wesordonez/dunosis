@@ -189,53 +189,60 @@
         {% block content %}{% endblock content %}
     </div>
     <footer class="tw-flex max-md:tw-flex-col tw-w-full tw-p-[5%]
-                    tw-px-[10%] tw-place-content-around tw-gap-3 
+                    tw-px-[5%] tw-place-content-around tw-gap-3 
                     tw-bg-black
                     tw-text-[#f5f5f5]
                     tw-mt-auto
                     ">
-        <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
-                    tw-gap-6 tw-place-items-center max-md:tw-w-full">
+        <div class="tw-h-full tw-w-full tw-flex tw-flex-row max-md:tw-flex-col
+                    tw-gap-6 tw-place-items-center max-md:tw-w-full tw-justify-between">
             
             <img src="{% static "assets/logos/dunosis-logo-sq.png" %}" 
-                alt="logo"  class="tw-max-w-[150px] max-md:tw-max-w-[120px] tw-rounded-full">
-            <div>
-                Chicago, IL   
-                <br>
-                United States
-            </div>
-            <div class="tw-mt-3 tw-font-semibold tw-text-lg">
-                Follow us
-            </div>
-            <div class="tw-flex tw-gap-4 tw-text-2xl">
-                <a href="https://www.facebook.com/profile.php?id=61565984502377" aria-label="Facebook">
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <a href="https://instagram.com/dunosis.usa" aria-label="Instagram">
-                   <i class="bi bi-instagram"></i>
-                </a>
-                <a href="https://wa.me/17732022074" aria-label="WhatsApp">
-                    <i class="bi bi-whatsapp"></i>
-                </a>
-                <a href="https://www.linkedin.com/company/104785338/" class="tw-w-[40px] tw-h-[40px]" aria-label="LinkedIn">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-            </div>
-        </div>
+                alt="logo"  class="tw-max-w-[120px] max-md:tw-max-w-[100px] tw-rounded-full">
 
-        <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
-                    tw-gap-4">
-
-            <h2 class="tw-text-3xl max-md:tw-text-xl">
-                Resources
-            </h2>
-            <div class=" tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                <a href="{% url "home" %}" class="footer-link">About us</a>
-                <a href="" class="footer-link">FAQ</a>
-                <a href="{% url "contact-us" %}" class="footer-link">Contact Us</a>
-                <a href="" class="footer-link">Privacy policy</a>
+            <div class="tw-h-full tw-w-auto tw-flex tw-flex-col tw-gap-4">
+                <div class=" tw-flex tw-flex-row tw-gap-3 max-md:tw-text-sm">
+                    <a href="{% url "home" %}" class="footer-link">Home</a>
+                    <a href="" class="footer-link">About Us</a>
+                    <a href="{% url "contact-us" %}" class="footer-link">Services</a>
+                    <a href="" class="footer-link">Portfolio</a>
+                </div>
             </div>
 
+            <div class="tw-h-full tw-w-auto tw-flex tw-flex-col tw-gap-4">
+                <div class="tw-font-semibold tw-text-lg tw-text-center">
+                    Follow us
+                </div>
+                <div class="tw-flex tw-gap-4 tw-text-2xl">
+                    <a href="https://www.facebook.com/profile.php?id=61565984502377" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/dunosis.usa" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/17732022074" aria-label="WhatsApp">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/104785338/" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tw-h-full tw-w-auto tw-flex tw-flex-col tw-gap-4">
+                <div class="tw-font-semibold tw-text-lg tw-text-center">
+                    Contact us
+                </div>
+                <div class="tw-flex tw-gap-2 max-md:tw-text-sm">
+                    <i class="bi bi-geo-alt"></i><span class="tw-ml-2">Chicago, IL 60622</span>
+                </div>
+                <div class="tw-flex tw-gap-2 max-md:tw-text-sm">
+                    <i class="bi bi-telephone"></i><span class="tw-ml-2">+1 (773)-202-2074</span>
+                </div>
+                <div class="tw-flex tw-gap-2 max-md:tw-text-sm">
+                    <i class="bi bi-envelope"></i><span class="tw-ml-2"><a href="mailto:info@dunosis.com">info@dunosis.com</a></span>
+                </div>
+            </div>
         </div>
 
         {% block footer %}
