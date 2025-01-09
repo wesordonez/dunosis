@@ -50,6 +50,9 @@ module.exports = {
     ],
     theme: {
         extend: {
+            fontFamily: {
+                custom: ['Noir Pro', 'sans-serif'],
+            },
             colors: {
                 'bg-primary': '#f5f5f5'
             },

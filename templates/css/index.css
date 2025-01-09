@@ -9,10 +9,65 @@
     --primary-text-color: #1d1b1b;
 }
 
+@font-face {
+    font-family: 'Noir Pro';
+    src: url('../fonts/NoirPro-Regular.eot');
+    src: url('../fonts/NoirPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NoirPro-Regular.woff2') format('woff2'),
+        url('../fonts/NoirPro-Regular.woff') format('woff'),
+        url('../fonts/NoirPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noir Pro';
+    src: url('../fonts/NoirPro-Light.eot');
+    src: url('../fonts/NoirPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NoirPro-Light.woff2') format('woff2'),
+        url('../fonts/NoirPro-Light.woff') format('woff'),
+        url('../fonts/NoirPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noir Pro';
+    src: url('../fonts/NoirPro-Bold.eot');
+    src: url('../fonts/NoirPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NoirPro-Bold.woff2') format('woff2'),
+        url('../fonts/NoirPro-Bold.woff') format('woff'),
+        url('../fonts/NoirPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noir Pro';
+    src: url('../fonts/NoirPro-Heavy.eot');
+    src: url('../fonts/NoirPro-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NoirPro-Heavy.woff2') format('woff2'),
+        url('../fonts/NoirPro-Heavy.woff') format('woff'),
+        url('../fonts/NoirPro-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noir Pro';
+    src: url('../fonts/NoirPro-Italic.eot');
+    src: url('../fonts/NoirPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NoirPro-Italic.woff2') format('woff2'),
+        url('../fonts/NoirPro-Italic.woff') format('woff'),
+        url('../fonts/NoirPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
 
 html {
     scroll-behavior: smooth;
-    font-family: "Roboto", sans-serif;
+    font-family: "Noir Pro", sans-serif;
 }
 
 header{
