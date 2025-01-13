@@ -130,17 +130,14 @@ header > .collapsable-header{
 .btn{
     padding: 10px 15px;
     width: max-content;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-radius: rounded-full;
     color: var(--btn-color);
     background-color: var(--btn-bg);
     justify-content: center;
     align-items: center;
     display: flex;
     cursor: pointer;
-}
-
-.btn:hover{
-
 }
 
 .btn:disabled{

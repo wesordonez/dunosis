@@ -135,7 +135,12 @@ python manage.py runserver
 ```
 Your website should be available at: http://localhost:8000/
 
-9. To run Tailwind CSS open a new terminal and run
+9. Install cross-env
+```py
+npm install --save-dev cross-env
+```
+
+10. To run Tailwind CSS open a new terminal and run
 ```py
 python manage.py tailwind start
 ```
