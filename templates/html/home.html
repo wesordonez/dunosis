@@ -12,11 +12,11 @@
 
         <!-- Imágenes de los extremos -->
         <div class="tw-flex tw-gap-4 tw-place-content-center tw-place-items-center">
-            <div class="tw-rounded-lg tw-overflow-hidden tw-shadow-xl tw-h-[500px] lg:tw-h-[800px] ">
+            <div class="tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] lg:tw-h-[800px] hover:tw-skew-y-6 tw-transition-transform tw-duration-200 hover:tw-shadow-2xl hover:tw-scale-105">
                 <img src="{% static './assets/images/home/184-400x1000.jpg' %}" 
                      alt="dashboard" class="tw-w-full tw-h-full object-cover">
             </div>
-            <div class="tw-rounded-lg tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px]">
+            <div class="tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px] hover:-tw-skew-y-6 tw-transition-transform tw-duration-200 hover:tw-shadow-2xl hover:tw-scale-105">
                 <img src="{% static './assets/images/home/184-400x1000.jpg' %}" 
                      alt="dashboard" class="tw-w-full tw-h-full object-cover">
             </div>
@@ -28,22 +28,23 @@
                         tw-text-center tw-leading-normal max-md:tw-leading-tight">
                 Learn About Our Team And Our Business
             </h1>
-            <p class="tw-mt-5 tw-text-justify tw-px-2 max-md:tw-text-sm">
+            <p class="tw-mt-5 tw-text-center tw-px-2 tw-text-lg align-center md:tw-text-2lg">
                 Order now and don't forget to subscribe and don't forget to enter the email below to get a voucher right now. 🚀
             </p>
             <a href="https://github.com/PaulleDemon/Django-website-template" 
-               class="btn tw-rounded-full tw-mt-5 tw-px-6 tw-py-3 tw-text-white tw-font-semibold tw-transition hover:tw-bg-blue-500">
-                Contact Us Now!
+                class="tw-rounded-full tw-mt-5 tw-px-6 tw-py-3 tw-bg-black tw-text-white tw-font-semibold tw-transition-transform tw-duration-300 tw-ease-in-out tw-flex tw-items-center tw-justify-center hover:tw-scale-110 hover:tw-shadow-xl">
+                    Contact Us Now!
             </a>
+
         </div>
 
         <!-- Imágenes de los extremos -->
         <div class="tw-flex tw-gap-4 tw-place-content-center tw-place-items-center">
-            <div class="tw-rounded-lg tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px]">
+            <div class="tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px] hover:tw-skew-y-6 tw-transition-transform tw-duration-200 hover:tw-shadow-2xl hover:tw-scale-105">
                 <img src="{% static './assets/images/home/184-400x1000.jpg' %}" 
                      alt="dashboard" class="tw-w-full tw-h-full object-cover">
             </div>
-            <div class="tw-rounded-lg tw-overflow-hidden tw-shadow-xl tw-h-[500px] lg:tw-h-[800px]">
+            <div class="tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] lg:tw-h-[800px] hover:-tw-skew-y-6 tw-transition-transform tw-duration-200 hover:tw-shadow-2xl hover:tw-scale-105">
                 <img src="{% static './assets/images/home/184-400x1000.jpg' %}" 
                      alt="dashboard" class="tw-w-full tw-h-full object-cover">
             </div>
@@ -235,5 +236,6 @@
 
 
     <script src="{% static "./js/home.js" %}"></script>
+    
 
 {% endblock scripts %}
