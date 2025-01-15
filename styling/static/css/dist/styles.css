@@ -602,6 +602,10 @@ video {
   right: 1rem;
 }
 
+.tw-right-0 {
+  right: 0px;
+}
+
 .tw-z-20 {
   z-index: 20;
 }
@@ -1124,6 +1128,11 @@ video {
      object-fit: contain;
 }
 
+.tw-object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .tw-p-2 {
   padding: 0.5rem;
 }
@@ -1450,6 +1459,10 @@ video {
 .hover\:tw-text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.tw-group:hover .group-hover\:tw-flex {
+  display: flex;
 }
 
 @media not all and (min-width: 1024px) {
