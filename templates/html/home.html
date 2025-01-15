@@ -178,9 +178,7 @@
 
     <section class="tw-w-full  tw-max-w-[100vw]
                     tw-place-content-center 
-                    tw-px-[10%]
-                    tw-p-4
-                    tw-gap-[10%]
+                    tw-p-6
                     max-md:tw-flex-col
                     tw-overflow-hidden
                     "
@@ -191,26 +189,31 @@
                 Check Out Some of the Stellar Work We've Done
             </p>
         </div>
-        <div class="tw-mt-10 tw-grid tw-grid-cols-2 tw-grid-rows-4 tw-gap-6 tw-max-w-5xl tw-px-4">
+        <div class="tw-mt-10 tw-mx-auto tw-grid tw-grid-cols-2 tw-grid-rows-4 tw-gap-6 tw-max-w-5xl tw-px-4">
             <!-- Highlighted Card -->
-            <div class="tw-relative tw-rounded-lg tw-overflow-hidden tw-col-span-1 tw-row-span-2">
-              <div class="tw-w-full tw-h-full tw-bg-gradient-to-t tw-from-yellow-400 tw-to-gray-300"></div>
-              <div class="tw-absolute tw-bottom-10 tw-left-8 tw-text-white">
-                <h3 class="tw-text-lg tw-font-bold">Generation Of Wealth</h3>
-                <p class="tw-text-sm">Marketing</p>
-              </div>
-              <button class="tw-absolute tw-bottom-4 tw-right-4 tw-bg-white tw-w-10 tw-h-10 tw-rounded-full tw-flex tw-justify-center tw-items-center tw-text-yellow-500 tw-shadow-lg">
-                <i class="tw-font-bold">&rarr;</i>
-              </button>
+            <div class="tw-rounded-lg tw-col-span-1 tw-row-span-2">
+                <div class="tw-w-full tw-h-full tw-bg-gradient-to-t tw-from-yellow-400 tw-to-gray-300 tw-z-0">
+                    <img src="{% static './assets/images/home/portfolio_1.png' %}" alt="Portfolio 1" class="tw-w-full tw-h-full tw-object-cover"></img>
+                    <div class="tw-p-4 tw-z-10">
+                        <div class="tw-flex tw-flex-col tw-justify-between tw-h-full tw-text-white">
+                            <h3 class="tw-text-lg tw-font-bold">Generation Of Wealth</h3>
+                            <p class="tw-text-sm">Marketing</p>
+                        </div>
+                        <button class="tw-bg-white tw-w-10 tw-h-10 tw-rounded-full tw-flex tw-justify-center tw-items-center tw-text-yellow-500 tw-shadow-lg">
+                            <i class="tw-font-bold">&rarr;</i>
+                        </button>
+                    </div>
+                </div>
             </div>
         
             <!-- Placeholder Cards -->
             <div class="tw-rounded-lg tw-bg-gray-300 tw-h-[300px]"></div>
             <div class="tw-rounded-lg tw-bg-gray-300 tw-h-[300px]"></div>
             <div class="tw-rounded-lg tw-bg-gray-300 tw-h-[300px]"></div>
+            <div class="tw-rounded-lg tw-bg-gray-300 tw-row-span-2"></div>
             <div class="tw-rounded-lg tw-bg-gray-300 tw-h-[300px]"></div>
-            <div class="tw-rounded-lg tw-bg-gray-300 tw-h-[300px]"></div>
-          </div>
+
+        </div>
     </section>
 
     <section class="tw-mt-5 tw-w-full tw-flex tw-flex-col tw-p-[5%]

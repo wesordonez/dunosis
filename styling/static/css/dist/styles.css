@@ -638,6 +638,14 @@ video {
   z-index: 5000;
 }
 
+.tw-z-0 {
+  z-index: 0;
+}
+
+.tw-z-10 {
+  z-index: 10;
+}
+
 .tw-col-span-2 {
   grid-column: span 2 / span 2;
 }
