@@ -1470,6 +1470,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.tw-group:hover .group-hover\:tw-opacity-100 {
+  opacity: 1;
+}
+
 @media not all and (min-width: 1024px) {
   .max-lg\:tw-fixed {
     position: fixed;
