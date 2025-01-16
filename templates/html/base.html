@@ -25,7 +25,7 @@
                         content="{% block socialDescription %}Web Development, Marketing, and Consulting{% endblock socialDescription %}" />
     <meta property="og:type" content="{% block pageType %}website{% endblock pageType %}" />
     <meta property="og:url" content="{% block pageLink %}{{request.build_absolute_uri}}{% endblock pageLink %}" />
-    <meta property="og:image" content="{% block pageImage %}{{ request.scheme }}://{{request.get_host}}{% static "./assets/images/home/hiking4.jpg" %}{% endblock pageImage %}" />
+    <meta property="og:image" content="{% block pageImage %}{{ request.scheme }}://{{request.get_host}}{% static "./assets/images/home/dunosis-backdrop.png" %}{% endblock pageImage %}" />
 
     <!-- Twitter -->
     {% comment %} 
@@ -82,7 +82,7 @@
     </div>
 
     <header class="tw-flex tw-w-full tw-z-20
-                    tw-h-[60px]  
+                    tw-h-[80px]  
                     lg:tw-justify-around
                     tw-absolute tw-top-0 tw-px-[10%]
                     max-lg:tw-mr-auto
@@ -90,10 +90,9 @@
                     tw-text-black
                     ">
 
-        <a class="tw-w-[50px] tw-h-[50px] tw-p-[4px]" href="{% url "home" %}">
-            <img src="{% static "assets/logos/dunosis-logo.png" %}" 
-                  alt="logo" class="tw-w-full tw-h-full tw-object-contain">
-
+        <a class="tw-w-[80px] tw-h-[80px] tw-p-[4px]" href="{% url "home" %}">
+            <img src="{% static "assets/logos/dunosis-logo-bg.png" %}" 
+                  alt="dunosis-logo" class="tw-w-full tw-h-full tw-object-contain">
         </a>
         <div class="collapsable-header animated-collapse max-lg:tw-shadow-md"
                     id="collapsed-header-items"
@@ -109,61 +108,24 @@
                             tw-text-black
                         ">
                     
-                <a class="header-links" href="{% url "home" %}">
-                    About us
+                <a class="header-links" href="{% url "about" %}">
+                    About
                 </a>
                 <a class="header-links" href="{% url "blogs" %}"
                         rel="noreferrer"
                         >
-                    Blogs
+                    Services
                 </a>
                 <a class="header-links" href="{% url "contact-us" %}"
                         rel="noreferrer"
                         >
-                    Contact us
+                    Portfolio
                 </a>
             </div>
-            <div class="tw-flex tw-gap-[20px] tw-place-items-center tw-text-xl
-                         max-lg:!tw-text-white
-                         max-lg:tw-place-content-center
-                        max-lg:tw-w-full
-                         max-lg:tw-place-items-start
-                         ">
-                <a href="https://www.facebook.com/profile.php?id=61565984502377" 
-                        target="_blank" 
-                        rel="noreferrer"
-                        aria-label="facebook"
-                        class=" header-links
-                                tw-transition-colors
-                                tw-duration-[0.3s]
-                                "
-                        >
-                    <i class="bi bi-facebook"></i>
-                </a>
-
-                <a href="https://www.instagram.com/dunosis.usa"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="instagram"
-                        class="header-links
-                                tw-transition-colors
-                                tw-duration-[0.3s]
-                                "
-                            >
-                    <i class="bi bi-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com/company/104785338/"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="linkedin"
-                        class="header-links
-                                tw-transition-colors
-                                tw-duration-[0.3s]
-                                "
-                            >
-                    <i class="bi bi-linkedin"></i>
-                </a>
-            </div>
+            <a href="https://github.com/PaulleDemon/Django-website-template" 
+            class="btn tw-rounded-full tw-flex tw-items-center tw-gap-2 tw-h-10 tw-px-6 hover:tw-blue-red-700 hover:tw-text-white hover:tw-bg-blue-500 tw-justify-center tw-mt-6">
+                        <span>Contact Us!</span>
+                    </a>
         </div>
         <button class="tw-absolute tw-text-black tw-z-50 
                         tw-right-3
@@ -179,50 +141,60 @@
         {% block content %}{% endblock content %}
     </div>
     <footer class="tw-flex max-md:tw-flex-col tw-w-full tw-p-[5%]
-                    tw-px-[10%] tw-place-content-around tw-gap-3 
+                    tw-px-[5%] tw-place-content-around tw-gap-3 
                     tw-bg-black
-                    tw-text-[#ffffff]
+                    tw-text-[#f5f5f5]
                     tw-mt-auto
                     ">
-        <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
-                    tw-gap-6 tw-place-items-center max-md:tw-w-full">
+        <div class="tw-h-full tw-w-full tw-flex tw-flex-row max-md:tw-flex-col
+                    tw-gap-6 tw-place-items-center max-md:tw-w-full tw-justify-between">
             
-            <img src="{% static "assets/logos/dunosis-logo.png" %}" 
-                alt="logo"  class="tw-max-w-[150px] max-md:tw-max-w-[120px]">
-            <div>
-                Chicago, IL   
-                <br>
-                United States
-            </div>
-            <div class="tw-mt-3 tw-font-semibold tw-text-lg">
-                Follow us
-            </div>
-            <div class="tw-flex tw-gap-4 tw-text-2xl">
-                <a href="https://www.facebook.com/profile.php?id=61565984502377" aria-label="Facebook">
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <a href="https://instagram.com/dunosis.usa" aria-label="Instagram">
-                   <i class="bi bi-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com/company/104785338/" class="tw-w-[40px] tw-h-[40px]" aria-label="LinkedIn">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-            </div>
-        </div>
+            <img src="{% static "assets/logos/dunosis-logo-sq.png" %}" 
+                alt="logo"  class="tw-max-w-[120px] max-md:tw-max-w-[100px] tw-rounded-full">
 
-        <div class="tw-h-full tw-w-[250px] tw-flex tw-flex-col 
-                    tw-gap-4">
-
-            <h2 class="tw-text-3xl max-md:tw-text-xl">
-                Resources
-            </h2>
-            <div class=" tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
-                <a href="{% url "home" %}" class="footer-link">About us</a>
-                <a href="" class="footer-link">FAQ</a>
-                <a href="{% url "contact-us" %}" class="footer-link">Contact Us</a>
-                <a href="" class="footer-link">Privacy policy</a>
+            <div class="tw-h-full tw-w-auto tw-flex tw-flex-col tw-gap-4">
+                <div class=" tw-flex tw-flex-row tw-gap-3 max-md:tw-text-sm">
+                    <a href="{% url "home" %}" class="footer-link">Home</a>
+                    <a href="" class="footer-link">About Us</a>
+                    <a href="{% url "contact-us" %}" class="footer-link">Services</a>
+                    <a href="" class="footer-link">Portfolio</a>
+                </div>
             </div>
 
+            <div class="tw-h-full tw-w-auto tw-flex tw-flex-col tw-gap-4">
+                <div class="tw-font-semibold tw-text-lg tw-text-center">
+                    Follow us
+                </div>
+                <div class="tw-flex tw-gap-4 tw-text-2xl">
+                    <a href="https://www.facebook.com/profile.php?id=61565984502377" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/dunosis.usa" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/17732022074" aria-label="WhatsApp">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/104785338/" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tw-h-full tw-w-auto tw-flex tw-flex-col tw-gap-4">
+                <div class="tw-font-semibold tw-text-lg tw-text-center">
+                    Contact us
+                </div>
+                <div class="tw-flex tw-gap-2 max-md:tw-text-sm">
+                    <i class="bi bi-geo-alt"></i><span class="tw-ml-2">Chicago, IL 60622</span>
+                </div>
+                <div class="tw-flex tw-gap-2 max-md:tw-text-sm">
+                    <i class="bi bi-telephone"></i><span class="tw-ml-2">+1 (773)-202-2074</span>
+                </div>
+                <div class="tw-flex tw-gap-2 max-md:tw-text-sm">
+                    <i class="bi bi-envelope"></i><span class="tw-ml-2"><a href="mailto:info@dunosis.com">info@dunosis.com</a></span>
+                </div>
+            </div>
         </div>
 
         {% block footer %}
@@ -243,15 +215,15 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/browser-image-compression@2.0.1/dist/browser-image-compression.js"></script>
 
 <script>
-    const STATIC_URL = "{% settings_value "STATIC_URL" %}" 
+    const STATIC_URL = "{% settings_value 'STATIC_URL' %}" 
 </script>
 
-<script src="{% static "./js/utils/elements.js" %}"></script>
-<script src="{% static "./js/utils/common.js" %}"></script>
-<script src="{% static "./js/utils/images.js" %}"></script>
-<script src="{% static "./js/utils/constants.js" %}"></script>
+<script src="{% static './js/utils/elements.js' %}"></script>
+<script src="{% static './js/utils/common.js' %}"></script>
+<script src="{% static './js/utils/images.js' %}"></script>
+<script src="{% static './js/utils/constants.js' %}"></script>
 
-<script src="{% static "./js/base.js" %}"></script>
+<script src="{% static './js/base.js' %}"></script>
 
 {% block scripts %}{% endblock scripts %}
 
