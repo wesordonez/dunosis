@@ -910,20 +910,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@keyframes tw-loop-scroll {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.tw-animate-loop-scroll {
-  animation: tw-loop-scroll 50s linear infinite;
-}
-
 .tw-cursor-pointer {
   cursor: pointer;
 }
@@ -1745,6 +1731,10 @@ video {
     width: 90%;
   }
 
+  .lg\:tw-w-\[60\%\] {
+    width: 60%;
+  }
+
   .lg\:tw-flex-row {
     flex-direction: row;
   }
@@ -1777,6 +1767,11 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:tw-mx-24 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
   .xl\:tw-flex {
     display: flex;
   }
