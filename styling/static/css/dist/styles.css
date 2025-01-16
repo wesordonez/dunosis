@@ -894,6 +894,14 @@ video {
   width: 3rem;
 }
 
+.tw-w-\[400px\] {
+  width: 400px;
+}
+
+.tw-w-\[100px\] {
+  width: 100px;
+}
+
 .tw-min-w-\[10\%\] {
   min-width: 10%;
 }
@@ -1474,6 +1482,11 @@ video {
 .tw-text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.tw-text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .tw-font-bold {
