@@ -640,6 +640,21 @@ video {
   margin-bottom: 1rem;
 }
 
+.tw-mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.tw-mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.tw-mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .tw-mb-14 {
   margin-bottom: 3.5rem;
 }
@@ -900,6 +915,22 @@ video {
 
 .tw-w-\[100px\] {
   width: 100px;
+}
+
+.tw-w-\[90\%\] {
+  width: 90%;
+}
+
+.tw-w-\[95\%\] {
+  width: 95%;
+}
+
+.tw-w-\[85\%\] {
+  width: 85%;
+}
+
+.tw-w-\[75\%\] {
+  width: 75%;
 }
 
 .tw-min-w-\[10\%\] {
