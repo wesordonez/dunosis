@@ -966,6 +966,10 @@ video {
   max-width: 400px;
 }
 
+.tw-max-w-\[100px\] {
+  max-width: 100px;
+}
+
 .-tw-translate-x-1\/2 {
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1319,6 +1323,10 @@ video {
 
 .tw-to-transparent {
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
+}
+
+.tw-bg-cover {
+  background-size: cover;
 }
 
 .tw-object-contain {

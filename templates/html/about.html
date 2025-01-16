@@ -25,56 +25,29 @@
             </div>
         </div>
 
+        <div class="md:tw-hidden">
 
-        <!-- Carrusel de imágenes para pantallas pequeñas -->
-        <div class="tw-flex space-x-16 tw-overflow-hidden tw-group md:tw-hidden ">
-            <div class="tw-flex tw-animate-loop-scroll tw-space-x-16 tw-h-[200px] tw-group-hover:paused">
-                <img src="{% static './assets/images/about/chicago.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/about/santacruz.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/about/Dunosis Stock Photos1.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/about/Dunosis Stock Photos2.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/about/Dunosis Stock Photos3.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/about/Dunosis Stock Photos4.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/about/Dunosis Stock Photos5.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/about/Dunosis Stock Photos1.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/about/Dunosis Stock Photos2.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/about/Dunosis Stock Photos3.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
+            <!-- Carrusel de imágenes para pantallas pequeñas -->
+            <div class="scroll imgbx" style="--t: 10s;">
+                <div class="tw-flex tw-flex-row tw-gap-2">
+                    <img src="{% static './assets/images/about/carrusel/photos1.jpg' %}" alt="dashboard" class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg">
+                    <img src="{% static './assets/images/about/carrusel/photos2.jpg' %}" alt="dashboard" class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg">
+                    <img src="{% static './assets/images/about/carrusel/photos3.jpg' %}" alt="dashboard" class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg">
+                    <img src="{% static './assets/images/about/carrusel/photos4.jpg' %}" alt="dashboard" class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg">
+                    <img src="{% static './assets/images/about/carrusel/photos5.jpg' %}" alt="dashboard" class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg">
+                    <!-- Duplicar las imágenes para lograr el efecto de bucle infinito -->
+                    <img src="{% static './assets/images/about/carrusel/photos1.jpg' %}" alt="dashboard" class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg">
+                    <img src="{% static './assets/images/about/carrusel/photos2.jpg' %}" alt="dashboard" class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg">
+                    <img src="{% static './assets/images/about/carrusel/photos3.jpg' %}" alt="dashboard" class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg">
+                    <img src="{% static './assets/images/about/carrusel/photos4.jpg' %}" alt="dashboard" class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg">
+                    <img src="{% static './assets/images/about/carrusel/photos5.jpg' %}" alt="dashboard" class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg">
+                </div>
             </div>
-            <div class="tw-flex tw-animate-loop-scroll tw-space-x-16 tw-h-[200px] tw-group-hover:paused" aria-hidden="true">
-                
-                <img src="{% static './assets/images/about/chicago.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
 
-                <img src="{% static './assets/images/about/santacruz.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
 
-                <img src="{% static './assets/images/about/Dunosis Stock Photos1.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/about/Dunosis Stock Photos2.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/about/Dunosis Stock Photos3.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/about/Dunosis Stock Photos4.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/about/Dunosis Stock Photos5.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/about/Dunosis Stock Photos1.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/about/Dunosis Stock Photos2.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/about/Dunosis Stock Photos3.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-            </div>
+            
         </div>
-
+        
         <!-- Contenido Central -->
         <div class="tw-flex tw-flex-col tw-items-center tw-max-w-[480px] tw-min-w-[300px] tw-mx-4">
             
@@ -299,44 +272,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <script src="{% static "./js/about.js" %}"></script>
+    <script src="{% static './js/about.js' %}"></script>
 
-    <script>
-   // Selecciona todos los elementos con la clase 'poster'
-   const elements = document.querySelectorAll('.poster');
 
-elements.forEach(el => {
-    const height = el.clientHeight;
-    const width = el.clientWidth;
-
-    el.addEventListener('mousemove', (e) => {
-        const { layerX, layerY } = e;
-
-        const yRotation = (
-            (layerX - width / 2) / width
-        ) * 20;
-
-        const xRotation = (
-            (layerY - height / 2) / height
-        ) * 20;
-
-        const string = `
-            perspective(500px)
-            scale(1.08)
-            rotateX(${xRotation}deg)
-            rotateY(${yRotation}deg)`;
-
-        el.style.transform = string;
-    });
-
-    el.addEventListener('mouseout', () => {
-        el.style.transform = `
-        perspective(500px) 
-        scale(1)
-        rotateX(0)
-        rotateY(0)`;
-    });
-});
-
-    </script>
 {% endblock scripts %}
