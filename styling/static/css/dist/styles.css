@@ -618,6 +618,14 @@ video {
   top: 12rem;
 }
 
+.tw-right-5 {
+  right: 1.25rem;
+}
+
+.tw-top-9 {
+  top: 2.25rem;
+}
+
 .tw-z-10 {
   z-index: 10;
 }
@@ -645,6 +653,16 @@ video {
 .tw-mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.tw-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tw-my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .tw-mb-10 {
@@ -751,8 +769,24 @@ video {
   margin-bottom: 12rem;
 }
 
+.tw-mt-10 {
+  margin-top: 2.5rem;
+}
+
+.tw-mt-12 {
+  margin-top: 3rem;
+}
+
+.tw-inline-block {
+  display: inline-block;
+}
+
 .tw-flex {
   display: flex;
+}
+
+.tw-grid {
+  display: grid;
 }
 
 .\!tw-hidden {
@@ -997,6 +1031,26 @@ video {
   max-width: 42rem;
 }
 
+.tw-max-w-3xl {
+  max-width: 48rem;
+}
+
+.tw-max-w-4xl {
+  max-width: 56rem;
+}
+
+.tw-max-w-7xl {
+  max-width: 80rem;
+}
+
+.tw-max-w-xl {
+  max-width: 36rem;
+}
+
+.tw-max-w-lg {
+  max-width: 32rem;
+}
+
 .-tw-translate-x-1\/2 {
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1213,13 +1267,26 @@ video {
   border-width: 0px;
 }
 
+.tw-border {
+  border-width: 1px;
+}
+
 .tw-border-t {
   border-top-width: 1px;
+}
+
+.tw-border-solid {
+  border-style: solid;
 }
 
 .tw-border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
+}
+
+.tw-border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
 }
 
 .tw-bg-\[\#f5f5f5\] {
@@ -1406,6 +1473,16 @@ video {
 .tw-py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.tw-px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.tw-py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .tw-pt-48 {
@@ -1767,6 +1844,10 @@ video {
     gap: 5rem;
   }
 
+  .sm\:tw-p-20 {
+    padding: 5rem;
+  }
+
   .sm\:tw-px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -1852,6 +1933,16 @@ video {
     padding-bottom: 6rem;
   }
 
+  .md\:tw-px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:tw-py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .md\:tw-text-left {
     text-align: left;
   }
@@ -1896,6 +1987,14 @@ video {
     margin-right: auto;
   }
 
+  .lg\:tw-mb-14 {
+    margin-bottom: 3.5rem;
+  }
+
+  .lg\:tw-mb-24 {
+    margin-bottom: 6rem;
+  }
+
   .lg\:tw-hidden {
     display: none;
   }
@@ -1932,6 +2031,18 @@ video {
     width: 90%;
   }
 
+  .lg\:tw-max-w-3xl {
+    max-width: 48rem;
+  }
+
+  .lg\:tw-max-w-lg {
+    max-width: 32rem;
+  }
+
+  .lg\:tw-grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:tw-flex-row {
     flex-direction: row;
   }
@@ -1952,6 +2063,10 @@ video {
     justify-content: space-around;
   }
 
+  .lg\:tw-gap-12 {
+    gap: 3rem;
+  }
+
   .lg\:tw-rounded-full {
     border-radius: 9999px;
   }
@@ -1966,9 +2081,19 @@ video {
     padding-bottom: 8rem;
   }
 
+  .lg\:tw-px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .lg\:tw-text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .lg\:tw-text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
