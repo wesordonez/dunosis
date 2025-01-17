@@ -30,3 +30,6 @@ def home_view(request):
 
 def about_view(request):
     return render(request, 'about.html', status=200)
+
+def service_details_view(request):
+    return render(request, 'service-details.html', status=200)
