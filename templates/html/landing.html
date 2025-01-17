@@ -99,7 +99,7 @@
               </div>
               <div class="tw-flex tw-flex-col-reverse tw-gap-8 sm:tw-gap-20 lg:tw-flex-row lg:tw-items-center">
                 <div class="tw-max-w-2xl">
-                  <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/649a9c0eb2276a1056dff848_Frame%2048379%20(1).png" class="tw-rounded-3xl" alt="" />
+                  <img src="{% static './assets/images/landing/web-dev-stock.jpg' %}" class="tw-rounded-3xl" alt="" />
                 </div>
                 <div class="tw-max-w-2xl">
                   <h2 class="tw-mb-4 tw-text-3xl tw-font-bold md:tw-text-5xl">Web Development</h2>
@@ -115,7 +115,7 @@
               </div>
               <div class="tw-flex tw-flex-col-reverse tw-gap-8 sm:tw-gap-20 lg:tw-flex-row lg:tw-items-center">
                 <div class="tw-max-w-2xl">
-                  <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/649a9c0eb2276a1056dff848_Frame%2048379%20(1).png" class="tw-rounded-3xl" alt="" />
+                  <img src="{% static './assets/images/landing/marketing-stock.jpg' %}" class="tw-rounded-3xl" alt="" />
                 </div>
                 <div class="tw-max-w-2xl">
                   <h2 class="tw-mb-4 tw-text-3xl tw-font-bold md:tw-text-5xl">Marketing and Sales Strategy</h2>
@@ -131,7 +131,7 @@
               </div>
               <div class="tw-flex tw-flex-col-reverse tw-gap-8 sm:tw-gap-20 lg:tw-flex-row lg:tw-items-center">
                 <div class="tw-max-w-2xl">
-                  <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/649a9c0eb2276a1056dff848_Frame%2048379%20(1).png" class="tw-rounded-3xl" alt="" />
+                  <img src="{% static './assets/images/landing/consulting-stock.jpg' %}" class="tw-rounded-3xl" alt="" />
                 </div>
                 <div class="tw-max-w-2xl">
                   <h2 class="tw-mb-4 tw-text-3xl tw-font-bold md:tw-text-5xl">Business and Technology Consulting</h2>
@@ -150,7 +150,7 @@
           <h2 class="tw-mb-8 tw-text-3xl tw-font-bold md:tw-text-5xl lg:tw-mb-14"> Meet Dunosis </h2>
           <p class="tw-mb-8 tw-max-w-lg tw-text-sm tw-text-gray-500 sm:tw-text-base lg:tw-mb-24"> Dunosis was founded by two passionate innovators bridging two vibrant cities: Chicago, Illinois and Santa Cruz, Bolivia. Wesley Ordoñez brings a wealth of experience in technology and engineering, while Tayo Zabala specializes in marketing and business strategy. Together, we combine global perspectives and local expertise to deliver impactful results for businesses of all sizes. At Dunosis, we’re committed to turning your ideas into powerful solutions. </p>
           <div class="tw-grid tw-gap-10 lg:tw-grid-cols-2 lg:tw-gap-12">
-            <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b7a30c42421ae3cbe5abb9_about%20image.svg" alt="" class="tw-inline-block tw-h-full tw-w-full tw-rounded-2xl tw-object-cover" />
+            <img src="{% static './assets/images/landing/wes-tayo.png' %}" alt="" class="tw-inline-block tw-h-full tw-w-full tw-rounded-2xl tw-object-cover" />
             <div class="tw-flex tw-flex-col tw-gap-5 tw-rounded-2xl tw-border tw-border-solid tw-border-black tw-p-10 sm:tw-p-20">
               <h2 class="tw-text-3xl tw-font-bold md:tw-text-5xl">Our Mission</h2>
               <p class="tw-text-sm tw-text-gray-500 sm:tw-text-base"> At Dunosis we aim to empower businesses and communities through exceptional digital solutions while creating opportunities for talented young Bolivians. By delivering expertly crafted websites, actionable data insights, and tailored tech consulting, we help our clients thrive in an increasingly digital world. We’re committed to professionalism, flexibility, and trust. At the same time, we strive to economically support Bolivian talent, provide real-world experience with American companies, and open pathways for cultural and professional exchange.
@@ -161,6 +161,8 @@
           </div>
         </div>
       </section>
+
+      <div class="tw-mb-10" formsappId="6789c5f8d70ec4c113bcd5c3"></div>
 
       <section class="tw-w-full tw-flex tw-flex-col md:tw-flex-row tw-items-center tw-justify-center tw-gap-10 tw-px-10 md:tw-px-16 tw-bg-blue-700 tw-overflow-hidden">
         <div class="tw-flex tw-flex-col tw-items-center tw-gap-4 tw-mt-16 tw-mb-16">
@@ -174,7 +176,7 @@
             </h3>
             <a
                 class="tw-uppercase tw-px-14 tw-py-4 tw-mt-4 tw-rounded-full tw-text-xl md:tw-text-2xl tw-font-semibold tw-text-black tw-bg-white hover:tw-scale-105 tw-transition-transform tw-duration-300 tw-mb-8"
-                href="https://github.com/PaulleDemon/Django-website-template">
+                href="https://dunosis.forms.app/contact-form">
                 learn more!
             </a>
             <div class="tw-flex tw-gap-4 tw-text-3xl">
@@ -215,6 +217,8 @@
     document.cookie = "user_timezone=" + timezone;
 </script>
 {% comment %} <script src="https://unpkg.com/quill-paste-smart@latest/dist/quill-paste-smart.js"></script> {% endcomment %}
+
+<script src="https://forms.app/static/embed.js" type="text/javascript" async defer onload="new formsapp('6789c5f8d70ec4c113bcd5c3', 'standard', {'width':'100vw','height':'600px','opacity':0}, 'https://nn9joelt.forms.app');"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/browser-image-compression@2.0.1/dist/browser-image-compression.js"></script>
