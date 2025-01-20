@@ -55,11 +55,6 @@ module.exports = {
             },
             colors: {
                 'bg-primary': '#f5f5f5',
-                'success-100': '#d5f6dd',
-                'success-200': '#b2e5bb',
-                'success-300': '#36ab24',
-                'success-400': '#1d7239',
-                'success-500': '#0e4329',
             },
         },
     },
