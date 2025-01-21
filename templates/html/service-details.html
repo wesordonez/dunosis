@@ -247,18 +247,18 @@
 			</div>
 
 			{% for faq in faq_list %}
-            <div id="white-content-{{ forloop.counter }}" class="tw-flex tw-items-center tw-justify-between tw-bg-white tw-shadow-lg tw-rounded-xl tw-py-6 tw-px-8">
-                <h2 class="tw-text-xl">{{ faq.question }}</h2>
-                <i class="bi bi-arrow-right-short tw-text-xl toggle-icon hover:tw-text-green-500" data-toggle="{{ forloop.counter }}"></i>
-            </div>
-            <div id="green-content-{{ forloop.counter }}" class="tw-flex tw-flex-col tw-justify-between tw-bg-green-100 tw-text-green-500 tw-shadow-lg tw-rounded-xl tw-py-6 tw-px-8 tw-gap-4 tw-hidden">
-                <div class="tw-flex tw-justify-between">
-                    <h2 class="tw-text-xl">{{ faq.question }}</h2>
-                    <i class="bi bi-arrow-up-short tw-text-xl toggle-icon" data-toggle="{{ forloop.counter }}"></i>
-                </div>
-                <p class="tw-font-light tw-text-black">{{ faq.answer }}</p>
-            </div>
-            {% endfor %}
+			<div id="white-content-{{ forloop.counter }}" class="tw-flex tw-items-center tw-justify-between tw-bg-white tw-shadow-lg tw-rounded-xl tw-py-6 tw-px-8 toggle-container" data-toggle="{{ forloop.counter }}">
+				<h2 class="tw-text-xl">{{ faq.question }}</h2>
+				<i class="bi bi-arrow-right-short tw-text-xl"></i>
+			</div>
+			<div id="green-content-{{ forloop.counter }}" class="tw-flex tw-flex-col tw-justify-between tw-bg-green-100 tw-text-green-500 tw-shadow-lg tw-rounded-xl tw-py-6 tw-px-8 tw-gap-4 tw-hidden toggle-container" data-toggle="{{ forloop.counter }}">
+				<div class="tw-flex tw-justify-between">
+					<h2 class="tw-text-xl">{{ faq.question }}</h2>
+					<i class="bi bi-arrow-up-short tw-text-xl"></i>
+				</div>
+				<p class="tw-font-light tw-text-black">{{ faq.answer }}</p>
+			</div>
+			{% endfor %}
 		</div>
 	</div>
 	<div
@@ -333,9 +333,9 @@
 	referrerpolicy="no-referrer"
 />
 <script>
-	document.querySelectorAll(".toggle-icon").forEach(icon => {
-        icon.addEventListener("click", function() {
-            const toggleId = icon.getAttribute("data-toggle");
+    document.querySelectorAll(".toggle-container").forEach(container => {
+        container.addEventListener("click", function() {
+            const toggleId = container.getAttribute("data-toggle");
             const whiteContent = document.getElementById(`white-content-${toggleId}`);
             const greenContent = document.getElementById(`green-content-${toggleId}`);
 
