@@ -38,3 +38,6 @@ def service_details_view(request):
         {"question": "What type of company is measured?", "answer": "There are many variations of passages of Lorem Ipsum available alternate. In some form, by injected humor."}
     ]
     return render(request, 'service-details.html',{'faq_list': faq_list}, status=200)
+
+def portfolio_details_view(request):
+    return render(request, 'portfolio-details.html', status=200)
