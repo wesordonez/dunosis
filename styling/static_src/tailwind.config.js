@@ -54,7 +54,7 @@ module.exports = {
                 custom: ['Noir Pro', 'sans-serif'],
             },
             colors: {
-                'bg-primary': '#f5f5f5'
+                'bg-primary': '#f5f5f5',
             },
         },
     },
