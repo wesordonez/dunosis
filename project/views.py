@@ -31,10 +31,8 @@ def home_view(request):
 def about_view(request):
     return render(request, 'about.html', status=200)
 
+def landing_view(request):
+    return render(request, 'landing.html', status=200)
+  
 def service_details_view(request):
-    faq_list = [
-        {"question": "How long should a business plan be?", "answer": "There are many variations of passages of Lorem Ipsum available alternate. In some form, by injected humor."},
-        {"question": "What is included in your service?", "answer": "There are many variations of passages of Lorem Ipsum available alternate. In some form, by injected humor."},
-        {"question": "What type of company is measured?", "answer": "There are many variations of passages of Lorem Ipsum available alternate. In some form, by injected humor."}
-    ]
-    return render(request, 'service-details.html',{'faq_list': faq_list}, status=200)
+    return render(request, 'service-details.html', status=200)
