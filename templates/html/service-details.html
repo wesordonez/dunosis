@@ -1,0 +1,349 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %}Service Details{% endblock title %} 
+{% block description %}Description of Service Details{% endblock description %} {% load custom_tags %}
+{%block content %}
+
+<div class="tw-flex tw-flex-col tw-items-center tw-p-10">
+	<div
+		class="tw-flex tw-flex-col md:tw-flex-row tw-justify-center tw-items-center md:tw-items-start tw-gap-8"
+	>
+		<!-- Cards Navs-->
+		<div
+			class="tw-flex tw-flex-col tw-gap-y-4 tw-min-w-[350px] tw-max-w-[500px] tw-order-2 md:tw-order-1"
+		>
+			<!-- card 1 -->
+			<div class="tw-flex tw-flex-col tw-bg-green-300 tw-p-8 tw-rounded-xl">
+				<h1 class="tw-text-2xl tw-font-bold">All Services</h1>
+				<!-- separador -->
+				<div class="tw-flex tw-flex-row tw-gap-2 tw-py-4">
+					<div class="tw-h-[2px] tw-w-[5%] tw-bg-green-700"></div>
+					<div class="tw-h-[2px] tw-w-[30%] tw-bg-green-700"></div>
+				</div>
+				<!-- buttons -->
+				<div class="tw-flex tw-flex-col tw-gap-4 tw-mt-4">
+					<div
+						class="tw-flex tw-items-center tw-justify-between tw-bg-white hover:tw-bg-green-500 hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group"
+					>
+						<h2 class="tw-text-xl">Web Development</h2>
+						<i
+							class="bi bi-arrow-right tw-text-xl tw-text-green-700 group-hover:tw-text-white"
+						></i>
+					</div>
+					<div
+						class="tw-flex tw-items-center tw-justify-between tw-bg-white hover:tw-bg-green-500 hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group"
+					>
+						<h2 class="tw-text-xl">Content Marketing</h2>
+						<i
+							class="bi bi-arrow-right tw-text-xl tw-text-green-700 group-hover:tw-text-white"
+						></i>
+					</div>
+					<div
+						class="tw-flex tw-items-center tw-justify-between tw-bg-white hover:tw-bg-green-500 hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group"
+					>
+						<h2 class="tw-text-xl">Social Media Marketing</h2>
+						<i
+							class="bi bi-arrow-right tw-text-xl tw-text-green-700 group-hover:tw-text-white"
+						></i>
+					</div>
+					<div
+						class="tw-flex tw-items-center tw-justify-between tw-bg-white hover:tw-bg-green-500 hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group"
+					>
+						<h2 class="tw-text-xl">Content Production</h2>
+						<i
+							class="bi bi-arrow-right tw-text-xl tw-text-green-700 group-hover:tw-text-white"
+						></i>
+					</div>
+					<div
+						class="tw-flex tw-items-center tw-justify-between tw-bg-white hover:tw-bg-green-500 hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group"
+					>
+						<h2 class="tw-text-xl">Sales Strategy</h2>
+						<i
+							class="bi bi-arrow-right tw-text-xl tw-text-green-700 group-hover:tw-text-white"
+						></i>
+					</div>
+				</div>
+			</div>
+			<!-- card 2 -->
+			<div class="tw-flex tw-flex-col tw-bg-green-300 tw-p-8 tw-rounded-xl">
+				<h1 class="tw-text-2xl tw-font-bold">Pricing Packages</h1>
+				<!-- separador -->
+				<div class="tw-flex tw-flex-row tw-gap-2 tw-py-4">
+					<div class="tw-h-[2px] tw-w-[5%] tw-bg-green-700"></div>
+					<div class="tw-h-[2px] tw-w-[30%] tw-bg-green-700"></div>
+				</div>
+				<!-- buttons -->
+				<div class="tw-flex tw-flex-col tw-gap-4 tw-mt-4">
+					<div
+						class="tw-flex tw-items-center tw-justify-start tw-gap-6 tw-bg-white hover:tw-bg-green-500 hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group"
+					>
+						<i
+							class="bi bi-clock tw-text-xl tw-text-green-700 group-hover:tw-text-white"
+						></i>
+						<h2 class="tw-text-xl">Basic Package - $350/month</h2>
+					</div>
+
+					<div
+						class="tw-flex tw-items-center tw-justify-start tw-gap-6 tw-bg-white hover:tw-bg-green-500 hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group"
+					>
+						<i
+							class="bi bi-clock tw-text-xl tw-text-green-700 group-hover:tw-text-white"
+						></i>
+						<h2 class="tw-text-xl">Mid Package - $450/month</h2>
+					</div>
+					<div
+						class="tw-flex tw-items-center tw-justify-start tw-gap-6 tw-bg-white hover:tw-bg-green-500 hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group"
+					>
+						<i
+							class="bi bi-clock tw-text-xl tw-text-green-700 group-hover:tw-text-white"
+						></i>
+						<h2 class="tw-text-xl">Pro Package - $900/month</h2>
+					</div>
+					<div
+						class="tw-flex tw-items-center tw-justify-center tw-gap-4 hover:tw-bg-green-800 tw-bg-green-500 tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group hover:tw-shadow-xl"
+					>
+						<h2 class="tw-text-xl">Appointment Now</h2>
+						<i class="bi bi-arrow-right tw-text-xl"></i>
+					</div>
+				</div>
+			</div>
+			<!-- card 3 -->
+			<div
+				class="tw-flex tw-flex-col tw-bg-gradient-to-t tw-from-green-500 tw-to-green-300 tw-p-8 tw-rounded-xl tw-justify-center tw-items-center tw-text-center tw-gap-8"
+			>
+				<div
+					class="tw-flex tw-rounded-full tw-shadow-xl tw-p-4 tw-w-20 tw-justify-center tw-bg-white"
+				>
+					<img
+						src="{% static './assets/images/services/details/phone-call.png' %}"
+						alt="Customer Support Icon"
+						class="tw-object-cover tw-p-2"
+					/>
+				</div>
+
+				<h1 class="tw-text-2xl tw-font-bold tw-text-white tw-mt-4">Need Help? Call Here</h1>
+				<h2 class="tw-text-xl tw-font-bold tw-text-white">+208-555-0112</h2>
+			</div>
+		</div>
+		<!-- Container -->
+		<div
+			class="tw-flex tw-flex-col tw-gap-4 tw-justify-center md:tw-ml-10 tw-min-w-[350px] tw-max-w-[900px] tw-order-1 md:tw-order-2"
+		>
+			<!-- image -->
+			<div
+				class="tw-flex tw-w-[100%] tw-h-[400px] tw-bg-gray-500 tw-rounded-3xl hover:tw-shadow-2xl tw-mb-4"
+			>
+				<img
+					src="{% static './assets/images/services/details/marketing.jpg' %}"
+					alt="digital-marketing"
+					class="tw-flex tw-w-[100%] tw-h-[100%] tw-rounded-3xl tw-object-cover"
+				/>
+			</div>
+			<h2 class="tw-text-4xl tw-font-bold tw-mb-4">Digital Marketing</h2>
+			<p class="tw-text-xl tw-mb-4 tw-font-light">
+				At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam
+				augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra
+				consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per
+				placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex enim gravida
+				cras congue. 
+                <br><br />  
+				At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam
+				augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra
+				consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per
+				placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex enim gravida
+				cras congue
+			</p>
+			<h2 class="tw-text-4xl tw-font-bold tw-mb-4">What We Provide</h2>
+			<p class="tw-text-xl tw-mb-4 tw-font-light">
+				At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam
+				augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra
+				consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per
+				placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex enim gravida
+				cras congue.
+			</p>
+			<div
+				class="tw-flex tw-flex-col md:tw-flex-row tw-justify-center tw-items-center tw-gap-4 tw-mb-4"
+			>
+				<!-- card left -->
+				<div
+					class="tw-relative tw-w-full tw-h-[400px] tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden tw-min-w-[300px]"
+				>
+					<img
+						src="{% static './assets/images/services/details/brand.png' %}"
+						alt="brand"
+						class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl"
+					/>
+
+					<!-- Texto superpuesto -->
+					<div
+						class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-justify-end tw-items-center tw-text-center tw-bg-gradient-to-t tw-from-black/60 tw-to-transparent tw-p-4 tw-pb-18"
+					>
+						<h2 class="tw-text-xl tw-font-bold tw-text-white">
+							Brand Design<br />Identity
+						</h2>
+						<p class="tw-text-white tw-mt-2">In Order To Scale New Customer</p>
+					</div>
+				</div>
+
+				<!-- card right -->
+				<div
+					class="tw-relative tw-w-full tw-h-[400px] tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden"
+				>
+					<img
+						src="{% static './assets/images/services/details/brand.png' %}"
+						alt="brand"
+						class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl"
+					/>
+
+					<!-- Texto superpuesto -->
+					<div
+						class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-justify-end tw-items-center tw-text-center tw-bg-gradient-to-t tw-from-black/60 tw-to-transparent tw-p-4 tw-pb-18"
+					>
+						<h2 class="tw-text-xl tw-font-bold tw-text-white">
+							Video Search<br />Optimization
+						</h2>
+						<p class="tw-text-white tw-mt-2">In Order To Scale New Customer</p>
+					</div>
+				</div>
+			</div>
+			<h2 class="tw-text-4xl tw-font-bold tw-mb-4">The Challange</h2>
+			<p class="tw-text-xl tw-mb-4 tw-font-light">
+				At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam
+				augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra
+				consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per
+				placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex enim gravida
+				cras congue.
+			</p>
+
+			<div class="tw-flex tw-flex-wrap tw-gap-4 tw-justify-between tw-mb-4">
+				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+					<i
+						class="tw-flex bi bi-check tw-bg-green-600 tw-text-white tw-rounded-full tw-h-8 tw-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"
+					></i>
+					<h2>Various analysis options.</h2>
+				</span>
+				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+					<i
+						class="tw-flex bi bi-check tw-bg-green-600 tw-text-white tw-rounded-full tw-h-8 tw-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"
+					></i>
+					<h2>Advance Data analysis operations.</h2>
+				</span>
+				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+					<i
+						class="tw-flex bi bi-check tw-bg-green-600 tw-text-white tw-rounded-full tw-h-8 tw-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"
+					></i>
+					<h2>Page Load(time, size, number of requests).</h2>
+				</span>
+				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+					<i
+						class="tw-flex bi bi-check tw-bg-green-600 tw-text-white tw-rounded-full tw-h-8 tw-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"
+					></i>
+					<h2>Advance Data analysis operations.</h2>
+				</span>
+			</div>
+
+			{% for faq in faq_list %}
+			<div id="white-content-{{ forloop.counter }}" class="tw-flex tw-items-center tw-justify-between tw-bg-white tw-shadow-lg tw-rounded-xl tw-py-6 tw-px-8 toggle-container" data-toggle="{{ forloop.counter }}">
+				<h2 class="tw-text-xl">{{ faq.question }}</h2>
+				<i class="bi bi-arrow-right-short tw-text-xl"></i>
+			</div>
+			<div id="green-content-{{ forloop.counter }}" class="tw-flex tw-flex-col tw-justify-between tw-bg-green-100 tw-text-green-500 tw-shadow-lg tw-rounded-xl tw-py-6 tw-px-8 tw-gap-4 tw-hidden toggle-container" data-toggle="{{ forloop.counter }}">
+				<div class="tw-flex tw-justify-between">
+					<h2 class="tw-text-xl">{{ faq.question }}</h2>
+					<i class="bi bi-arrow-up-short tw-text-xl"></i>
+				</div>
+				<p class="tw-font-light tw-text-black">{{ faq.answer }}</p>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div
+		class="tw-flex tw-flex-col md:tw-flex-row tw-bg-green-500 tw-py-10 tw-px-10 tw-mt-8 tw-rounded-lg tw-text-white tw-justify-center tw-items-center tw-w-full tw-gap-4 tw-min-w-[350px] tw-max-w-[900px] md:tw-min-w-[740px] md:tw-max-w-[1440px]"
+	>
+		<div class="tw-flex">
+			<!-- Circle Avatar 1 -->
+			<div
+				class="tw-w-16 tw-h-16 tw-rounded-full tw-overflow-hidden tw-border-2 tw-border-white tw-shadow-md"
+			>
+				<img
+					src="{% static './assets/images/services/details/avatar1.jpg' %}"
+					alt="Avatar 1"
+					class="tw-w-full tw-h-full tw-object-cover"
+				/>
+			</div>
+			<!-- Circle Avatar 2 -->
+			<div
+				class="tw-w-16 tw-h-16 tw-rounded-full tw-overflow-hidden tw-border-2 tw-border-white tw-shadow-md tw--ml-4"
+			>
+				<img
+					src="{% static './assets/images/services/details/avatar2.jpg' %}"
+					alt="Avatar 2"
+					class="tw-w-full tw-h-full tw-object-cover"
+				/>
+			</div>
+			<!-- Circle Avatar 3 -->
+			<div
+				class="tw-w-16 tw-h-16 tw-rounded-full tw-overflow-hidden tw-border-2 tw-border-white tw-shadow-md tw--ml-4"
+			>
+				<img
+					src="{% static './assets/images/services/details/avatar3.jpg' %}"
+					alt="Avatar 3"
+					class="tw-w-full tw-h-full tw-object-cover"
+				/>
+			</div>
+		</div>
+
+		<h2 class="tw-flex tw-text-2xl tw-font-semibold">1.5 K Happy Clients</h2>
+		<div class="tw-flex tw-items-center tw-gap-2 tw-group lg:tw-ml-8">
+			<a
+				href="https://github.com/PaulleDemon/Django-website-template"
+				class="tw-flex tw-h-14 tw-bg-green-800 tw-text-sm tw-text-white tw-uppercase tw-rounded-full tw-items-center tw-gap-2 tw-px-6 group-hover:tw-bg-green-900 group-hover:tw-text-white"
+			>
+				view all services
+			</a>
+			<a
+				href="https://github.com/PaulleDemon/Django-website-template"
+				class="tw-rounded-full tw-h-14 tw-w-14 tw-flex tw-items-center tw-justify-center tw-bg-green-800 tw-text-white group-hover:tw-bg-green-900 group-hover:tw-text-white"
+			>
+				<i class="bi bi-arrow-up-right"></i>
+			</a>
+		</div>
+	</div>
+</div>
+
+<!-- Incluir el social footer -->
+{% include 'components/pages/cta-footer.html' %} 
+{% endblock content %} 
+{% block scripts %}
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+	integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+></script>
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+	integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+/>
+<script>
+    document.querySelectorAll(".toggle-container").forEach(container => {
+        container.addEventListener("click", function() {
+            const toggleId = container.getAttribute("data-toggle");
+            const whiteContent = document.getElementById(`white-content-${toggleId}`);
+            const greenContent = document.getElementById(`green-content-${toggleId}`);
+
+            // Alternar visibilidad entre contenido blanco y verde
+            whiteContent.classList.toggle("tw-hidden");
+            greenContent.classList.toggle("tw-hidden");
+        });
+    });
+</script>
+
+{% endblock scripts %}
