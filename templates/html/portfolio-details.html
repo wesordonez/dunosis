@@ -1,30 +1,26 @@
-{% extends 'base.html' %} 
-{% load static %} 
-{% block title %}Service Details{% endblock title %} 
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Service Details{% endblock title %}
 {% block description %}Description of Service Details{% endblock description %} {% load custom_tags %}
 {%block content %}
 
 <div class="tw-flex tw-flex-col tw-p-10 md:tw-max-w-[1440px] tw-mx-auto tw-gap-4">
-    <!-- image -->
-    <div
-        class="tw-flex tw-w-[100%] tw-h-[400px] tw-bg-gray-500 tw-rounded-3xl hover:tw-shadow-2xl tw-mb-4 tw-justify-center"
-    >
-        <img
-            src="{% static './assets/images/portfolio/details/marketing.jpg' %}"
-            alt="digital-marketing"
-            class="tw-flex tw-w-[100%] tw-h-[100%] tw-rounded-3xl tw-object-cover tw-mb-4"
-        />
-    </div>
-    <div class="tw-flex tw-flex-col lg:tw-flex-row tw-items-center lg:tw-items-start tw-gap-8">
-        <div class="tw-flex tw-flex-col tw-min-w-[350px] tw-max-w-[800px]">
-            <h2 class="tw-text-4xl tw-font-bold tw-mb-4">Digital Marketing</h2>
+	<!-- image -->
+	<div
+		class="tw-flex tw-w-full tw-h-[400px] lg:tw-h-[700px] tw-bg-gray-500 tw-rounded-3xl hover:tw-shadow-2xl tw-mb-4 tw-justify-center">
+		<img src="{% static './assets/images/portfolio/details/marketing.jpg' %}" alt="digital-marketing"
+			class="tw-flex tw-w-full tw-h-[100%] tw-rounded-3xl tw-object-cover tw-mb-4" />
+	</div>
+	<div class="tw-flex tw-flex-col lg:tw-flex-row tw-items-center lg:tw-items-start tw-gap-8">
+		<div class="tw-flex tw-flex-col tw-max-w-[800px] tw-order-2 lg:tw-order-1">
+			<h2 class="tw-text-4xl tw-font-bold tw-mb-4">Digital Marketing</h2>
 			<p class="tw-text-xl tw-mb-4 tw-font-light">
 				At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam
 				augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra
 				consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per
 				placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex enim gravida
-				cras congue. 
-                <br><br />  
+				cras congue.
+				<br><br />
 				At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam
 				augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra
 				consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per
@@ -39,53 +35,38 @@
 				placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex enim gravida
 				cras congue.
 			</p>
-            <div class="tw-flex tw-flex-wrap tw-gap-4 tw-justify-between tw-mb-4">
+			<div class="tw-flex tw-flex-wrap tw-gap-4 tw-justify-between tw-mb-10">
 				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
-					<i
-						class="tw-flex bi bi-check tw-bg-green-600 tw-text-white tw-rounded-full tw-h-8 tw-w-8 tw-text-2xl tw-items-center tw-justify-center"
-						aria-hidden="true"
-					></i>
+					<i class="tw-flex bi bi-check tw-bg-green-600 tw-text-white tw-rounded-full tw-h-8 tw-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"></i>
 					<h2>Various analysis options.</h2>
 				</span>
 				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
-					<i
-						class="tw-flex bi bi-check tw-bg-green-600 tw-text-white tw-rounded-full tw-h-8 tw-w-8 tw-text-2xl tw-items-center tw-justify-center"
-						aria-hidden="true"
-					></i>
+					<i class="tw-flex bi bi-check tw-bg-green-600 tw-text-white tw-rounded-full tw-h-8 tw-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"></i>
 					<h2>Advance Data analysis operations.</h2>
 				</span>
 				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
-					<i
-						class="tw-flex bi bi-check tw-bg-green-600 tw-text-white tw-rounded-full tw-h-8 tw-w-8 tw-text-2xl tw-items-center tw-justify-center"
-						aria-hidden="true"
-					></i>
-					<h2>Page Load(time, size, number of requests).</h2>
+					<i class="tw-flex bi bi-check tw-bg-green-600 tw-text-white tw-rounded-full tw-h-8 tw-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"></i>
+					<h2>Page Load(time, size,etc).</h2>
 				</span>
 				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
-					<i
-						class="tw-flex bi bi-check tw-bg-green-600 tw-text-white tw-rounded-full tw-h-8 tw-w-8 tw-text-2xl tw-items-center tw-justify-center"
-						aria-hidden="true"
-					></i>
+					<i class="tw-flex bi bi-check tw-bg-green-600 tw-text-white tw-rounded-full tw-h-8 tw-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"></i>
 					<h2>Advance Data analysis operations.</h2>
 				</span>
 			</div>
-            <div
-				class="tw-flex tw-flex-col md:tw-flex-row tw-justify-center tw-items-center tw-gap-4 tw-mb-4"
-			>
+			<div class="tw-flex tw-flex-col md:tw-flex-row tw-justify-center tw-items-center tw-gap-4 tw-mb-4">
 				<!-- card left -->
 				<div
-					class="tw-relative tw-w-full tw-h-[400px] tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden tw-min-w-[300px]"
-				>
-					<img
-						src="{% static './assets/images/portfolio/details/brand.png' %}"
-						alt="brand"
-						class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl"
-					/>
+					class="tw-relative tw-w-full tw-h-[400px] tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden tw-min-w-[300px]">
+					<img src="{% static './assets/images/portfolio/details/brand.png' %}" alt="brand"
+						class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl" />
 
 					<!-- Texto superpuesto -->
 					<div
-						class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-justify-end tw-items-center tw-text-center tw-bg-gradient-to-t tw-from-black/60 tw-to-transparent tw-p-4 tw-pb-18"
-					>
+						class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-justify-end tw-items-center tw-text-center tw-bg-gradient-to-t tw-from-black/60 tw-to-transparent tw-p-4 tw-pb-18">
 						<h2 class="tw-text-xl tw-font-bold tw-text-white">
 							Brand Design<br />Identity
 						</h2>
@@ -94,19 +75,13 @@
 				</div>
 
 				<!-- card right -->
-				<div
-					class="tw-relative tw-w-full tw-h-[400px] tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden"
-				>
-					<img
-						src="{% static './assets/images/portfolio/details/brand.png' %}"
-						alt="brand"
-						class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl"
-					/>
+				<div class="tw-relative tw-w-full tw-h-[400px] tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden">
+					<img src="{% static './assets/images/portfolio/details/brand.png' %}" alt="brand"
+						class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl" />
 
 					<!-- Texto superpuesto -->
 					<div
-						class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-justify-end tw-items-center tw-text-center tw-bg-gradient-to-t tw-from-black/60 tw-to-transparent tw-p-4 tw-pb-18"
-					>
+						class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-justify-end tw-items-center tw-text-center tw-bg-gradient-to-t tw-from-black/60 tw-to-transparent tw-p-4 tw-pb-18">
 						<h2 class="tw-text-xl tw-font-bold tw-text-white">
 							Video Search<br />Optimization
 						</h2>
@@ -114,169 +89,173 @@
 					</div>
 				</div>
 			</div>
-            <p class="tw-text-xl tw-mb-4 tw-font-light">
+			<p class="tw-text-xl tw-mb-4 tw-font-light">
 				At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam
 				augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra
 				consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per
 				placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex enim gravida
 				cras congue.
 			</p>
-        </div>
-        <!-- card nav -->
-        <div class="tw-flex tw-flex-col tw-w-full tw-gap-y-4 tw-min-w-[350px] tw-max-w-[500px] md:tw-justify-start">
-            <!-- card 2 -->
-			<div class="tw-flex tw-flex-col tw-bg-gradient-to-t tw-from-green-300 tw-to-green-600 tw-p-8 tw-rounded-xl tw-text-white">
+		</div>
+		<!-- card nav -->
+		<div class="tw-flex tw-flex-col tw-w-full tw-gap-y-4 tw-min-w-[350px] lg:tw-max-w-[500px] md:tw-justify-start tw-order-1 lg:tw-order-2">
+			<!-- card 2 -->
+			<div
+				class="tw-flex tw-flex-col tw-bg-gradient-to-t tw-from-green-300 tw-to-green-600 tw-p-8 tw-rounded-xl tw-text-white">
 				<h1 class="tw-text-2xl tw-font-bold tw-text-white">Project Information</h1>
 				<!-- separador -->
-				
-                <div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2 tw-mb-8"></div>
+
+				<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2 tw-mb-8"></div>
 				<!-- buttons -->
 				<div class="tw-flex tw-flex-col tw-gap-4">
-					<div
-						class="tw-flex tw-flex-col tw-items-start tw-justify-start"
-					>						
-                        <h2 class="tw-text-xl">Client:</h2>
+					<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
+						<h2 class="tw-text-xl">Client:</h2>
 						<h2 class="tw-text-xl tw-font-extralight">Jhon Son Smith</h2>
-                        <div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
+						<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
 					</div>
 
-					<div
-						class="tw-flex tw-flex-col tw-items-start tw-justify-start"
-					>						
-                        <h2 class="tw-text-xl">Category:</h2>
+					<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
+						<h2 class="tw-text-xl">Category:</h2>
 						<h2 class="tw-text-xl tw-font-extralight">Build Constractions</h2>
-                        <div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
+						<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
 					</div>
 
-                    <div
-						class="tw-flex tw-flex-col tw-items-start tw-justify-start"
-					>						
-                        <h2 class="tw-text-xl">Start Date:</h2>
+					<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
+						<h2 class="tw-text-xl">Start Date:</h2>
 						<h2 class="tw-text-xl tw-font-extralight">10 June, 2023</h2>
-                        <div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
+						<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
 					</div>
 
 
-                    <div
-						class="tw-flex tw-flex-col tw-items-start tw-justify-start"
-					>						
-                        <h2 class="tw-text-xl">End Date:</h2>
+					<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
+						<h2 class="tw-text-xl">End Date:</h2>
 						<h2 class="tw-text-xl tw-font-extralight">10 October, 2023</h2>
-                        <div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
+						<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
 					</div>
 
-                    <div
-						class="tw-flex tw-flex-col tw-items-start tw-justify-start"
-					>						
-                        <h2 class="tw-text-xl">Project Budget:</h2>
+					<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
+						<h2 class="tw-text-xl">Project Budget:</h2>
 						<h2 class="tw-text-xl tw-font-extralight">$25.800,99</h2>
-                        <div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
+						<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
 					</div>
 
-                    <div
-						class="tw-flex tw-justify-center tw-mt-4 tw-gap-x-4"
-					>						
-                        <p class="tw-text-xl tw-mb-2">Follow on:</p>
-                        <div class="tw-flex tw-gap-4 tw-text-xl tw-justify-center tw-items-center">
-                            <a
-                                href="https://www.facebook.com/profile.php?id=61565984502377"
-                                aria-label="Facebook"
-                                class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-mb-8"
-                            >
-                                <i class="bi bi-facebook tw-text-2xl"></i>
-                            </a>
-                            <a
-                                href="https://instagram.com/dunosis.usa"
-                                aria-label="Instagram"
-                                class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-mb-8"
-                            >
-                                <i class="bi bi-twitter tw-text-2xl"></i>
-                            </a>
-                            <a
-                                href="https://www.linkedin.com/company/104785338/"
-                                aria-label="LinkedIn"
-                                class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-mb-8"
-                            >
-                                <i class="bi bi-linkedin tw-text-2xl"></i>
-                            </a>
-                            <a
-                                href="https://wa.me/17732022074"
-                                aria-label="Youtube"
-                                class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-mb-8"
-                            >
-                                <i class="bi bi-youtube tw-text-2xl"></i>
-                            </a>
-                        </div>
+					<div class="tw-flex tw-justify-center tw-mt-4 tw-gap-x-4">
+						<p class="tw-text-xl tw-mb-2">Follow on:</p>
+						<div class="tw-flex tw-gap-4 tw-text-xl tw-justify-center tw-items-center">
+							<a href="https://www.facebook.com/profile.php?id=61565984502377" aria-label="Facebook"
+								class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-mb-8">
+								<i class="bi bi-facebook tw-text-2xl"></i>
+							</a>
+							<a href="https://instagram.com/dunosis.usa" aria-label="Instagram"
+								class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-mb-8">
+								<i class="bi bi-twitter tw-text-2xl"></i>
+							</a>
+							<a href="https://www.linkedin.com/company/104785338/" aria-label="LinkedIn"
+								class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-mb-8">
+								<i class="bi bi-linkedin tw-text-2xl"></i>
+							</a>
+							<a href="https://wa.me/17732022074" aria-label="Youtube"
+								class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-mb-8">
+								<i class="bi bi-youtube tw-text-2xl"></i>
+							</a>
+						</div>
 					</div>
 
 				</div>
 			</div>
 			<!-- card 3 -->
 			<div
-				class="tw-flex tw-flex-col tw-bg-gradient-to-t tw-from-green-500 tw-to-green-300 tw-p-8 tw-rounded-xl tw-justify-center tw-items-center tw-text-center "
-			>
+				class="tw-flex tw-flex-col tw-bg-gradient-to-t tw-from-green-500 tw-to-green-300 tw-p-8 tw-rounded-xl tw-justify-center tw-items-center tw-text-center ">
 				<div
-					class="tw-flex tw-rounded-full tw-shadow-xl tw-p-2 tw-w-20 tw-justify-center tw-bg-green-500 tw-border-4 tw-border-white"
-				>
-					<img
-						src="{% static './assets/images/portfolio/details/phone-call.png' %}"
-						alt="Customer Support Icon"
-						class="tw-object-cover tw-p-2 tw-invert"
-					/>
+					class="tw-flex tw-rounded-full tw-shadow-xl tw-p-2 tw-w-20 tw-justify-center tw-bg-green-500 tw-border-4 tw-border-white">
+					<img src="{% static './assets/images/portfolio/details/phone-call.png' %}"
+						alt="Customer Support Icon" class="tw-object-cover tw-p-2 tw-invert" />
 				</div>
 
 				<h1 class="tw-text-2xl tw-font-bold tw-text-white tw-mt-4">Need Help? Call Here</h1>
 				<h2 class="tw-text-xl tw-text-white">+208-555-0112</h2>
 			</div>
-        </div>
-    </div>
-    <div class="tw-h-[2px] tw-w-full tw-bg-gray-400 tw-my-10 tw-opacity-40"></div>
-    <div class="tw-flex tw-justify-between tw-items-center">
-        <div class="tw-flex tw-justify-center tw-items-center tw-gap-4 tw-group">
-            <div class="tw-bg-gray-400 tw-h-[60px] tw-w-[60px] tw-rounded-full group-hover:tw-bg-transparent group-hover:tw-scale-110 group-hover:tw-border-4 group-hover:tw-border-green-500"></div>
-            <h1 class="tw-text-2xl tw-font-bold hover:tw-text-green-500 group-hover:tw-text-green-500">Previous</h1>
-        </div>
-        <div class="tw-flex tw-justify-center tw-items-center tw-gap-4 tw-group">
-            <h1 class="tw-text-2xl tw-font-bold group-hover:tw-text-green-500">Next</h1>
-            <div class="tw-bg-gray-400 tw-h-[60px] tw-w-[60px] tw-rounded-full group-hover:tw-bg-transparent group-hover:tw-scale-110 group-hover:tw-border-4 group-hover:tw-border-green-500"></div>
-        </div>
-    </div>
+		</div>
+	</div>
+	<div
+		class="tw-flex tw-flex-col tw-w-full md:tw-flex-row tw-bg-green-500 tw-py-10 tw-mt-4 tw-rounded-lg tw-text-white tw-justify-center tw-items-center tw-gap-4 tw-max-w-[900px] md:tw-min-w-[740px] md:tw-max-w-[1440px]">
+		<div class="tw-flex">
+			<!-- Circle Avatar 1 -->
+			<div class="tw-w-16 tw-h-16 tw-rounded-full tw-overflow-hidden tw-border-2 tw-border-white tw-shadow-md">
+				<img src="{% static './assets/images/happy-clients/avatar1.jpg' %}" alt="Avatar 1"
+					class="tw-w-full tw-h-full tw-object-cover" />
+			</div>
+			<!-- Circle Avatar 2 -->
+			<div
+				class="tw-w-16 tw-h-16 tw-rounded-full tw-overflow-hidden tw-border-2 tw-border-white tw-shadow-md tw--ml-4">
+				<img src="{% static './assets/images/happy-clients/avatar2.jpg' %}" alt="Avatar 2"
+					class="tw-w-full tw-h-full tw-object-cover" />
+			</div>
+			<!-- Circle Avatar 3 -->
+			<div
+				class="tw-w-16 tw-h-16 tw-rounded-full tw-overflow-hidden tw-border-2 tw-border-white tw-shadow-md tw--ml-4">
+				<img src="{% static './assets/images/happy-clients/avatar3.jpg' %}" alt="Avatar 3"
+					class="tw-w-full tw-h-full tw-object-cover" />
+			</div>
+		</div>
 
-    <div class="tw-h-[2px] tw-w-full tw-bg-gray-400 tw-my-10 tw-opacity-40"></div>
+		<h2 class="tw-flex tw-text-2xl tw-font-semibold">1.5 K Happy Clients</h2>
+		<div class="tw-flex tw-items-center tw-gap-2 tw-group lg:tw-ml-8">
+			<a href="https://github.com/PaulleDemon/Django-website-template"
+				class="tw-flex tw-h-14 tw-bg-green-800 tw-text-sm tw-text-white tw-uppercase tw-rounded-full tw-items-center tw-gap-2 tw-px-6 group-hover:tw-bg-green-900 group-hover:tw-text-white">
+				view all projects
+			</a>
+			<a href="https://github.com/PaulleDemon/Django-website-template"
+				class="tw-rounded-full tw-h-14 tw-w-14 tw-flex tw-items-center tw-justify-center tw-bg-green-800 tw-text-white group-hover:tw-bg-green-900 group-hover:tw-text-white">
+				<i class="bi bi-arrow-up-right"></i>
+			</a>
+		</div>
+	</div>
+	<div class="tw-h-[2px] tw-w-full tw-bg-gray-400 tw-my-5 md:tw-my-10 tw-opacity-40"></div>
+	<div class="tw-flex tw-justify-between tw-items-center">
+		<a href="" class="tw-flex tw-justify-center tw-items-center tw-gap-2 md:tw-gap-4 tw-group">
+			<div class="tw-rounded-full tw-h-10 tw-w-10 tw-items-center tw-text-gray-500 group-hover:tw-bg-green-500 group-hover:tw-text-white tw-border-2 tw-border-gray-500 group-hover:tw-border-green-500">
+				<i class="tw-flex bi bi-arrow-left tw-h-full tw-text-2xl tw-justify-center tw-items-center"
+				aria-hidden="true"></i>
+			</div>
+			<h1 class="tw-text-lg md:tw-text-2xl tw-font-bold tw-text-gray-500 hover:tw-text-green-500 group-hover:tw-text-green-500">Previous</h1>
+		</a>
+		<a href="" class="tw-flex tw-justify-center tw-items-center tw-gap-2 md:tw-gap-4 tw-group">
+			<h1 class="tw-text-lg md:tw-text-2xl tw-font-bold tw-text-gray-500 hover:tw-text-green-500 group-hover:tw-text-green-500">Next</h1>
+			<div class="tw-rounded-full tw-h-10 tw-w-10 tw-items-center tw-text-gray-500 group-hover:tw-bg-green-500 group-hover:tw-text-white tw-border-2 tw-border-gray-500 group-hover:tw-border-green-500">
+				<i class="tw-flex bi bi-arrow-right tw-h-full tw-text-2xl tw-justify-center tw-items-center"
+				aria-hidden="true"></i>
+			</div>
+		</a>
+	</div>
+
+	<div class="tw-h-[2px] tw-w-full tw-bg-gray-400 tw-my-5 md:tw-my-10 tw-opacity-40"></div>
 
 
-    {% include 'components/pages/hp-client.html' with title="Service" %} 
 </div>
 
 <!-- Incluir el social footer -->
-{% include 'components/pages/cta-footer.html' %} 
-{% endblock content %} 
+{% include 'components/pages/cta-footer.html' %}
+{% endblock content %}
 {% block scripts %}
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
 	integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
-	crossorigin="anonymous"
-	referrerpolicy="no-referrer"
-></script>
-<link
-	rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
 	integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
-	crossorigin="anonymous"
-	referrerpolicy="no-referrer"
-/>
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script>
 	document.querySelectorAll(".toggle-icon").forEach(icon => {
-        icon.addEventListener("click", function() {
-            const toggleId = icon.getAttribute("data-toggle");
-            const whiteContent = document.getElementById(`white-content-${toggleId}`);
-            const greenContent = document.getElementById(`green-content-${toggleId}`);
+		icon.addEventListener("click", function () {
+			const toggleId = icon.getAttribute("data-toggle");
+			const whiteContent = document.getElementById(`white-content-${toggleId}`);
+			const greenContent = document.getElementById(`green-content-${toggleId}`);
 
-            // Alternar visibilidad entre contenido blanco y verde
-            whiteContent.classList.toggle("tw-hidden");
-            greenContent.classList.toggle("tw-hidden");
-        });
-    });
+			// Alternar visibilidad entre contenido blanco y verde
+			whiteContent.classList.toggle("tw-hidden");
+			greenContent.classList.toggle("tw-hidden");
+		});
+	});
 </script>
 
 {% endblock scripts %}
