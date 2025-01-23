@@ -98,69 +98,76 @@
 			</p>
 		</div>
 		<!-- card nav -->
-		<div class="tw-flex tw-flex-col tw-w-full tw-gap-y-4 tw-min-w-[350px] lg:tw-max-w-[500px] md:tw-justify-start tw-order-1 lg:tw-order-2">
+		<div
+			class="tw-flex tw-flex-col tw-w-full tw-gap-y-4 tw-min-w-[350px] lg:tw-max-w-[500px] md:tw-justify-start tw-order-1 lg:tw-order-2">
 			<!-- card 2 -->
 			<div
 				class="tw-flex tw-flex-col tw-bg-gradient-to-t tw-from-green-300 tw-to-green-600 tw-p-8 tw-rounded-xl tw-text-white">
-				<h1 class="tw-text-2xl tw-font-bold tw-text-white">Project Information</h1>
-				<!-- separador -->
+				<!-- Contenido colapsable -->
+				<button id="toggleButton"
+					class=" tw-flex tw-justify-between tw-text-white tw-font-bold tw-rounded-lg tw-transition-colors tw-duration-300"
+					onclick="toggleCollapse()">
 
-				<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2 tw-mb-8"></div>
-				<!-- buttons -->
-				<div class="tw-flex tw-flex-col tw-gap-4">
-					<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
-						<h2 class="tw-text-xl">Client:</h2>
-						<h2 class="tw-text-xl tw-font-extralight">Jhon Son Smith</h2>
-						<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
-					</div>
+					<h1 class="tw-text-2xl tw-font-bold tw-text-white">Project Information</h1>
+					<i id="arrowIcon" class="tw-text-2xl tw-transition-transform tw-duration-300 bi bi-chevron-right"></i>
+   
+				</button>
 
-					<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
-						<h2 class="tw-text-xl">Category:</h2>
-						<h2 class="tw-text-xl tw-font-extralight">Build Constractions</h2>
-						<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
-					</div>
+				<div id="collapsibleContent" class="tw-hidden lg:tw-block">
+					<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-8 tw-mb-4"></div>
 
-					<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
-						<h2 class="tw-text-xl">Start Date:</h2>
-						<h2 class="tw-text-xl tw-font-extralight">10 June, 2023</h2>
-						<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
-					</div>
+					<div class="tw-flex tw-flex-col tw-gap-4">
+						<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
+							<h2 class="tw-text-xl">Client:</h2>
+							<h2 class="tw-text-xl tw-font-extralight">Jhon Son Smith</h2>
+							<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
+						</div>
 
+						<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
+							<h2 class="tw-text-xl">Category:</h2>
+							<h2 class="tw-text-xl tw-font-extralight">Build Constractions</h2>
+							<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
+						</div>
 
-					<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
-						<h2 class="tw-text-xl">End Date:</h2>
-						<h2 class="tw-text-xl tw-font-extralight">10 October, 2023</h2>
-						<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
-					</div>
+						<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
+							<h2 class="tw-text-xl">Start Date:</h2>
+							<h2 class="tw-text-xl tw-font-extralight">10 June, 2023</h2>
+							<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
+						</div>
 
-					<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
-						<h2 class="tw-text-xl">Project Budget:</h2>
-						<h2 class="tw-text-xl tw-font-extralight">$25.800,99</h2>
-						<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
-					</div>
+						<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
+							<h2 class="tw-text-xl">End Date:</h2>
+							<h2 class="tw-text-xl tw-font-extralight">10 October, 2023</h2>
+							<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
+						</div>
 
-					<div class="tw-flex tw-justify-center tw-mt-4 tw-gap-x-4">
-						<p class="tw-text-xl tw-mb-2">Follow on:</p>
-						<div class="tw-flex tw-gap-4 tw-text-xl tw-justify-center tw-items-center">
-							<a href="https://www.facebook.com/profile.php?id=61565984502377" aria-label="Facebook"
-								class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-mb-8">
-								<i class="bi bi-facebook tw-text-2xl"></i>
-							</a>
-							<a href="https://instagram.com/dunosis.usa" aria-label="Instagram"
-								class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-mb-8">
-								<i class="bi bi-twitter tw-text-2xl"></i>
-							</a>
-							<a href="https://www.linkedin.com/company/104785338/" aria-label="LinkedIn"
-								class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-mb-8">
-								<i class="bi bi-linkedin tw-text-2xl"></i>
-							</a>
-							<a href="https://wa.me/17732022074" aria-label="Youtube"
-								class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-mb-8">
-								<i class="bi bi-youtube tw-text-2xl"></i>
-							</a>
+						<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
+							<h2 class="tw-text-xl">Project Budget:</h2>
+							<h2 class="tw-text-xl tw-font-extralight">$25.800,99</h2>
+							<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
+						</div>
+						<div class="tw-flex tw-justify-center tw-gap-x-4">
+							<p class="tw-text-xl">Follow on:</p>
+							<div class="tw-flex tw-gap-4 tw-text-xl tw-justify-center tw-items-center">
+								<a href="https://www.facebook.com/profile.php?id=61565984502377" aria-label="Facebook"
+									class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center">
+									<i class="bi bi-facebook tw-text-2xl"></i>
+								</a>
+								<a href="https://instagram.com/dunosis.usa" aria-label="Instagram"
+									class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center">
+									<i class="bi bi-twitter tw-text-2xl"></i>
+								</a>
+								<a href="https://www.linkedin.com/company/104785338/" aria-label="LinkedIn"
+									class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center">
+									<i class="bi bi-linkedin tw-text-2xl"></i>
+								</a>
+								<a href="https://wa.me/17732022074" aria-label="Youtube"
+									class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center">
+									<i class="bi bi-youtube tw-text-2xl"></i>
+								</a>
+							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
 			<!-- card 3 -->
@@ -214,17 +221,23 @@
 	<div class="tw-h-[2px] tw-w-full tw-bg-gray-400 tw-my-5 md:tw-my-10 tw-opacity-40"></div>
 	<div class="tw-flex tw-justify-between tw-items-center">
 		<a href="" class="tw-flex tw-justify-center tw-items-center tw-gap-2 md:tw-gap-4 tw-group">
-			<div class="tw-rounded-full tw-h-10 tw-w-10 tw-items-center tw-text-gray-500 group-hover:tw-bg-green-500 group-hover:tw-text-white tw-border-2 tw-border-gray-500 group-hover:tw-border-green-500">
+			<div
+				class="tw-rounded-full tw-h-10 tw-w-10 tw-items-center tw-text-gray-500 group-hover:tw-bg-green-500 group-hover:tw-text-white tw-border-2 tw-border-gray-500 group-hover:tw-border-green-500">
 				<i class="tw-flex bi bi-arrow-left tw-h-full tw-text-2xl tw-justify-center tw-items-center"
-				aria-hidden="true"></i>
+					aria-hidden="true"></i>
 			</div>
-			<h1 class="tw-text-lg md:tw-text-2xl tw-font-bold tw-text-gray-500 hover:tw-text-green-500 group-hover:tw-text-green-500">Previous</h1>
+			<h1
+				class="tw-text-lg md:tw-text-2xl tw-font-bold tw-text-gray-500 hover:tw-text-green-500 group-hover:tw-text-green-500">
+				Previous</h1>
 		</a>
 		<a href="" class="tw-flex tw-justify-center tw-items-center tw-gap-2 md:tw-gap-4 tw-group">
-			<h1 class="tw-text-lg md:tw-text-2xl tw-font-bold tw-text-gray-500 hover:tw-text-green-500 group-hover:tw-text-green-500">Next</h1>
-			<div class="tw-rounded-full tw-h-10 tw-w-10 tw-items-center tw-text-gray-500 group-hover:tw-bg-green-500 group-hover:tw-text-white tw-border-2 tw-border-gray-500 group-hover:tw-border-green-500">
+			<h1
+				class="tw-text-lg md:tw-text-2xl tw-font-bold tw-text-gray-500 hover:tw-text-green-500 group-hover:tw-text-green-500">
+				Next</h1>
+			<div
+				class="tw-rounded-full tw-h-10 tw-w-10 tw-items-center tw-text-gray-500 group-hover:tw-bg-green-500 group-hover:tw-text-white tw-border-2 tw-border-gray-500 group-hover:tw-border-green-500">
 				<i class="tw-flex bi bi-arrow-right tw-h-full tw-text-2xl tw-justify-center tw-items-center"
-				aria-hidden="true"></i>
+					aria-hidden="true"></i>
 			</div>
 		</a>
 	</div>
@@ -244,18 +257,22 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
 	integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
 	crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script>
-	document.querySelectorAll(".toggle-icon").forEach(icon => {
-		icon.addEventListener("click", function () {
-			const toggleId = icon.getAttribute("data-toggle");
-			const whiteContent = document.getElementById(`white-content-${toggleId}`);
-			const greenContent = document.getElementById(`green-content-${toggleId}`);
 
-			// Alternar visibilidad entre contenido blanco y verde
-			whiteContent.classList.toggle("tw-hidden");
-			greenContent.classList.toggle("tw-hidden");
-		});
-	});
+<script>
+	function toggleCollapse() {
+		const content = document.getElementById('collapsibleContent');
+		const button = document.getElementById('toggleButton');
+
+		if (content.classList.contains('tw-hidden')) {
+			content.classList.remove('tw-hidden');
+			arrowIcon.classList.replace('bi-chevron-right', 'bi-chevron-down'); 
+			// button.textContent = 'Hide Project Information';
+		} else {
+			content.classList.add('tw-hidden');
+			arrowIcon.classList.replace('bi-chevron-down', 'bi-chevron-right'); 
+			// button.textContent = 'Show Project Information';
+		}
+	}
 </script>
 
 {% endblock scripts %}
