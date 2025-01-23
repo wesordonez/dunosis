@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Service Details{% endblock title %}
+{% block description %}Description of Service Details{% endblock description %} {% load custom_tags %}
+{%block content %}
+
+<div class="tw-flex tw-flex-col tw-items-center tw-p-10">
+    <h1 class="tw-text-4xl tw-font-bold">World Class Services By World Class Talent</h1>
+    <div class="tw-flex tw-gap-4">
+        <div class="tw-flex tw-border tw-rounded-2xl tw-border-4 tw-border-green-700 tw-w-[70%]">
+            <div class="tw-flex tw-flex-col tw-p-4 tw-gap-2 tw-w-[60%]">
+                <h2 class="tw-font-bold">Maketing & Strategy</h2>
+                <p class="tw-font-light">In order to scale new customer acquisition and retention for
+                    e-commerce brands, we work across the entire customer
+                    journey. Our team has a successful
+                </p>
+            </div>
+            <div class="tw-flex tw-w-[40%]">
+
+                <img src="{% static './assets/images/services/details/marketing.jpg' %}" alt="digital-marketing"
+                    class="tw-flex tw-w-[50px] tw-h-[100px] tw-rounded-2xl tw-object-cover" />
+            </div>
+        </div>
+        <div class="tw-flex tw-bg-white tw-rounded-2xl tw-flex-col tw-w-[30%]">
+            <div class="tw-flex tw-flex-col tw-p-4">
+
+                <h2 class="tw-font-bold">Social Media</h2>
+                <p class="tw-font-light">In order to scale new customer
+                    acquisition and retention for e-commerce
+                    brands, we work across thel</p>
+            </div>
+        </div>
+    </div>
+    <div></div>
+
+    <div
+        class="tw-flex tw-flex-col md:tw-flex-row tw-bg-green-500 tw-py-10 tw-px-10 tw-mt-8 tw-rounded-lg tw-text-white tw-justify-center tw-items-center tw-w-full tw-gap-4 tw-min-w-[350px] tw-max-w-[900px] md:tw-min-w-[740px] md:tw-max-w-[1440px]">
+        <div class="tw-flex">
+            <!-- Circle Avatar 1 -->
+            <div class="tw-w-16 tw-h-16 tw-rounded-full tw-overflow-hidden tw-border-2 tw-border-white tw-shadow-md">
+                <img src="{% static './assets/images/services/details/avatar1.jpg' %}" alt="Avatar 1"
+                    class="tw-w-full tw-h-full tw-object-cover" />
+            </div>
+            <!-- Circle Avatar 2 -->
+            <div
+                class="tw-w-16 tw-h-16 tw-rounded-full tw-overflow-hidden tw-border-2 tw-border-white tw-shadow-md tw--ml-4">
+                <img src="{% static './assets/images/services/details/avatar2.jpg' %}" alt="Avatar 2"
+                    class="tw-w-full tw-h-full tw-object-cover" />
+            </div>
+            <!-- Circle Avatar 3 -->
+            <div
+                class="tw-w-16 tw-h-16 tw-rounded-full tw-overflow-hidden tw-border-2 tw-border-white tw-shadow-md tw--ml-4">
+                <img src="{% static './assets/images/services/details/avatar3.jpg' %}" alt="Avatar 3"
+                    class="tw-w-full tw-h-full tw-object-cover" />
+            </div>
+        </div>
+
+        <h2 class="tw-flex tw-text-2xl tw-font-semibold">1.5 K Happy Clients</h2>
+        <div class="tw-flex tw-items-center tw-gap-2 tw-group lg:tw-ml-8">
+            <a href="https://github.com/PaulleDemon/Django-website-template"
+                class="tw-flex tw-h-14 tw-bg-green-800 tw-text-sm tw-text-white tw-uppercase tw-rounded-full tw-items-center tw-gap-2 tw-px-6 group-hover:tw-bg-green-900 group-hover:tw-text-white">
+                view all services
+            </a>
+            <a href="https://github.com/PaulleDemon/Django-website-template"
+                class="tw-rounded-full tw-h-14 tw-w-14 tw-flex tw-items-center tw-justify-center tw-bg-green-800 tw-text-white group-hover:tw-bg-green-900 group-hover:tw-text-white">
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Incluir el social footer -->
+{% include 'components/pages/cta-footer.html' %}
+{% endblock content %}
+{% block scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+    integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+    integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script>
+    document.querySelectorAll(".toggle-container").forEach(container => {
+        container.addEventListener("click", function () {
+            const toggleId = container.getAttribute("data-toggle");
+            const whiteContent = document.getElementById(`white-content-${toggleId}`);
+            const greenContent = document.getElementById(`green-content-${toggleId}`);
+
+            // Alternar visibilidad entre contenido blanco y verde
+            whiteContent.classList.toggle("tw-hidden");
+            greenContent.classList.toggle("tw-hidden");
+        });
+    });
+</script>
+
+{% endblock scripts %}
