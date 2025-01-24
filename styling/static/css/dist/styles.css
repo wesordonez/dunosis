@@ -1297,6 +1297,10 @@ input[type="range"]::-ms-fill-lower {
   height: 10px;
 }
 
+.tw-h-\[700px\] {
+  height: 700px;
+}
+
 .tw-max-h-\[250px\] {
   max-height: 250px;
 }
