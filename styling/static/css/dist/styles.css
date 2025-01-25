@@ -634,10 +634,6 @@ video {
   order: 2;
 }
 
-.tw-col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
 .tw-m-2 {
   margin: 0.5rem;
 }
@@ -656,11 +652,6 @@ video {
   margin-right: auto;
 }
 
-.tw-my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
 .tw-my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -669,6 +660,11 @@ video {
 .tw-my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.tw-my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .tw--ml-4 {
@@ -681,10 +677,6 @@ video {
 
 .tw-mb-16 {
   margin-bottom: 4rem;
-}
-
-.tw-mb-2 {
-  margin-bottom: 0.5rem;
 }
 
 .tw-mb-28 {
@@ -735,6 +727,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.tw-mt-8 {
+  margin-top: 2rem;
+}
+
 .tw-mt-\[10\%\] {
   margin-top: 10%;
 }
@@ -749,10 +745,6 @@ video {
 
 .tw-mt-auto {
   margin-top: auto;
-}
-
-.tw-mt-8 {
-  margin-top: 2rem;
 }
 
 .tw-flex {

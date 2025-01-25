@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}Service Details{% endblock title %}
-{% block description %}Description of Service Details{% endblock description %} {% load custom_tags %}
+{% block title %}Portfolio Details{% endblock title %}
+{% block description %}Description of Portfolio Details{% endblock description %} {% load custom_tags %}
 {%block content %}
 
 <div class="tw-flex tw-flex-col tw-p-10 md:tw-max-w-[1440px] tw-mx-auto tw-gap-4">
@@ -263,21 +263,6 @@
 	integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
 	crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<script>
-	function toggleCollapse() {
-		const content = document.getElementById('collapsibleContent');
-		const button = document.getElementById('toggleButton');
-
-		if (content.classList.contains('tw-hidden')) {
-			content.classList.remove('tw-hidden');
-			arrowIcon.classList.replace('bi-chevron-right', 'bi-chevron-down'); 
-			// button.textContent = 'Hide Project Information';
-		} else {
-			content.classList.add('tw-hidden');
-			arrowIcon.classList.replace('bi-chevron-down', 'bi-chevron-right'); 
-			// button.textContent = 'Show Project Information';
-		}
-	}
-</script>
+<script src="{% static './js/portfolio-details.js' %}"></script>
 
 {% endblock scripts %}
