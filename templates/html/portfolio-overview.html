@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Portfolio Overview{% endblock title %}
+{% block description %}Description of Portfolio Overview{% endblock description %} 
+{% load custom_tags %}
+{%block content %}
+
+<div class="tw-flex tw-flex-col tw-p-10 md:tw-max-w-[1440px] tw-mx-auto tw-gap-4">
+
+
+</div>
+
+<!-- Incluir el social footer -->
+{% include 'components/pages/cta-footer.html' %}
+{% endblock content %}
+{% block scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+	integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+	integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script src="{% static './js/portfolio-details.js' %}"></script>
+
+{% endblock scripts %}
