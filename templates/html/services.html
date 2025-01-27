@@ -36,7 +36,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="image-container tw-w-full md:tw-w-[50%] tw-hidden md:tw-block tw-order-1 md:tw-order-2">
+                <div class="image-container tw-w-full md:tw-w-[50%] md:tw-block tw-order-1 md:tw-order-2">
                     <div class="tw-right-0 tw-top-0 tw-w-full md:tw-h-full">
                         <img src="{% static './assets/images/services/details/marketing.jpg' %}"
                             alt="Marketing & Strategy" class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="image-container tw-w-full md:tw-w-[50%] tw-hidden tw-order-1 md:tw-order-2">
+                <div class="image-container tw-w-full md:tw-w-[50%] md:tw-hidden tw-order-1 md:tw-order-2">
                     <div class="tw-right-0 tw-top-0 tw-w-full md:tw-h-full">
                         <img src="{% static './assets/images/services/details/marketing.jpg' %}" alt="Social Media"
                             class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="image-container1 tw-w-full md:tw-w-[50%] tw-hidden tw-order-1 md:tw-order-2">
+                <div class="image-container1 tw-w-full md:tw-w-[50%] md:tw-hidden tw-order-1 md:tw-order-2">
                     <div class="tw-right-0 tw-top-0 tw-w-full md:tw-h-full">
                         <img src="{% static './assets/images/services/details/marketing.jpg' %}" alt="Social Media"
                             class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
@@ -125,7 +125,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="image-container1 tw-w-full md:tw-w-[50%] tw-hidden md:tw-block tw-order-1 md:tw-order-2">
+                <div class="image-container1 tw-w-full md:tw-w-[50%] md:tw-block tw-order-1 md:tw-order-2">
                     <div class="tw-right-0 tw-top-0 tw-w-full md:tw-h-full">
                         <img src="{% static './assets/images/services/details/marketing.jpg' %}"
                             alt="Marketing & Strategy" class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
@@ -557,14 +557,14 @@
                     otherCard.classList.add('md:tw-w-[30%]');
                     otherCard.querySelector('.image-container').classList.remove('md:tw-block');
                     otherCard.querySelector('.image-container').classList.remove('md:tw-w-[50%]');
-                    otherCard.querySelector('.image-container').classList.add('tw-hidden');
+                    otherCard.querySelector('.image-container').classList.add('md:tw-hidden');
                 }
             });
 
             // Cambia la tarjeta actual
             card.classList.remove('md:tw-w-[30%]');
             card.classList.add('md:tw-w-[70%]');
-            card.querySelector('.image-container').classList.remove('tw-hidden');
+            card.querySelector('.image-container').classList.remove('md:tw-hidden');
             otherCard.querySelector('.image-container').classList.add('md:tw-w-[50%]');
         });
     });
@@ -593,14 +593,14 @@
                     otherCard1.classList.add('md:tw-w-[30%]');
                     otherCard1.querySelector('.image-container1').classList.remove('md:tw-block');
                     otherCard1.querySelector('.image-container1').classList.remove('md:tw-w-[50%]');
-                    otherCard1.querySelector('.image-container1').classList.add('tw-hidden');
+                    otherCard1.querySelector('.image-container1').classList.add('md:tw-hidden');
                 }
             });
 
             // Cambia la tarjeta actual
             card1.classList.remove('md:tw-w-[30%]');
             card1.classList.add('md:tw-w-[70%]');
-            card1.querySelector('.image-container1').classList.remove('tw-hidden');
+            card1.querySelector('.image-container1').classList.remove('md:tw-hidden');
             otherCard1.querySelector('.image-container1').classList.add('md:tw-w-[50%]');
         });
     });
