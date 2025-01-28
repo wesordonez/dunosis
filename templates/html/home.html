@@ -5,11 +5,11 @@
 
 {% block content %}
 
-<section class="tw-w-full tw-h-[100vh]">
+<section class="tw-w-full tw-h-screen">
     <!-- Hero top -->
-    <div class="tw-bg-gray-300">
+    <div class="">
       <!-- Container -->
-      <div class="tw-mx-auto tw-max-w-7xl tw-px-5 tw-py-16 md:tw-px-10 md:tw-py-20">
+      <div class="tw-mx-auto tw-py-16 md:tw-py-20">
         <!-- Title -->
         <div class="tw-flex tw-justify-between tw-items-center tw-w-full">
             <div class="tw-w-full tw-space-y-2 tw-flex tw-flex-col tw-items-start">
@@ -34,7 +34,7 @@
           <a href="#" class="tw-mr-6 tw-rounded-md tw-bg-black tw-px-8 tw-py-4 tw-text-center tw-font-semibold tw-text-white lg:tw-mr-8"> Get Started </a>
           <a href="#" class="tw-flex tw-items-center tw-justify-center tw-rounded-md tw-border tw-border-solid tw-border-black tw-bg-white tw-px-6 tw-py-3 tw-font-bold">
             <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a94d411e6cf99_Vector%20(6).svg" alt="" class="tw-mr-2 tw-max-h-4 tw-w-5" />
-            <p>Download App</p>
+            <p>Learn More</p>
           </a>
         </div>
       </div>
@@ -42,21 +42,32 @@
     <!-- Hero bottom -->
     <div class="tw-mx-auto tw-max-w-7xl tw-px-5 tw-py-12 md:tw-px-10 md:tw-py-16 lg:tw-py-20">
       <!-- Component -->
-      <div class="tw-relative tw-flex tw-max-w-7xl tw-flex-col tw-gap-4 lg:tw-flex-row lg:tw-justify-end">
-        <!-- Arrow down -->
-        <a href="#" class="tw-absolute tw-bottom-0 tw-left-0">
-          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a946f0be6cfa0_Frame%2048040.svg" alt="" class="tw-hidden lg:tw-inline-block" />
-        </a>
-        <div class="tw-max-w-xl">
-          <!-- Title -->
-          <h3 class="tw-text-2xl tw-font-bold md:tw-text-3xl">Introduction</h3>
-          <!-- Divider -->
-          <div class="tw-my-6 tw-w-16 tw-border-t tw-border-black"></div>
-          <p class="tw-text-sm tw-text-gray-500"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. </p>
+        <div class="tw-flex tw-max-w-7xl tw-flex-col tw-gap-4 lg:tw-flex-row lg:tw-justify-end">
+            <div class="tw-max-w-xl">
+                <!-- Title -->
+                <h3 class="tw-text-2xl tw-font-bold md:tw-text-3xl">Your Business Deserves More</h3>
+                <!-- Description -->
+                <div class="tw-my-6 tw-w-16 tw-border-t tw-border-black"></div>
+                <p class="tw-text-sm tw-text-gray-500"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. </p>
+            </div>
+            
+            <!-- Buttons -->
+            <div class="tw-w-1/2 tw-flex tw-flex-col tw-place-content-center tw-max-w-[650px] tw-min-w-[450px] 
+            max-md:tw-min-w-[300px]">
+                <h1 class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-right
+                        tw-leading-normal max-md:tw-text-5xl max-md:tw-leading-[70px]">
+                    Marketing
+                </h1>
+                <h1 class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-right
+                        tw-leading-normal max-md:tw-text-5xl max-md:tw-leading-[70px]">
+                    Consulting
+                </h1>
+                <h1 class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-right
+                        tw-leading-normal max-md:tw-text-5xl max-md:tw-leading-[70px]">
+                    Web Development
+                </h1>
+            </div>
         </div>
-        <!-- Image -->
-        <img src="{% static "./assets/images/home/dashboard.png" %}" alt="" class="tw-w-[450px] tw-h-full tw-object-cover" />
-      </div>
     </div>
 </section>
 
