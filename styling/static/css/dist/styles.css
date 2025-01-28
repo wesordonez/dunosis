@@ -2518,6 +2518,11 @@ input[type="range"]::-ms-fill-lower {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .max-sm\:tw-text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 @media (min-width: 640px) {

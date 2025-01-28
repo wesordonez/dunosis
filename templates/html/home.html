@@ -6,98 +6,25 @@
 {% block content %}
 
 <!-- Hero Section -->
-<section
-	class="tw-flex tw-flex-col tw-w-full md:tw-min-h-screen tw-justify-center"
-	id="hero-section">
-	<div
-		class="tw-w-full tw-h-full tw-p-[4%] tw-flex tw-justify-around tw-items-center tw-gap-y-16 max-md:tw-flex-col"
-	>
-		<div
-			class="tw-gap-4 tw-place-content-center tw-place-items-center xl:tw-flex xl:tw-flex-row"
-		>
-			<div
-				class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] lg:tw-h-[700px] hover:tw-shadow-2xl tw-hidden md:tw-flex"
-			>
-				<img
-					src="{% static './assets/images/about/chicago.jpg' %}"
-					alt="dashboard"
-					class="tw-w-[300px] tw-h-full tw-object-cover"
-				/>
-			</div>
-			<div
-				class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px] hover:tw-shadow-2xl hover:tw-duration-150 tw-hidden xl:tw-flex"
-			>
-				<img
-					src="{% static './assets/images/about/wesley.jpeg' %}"
-					alt="dashboard"
-					class="tw-w-[200px] tw-h-full tw-object-cover"
-				/>
-			</div>
-		</div>
+<section class="tw-flex tw-flex-col tw-w-full md:tw-min-h-screen tw-justify-center" id="hero-section">
 
-		<div class="md:tw-hidden">
-			<!-- Carrusel de imágenes para pantallas pequeñas -->
-			<div class="scroll imgbx" style="--t: 10s">
-				<div class="tw-flex tw-flex-row tw-gap-2">
-					<img
-						src="{% static './assets/images/about/carrusel/photos1.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-					<img
-						src="{% static './assets/images/about/carrusel/photos2.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-					<img
-						src="{% static './assets/images/about/carrusel/photos3.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-					<img
-						src="{% static './assets/images/about/carrusel/photos4.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-					<img
-						src="{% static './assets/images/about/carrusel/photos5.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-					<img
-						src="{% static './assets/images/about/carrusel/photos1.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-					<img
-						src="{% static './assets/images/about/carrusel/photos2.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-					<img
-						src="{% static './assets/images/about/carrusel/photos3.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-					<img
-						src="{% static './assets/images/about/carrusel/photos4.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-					<img
-						src="{% static './assets/images/about/carrusel/photos5.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-				</div>
-			</div>
-		</div>
+	<div class="tw-w-full tw-h-full tw-p-[4%] tw-flex tw-justify-around tw-items-center tw-gap-y-16 max-md:tw-flex-col">
 
-		<!-- Contenido Central -->
+        <!-- Left Photos -->
+        <div class="tw-gap-4 tw-place-content-center tw-place-items-center xl:tw-flex xl:tw-flex-row">
+            <div class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] lg:tw-h-[700px] hover:tw-shadow-2xl tw-hidden md:tw-flex">
+                <img src="{% static './assets/images/about/chicago.jpg' %}" alt="chicago" class="tw-w-[300px] tw-h-full tw-object-cover" />
+            </div>
+            <div class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px] hover:tw-shadow-2xl hover:tw-duration-150 tw-hidden xl:tw-flex">
+                <img src="{% static './assets/images/about/wesley.jpeg' %}" alt="dashboard" class="tw-w-[200px] tw-h-full tw-object-cover" />
+            </div>
+        </div>
+
+		<!-- Center Content -->
 		<div class="tw-flex tw-flex-col tw-items-center tw-max-w-[480px] tw-min-w-[300px] tw-mx-4">
 			<div class="tw-w-full tw-flex tw-flex-col tw-items-center">
                 <img src="{% static 'assets/logos/dunosis-logo-bg.png' %}" alt="Dunosis Logo" class="tw-mb-1">
-                <h1 class="tw-text-2xl max-md:tw-text-lg max-sm:tw-text-sm tw-font-light tw-text-center tw-lowercase">
+                <h1 class="tw-text-3xl max-md:tw-text-3xl max-sm:tw-text-2xl tw-font-light tw-text-center tw-lowercase">
                   Where Knowledge Meets Power
                 </h1>
               </div>
@@ -110,28 +37,16 @@
               </div>
 		</div>
 
-		<div
-			class="tw-gap-4 tw-place-content-center tw-place-items-center xl:tw-flex xl:tw-flex-row"
-		>
-			<div
-				class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px] hover:tw-shadow-2xl hover:tw-scale-105 hover:tw-duration-150 tw-hidden xl:tw-flex"
-			>
-				<img
-					src="{% static './assets/images/about/tayo.jpeg' %}"
-					alt="dashboard"
-					class="tw-w-[200px] tw-h-full tw-object-cover"
-				/>
-			</div>
-			<div
-				class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] lg:tw-h-[800px] hover:tw-shadow-2xl hover:tw-scale-105 tw-hidden md:tw-flex"
-			>
-				<img
-					src="{% static './assets/images/about/santacruz.jpg' %}"
-					alt="dashboard"
-					class="tw-w-[300px] tw-h-full tw-object-cover"
-				/>
-			</div>
-		</div>
+        <!-- Right Photos -->
+        <div class="tw-gap-4 tw-place-content-center tw-place-items-center xl:tw-flex xl:tw-flex-row">
+            <div class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px] hover:tw-shadow-2xl hover:tw-scale-105 hover:tw-duration-150 tw-hidden xl:tw-flex">
+                <img src="{% static './assets/images/about/tayo.jpeg' %}" alt="dashboard" class="tw-w-[200px] tw-h-full tw-object-cover" />
+            </div>
+            <div class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] lg:tw-h-[700px] hover:tw-shadow-2xl hover:tw-scale-105 tw-hidden md:tw-flex">
+                <img src="{% static './assets/images/about/santacruz.jpg' %}" alt="dashboard" class="tw-w-[300px] tw-h-full tw-object-cover" />
+            </div>
+        </div>
+        
 	</div>
 </section>
 
