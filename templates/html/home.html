@@ -5,175 +5,135 @@
 
 {% block content %}
 
-<section class="tw-w-full tw-h-screen">
-    <!-- Hero top -->
-    <div class="">
-      <!-- Container -->
-      <div class="tw-mx-auto tw-py-16 md:tw-py-20">
-        <!-- Title -->
-        <div class="tw-flex tw-justify-between tw-items-center tw-w-full">
-            <div class="tw-w-full tw-space-y-2 tw-flex tw-flex-col tw-items-start">
-              <div class="tw-w-[20%] tw-h-4 tw-bg-[#C62A2C]"></div>
-              <div class="tw-w-[40%] tw-h-4 tw-bg-[#ECB731]"></div>
-              <div class="tw-w-[60%] tw-h-4 tw-bg-[#029A4D]"></div>
-            </div>
-            <div class="tw-w-[950px] tw-flex tw-flex-col tw-items-center">
-              <img src="{% static 'assets/logos/dunosis-logo-bg.png' %}" alt="Dunosis Logo" class="tw-mb-1">
-              <h1 class="tw-text-2xl max-md:tw-text-lg max-sm:tw-text-sm tw-font-light tw-text-center tw-lowercase">
-                Where Knowledge Meets Power
-              </h1>
-            </div>
-            <div class="tw-w-full tw-space-y-2 tw-flex tw-flex-col tw-items-end">
-              <div class="tw-w-[20%] tw-h-4 tw-bg-[#C62A2C]"></div>
-              <div class="tw-w-[40%] tw-h-4 tw-bg-[#ECB731]"></div>
-              <div class="tw-w-[60%] tw-h-4 tw-bg-[#029A4D]"></div>
-            </div>
-        </div>        
-        <!-- Buttons -->
-        <div class="tw-flex tw-items-center tw-justify-center tw-mt-6">
-          <a href="#" class="tw-mr-6 tw-rounded-md tw-bg-black tw-px-8 tw-py-4 tw-text-center tw-font-semibold tw-text-white lg:tw-mr-8"> Get Started </a>
-          <a href="#" class="tw-flex tw-items-center tw-justify-center tw-rounded-md tw-border tw-border-solid tw-border-black tw-bg-white tw-px-6 tw-py-3 tw-font-bold">
-            <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a94d411e6cf99_Vector%20(6).svg" alt="" class="tw-mr-2 tw-max-h-4 tw-w-5" />
-            <p>Learn More</p>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Hero bottom -->
-    <div class="tw-mx-auto tw-max-w-7xl tw-px-5 tw-py-12 md:tw-px-10 md:tw-py-16 lg:tw-py-20">
-      <!-- Component -->
-        <div class="tw-flex tw-max-w-7xl tw-flex-col tw-gap-4 lg:tw-flex-row lg:tw-justify-end">
-            <div class="tw-max-w-xl">
-                <!-- Title -->
-                <h3 class="tw-text-2xl tw-font-bold md:tw-text-3xl">Your Business Deserves More</h3>
-                <!-- Description -->
-                <div class="tw-my-6 tw-w-16 tw-border-t tw-border-black"></div>
-                <p class="tw-text-sm tw-text-gray-500"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. </p>
-            </div>
-            
-            <!-- Buttons -->
-            <div class="tw-w-1/2 tw-flex tw-flex-col tw-place-content-center tw-max-w-[650px] tw-min-w-[450px] 
-            max-md:tw-min-w-[300px]">
-                <h1 class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-right
-                        tw-leading-normal max-md:tw-text-5xl max-md:tw-leading-[70px]">
-                    Marketing
+<!-- Hero Section -->
+<section
+	class="tw-flex tw-flex-col tw-w-full md:tw-min-h-screen tw-justify-center"
+	id="hero-section">
+	<div
+		class="tw-w-full tw-h-full tw-p-[4%] tw-flex tw-justify-around tw-items-center tw-gap-y-16 max-md:tw-flex-col"
+	>
+		<div
+			class="tw-gap-4 tw-place-content-center tw-place-items-center xl:tw-flex xl:tw-flex-row"
+		>
+			<div
+				class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] lg:tw-h-[700px] hover:tw-shadow-2xl tw-hidden md:tw-flex"
+			>
+				<img
+					src="{% static './assets/images/about/chicago.jpg' %}"
+					alt="dashboard"
+					class="tw-w-[300px] tw-h-full tw-object-cover"
+				/>
+			</div>
+			<div
+				class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px] hover:tw-shadow-2xl hover:tw-duration-150 tw-hidden xl:tw-flex"
+			>
+				<img
+					src="{% static './assets/images/about/wesley.jpeg' %}"
+					alt="dashboard"
+					class="tw-w-[200px] tw-h-full tw-object-cover"
+				/>
+			</div>
+		</div>
+
+		<div class="md:tw-hidden">
+			<!-- Carrusel de imágenes para pantallas pequeñas -->
+			<div class="scroll imgbx" style="--t: 10s">
+				<div class="tw-flex tw-flex-row tw-gap-2">
+					<img
+						src="{% static './assets/images/about/carrusel/photos1.jpg' %}"
+						alt="dashboard"
+						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
+					/>
+					<img
+						src="{% static './assets/images/about/carrusel/photos2.jpg' %}"
+						alt="dashboard"
+						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
+					/>
+					<img
+						src="{% static './assets/images/about/carrusel/photos3.jpg' %}"
+						alt="dashboard"
+						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
+					/>
+					<img
+						src="{% static './assets/images/about/carrusel/photos4.jpg' %}"
+						alt="dashboard"
+						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
+					/>
+					<img
+						src="{% static './assets/images/about/carrusel/photos5.jpg' %}"
+						alt="dashboard"
+						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
+					/>
+					<img
+						src="{% static './assets/images/about/carrusel/photos1.jpg' %}"
+						alt="dashboard"
+						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
+					/>
+					<img
+						src="{% static './assets/images/about/carrusel/photos2.jpg' %}"
+						alt="dashboard"
+						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
+					/>
+					<img
+						src="{% static './assets/images/about/carrusel/photos3.jpg' %}"
+						alt="dashboard"
+						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
+					/>
+					<img
+						src="{% static './assets/images/about/carrusel/photos4.jpg' %}"
+						alt="dashboard"
+						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
+					/>
+					<img
+						src="{% static './assets/images/about/carrusel/photos5.jpg' %}"
+						alt="dashboard"
+						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
+					/>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contenido Central -->
+		<div class="tw-flex tw-flex-col tw-items-center tw-max-w-[480px] tw-min-w-[300px] tw-mx-4">
+			<div class="tw-w-full tw-flex tw-flex-col tw-items-center">
+                <img src="{% static 'assets/logos/dunosis-logo-bg.png' %}" alt="Dunosis Logo" class="tw-mb-1">
+                <h1 class="tw-text-2xl max-md:tw-text-lg max-sm:tw-text-sm tw-font-light tw-text-center tw-lowercase">
+                  Where Knowledge Meets Power
                 </h1>
-                <h1 class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-right
-                        tw-leading-normal max-md:tw-text-5xl max-md:tw-leading-[70px]">
-                    Consulting
-                </h1>
-                <h1 class="tw-text-4xl tw-font-semibold tw-uppercase tw-text-right
-                        tw-leading-normal max-md:tw-text-5xl max-md:tw-leading-[70px]">
-                    Web Development
-                </h1>
-            </div>
-        </div>
-    </div>
+              </div>
+              <div class="tw-flex tw-items-center tw-justify-center tw-mt-6">
+                <a href="#" class="tw-mr-6 tw-rounded-md tw-bg-black tw-px-8 tw-py-4 tw-text-center tw-font-semibold tw-text-white lg:tw-mr-8"> Get Started </a>
+                <a href="#" class="tw-flex tw-items-center tw-justify-center tw-rounded-md tw-border tw-border-solid tw-border-black tw-bg-white tw-px-6 tw-py-3 tw-font-bold">
+                  <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a94d411e6cf99_Vector%20(6).svg" alt="" class="tw-mr-2 tw-max-h-4 tw-w-5" />
+                  <p>Learn More</p>
+                </a>
+              </div>
+		</div>
+
+		<div
+			class="tw-gap-4 tw-place-content-center tw-place-items-center xl:tw-flex xl:tw-flex-row"
+		>
+			<div
+				class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px] hover:tw-shadow-2xl hover:tw-scale-105 hover:tw-duration-150 tw-hidden xl:tw-flex"
+			>
+				<img
+					src="{% static './assets/images/about/tayo.jpeg' %}"
+					alt="dashboard"
+					class="tw-w-[200px] tw-h-full tw-object-cover"
+				/>
+			</div>
+			<div
+				class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] lg:tw-h-[800px] hover:tw-shadow-2xl hover:tw-scale-105 tw-hidden md:tw-flex"
+			>
+				<img
+					src="{% static './assets/images/about/santacruz.jpg' %}"
+					alt="dashboard"
+					class="tw-w-[300px] tw-h-full tw-object-cover"
+				/>
+			</div>
+		</div>
+	</div>
 </section>
-
-<!-- About Section -->
-<section class="tw-flex tw-flex-col tw-w-full md:tw-min-h-screen tw-justify-center" id="hero-section">
-
-    <div class="tw-w-full tw-h-full tw-p-[4%] tw-flex tw-justify-around tw-items-center tw-gap-y-16 max-md:tw-flex-col">
-         
-
-        <!-- Imágenes de los extremos -->
-        <div class="tw-gap-4 tw-place-content-center tw-place-items-center xl:tw-flex xl:tw-flex-row">
-            <div class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] lg:tw-h-[700px] hover:tw-shadow-2xl tw-hidden md:tw-flex">
-                <img src="{% static './assets/images/home/chicago.jpg' %}" 
-                     alt="dashboard" class="tw-w-[300px] tw-h-full tw-object-cover">
-            </div>
-            <div class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px]  hover:tw-shadow-2xl hover:tw-duration-150 tw-hidden xl:tw-flex">
-                <img src="{% static './assets/images/home/wesley.jpeg' %}" 
-                     alt="dashboard" class="tw-w-[200px] tw-h-full tw-object-cover">
-            </div>
-        </div>
-
-
-        <!-- Carrusel de imágenes para pantallas pequeñas -->
-        <div class="tw-flex space-x-16 tw-overflow-hidden tw-group md:tw-hidden ">
-            <div class="tw-flex tw-animate-loop-scroll tw-space-x-16 tw-h-[200px] tw-group-hover:paused">
-                <img src="{% static './assets/images/home/chicago.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/santacruz.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos1.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos2.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos3.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos4.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos5.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos1.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos2.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos3.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-            </div>
-            <div class="tw-flex tw-animate-loop-scroll tw-space-x-16 tw-h-[200px] tw-group-hover:paused" aria-hidden="true">
-                
-                <img src="{% static './assets/images/home/chicago.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/santacruz.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos1.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos2.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos3.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos4.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos5.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos1.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos2.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos3.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-            </div>
-        </div>
-
-        <!-- Contenido Central -->
-        <div class="tw-flex tw-flex-col tw-items-center tw-max-w-[480px] tw-min-w-[300px] tw-mx-4">
-            
-            <h1 class="tw-text-4xl lg:tw-text-6xl tw-font-semibold tw-uppercase 
-                        tw-text-center tw-leading-normal max-md:tw-leading-tight">
-                Learn About Our Team And Our Business
-            </h1>
-            <p class="tw-mt-5 tw-text-center tw-px-2 tw-text-lg align-center md:tw-text-2lg">
-                Order now and don't forget to subscribe and don't forget to enter the email below to get a voucher right now. 🚀
-            </p>
-            <a href="https://github.com/PaulleDemon/Django-website-template" 
-                class="tw-rounded-full tw-mt-5 tw-px-6 tw-py-3 tw-bg-black tw-text-white tw-font-semibold tw-transition-transform tw-duration-300 tw-ease-in-out tw-flex tw-items-center tw-justify-center hover:tw-scale-110 hover:tw-shadow-xl">
-                    Contact Us Now!
-            </a>
-
-        </div>
-
-        <!-- Imágenes de los extremos -->
-        <div class="tw-gap-4 tw-place-content-center tw-place-items-center xl:tw-flex xl:tw-flex-row">
-            <div class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px] hover:tw-shadow-2xl hover:tw-scale-105  hover:tw-duration-150  tw-hidden xl:tw-flex">
-                <img src="{% static './assets/images/home/tayo.jpeg' %}" 
-                     alt="dashboard" class="tw-w-[200px] tw-h-full tw-object-cover">
-            </div>
-            <div class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] lg:tw-h-[800px] hover:tw-shadow-2xl hover:tw-scale-105 tw-hidden md:tw-flex">
-                <img src="{% static './assets/images/home/santacruz.jpg' %}" 
-                     alt="dashboard" class="tw-w-[300px] tw-h-full tw-object-cover">
-            </div>
-        </div>
-        
-
-
-    </div>
-
-</section>
-
 
 
 <!-- Who are we section -->
