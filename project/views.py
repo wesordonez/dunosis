@@ -36,3 +36,6 @@ def landing_view(request):
   
 def service_details_view(request):
     return render(request, 'service-details.html', status=200)
+
+def portfolio_details_view(request):
+    return render(request, 'portfolio-details.html', status=200)
