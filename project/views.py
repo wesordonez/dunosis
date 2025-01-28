@@ -27,3 +27,15 @@ def handler_403(request, exception=None):
 
 def home_view(request):
     return render(request, 'home.html', status=200)
+
+def about_view(request):
+    return render(request, 'about.html', status=200)
+
+def landing_view(request):
+    return render(request, 'landing.html', status=200)
+  
+def service_details_view(request):
+    return render(request, 'service-details.html', status=200)
+
+def portfolio_details_view(request):
+    return render(request, 'portfolio-details.html', status=200)

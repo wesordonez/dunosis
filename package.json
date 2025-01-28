@@ -1,7 +1,10 @@
 {
   "dependencies": {
-    "cross-env": "^7.0.3",
+    "flowbite": "^2.5.2",
     "postcss-simple-vars": "^7.0.1",
     "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }

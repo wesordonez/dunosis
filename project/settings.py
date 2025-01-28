@@ -28,7 +28,6 @@ from google.oauth2 import service_account
 from pathlib import Path
 from dotenv import load_dotenv
 
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -55,12 +54,12 @@ else:
 
 # Cloud Platform Settings
 # if not DEBUG and cloud_platform in ['DIGITAL_OCEAN', 'RAILWAY']:
-#     # since the firebase-cred cannot be uploaded manually 
+#     # since the firebase-cred cannot be uploaded manually
 #     # https://www.digitalocean.com/community/questions/how-to-upload-a-secret-credential-file
 #     firebase_cred = env('FIREBASE_ENCODED')
 #     decoded_bytes = base64.b64decode(firebase_cred)
 #     decoded_json = json.loads(decoded_bytes.decode('utf-8'))
-  
+
 #     with open(FIREBASE_CRED_PATH, 'w') as f:
 #         json.dump(decoded_json, f, indent=4)
 
@@ -75,7 +74,7 @@ ALLOWED_HOSTS = [host.strip() for host in ALLOWED_HOSTS]
 #     CSRF_TRUSTED_ORIGINS = os.environ.get('ALLOWED_CORS').replace(' ', '').split(',')
 
 
-PROJECT_TITLE = 'Dunosis Website' # name of the project
+PROJECT_TITLE = 'Dunosis Website'  # name of the project
 
 if DEBUG:
     DOMAIN = "http://localhost:8000"
@@ -95,8 +94,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'django.contrib.sites',  # sitemaps 
-    'django.contrib.sitemaps',  # sitemaps 
+    'django.contrib.sites',  # sitemaps
+    'django.contrib.sitemaps',  # sitemaps
 
 
     # 3rd party
@@ -106,17 +105,17 @@ INSTALLED_APPS = [
 
     'styling',
 
-    #first party
+    # first party
     'user',
     'blog',
     'inquiry',
 ]
 
 
-SITE_ID = 1 # for sitemaps
-# ANALYTICS_TAG_ID = env('GOOGLE_ANALYTICS') # for analytics tag on frontend
+SITE_ID = 1  # for sitemaps
+ANALYTICS_TAG_ID = os.environ.get('GOOGLE_ANALYTICS') # for analytics tag on frontend
 
-AUTH_USER_MODEL = "user.User" 
+AUTH_USER_MODEL = "user.User"
 
 
 LOGIN_REDIRECT_URL = '/'
@@ -129,7 +128,6 @@ INTERNAL_IPS = [
 ]
 
 
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -139,8 +137,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
-    'whitenoise.middleware.WhiteNoiseMiddleware', #whitenoise
-    'django_browser_reload.middleware.BrowserReloadMiddleware', # reload
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # whitenoise
+    'django_browser_reload.middleware.BrowserReloadMiddleware',  # reload
     'django_ratelimit.middleware.RatelimitMiddleware',
 ]
 
@@ -149,10 +147,11 @@ ROOT_URLCONF = 'project.urls'
 # Email Settings
 
 if DEBUG:
-    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # This is only for development
+    # This is only for development
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     # EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
 
-else: 
+else:
     pass
     # uncomment below for production emailing
     # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # for production
@@ -184,7 +183,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
-            'libraries':{
+            'libraries': {
                 'custom_tags': 'project.templatetags.custom_tags',
             }
         },
@@ -220,10 +219,17 @@ else:
             }
         }
 
-    # DATABASES  = {
-    #                 'default':dj_database_url.config(default=os.environ.get('POSTGRES_URL')),   
-    #             }
-    # DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'
+# DATABASES  = {
+#                 'default':dj_database_url.config(default=os.environ.get('POSTGRES_URL')),
+#             }
+# DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 # Password validation
@@ -263,11 +269,12 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR.joinpath('staticfiles', 'static')
 STATICFILES_DIRS = [
-                        BASE_DIR.joinpath('templates'),
-                        # BASE_DIR.joinpath('templates', 'js'),
-                        # BASE_DIR.joinpath('templates', 'css'),
-                        BASE_DIR.joinpath('templates', 'assets'),
-                    ]
+    BASE_DIR.joinpath('templates'),
+    # BASE_DIR.joinpath('templates', 'js'),
+    # BASE_DIR.joinpath('templates', 'css'),
+    BASE_DIR.joinpath('templates', 'assets'),
+    BASE_DIR.joinpath('node_modules'),
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -282,7 +289,7 @@ MEDIA_ROOT = BASE_DIR.joinpath('media')
 # if DEBUG:
 #     MEDIA_URL = '/media/'
 #     MEDIA_DOMAIN = 'http://localhost:8000'
-   
+
 # else:
 #     MEDIA_URL = '/media/'
 
@@ -317,7 +324,7 @@ LOGGING = {
             'level': 'DEBUG',
             'class': 'logging.StreamHandler',
         },
-        
+
         'celery': {
             'level': 'DEBUG',
             'class': 'logging.StreamHandler',
