@@ -1046,11 +1046,6 @@ input[type="range"]::-ms-fill-lower {
   margin-bottom: 1.25rem;
 }
 
-.tw-my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .tw--ml-4 {
   margin-left: -1rem;
 }
@@ -1280,10 +1275,6 @@ input[type="range"]::-ms-fill-lower {
   min-height: 80px;
 }
 
-.tw-w-1\/2 {
-  width: 50%;
-}
-
 .tw-w-10 {
   width: 2.5rem;
 }
@@ -1437,10 +1428,6 @@ input[type="range"]::-ms-fill-lower {
   max-width: 550px;
 }
 
-.tw-max-w-\[650px\] {
-  max-width: 650px;
-}
-
 .tw-max-w-\[800px\] {
   max-width: 800px;
 }
@@ -1457,8 +1444,8 @@ input[type="range"]::-ms-fill-lower {
   max-width: auto;
 }
 
-.tw-max-w-xl {
-  max-width: 36rem;
+.tw-max-w-lg {
+  max-width: 32rem;
 }
 
 .tw-shrink-0 {
@@ -1626,12 +1613,6 @@ input[type="range"]::-ms-fill-lower {
 
 .tw-gap-y-8 {
   row-gap: 2rem;
-}
-
-.tw-space-x-16 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(4rem * var(--tw-space-x-reverse));
-  margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .tw-space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2004,11 +1985,6 @@ input[type="range"]::-ms-fill-lower {
 .tw-py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-}
-
-.tw-py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .tw-py-14 {
@@ -2466,11 +2442,6 @@ input[type="range"]::-ms-fill-lower {
     line-height: 2.25rem;
   }
 
-  .max-md\:tw-text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .max-md\:tw-text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -2484,10 +2455,6 @@ input[type="range"]::-ms-fill-lower {
   .max-md\:tw-text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .max-md\:tw-leading-\[70px\] {
-    line-height: 70px;
   }
 
   .max-md\:tw-leading-tight {
@@ -2504,6 +2471,11 @@ input[type="range"]::-ms-fill-lower {
     border-radius: 9999px;
   }
 
+  .max-sm\:tw-text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .max-sm\:tw-text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2518,14 +2490,13 @@ input[type="range"]::-ms-fill-lower {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-
-  .max-sm\:tw-text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
 }
 
 @media (min-width: 640px) {
+  .sm\:tw-grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:tw-gap-20 {
     gap: 5rem;
   }
@@ -2561,6 +2532,10 @@ input[type="range"]::-ms-fill-lower {
 
   .md\:tw-ml-10 {
     margin-left: 2.5rem;
+  }
+
+  .md\:tw-mb-12 {
+    margin-bottom: 3rem;
   }
 
   .md\:tw-block {
@@ -2611,6 +2586,10 @@ input[type="range"]::-ms-fill-lower {
     max-width: 1440px;
   }
 
+  .md\:tw-grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .md\:tw-flex-row {
     flex-direction: row;
   }
@@ -2625,6 +2604,19 @@ input[type="range"]::-ms-fill-lower {
 
   .md\:tw-gap-4 {
     gap: 1rem;
+  }
+
+  .md\:tw-gap-0 {
+    gap: 0px;
+  }
+
+  .md\:tw-border-r {
+    border-right-width: 1px;
+  }
+
+  .md\:tw-border-gray-300 {
+    --tw-border-opacity: 1;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
   }
 
   .md\:tw-px-10 {
@@ -2652,11 +2644,6 @@ input[type="range"]::-ms-fill-lower {
     padding-right: 15%;
   }
 
-  .md\:tw-py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
   .md\:tw-py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -2665,6 +2652,11 @@ input[type="range"]::-ms-fill-lower {
   .md\:tw-py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .md\:tw-py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .md\:tw-text-left {
@@ -2800,10 +2792,6 @@ input[type="range"]::-ms-fill-lower {
     align-items: center;
   }
 
-  .lg\:tw-justify-end {
-    justify-content: flex-end;
-  }
-
   .lg\:tw-justify-around {
     justify-content: space-around;
   }
@@ -2819,11 +2807,6 @@ input[type="range"]::-ms-fill-lower {
   .lg\:tw-px-\[30\%\] {
     padding-left: 30%;
     padding-right: 30%;
-  }
-
-  .lg\:tw-py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
   }
 
   .lg\:tw-py-32 {
