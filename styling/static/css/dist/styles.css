@@ -1162,6 +1162,10 @@ input[type="range"]::-ms-fill-lower {
   margin-top: auto;
 }
 
+.tw-mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .tw-inline-block {
   display: inline-block;
 }
@@ -1496,6 +1500,10 @@ input[type="range"]::-ms-fill-lower {
 
 .tw-list-disc {
   list-style-type: disc;
+}
+
+.tw-grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .tw-flex-row {
@@ -2497,8 +2505,16 @@ input[type="range"]::-ms-fill-lower {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .sm\:tw-grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .sm\:tw-gap-20 {
     gap: 5rem;
+  }
+
+  .sm\:tw-gap-12 {
+    gap: 3rem;
   }
 
   .sm\:tw-px-20 {
@@ -2536,6 +2552,10 @@ input[type="range"]::-ms-fill-lower {
 
   .md\:tw-mb-12 {
     margin-bottom: 3rem;
+  }
+
+  .md\:tw-mb-10 {
+    margin-bottom: 2.5rem;
   }
 
   .md\:tw-block {
@@ -2590,6 +2610,10 @@ input[type="range"]::-ms-fill-lower {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .md\:tw-grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
   .md\:tw-flex-row {
     flex-direction: row;
   }
@@ -2608,6 +2632,10 @@ input[type="range"]::-ms-fill-lower {
 
   .md\:tw-gap-0 {
     gap: 0px;
+  }
+
+  .md\:tw-gap-6 {
+    gap: 1.5rem;
   }
 
   .md\:tw-border-r {
@@ -2722,6 +2750,10 @@ input[type="range"]::-ms-fill-lower {
 
   .lg\:tw-mr-8 {
     margin-right: 2rem;
+  }
+
+  .lg\:tw-mb-12 {
+    margin-bottom: 3rem;
   }
 
   .lg\:tw-block {
