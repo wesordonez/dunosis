@@ -449,6 +449,8 @@ header > .collapsable-header {
 	}
 }
 
+/* Styles for animating how to section */
+
 .scroll div img {
 	display: inline-flex;
 	padding: 1px;
@@ -457,4 +459,91 @@ header > .collapsable-header {
 	object-fit: cover;
 	width: 100px;
 	height: auto;
+}
+
+/* Initial styles for the animated line */
+.animated-line {
+	height: 0;
+	transform: translateX(-50%);
+	transition: height 0.5s ease-out;
+}
+
+/* Initial styles for steps */
+.step {
+	opacity: 0.5;
+	transition: opacity 0.5s, font-weight 0.5s, color 0.5s;
+}
+
+/* Active styles for steps */
+.step.active {
+	opacity: 1;
+}
+
+/* Style for step-ball */
+.step-ball {
+	transition: background-color 0.5s ease;
+}
+
+/* Active style for step-ball */
+.step.active .step-ball {
+	background-color: black;
+}
+
+/* Styles for the pricing slider */
+.option {
+	color: #6b7280; /* gray-500 */
+	transition: color 0.3s ease-in-out;
+}
+
+.option.active {
+	color: #ffffff; /* white */
+}
+
+.card {
+	--card-width: 30%;
+	width: var(--card-width);
+	transition: width 0.5s;
+}
+
+@media (max-width: 768px) {
+	.card {
+		--card-width: 100%;
+		width: var(--card-width);
+	}
+}
+
+.card.active {
+	--card-width: 70%;
+	width: var(--card-width);
+}
+
+@media (max-width: 768px) {
+	.card.active {
+		--card-width: 100%;
+		width: var(--card-width);
+	}
+}
+
+@media (max-width: 768px) {
+	.card {
+		--card-width: 100%;
+		width: var(--card-width);
+	}
+}
+
+@media (min-width: 768px) {
+	.image-container {
+		display: none;
+	}
+}
+
+.card.active .image-container {
+	display: block;
+	width: 50%;
+}
+
+@media (max-width: 768px) {
+	.card.active .image-container {
+		width: 100%;
+	}
 }

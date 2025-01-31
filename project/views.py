@@ -39,3 +39,12 @@ def service_details_view(request):
 
 def services_view(request):
     return render(request, 'services.html', status=200)
+
+def services_view(request):
+    return render(request, 'services.html', status=200)
+
+def portfolio_view(request):
+    return render(request, 'portfolio-overview.html', status=200)
+
+def portfolio_details_view(request):
+    return render(request, 'portfolio-details.html', status=200)

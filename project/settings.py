@@ -28,8 +28,6 @@ from google.oauth2 import service_account
 from pathlib import Path
 from dotenv import load_dotenv
 
-NPM_BIN_PATH="C:/Program Files/nodejs/npm.cmd"
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -115,7 +113,7 @@ INSTALLED_APPS = [
 
 
 SITE_ID = 1  # for sitemaps
-# ANALYTICS_TAG_ID = env('GOOGLE_ANALYTICS') # for analytics tag on frontend
+ANALYTICS_TAG_ID = os.environ.get('GOOGLE_ANALYTICS') # for analytics tag on frontend
 
 AUTH_USER_MODEL = "user.User"
 

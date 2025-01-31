@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="shortcut icon" href="{% static 'assets/logos/dunosis-logo.png' %}" type="image/png">
+    <link rel="shortcut icon" href="{% static 'assets/logos/dunosis-logo-icon.png' %}" type="image/png">
     
     <meta name="theme-color" content="#f5f5f5">
 
@@ -111,12 +111,12 @@
                 <a class="header-links" href="{% url "about" %}">
                     About
                 </a>
-                <a class="header-links" href="{% url "blogs" %}"
+                <a class="header-links" href="{% url "service-details" %}"
                         rel="noreferrer"
                         >
                     Services
                 </a>
-                <a class="header-links" href="{% url "contact-us" %}"
+                <a class="header-links" href="{% url "portfolio-details" %}"
                         rel="noreferrer"
                         >
                     Portfolio
@@ -201,6 +201,7 @@
         {% endblock footer %}
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.js"></script>
 </body>
 
 {% comment %} <script src="{% static "./js/base.js" %}"></script> {% endcomment %}
@@ -226,6 +227,8 @@
 <script src="{% static './js/base.js' %}"></script>
 
 <script src="{% static 'flowbite/dist/flowbite.min.js' %}"></script>
+
+<script src="https://forms.app/static/embed.js" type="text/javascript" async defer onload="new formsapp('6789c5f8d70ec4c113bcd5c3', 'standard', {'width':'100vw','height':'600px','opacity':0}, 'https://nn9joelt.forms.app');"></script>
 
 {% block scripts %}{% endblock scripts %}
 
