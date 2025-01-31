@@ -1005,6 +1005,10 @@ input[type="range"]::-ms-fill-lower {
   top: 70%;
 }
 
+.tw-left-1\/4 {
+  left: 25%;
+}
+
 .tw-z-0 {
   z-index: 0;
 }
@@ -1976,6 +1980,11 @@ input[type="range"]::-ms-fill-lower {
 .tw-bg-yellow-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(194 120 3 / var(--tw-bg-opacity, 1));
+}
+
+.tw-bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 100 242 / var(--tw-bg-opacity, 1));
 }
 
 .tw-bg-gradient-to-t {

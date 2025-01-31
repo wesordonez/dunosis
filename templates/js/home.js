@@ -113,3 +113,48 @@ contenidos1.forEach(contenido1 => {
 		otherContenidos1.classList.add("md:tw-w-[50%]");
 	});
 });
+
+// JS for How it Works animation
+document.addEventListener("DOMContentLoaded", () => {
+	const steps = document.querySelectorAll(".step");
+	const animatedLine = document.querySelector(".animated-line");
+	const componentDiv = document.querySelector(".component-div");
+
+	function animateOnScroll() {
+		const viewportHeight = window.innerHeight;
+		const componentPosition = componentDiv.getBoundingClientRect().top;
+		const componentBottomPosition = componentDiv.getBoundingClientRect().bottom;
+		const scrollPosition = window.scrollY + viewportHeight / 2;
+
+		if (componentPosition <= viewportHeight / 2) {
+			let maxHeight = 0;
+
+			steps.forEach((step, index) => {
+				const stepPosition = step.getBoundingClientRect().top + window.scrollY;
+
+				if (scrollPosition > stepPosition) {
+					step.classList.add("active");
+					maxHeight = Math.max(
+						maxHeight,
+						scrollPosition - stepPosition + step.offsetHeight / 2
+					);
+				} else {
+					step.classList.remove("active");
+				}
+			});
+
+			// Calculate the maximum height the line can grow
+			const maxComponentHeight = componentBottomPosition - viewportHeight / 2;
+			const maxLineHeight = componentDiv.offsetHeight;
+
+			// Ensure the animated line does not grow past the bottom of the component-div
+			animatedLine.style.height = `${Math.min(maxHeight, maxLineHeight)}px`;
+		} else {
+			animatedLine.style.height = "0";
+			steps.forEach(step => step.classList.remove("active"));
+		}
+	}
+
+	window.addEventListener("scroll", animateOnScroll);
+	animateOnScroll(); // Initial check on page load
+});

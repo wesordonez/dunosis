@@ -458,3 +458,31 @@ header > .collapsable-header {
 	width: 100px;
 	height: auto;
 }
+
+/* Initial styles for the animated line */
+.animated-line {
+	height: 0;
+	transform: translateX(-50%);
+	transition: height 0.5s ease-out;
+}
+
+/* Initial styles for steps */
+.step {
+	opacity: 0.5;
+	transition: opacity 0.5s, font-weight 0.5s, color 0.5s;
+}
+
+/* Active styles for steps */
+.step.active {
+	opacity: 1;
+}
+
+/* Style for step-ball */
+.step-ball {
+	transition: background-color 0.5s ease;
+}
+
+/* Active style for step-ball */
+.step.active .step-ball {
+	background-color: black;
+}
