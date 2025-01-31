@@ -2848,10 +2848,6 @@ input[type="range"]::-ms-fill-lower {
     height: 200px;
   }
 
-  .md\:tw-h-\[450px\] {
-    height: 450px;
-  }
-
   .md\:tw-h-full {
     height: 100%;
   }
