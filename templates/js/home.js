@@ -172,35 +172,35 @@ document.addEventListener("DOMContentLoaded", () => {
 		prices.forEach(price => {
 			const oneTimePrice = price.dataset.oneTime;
 			price.querySelector(".price-amount").textContent = oneTimePrice;
-			price.querySelector(".price-period").textContent = "/One-Time";
+			price.querySelector(".price-period").textContent = "";
 		});
 	}
-});
 
-options.forEach(option => {
-	option.addEventListener("click", () => {
-		// Toggle active state
-		options.forEach(opt => opt.classList.remove("active"));
-		option.classList.add("active");
+	options.forEach(option => {
+		option.addEventListener("click", () => {
+			// Toggle active state
+			options.forEach(opt => opt.classList.remove("active"));
+			option.classList.add("active");
 
-		// Move the slider
-		if (option.dataset.type === "one-time") {
-			slider.style.transform = "translateX(0)";
-		} else {
-			slider.style.transform = "translateX(110%)";
-		}
-
-		// Update pricing
-		prices.forEach(price => {
-			const oneTimePrice = price.dataset.oneTime;
-			const monthlyPrice = price.dataset.monthly;
+			// Move the slider
 			if (option.dataset.type === "one-time") {
-				price.querySelector(".price-amount").textContent = oneTimePrice;
-				price.querySelector(".price-period").textContent = "/One-Time";
+				slider.style.transform = "translateX(0)";
 			} else {
-				price.querySelector(".price-amount").textContent = monthlyPrice;
-				price.querySelector(".price-period").textContent = "/MO";
+				slider.style.transform = "translateX(110%)";
 			}
+
+			// Update pricing
+			prices.forEach(price => {
+				const oneTimePrice = price.dataset.oneTime;
+				const monthlyPrice = price.dataset.monthly;
+				if (option.dataset.type === "one-time") {
+					price.querySelector(".price-amount").textContent = oneTimePrice;
+					price.querySelector(".price-period").textContent = "";
+				} else {
+					price.querySelector(".price-amount").textContent = monthlyPrice;
+					price.querySelector(".price-period").textContent = "/MO";
+				}
+			});
 		});
 	});
 });
