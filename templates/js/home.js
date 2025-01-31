@@ -4,6 +4,63 @@
 
 // JS for poster hover effect
 
+// Cache DOM queries
+const cardRows = [
+	{
+		cards: document.querySelectorAll(".card"),
+		contents: document.querySelectorAll(".contenido"),
+	},
+	{
+		cards: document.querySelectorAll(".card1"),
+		contents: document.querySelectorAll(".contenido1"),
+	},
+];
+
+// Reusable function to handle card hover effects
+function setupCardHoverEffects(cards, contents) {
+	cards.forEach(card => {
+		card.addEventListener("mouseenter", () => {
+			// Remove hover from other cards
+			cards.forEach(otherCard => {
+				if (otherCard !== card) {
+					otherCard.classList.remove("md:tw-w-[70%]");
+					otherCard.classList.add("md:tw-w-[30%]");
+					const imageContainer = otherCard.querySelector(
+						".image-container, .image-container1"
+					);
+					imageContainer.classList.remove("md:tw-block", "md:tw-w-[50%]");
+					imageContainer.classList.add("md:tw-hidden");
+				}
+			});
+
+			// Change the current card
+			card.classList.remove("md:tw-w-[30%]");
+			card.classList.add("md:tw-w-[70%]");
+			const imageContainer = card.querySelector(".image-container, .image-container1");
+			imageContainer.classList.remove("md:tw-hidden");
+			imageContainer.classList.add("md:tw-w-[50%]");
+		});
+	});
+
+	contents.forEach(content => {
+		content.addEventListener("mouseenter", () => {
+			// Remove hover from other contents
+			contents.forEach(otherContent => {
+				if (otherContent !== content) {
+					otherContent.classList.remove("md:tw-w-[50%]");
+				}
+			});
+
+			// Change the current content
+			content.classList.add("md:tw-w-[50%]");
+		});
+	});
+}
+
+// Apply hover effects to all card rows
+cardRows.forEach(row => setupCardHoverEffects(row.cards, row.contents));
+
+// JS for poster hover effect
 const elements = document.querySelectorAll(".poster");
 
 elements.forEach(el => {
@@ -14,24 +71,23 @@ elements.forEach(el => {
 		const { layerX, layerY } = e;
 
 		const yRotation = ((layerX - width / 2) / width) * 20;
-
 		const xRotation = ((layerY - height / 2) / height) * 20;
 
 		const string = `
-         perspective(500px)
-         scale(1.08)
-         rotateX(${xRotation}deg)
-         rotateY(${yRotation}deg)`;
+      perspective(500px)
+      scale(1.08)
+      rotateX(${xRotation}deg)
+      rotateY(${yRotation}deg)`;
 
 		el.style.transform = string;
 	});
 
 	el.addEventListener("mouseout", () => {
 		el.style.transform = `
-            perspective(500px) 
-            scale(1)
-            rotateX(0)
-            rotateY(0)`;
+      perspective(500px) 
+      scale(1)
+      rotateX(0)
+      rotateY(0)`;
 	});
 });
 
