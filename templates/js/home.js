@@ -25,64 +25,6 @@ function throttle(func, limit) {
 }
 
 // JS for poster hover effect
-
-// Cache DOM queries
-const cardRows = [
-	{
-		cards: document.querySelectorAll(".card"),
-		contents: document.querySelectorAll(".contenido"),
-	},
-	{
-		cards: document.querySelectorAll(".card1"),
-		contents: document.querySelectorAll(".contenido1"),
-	},
-];
-
-// Reusable function to handle card hover effects
-function setupCardHoverEffects(cards, contents) {
-	cards.forEach(card => {
-		card.addEventListener("mouseenter", () => {
-			// Remove hover from other cards
-			cards.forEach(otherCard => {
-				if (otherCard !== card) {
-					otherCard.classList.remove("md:tw-w-[70%]");
-					otherCard.classList.add("md:tw-w-[30%]");
-					const imageContainer = otherCard.querySelector(
-						".image-container, .image-container1"
-					);
-					imageContainer.classList.remove("md:tw-block", "md:tw-w-[50%]");
-					imageContainer.classList.add("md:tw-hidden");
-				}
-			});
-
-			// Change the current card
-			card.classList.remove("md:tw-w-[30%]");
-			card.classList.add("md:tw-w-[70%]");
-			const imageContainer = card.querySelector(".image-container, .image-container1");
-			imageContainer.classList.remove("md:tw-hidden");
-			imageContainer.classList.add("md:tw-w-[50%]");
-		});
-	});
-
-	contents.forEach(content => {
-		content.addEventListener("mouseenter", () => {
-			// Remove hover from other contents
-			contents.forEach(otherContent => {
-				if (otherContent !== content) {
-					otherContent.classList.remove("md:tw-w-[50%]");
-				}
-			});
-
-			// Change the current content
-			content.classList.add("md:tw-w-[50%]");
-		});
-	});
-}
-
-// Apply hover effects to all card rows
-cardRows.forEach(row => setupCardHoverEffects(row.cards, row.contents));
-
-// JS for poster hover effect
 const elements = document.querySelectorAll(".poster");
 
 elements.forEach(el => {
@@ -110,6 +52,27 @@ elements.forEach(el => {
       scale(1)
       rotateX(0)
       rotateY(0)`;
+	});
+});
+
+// Simplified card hover effect
+const cardRows = document.querySelectorAll(".card-row");
+
+cardRows.forEach((row, rowIndex) => {
+	const cards = row.querySelectorAll(".card");
+
+	// Automatically activate the first card of the first row and the second card of the second row
+	if (rowIndex === 0 && cards.length > 0) {
+		cards[0].classList.add("active");
+	} else if (rowIndex === 1 && cards.length > 1) {
+		cards[1].classList.add("active");
+	}
+
+	cards.forEach(card => {
+		card.addEventListener("mouseenter", () => {
+			cards.forEach(c => c.classList.remove("active"));
+			card.classList.add("active");
+		});
 	});
 });
 

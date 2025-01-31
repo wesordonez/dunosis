@@ -498,3 +498,52 @@ header > .collapsable-header {
 .option.active {
 	color: #ffffff; /* white */
 }
+
+.card {
+	--card-width: 30%;
+	width: var(--card-width);
+	transition: width 0.5s;
+}
+
+@media (max-width: 768px) {
+	.card {
+		--card-width: 100%;
+		width: var(--card-width);
+	}
+}
+
+.card.active {
+	--card-width: 70%;
+	width: var(--card-width);
+}
+
+@media (max-width: 768px) {
+	.card.active {
+		--card-width: 100%;
+		width: var(--card-width);
+	}
+}
+
+@media (max-width: 768px) {
+	.card {
+		--card-width: 100%;
+		width: var(--card-width);
+	}
+}
+
+@media (min-width: 768px) {
+	.image-container {
+		display: none;
+	}
+}
+
+.card.active .image-container {
+	display: block;
+	width: 50%;
+}
+
+@media (max-width: 768px) {
+	.card.active .image-container {
+		width: 100%;
+	}
+}
