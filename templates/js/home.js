@@ -2,6 +2,28 @@
  * Contains JS code for home page
  */
 
+// Throttling function
+function throttle(func, limit) {
+	let lastFunc;
+	let lastRan;
+	return function () {
+		const context = this;
+		const args = arguments;
+		if (!lastRan) {
+			func.apply(context, args);
+			lastRan = Date.now();
+		} else {
+			clearTimeout(lastFunc);
+			lastFunc = setTimeout(function () {
+				if (Date.now() - lastRan >= limit) {
+					func.apply(context, args);
+					lastRan = Date.now();
+				}
+			}, limit - (Date.now() - lastRan));
+		}
+	};
+}
+
 // JS for poster hover effect
 
 // Cache DOM queries
@@ -132,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	};
 
-	window.addEventListener("scroll", animateOnScroll);
+	window.addEventListener("scroll", throttle(animateOnScroll, 50));
 	animateOnScroll(); // Initial check on page load
 });
 
