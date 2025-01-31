@@ -449,6 +449,8 @@ header > .collapsable-header {
 	}
 }
 
+/* Styles for animating how to section */
+
 .scroll div img {
 	display: inline-flex;
 	padding: 1px;
@@ -485,4 +487,14 @@ header > .collapsable-header {
 /* Active style for step-ball */
 .step.active .step-ball {
 	background-color: black;
+}
+
+/* Styles for the pricing slider */
+.option {
+	color: #6b7280; /* gray-500 */
+	transition: color 0.3s ease-in-out;
+}
+
+.option.active {
+	color: #ffffff; /* white */
 }
