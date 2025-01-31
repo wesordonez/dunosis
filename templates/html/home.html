@@ -158,32 +158,9 @@
         </div>
       </div>
 
-      <div class="tw-flex tw-flex-col md:tw-flex-row tw-bg-green-500 tw-py-10 tw-px-10 tw-mt-8 tw-rounded-lg tw-text-white tw-justify-center tw-items-center tw-w-full tw-gap-4 tw-min-w-[350px] tw-max-w-[900px] md:tw-min-w-[740px] md:tw-max-w-[1440px]">
-        <div class="tw-flex">
-          <!-- Circle Avatar 1 -->
-          <div class="tw-w-16 tw-h-16 tw-rounded-full tw-overflow-hidden tw-border-2 tw-border-white tw-shadow-md">
-            <img src="{% static './assets/images/services/details/avatar1.jpg' %}" alt="Avatar 1" class="tw-w-full tw-h-full tw-object-cover" />
-          </div>
-          <!-- Circle Avatar 2 -->
-          <div class="tw-w-16 tw-h-16 tw-rounded-full tw-overflow-hidden tw-border-2 tw-border-white tw-shadow-md tw--ml-4">
-            <img src="{% static './assets/images/services/details/avatar2.jpg' %}" alt="Avatar 2" class="tw-w-full tw-h-full tw-object-cover" />
-          </div>
-          <!-- Circle Avatar 3 -->
-          <div class="tw-w-16 tw-h-16 tw-rounded-full tw-overflow-hidden tw-border-2 tw-border-white tw-shadow-md tw--ml-4">
-            <img src="{% static './assets/images/services/details/avatar3.jpg' %}" alt="Avatar 3" class="tw-w-full tw-h-full tw-object-cover" />
-          </div>
-        </div>
+      <!-- Pre Footer CTA -->
+      {% include 'components/pre-footer-cta.html' with title="Pricing" %} 
 
-        <h2 class="tw-flex tw-text-2xl tw-font-semibold">1.5 K Happy Clients</h2>
-        <div class="tw-flex tw-items-center tw-gap-2 tw-group lg:tw-ml-8">
-          <a href="https://github.com/PaulleDemon/Django-website-template" class="tw-flex tw-h-14 tw-bg-green-800 tw-text-sm tw-text-white tw-uppercase tw-rounded-full tw-items-center tw-gap-2 tw-px-6 group-hover:tw-bg-green-900 group-hover:tw-text-white">
-            view all services
-          </a>
-          <a href="https://github.com/PaulleDemon/Django-website-template" class="tw-rounded-full tw-h-14 tw-w-14 tw-flex tw-items-center tw-justify-center tw-bg-green-800 tw-text-white group-hover:tw-bg-green-900 group-hover:tw-text-white">
-            <i class="bi bi-arrow-up-right"></i>
-          </a>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -191,16 +168,17 @@
 <!-- Logo Cloud -->
 <section>
     <!-- Container -->
-    <div class="tw-mx-auto tw-w-full tw-max-w-7xl tw-px-5 tw-py-16 md:tw-px-10 md:tw-py-20">
+    <div class="tw-mx-auto tw-w-full tw-max-w-7xl tw-px-5 tw-pb-16 md:tw-px-10 md:tw-pb-20">
       <!-- Title -->
       <h5 class="tw-mb-6 tw-text-center tw-text-xl tw-font-bold md:tw-mb-10 lg:tw-mb-12"> Real designs made by real people. Here's our tech stack: </h5>
       <!-- Component -->
-      <div class="tw-grid tw-grid-cols-2 tw-gap-8 sm:tw-grid-cols-3 sm:tw-gap-12 md:tw-grid-cols-5 md:tw-gap-6">
-        <img class="tw-mx-auto" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a948ffde6cf70_Microsoft%20Logo.svg" alt="" />
-        <img class="tw-mx-auto" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a94ae44e6cf75_PayPal%20Logo.svg" alt="" />
-        <img class="tw-mx-auto" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9467b4e6cf74_Google%20Logo.svg" alt="" />
-        <img class="tw-mx-auto" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a940c75e6cf67_Chase%20Logo.svg" alt="" />
-        <img class="tw-mx-auto" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a948d9ce6cf68_Walmart%20Logo.svg" alt="" />
+      <div class="tw-grid tw-grid-cols-2 tw-gap-8 sm:tw-grid-cols-3 sm:tw-gap-12 md:tw-grid-cols-6 md:tw-gap-6 tw-items-center">
+        <img class="tw-mx-auto tw-max-h-[150px] tw-filter tw-grayscale hover:tw-filter-none tw-transition-all tw-duration-300 tw-ease-in-out" src="{% static './assets/logos/tools/click-up-logo.png' %}" alt="Click Up Logo" />
+        <img class="tw-mx-auto tw-max-h-[150px] tw-filter tw-grayscale hover:tw-filter-none tw-transition-all tw-duration-300 tw-ease-in-out" src="{% static './assets/logos/tools/figma-logo.png' %}" alt="Figma Logo"/>
+        <img class="tw-mx-auto tw-max-h-[150px] tw-filter tw-grayscale hover:tw-filter-none tw-transition-all tw-duration-300 tw-ease-in-out" src="{% static './assets/logos/tools/django-logo.png' %}" alt="Django Logo" />
+        <img class="tw-mx-auto tw-max-h-[150px] tw-filter tw-grayscale hover:tw-filter-none tw-transition-all tw-duration-300 tw-ease-in-out" src="{% static './assets/logos/tools/python-logo.png' %}" alt="Python Logo" />
+        <img class="tw-mx-auto tw-max-h-[150px] tw-filter tw-grayscale hover:tw-filter-none tw-transition-all tw-duration-300 tw-ease-in-out" src="{% static './assets/logos/tools/web-dev-logo.png' %}" alt="Web Dev Logo" />
+        <img class="tw-mx-auto tw-max-h-[150px] tw-filter tw-grayscale hover:tw-filter-none tw-transition-all tw-duration-300 tw-ease-in-out" src="{% static './assets/logos/tools/digital-ocean-logo.png' %}" alt="Digital Ocean Logo" />
       </div>
     </div>
 </section>

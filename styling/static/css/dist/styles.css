@@ -1331,6 +1331,14 @@ input[type="range"]::-ms-fill-lower {
   max-height: 400px;
 }
 
+.tw-max-h-\[200px\] {
+  max-height: 200px;
+}
+
+.tw-max-h-\[150px\] {
+  max-height: 150px;
+}
+
 .tw-min-h-\[100vh\] {
   min-height: 100vh;
 }
@@ -2175,6 +2183,10 @@ input[type="range"]::-ms-fill-lower {
   padding-top: 12rem;
 }
 
+.tw-pb-16 {
+  padding-bottom: 4rem;
+}
+
 .tw-text-left {
   text-align: left;
 }
@@ -2361,8 +2373,17 @@ input[type="range"]::-ms-fill-lower {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.tw-grayscale {
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .tw-invert {
   --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.tw-filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -2504,6 +2525,10 @@ input[type="range"]::-ms-fill-lower {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:tw-filter-none:hover {
+  filter: none;
 }
 
 .hover\:tw-duration-150:hover {
@@ -2822,6 +2847,10 @@ input[type="range"]::-ms-fill-lower {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
+  .md\:tw-grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
   .md\:tw-flex-row {
     flex-direction: row;
   }
@@ -2910,6 +2939,10 @@ input[type="range"]::-ms-fill-lower {
 
   .md\:tw-pr-12 {
     padding-right: 3rem;
+  }
+
+  .md\:tw-pb-20 {
+    padding-bottom: 5rem;
   }
 
   .md\:tw-text-left {
