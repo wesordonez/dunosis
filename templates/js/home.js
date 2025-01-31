@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const animatedLine = document.querySelector(".animated-line");
 	const componentDiv = document.querySelector(".component-div");
 
-	function animateOnScroll() {
+	const animateOnScroll = function () {
 		const viewportHeight = window.innerHeight;
 		const componentPosition = componentDiv.getBoundingClientRect().top;
 		const componentBottomPosition = componentDiv.getBoundingClientRect().bottom;
@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			animatedLine.style.height = "0";
 			steps.forEach(step => step.classList.remove("active"));
 		}
-	}
+	};
 
 	window.addEventListener("scroll", animateOnScroll);
 	animateOnScroll(); // Initial check on page load
