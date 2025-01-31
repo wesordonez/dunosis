@@ -5,4 +5,8 @@
     },
     "prettier.configPath": ".vscode/.prettierrc.json",
     "markdown.extension.toc.updateOnSave": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
 }
