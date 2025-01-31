@@ -42,7 +42,7 @@ const contenidos = document.querySelectorAll(".contenido");
 const cards1 = document.querySelectorAll(".card1");
 const contenidos1 = document.querySelectorAll(".contenido1");
 
-// Add events to each card
+// Add events to each card on first row
 cards.forEach(card => {
 	card.addEventListener("mouseenter", () => {
 		// Remove hover from other cards
@@ -78,7 +78,7 @@ contenidos.forEach(contenido => {
 	});
 });
 
-// Add events to each card
+// Add events to each card on second row
 cards1.forEach(card1 => {
 	card1.addEventListener("mouseenter", () => {
 		// Remove hover from other cards
