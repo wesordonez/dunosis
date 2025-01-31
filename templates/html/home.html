@@ -5,287 +5,409 @@
 
 {% block content %}
 
-<!-- About Section -->
+<!-- Hero Section -->
 <section class="tw-flex tw-flex-col tw-w-full md:tw-min-h-screen tw-justify-center" id="hero-section">
 
-    <div class="tw-w-full tw-h-full tw-p-[4%] tw-flex tw-justify-around tw-items-center tw-gap-y-16 max-md:tw-flex-col">
-         
+	<div class="tw-w-full tw-h-full tw-p-[4%] tw-flex tw-justify-around tw-items-center tw-gap-y-16 max-md:tw-flex-col">
 
-        <!-- Imágenes de los extremos -->
+        <!-- Left Photos -->
         <div class="tw-gap-4 tw-place-content-center tw-place-items-center xl:tw-flex xl:tw-flex-row">
             <div class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] lg:tw-h-[700px] hover:tw-shadow-2xl tw-hidden md:tw-flex">
-                <img src="{% static './assets/images/home/chicago.jpg' %}" 
-                     alt="dashboard" class="tw-w-[300px] tw-h-full tw-object-cover">
+                <img src="{% static './assets/images/about/chicago.jpg' %}" alt="chicago" class="tw-w-[300px] tw-h-full tw-object-cover" />
             </div>
-            <div class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px]  hover:tw-shadow-2xl hover:tw-duration-150 tw-hidden xl:tw-flex">
-                <img src="{% static './assets/images/home/wesley.jpeg' %}" 
-                     alt="dashboard" class="tw-w-[200px] tw-h-full tw-object-cover">
+            <div class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px] hover:tw-shadow-2xl hover:tw-duration-150 tw-hidden xl:tw-flex">
+                <img src="{% static './assets/images/about/wesley.jpeg' %}" alt="dashboard" class="tw-w-[200px] tw-h-full tw-object-cover" />
             </div>
         </div>
 
+		<!-- Center Content -->
+		<div class="tw-flex tw-flex-col tw-items-center tw-max-w-[480px] tw-min-w-[300px] tw-mx-4">
+			<div class="tw-w-full tw-flex tw-flex-col tw-items-center">
+                <img src="{% static 'assets/logos/dunosis-logo-bg.png' %}" alt="Dunosis Logo" class="tw-mb-1">
+                <h1 class="tw-text-3xl max-md:tw-text-3xl max-sm:tw-text-2xl tw-font-light tw-text-center tw-lowercase">
+                  Where Knowledge Meets Power
+                </h1>
+              </div>
+              <div class="tw-flex tw-items-center tw-justify-center tw-mt-6">
+                <a href="#" class="tw-mr-6 tw-rounded-md tw-bg-black tw-px-8 tw-py-4 tw-text-center tw-font-semibold tw-text-white lg:tw-mr-8"> Get Started </a>
+                <a href="#" class="tw-flex tw-items-center tw-justify-center tw-rounded-md tw-border tw-border-solid tw-border-black tw-bg-white tw-px-6 tw-py-3 tw-font-bold">
+                  <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a94d411e6cf99_Vector%20(6).svg" alt="" class="tw-mr-2 tw-max-h-4 tw-w-5" />
+                  <p>Learn More</p>
+                </a>
+              </div>
+		</div>
 
-        <!-- Carrusel de imágenes para pantallas pequeñas -->
-        <div class="tw-flex space-x-16 tw-overflow-hidden tw-group md:tw-hidden ">
-            <div class="tw-flex tw-animate-loop-scroll tw-space-x-16 tw-h-[200px] tw-group-hover:paused">
-                <img src="{% static './assets/images/home/chicago.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/santacruz.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos1.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos2.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos3.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos4.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos5.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos1.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos2.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos3.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-            </div>
-            <div class="tw-flex tw-animate-loop-scroll tw-space-x-16 tw-h-[200px] tw-group-hover:paused" aria-hidden="true">
-                
-                <img src="{% static './assets/images/home/chicago.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/santacruz.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos1.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos2.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos3.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos4.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos5.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos1.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos2.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-                <img src="{% static './assets/images/home/Dunosis Stock Photos3.jpg' %}" alt="dashboard" class="tw-w-none tw-w-[80px] tw-object-cover">
-
-            </div>
-        </div>
-
-        <!-- Contenido Central -->
-        <div class="tw-flex tw-flex-col tw-items-center tw-max-w-[480px] tw-min-w-[300px] tw-mx-4">
-            
-            <h1 class="tw-text-4xl lg:tw-text-6xl tw-font-semibold tw-uppercase 
-                        tw-text-center tw-leading-normal max-md:tw-leading-tight">
-                Learn About Our Team And Our Business
-            </h1>
-            <p class="tw-mt-5 tw-text-center tw-px-2 tw-text-lg align-center md:tw-text-2lg">
-                Order now and don't forget to subscribe and don't forget to enter the email below to get a voucher right now. 🚀
-            </p>
-            <a href="https://github.com/PaulleDemon/Django-website-template" 
-                class="tw-rounded-full tw-mt-5 tw-px-6 tw-py-3 tw-bg-black tw-text-white tw-font-semibold tw-transition-transform tw-duration-300 tw-ease-in-out tw-flex tw-items-center tw-justify-center hover:tw-scale-110 hover:tw-shadow-xl">
-                    Contact Us Now!
-            </a>
-
-        </div>
-
-        <!-- Imágenes de los extremos -->
+        <!-- Right Photos -->
         <div class="tw-gap-4 tw-place-content-center tw-place-items-center xl:tw-flex xl:tw-flex-row">
-            <div class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px] hover:tw-shadow-2xl hover:tw-scale-105  hover:tw-duration-150  tw-hidden xl:tw-flex">
-                <img src="{% static './assets/images/home/tayo.jpeg' %}" 
-                     alt="dashboard" class="tw-w-[200px] tw-h-full tw-object-cover">
+            <div class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px] hover:tw-shadow-2xl hover:tw-scale-105 hover:tw-duration-150 tw-hidden xl:tw-flex">
+                <img src="{% static './assets/images/about/tayo.jpeg' %}" alt="dashboard" class="tw-w-[200px] tw-h-full tw-object-cover" />
             </div>
-            <div class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] lg:tw-h-[800px] hover:tw-shadow-2xl hover:tw-scale-105 tw-hidden md:tw-flex">
-                <img src="{% static './assets/images/home/santacruz.jpg' %}" 
-                     alt="dashboard" class="tw-w-[300px] tw-h-full tw-object-cover">
+            <div class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] lg:tw-h-[700px] hover:tw-shadow-2xl hover:tw-scale-105 tw-hidden md:tw-flex">
+                <img src="{% static './assets/images/about/santacruz.jpg' %}" alt="dashboard" class="tw-w-[300px] tw-h-full tw-object-cover" />
             </div>
         </div>
         
-
-
-    </div>
-
+	</div>
 </section>
 
+<!-- Service Overview Hero Section -->
+<section>
+  <!-- Container -->
+  <div class="tw-mx-auto tw-w-full tw-max-w-7xl tw-px-5 tw-py-16 md:tw-px-10 md:tw-py-20">
+    <!-- Title -->
+    <h2 class="tw-items-center tw-text-center tw-text-3xl tw-font-bold md:tw-text-5xl"> Solutions Tailored for Your Success </h2>
+    <p class="tw-mx-auto tw-mb-2 tw-mt-4 tw-max-w-lg tw-text-center tw-text-sm tw-text-gray-500 sm:tw-text-base md:tw-mb-12"> Custom-built strategies, cutting-edge technology, and expert guidance—all in one place. </p>
+    <!-- List -->
+    <div class="tw-flex tw-flex-col tw-max-w-7xl tw-mx-auto tw-py-2 tw-px-4 tw-gap-6">
+      <div class="card-row tw-flex tw-flex-col md:tw-flex-row md:tw-max-h-[450px] tw-gap-6">
 
-
-<!-- Who are we section -->
-<section class="tw-w-full md:tw-min-h-screen tw-justify-center tw-flex tw-flex-col">
-
-    <!-- Barra roja -->
-    <div class="tw-absolute tw-left-0 tw-h-full tw-w-5 tw-bg-red-700 tw-hidden md:tw-block"></div>
-    
-
-    <div class="tw-items-start tw-gap-3 tw-text-left tw-p-20 tw-px-20">
-        <!-- header -->
-        <h3 class="tw-text-xl md:tw-text-3xl tw-font-bold">Who Are We?</h3>
-        
-        <div class="tw-items-start tw-flex tw-flex-col md:tw-flex-row tw-w-full tw-justify-between tw-gap-y-8 tw-mb-28">
-            <h2 class="tw-text-3xl md:tw-text-5xl tw-font-bold">
-                Meet Our Professional <br> Team Members
-            </h2>
-            <div class="tw-flex tw-items-center tw-gap-2 tw-group tw-ml-auto">
-                <a href="https://github.com/PaulleDemon/Django-website-template" 
-                    class="btn tw-rounded-full tw-flex tw-items-center tw-gap-2 tw-h-14 tw-px-6 group-hover:tw-bg-red-700 group-hover:tw-text-white">
-                    VIEW ALL MEMBERS
-                </a>
-                <a href="https://github.com/PaulleDemon/Django-website-template" 
-                    class="tw-rounded-full tw-h-14 tw-w-14 tw-flex tw-items-center tw-justify-center tw-bg-black tw-text-white group-hover:tw-bg-red-700 group-hover:tw-text-white">
-                    <i class="bi bi-arrow-up-right"></i>
-                </a>
+        <!-- Web Development -->
+        <div class="card tw-flex-col md:tw-flex-row tw-bg-white tw-rounded-2xl tw-shadow-md tw-border-2 hover:tw-border-green-500 tw-flex tw-transition-all tw-duration-300">
+          <div class="contenido tw-w-full tw-order-2 md:tw-order-1">
+            <div class="tw-flex tw-flex-col tw-h-full tw-w-full tw-p-5 tw-gap-2">
+              <h3 class="tw-text-2xl tw-font-bold">Web Development</h3>
+              <p class="tw-text-md tw-font-light tw-text-gray-700 tw-mt-2">
+                Modern, high-performance websites built to impress and convert. We craft sleek, responsive, and user-friendly sites tailored to your business needs.
+              </p>
+              <div class="tw-mt-auto tw-flex tw-w-full tw-justify-between tw-items-center">
+                <button class="tw-w-8 tw-text-green-500 tw-text-lg tw-rounded-full tw-border-2 tw-border-green-500 hover:tw-bg-green-500 hover:tw-text-white tw-transition-colors tw-duration-300">
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+                <span class="tw-text-5xl tw-font-bold tw-right-4 tw-opacity-20" style="color: white; -webkit-text-stroke: 2px green;">01</span>
+              </div>
             </div>
+          </div>
+          <div class="image-container tw-w-full md:tw-w-[50%] md:tw-block tw-order-1 md:tw-order-2">
+            <div class="tw-right-0 tw-top-0 tw-w-full md:tw-h-full">
+              <img src="{% static './assets/images/home/du-webdev-stock.jpg' %}" alt="Web Development" class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
+            </div>
+          </div>
         </div>
-        <!-- images -->
-        <div class="tw-flex tw-flex-col md:tw-flex-row tw-w-full tw-justify-center tw-items-center tw-gap-10 tw-gap-y-28 tw-px-10 tw-mt-24">
-            <!-- card template -->
-            <div class="tw-bg-red-500 tw-w-[200px] tw-h-[200px] md:tw-w-[300px] md:tw-h-[200px] lg:tw-w-[400px] lg:tw-h-[300px] tw-p-10 tw-rounded-[4rem] tw-relative
-             hover:tw-scale-105 hover:-tw-translate-y-9 xl:tw-opacity-[70%] hover:tw-opacity-100 hover:tw-shadow-[0_-15px_0_rgba(172,5,5,0.5)]">
-                <img src="{% static './assets/images/home/Wesley-transparent.png' %}" alt="profile" 
-                class="tw-w-48 md:tw-w-64 tw-absolute -tw-top-5 tw-left-1/2 tw-transform -tw-translate-x-1/2 -tw-translate-y-[30%] tw-duration-500">
-                <div class="tw-absolute tw-bg-white tw-p-4 tw-text-center tw-rounded-2xl lg:tw-rounded-full tw-top-[70%] tw-shadow-lg tw-w-[100%] lg:tw-w-[90%] tw-left-1/2 tw-transform -tw-translate-x-1/2">
-                    <h3 class="tw-text-xl tw-font-bold">Wesley Ordoñez</h3>
-                    <h4 class="tw-text-md">Lead Developer</h4>
-                </div>
+
+        <!-- Social Media -->
+        <div class="card tw-flex-col md:tw-flex-row tw-bg-white tw-rounded-2xl tw-shadow-md tw-border-2 hover:tw-border-green-500 tw-flex tw-transition-all tw-duration-300">
+          <div class="contenido tw-w-full tw-order-2 md:tw-order-1">
+            <div class="tw-flex tw-flex-col tw-h-full tw-w-full tw-p-5 tw-gap-2">
+              <h3 class="tw-text-2xl tw-font-bold">Social Media</h3>
+              <p class="tw-text-md tw-font-light tw-text-gray-700 tw-mt-2">
+                Stand out with compelling content. We create, manage, and optimize your online presence to keep your audience engaged.
+              </p>
+              <div class="tw-mt-auto tw-flex tw-w-full tw-justify-between tw-items-center">
+                <button class="tw-w-8 tw-text-green-500 tw-text-lg tw-rounded-full tw-border-2 tw-border-green-500 hover:tw-bg-green-500 hover:tw-text-white tw-transition-colors tw-duration-300">
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+                <span class="tw-text-5xl tw-font-bold tw-right-4 tw-opacity-20" style="color: white; -webkit-text-stroke: 2px green;">02</span>
+              </div>
             </div>
-            
-            <div class="tw-bg-yellow-500 tw-w-[200px] tw-h-[200px] md:tw-w-[300px] md:tw-h-[200px] lg:tw-w-[400px] lg:tw-h-[300px] tw-p-10 tw-rounded-[4rem] tw-relative
-             hover:tw-scale-105 hover:-tw-translate-y-9 xl:tw-opacity-[70%] hover:tw-opacity-100 hover:tw-shadow-[0_-15px_0_rgba(255,215,0,0.5)]">
-                <img src="{% static './assets/images/home/Tayo-transparent.png' %}" alt="profile" 
-                class="tw-w-48 md:tw-w-64 tw-absolute -tw-top-5 tw-left-1/2 tw-transform -tw-translate-x-1/2 -tw-translate-y-[30%] tw-duration-500">
-                <div class="tw-absolute tw-bg-white tw-p-4 tw-text-center tw-rounded-2xl lg:tw-rounded-full tw-top-[70%] tw-shadow-lg tw-w-[100%] lg:tw-w-[90%] tw-left-1/2 tw-transform -tw-translate-x-1/2">
-                    <h3 class="tw-text-xl tw-font-bold">Tayo Zabala</h3>
-                    <h4 class="tw-text-md">Marketing</h4>
-                </div>
+          </div>
+          <div class="image-container tw-w-full md:tw-w-[50%] md:tw-hidden tw-order-1 md:tw-order-2">
+            <div class="tw-right-0 tw-top-0 tw-w-full md:tw-h-full">
+              <img src="{% static './assets/images/home/du-socialmedia-stock.jpg' %}" alt="Social Media" class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
             </div>
-    
-            <div class="tw-bg-green-500 tw-w-[200px] tw-h-[200px] md:tw-w-[300px] md:tw-h-[200px] lg:tw-w-[400px] lg:tw-h-[300px] tw-p-10 tw-rounded-[4rem] tw-relative
-             hover:tw-scale-105 hover:-tw-translate-y-9 xl:tw-opacity-[70%] hover:tw-opacity-100 hover:tw-shadow-[0_-15px_0_rgba(31,198,0,0.5)]">
-                <img src="{% static './assets/images/home/Timo-transparent.png' %}" alt="profile" 
-                class="tw-w-48 md:tw-w-64 tw-absolute -tw-top-5 tw-left-1/2 tw-transform -tw-translate-x-1/2 -tw-translate-y-[30%] tw-duration-500">
-                <div class="tw-absolute tw-bg-white tw-p-4 tw-text-center tw-rounded-2xl lg:tw-rounded-full tw-top-[70%] tw-shadow-lg tw-w-[100%] lg:tw-w-[90%] tw-left-1/2 tw-transform -tw-translate-x-1/2">
-                    <h3 class="tw-text-xl tw-font-bold">Timo Ordoñez</h3>
-                    <h4 class="tw-text-md">Sales</h4>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="card-row tw-flex tw-flex-col md:tw-flex-row md:tw-max-h-[450px] tw-gap-6">
+
+        <!-- Marketing & Strategy -->
+        <div class="card tw-flex-col md:tw-flex-row tw-bg-white tw-rounded-2xl tw-shadow-md tw-border-2 hover:tw-border-green-500 tw-flex tw-transition-all tw-duration-300">
+          <div class="contenido tw-w-full tw-order-2 md:tw-order-1">
+            <div class="tw-flex tw-flex-col tw-h-full tw-w-full tw-p-5 tw-gap-2">
+              <h3 class="tw-text-2xl tw-font-bold">Marketing & Strategy</h3>
+              <p class="tw-text-md tw-font-light tw-text-gray-700 tw-mt-2">
+                Smart strategies that drive real results. From brand positioning to targeted campaigns, we help you attract, engage, and convert your ideal customers.
+              </p>
+              <div class="tw-mt-auto tw-flex tw-w-full tw-justify-between tw-items-center">
+                <button class="tw-w-8 tw-text-green-500 tw-text-lg tw-rounded-full tw-border-2 tw-border-green-500 hover:tw-bg-green-500 hover:tw-text-white tw-transition-colors tw-duration-300">
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+                <span class="tw-text-5xl tw-font-bold tw-right-4 tw-opacity-20" style="color: white; -webkit-text-stroke: 2px green;">03</span>
+              </div>
+            </div>
+          </div>
+          <div class="image-container tw-w-full md:tw-w-[50%] md:tw-hidden tw-order-1 md:tw-order-2">
+            <div class="tw-right-0 tw-top-0 tw-w-full md:tw-h-full">
+              <img src="{% static './assets/images/home/du-marketing-stock.jpg' %}" alt="Marketing & Strategy" class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
+            </div>
+          </div>
+        </div>
+
+        <!-- Consulting -->
+        <div class="card tw-flex-col md:tw-flex-row tw-bg-white tw-rounded-2xl tw-shadow-md tw-border-2 hover:tw-border-green-500 tw-flex tw-transition-all tw-duration-300">
+          <div class="contenido tw-w-full tw-order-2 md:tw-order-1">
+            <div class="tw-flex tw-flex-col tw-h-full tw-w-full tw-p-5 tw-gap-2">
+              <h3 class="tw-text-2xl tw-font-bold">Consulting</h3>
+              <p class="tw-text-md tw-font-light tw-text-gray-700 tw-mt-2">
+                Expert insights to navigate the digital world. We provide tailored solutions in strategy, tech, and business growth to set you up for success.
+              </p>
+              <div class="tw-mt-auto tw-flex tw-w-full tw-justify-between tw-items-center">
+                <button class="tw-w-8 tw-text-green-500 tw-text-lg tw-rounded-full tw-border-2 tw-border-green-500 hover:tw-bg-green-500 hover:tw-text-white tw-transition-colors tw-duration-300">
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+                <span class="tw-text-5xl tw-font-bold tw-right-4 tw-opacity-20" style="color: white; -webkit-text-stroke: 2px green;">04</span>
+              </div>
+            </div>
+          </div>
+          <div class="image-container tw-w-full md:tw-w-[50%] md:tw-block tw-order-1 md:tw-order-2">
+            <div class="tw-right-0 tw-top-0 tw-w-full md:tw-h-full">
+              <img src="{% static './assets/images/home/du-consulting-stock.jpg' %}" alt="Consulting" class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pre Footer CTA -->
+      {% include 'components/pre-footer-cta.html' with title="Pricing" %} 
+
     </div>
-
+  </div>
 </section>
 
-
-
-
-<!-- Our Working Process -->
-<section class="tw-w-full md:tw-min-h-screen tw-justify-center tw-flex tw-flex-col">
-
-    <!-- Barra amarillo -->
-    <div class="tw-absolute tw-left-0 tw-h-full tw-w-5 tw-bg-yellow-500 tw-hidden md:tw-block"></div>
-    <div class="tw-flex tw-w-full tw-items-center tw-justify-center">
-
-            <img src="{% static './assets/images/home/workinprocess.png' %}" alt="profile" 
-            class="tw-w-full">  
-            
+<!-- Logo Cloud -->
+<section>
+    <!-- Container -->
+    <div class="tw-mx-auto tw-w-full tw-max-w-7xl tw-px-5 tw-pb-16 md:tw-px-10 md:tw-pb-20">
+      <!-- Title -->
+      <h5 class="tw-mb-6 tw-text-center tw-text-xl tw-font-bold md:tw-mb-10 lg:tw-mb-12"> Real designs made by real people. Here's our tech stack: </h5>
+      <!-- Component -->
+      <div class="tw-grid tw-grid-cols-2 tw-gap-8 sm:tw-grid-cols-3 sm:tw-gap-12 md:tw-grid-cols-6 md:tw-gap-6 tw-items-center">
+        <img class="tw-mx-auto tw-max-h-[150px] tw-filter tw-grayscale hover:tw-filter-none tw-transition-all tw-duration-300 tw-ease-in-out" src="{% static './assets/logos/tools/click-up-logo.png' %}" alt="Click Up Logo" />
+        <img class="tw-mx-auto tw-max-h-[150px] tw-filter tw-grayscale hover:tw-filter-none tw-transition-all tw-duration-300 tw-ease-in-out" src="{% static './assets/logos/tools/figma-logo.png' %}" alt="Figma Logo"/>
+        <img class="tw-mx-auto tw-max-h-[150px] tw-filter tw-grayscale hover:tw-filter-none tw-transition-all tw-duration-300 tw-ease-in-out" src="{% static './assets/logos/tools/django-logo.png' %}" alt="Django Logo" />
+        <img class="tw-mx-auto tw-max-h-[150px] tw-filter tw-grayscale hover:tw-filter-none tw-transition-all tw-duration-300 tw-ease-in-out" src="{% static './assets/logos/tools/python-logo.png' %}" alt="Python Logo" />
+        <img class="tw-mx-auto tw-max-h-[150px] tw-filter tw-grayscale hover:tw-filter-none tw-transition-all tw-duration-300 tw-ease-in-out" src="{% static './assets/logos/tools/web-dev-logo.png' %}" alt="Web Dev Logo" />
+        <img class="tw-mx-auto tw-max-h-[150px] tw-filter tw-grayscale hover:tw-filter-none tw-transition-all tw-duration-300 tw-ease-in-out" src="{% static './assets/logos/tools/digital-ocean-logo.png' %}" alt="Digital Ocean Logo" />
+      </div>
     </div>
-
 </section>
 
-<!-- WHY CHOOSE US -->
-<section class="tw-w-full md:tw-min-h-screen tw-justify-center tw-flex tw-flex-col">
-
-    <!-- Barra verde -->
-    <div class="tw-absolute tw-left-0 tw-h-full tw-w-5 tw-bg-green-700 tw-hidden md:tw-block"></div>
-
-    <!-- Contenedor de contenido -->
-    <div class="tw-flex tw-flex-col lg:tw-flex-row tw-w-full tw-h-full tw-px-14 tw-py-14 md:tw-px-28 tw-justify-center align-items-center">
-        <div class="tw-flex tw-flex-col tw-items-center tw-w-full lg:tw-w-[50%] lg:tw-mx-24 tw-mb-10">
-            <h2 class="tw-text-3xl md:tw-text-5xl tw-font-bold tw-mb-8">
-                WHY CHOOSE US
-            </h2>
-            <p class="tw-text-xl md:tw-text-2xl tw-mb-8 tw-text-center md:tw-text-left">
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
-            </p>
-            
-            <!-- Características -->
-            <div class="tw-w-full tw-flex tw-flex-col tw-justify-center tw-gap-4">
-                <div class="tw-flex tw-flex-col md:tw-flex-row tw-gap-8">
-                    <!-- Feature 1 -->
-                    <div class="tw-flex tw-items-center tw-gap-4 tw-w-full md:tw-w-1/2 tw-m-4">
-                        <img src="{% static './assets/images/home/growth.png' %}" alt="Business Growth Icon" class="tw-bg-white tw-shadow-xl tw-p-4 tw-rounded-xl tw-w-20">
-                        <h2 class="tw-text-2xl">Business Growth</h2>
-                    </div>
-                    <!-- Feature 2 -->
-                    <div class="tw-flex tw-items-center tw-gap-4 tw-w-full md:tw-w-1/2 tw-m-4">
-                        <img src="{% static './assets/images/home/growth.png' %}" alt="Technology Consultancy Icon" class="tw-bg-white tw-shadow-xl tw-p-4 tw-rounded-xl tw-w-20">
-                        <h2 class="tw-text-2xl">Technology Consultancy</h2>
-                    </div>
-
-                </div>
-                <div class="tw-flex tw-flex-col md:tw-flex-row tw-gap-8">
-                    <!-- Feature 3 -->
-                    <div class="tw-flex tw-items-center tw-gap-4 tw-w-full md:tw-w-1/2 tw-m-4">
-                        <img src="{% static './assets/images/home/growth.png' %}" alt="Innovation Solutions Icon" class="tw-bg-white tw-shadow-xl tw-p-4 tw-rounded-xl tw-w-20">
-                        <h2 class="tw-text-2xl">Innovation Solutions</h2>
-                    </div>
-                    <!-- Feature 4 -->
-                    <div class="tw-flex tw-items-center tw-gap-4 tw-w-full md:tw-w-1/2 tw-m-4">
-                        <img src="{% static './assets/images/home/growth.png' %}" alt="Customer Support Icon" class="tw-bg-white tw-shadow-xl tw-p-4 tw-rounded-xl tw-w-20">
-                        <h2 class="tw-text-2xl">Customer Support</h2>
-                    </div>
-
-                </div>
+<!-- How it Works -->
+<section>
+    <!-- Container -->
+    <div class="tw-mx-auto tw-w-full tw-max-w-7xl tw-px-5 tw-py-12 md:tw-px-10 md:tw-py-16 lg:tw-py-20">
+    <!-- Title -->
+    <h2 class="tw-items-center tw-text-center tw-text-3xl tw-font-bold md:tw-text-5xl"> So, How's it Work? </h2>
+    <p class="tw-mx-auto tw-mb-2 tw-mt-4 tw-max-w-lg tw-text-center tw-text-sm tw-text-gray-500 sm:tw-text-base md:tw-mb-12"> Your Idea, Our Expertise — Built for You, Owned by You </p>
+      <!-- Component -->
+      <div class="component-div tw-flex tw-flex-col tw-items-center">
+        <!-- Items -->
+        <div class="tw-relative">
+          <div class="animated-line tw-absolute tw-w-1 md:tw-w-2 tw-bg-black tw-left-1/2"></div>
+          <!-- Step 1 -->
+          <div class="step tw-mb-20 tw-mt-20 tw-flex tw-items-center tw-w-full">
+            <div class="tw-w-1/2 tw-text-right tw-pr-5 md:tw-pr-12">
+              <div class="tw-inline-block tw-bg-gray-100 tw-px-4 tw-py-2 tw-rounded-lg">
+                <h5 class="tw-text-lg md:tw-text-2xl tw-font-semibold">Step 1</h5>
+              </div>
             </div>
-            
-            
-        </div>
-
-
-
-        <!-- Imagen con fondo cuadrado rojo -->
-        <div class="tw-relative tw-flex tw-w-full md:tw-w-1/2 tw-justify-center tw-self-center">
-            <!-- Fondo cuadrado rojo -->
-            <div class="tw-absolute tw-top-1/2 tw-left-1/2 tw-w-[320px] tw-h-[320px] lg:tw-w-[400px] lg:tw-h-[400px] 
-                tw-bg-gradient-to-t tw-from-red-600 tw-via-yellow-600 tw-to-transparent tw-rounded-3xl tw-rounded-tl-[350px] tw-transform tw--translate-x-1/2 tw--translate-y-[55%]">
+            <div class="step-ball tw-w-4 tw-h-4 md:tw-w-5 md:tw-h-5 tw-rounded-full tw-bg-gray-400"></div>
+            <div class="tw-w-1/2 tw-pl-5 md:tw-pl-12">
+              <svg class="tw-mb-4" width="20" height="31" viewBox="0 0 20 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.9848 9.10266..." fill="black" />
+                <path d="M4.87632 14.9834..." fill="white" stroke="black" />
+              </svg>
+              <h6 class="tw-text-md md:tw-text-xl tw-font-semibold tw-mb-3"> Connect & Discover </h6>
+              <p class="tw-text-gray-500"> We start by understanding your needs. Whether it’s a website, marketing strategy, or consulting, we’ll discuss your goals, challenges, and vision to ensure we’re aligned from the start. </p>
             </div>
-            <img src="{% static './assets/images/home/womanusinglaptop.png' %}" alt="profile" class="tw-max-w-[500px] tw-z-10 xl:w-[300px]">
+          </div>
+          <!-- Step 2 -->
+          <div class="step tw-mb-20 tw-mt-20 tw-flex tw-items-center tw-w-full">
+            <div class="tw-w-1/2 tw-text-right tw-pr-5 md:tw-pr-12">
+              <div class="tw-inline-block tw-bg-gray-100 tw-px-4 tw-py-2 tw-rounded-lg">
+                <h5 class="tw-text-lg md:tw-text-2xl tw-font-semibold">Step 2</h5>
+              </div>
+            </div>
+            <div class="step-ball tw-w-4 tw-h-4 md:tw-w-5 md:tw-h-5 tw-rounded-full tw-bg-gray-400"></div>
+            <div class="tw-w-1/2 tw-pl-5 md:tw-pl-12">
+              <svg class="tw-mb-4" width="20" height="31" viewBox="0 0 20 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.9848 9.10266..." fill="black" />
+                <path d="M4.87632 14.9834..." fill="white" stroke="black" />
+              </svg>
+              <h6 class="tw-text-md md:tw-text-xl tw-font-semibold tw-mb-3"> Plan & Build </h6>
+              <p class="tw-text-gray-500"> Once we’ve defined the scope, we get to work! We craft tailored solutions—whether designing, developing, strategizing, or optimizing—to meet your unique business needs. </p>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div class="step tw-mb-20 tw-mt-20 tw-flex tw-items-center tw-w-full">
+            <div class="tw-w-1/2 tw-text-right tw-pr-5 md:tw-pr-12">
+              <div class="tw-inline-block tw-bg-gray-100 tw-px-4 tw-py-2 tw-rounded-lg">
+                <h5 class="tw-text-lg md:tw-text-2xl tw-font-semibold">Step 3</h5>
+              </div>
+            </div>
+            <div class="step-ball tw-w-4 tw-h-4 md:tw-w-5 md:tw-h-5 tw-rounded-full tw-bg-gray-400"></div>
+            <div class="tw-w-1/2 tw-pl-5 md:tw-pl-12">
+              <svg class="tw-mb-4" width="20" height="31" viewBox="0 0 20 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.9848 9.10266..." fill="black" />
+                <path d="M4.87632 14.9834..." fill="white" stroke="black" />
+              </svg>
+              <h6 class="tw-text-md md:tw-text-xl tw-font-semibold tw-mb-3"> Deliver & Empower </h6>
+              <p class="tw-text-gray-500"> Your project is ready! We ensure a seamless handoff, providing all necessary access, documentation, and support so you have full ownership and the confidence to move forward. </p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-
-    
+</section>
+ 
+<!-- Pricing Overview Section -->
+<section>
+  <!-- Container -->
+  <div class="tw-mx-auto tw-max-w-7xl tw-px-5 tw-py-16 md:tw-px-10 md:tw-py-20">
+    <!-- Heading Container -->
+    <div class="tw-mx-auto tw-mb-8 tw-max-w-3xl tw-text-center md:tw-mb-12">
+      <!-- Heading -->
+      <h2 class="tw-text-3xl tw-font-bold md:tw-text-5xl"> Tailored Pricing for Ambition. </h2>
+      <!-- Subheading -->
+      <p class="tw-mx-auto tw-mt-4 tw-max-w-xl tw-text-sm tw-text-gray-500 md:tw-text-base"> Choose from our dynamic pricing plans, crafted to fit businesses of diverse scales and domains. Experience value, results, and a satisfying return on investment. </p>
+    </div>
+    <!-- Select Price Type -->
+    <div class="tw-relative tw-mx-auto tw-mb-8 tw-flex tw-w-fit tw-cursor-pointer tw-rounded-xl tw-bg-gray-100 md:tw-mb-12">
+      <div class="tw-relative tw-z-10 tw-px-10 tw-py-4 option" data-type="one-time">
+        <p class="tw-text-sm tw-font-semibold sm:tw-text-base"> One-Time </p>
+      </div>
+      <div class="tw-relative tw-z-10 tw-px-10 tw-py-4 option" data-type="monthly">
+        <p class="tw-text-sm tw-font-semibold sm:tw-text-base"> Monthly </p>
+      </div>
+      <div class="tw-absolute tw-left-2 tw-top-[6px] tw-z-0 tw-h-4/5 tw-w-[45%] tw-rounded-md tw-bg-black tw-transition-all tw-duration-300 slider"></div>
+    </div>
+    <!-- Prices Container -->
+    <div class="tw-grid tw-grid-cols-1 tw-gap-8 sm:tw-grid-cols-2 md:tw-grid-cols-3 md:tw-gap-4">
+      <!-- Price Web Development -->
+      <div class="tw-mx-auto tw-w-full tw-max-w-md tw-rounded-2xl tw-border tw-border-gray-300 tw-bg-white tw-shadow-xl tw-px-8 tw-py-14 price" data-one-time="$500" data-monthly="$100">
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <p class="tw-text-3xl tw-font-bold sm:tw-text-2xl md:tw-text-3xl"> Web Development </p>
+          <p class="tw-text-xl tw-text-gray-500">Starting at:</p>
+          <h2 class="tw-flex tw-items-center tw-text-4xl tw-font-bold md:tw-text-5xl"> <span class="price-amount"> $100</span><span class="tw-text-sm tw-text-gray-500 price-period">/MO</span>
+          </h2>
+        </div>
+        <a href="#" class="tw-mb-4 tw-mt-12 tw-inline-block tw-w-full tw-rounded-md tw-border-black tw-bg-black tw-px-6 tw-py-3 tw-text-center tw-font-semibold tw-text-white hover:tw-bg-white hover:tw-text-black hover:tw-border-2 hover:tw-border-black tw-transition-colors tw-duration-300"> Learn more! </a>
+      </div>
+      <!-- Price Marketing -->
+      <div class="tw-mx-auto tw-w-full tw-max-w-md tw-rounded-2xl tw-border tw-border-gray-300 tw-bg-white tw-shadow-xl tw-px-8 tw-py-14 price" data-one-time="$650" data-monthly="$450">
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <p class="tw-text-3xl tw-font-bold sm:tw-text-2xl md:tw-text-3xl"> Marketing </p>
+          <p class="tw-text-xl tw-text-gray-500">Starting at:</p>
+          <h2 class="tw-flex tw-items-center tw-text-4xl tw-font-bold md:tw-text-5xl"> <span class="price-amount"> $450</span><span class="tw-text-sm tw-text-gray-500 price-period">/MO</span>
+          </h2>
+        </div>
+        <a href="#" class="tw-mb-4 tw-mt-12 tw-inline-block tw-w-full tw-rounded-md tw-border-black tw-bg-black tw-px-6 tw-py-3 tw-text-center tw-font-semibold tw-text-white hover:tw-bg-white hover:tw-text-black hover:tw-border-2 hover:tw-border-black tw-transition-colors tw-duration-300"> Learn more! </a>
+      </div>
+      <!-- Price Consulting -->
+      <div class="tw-mx-auto tw-w-full tw-max-w-md tw-rounded-2xl tw-border tw-border-gray-300 tw-bg-white tw-shadow-xl tw-px-8 tw-py-14 price" data-one-time="$750" data-monthly="$50">
+        <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
+          <p class="tw-text-3xl tw-font-bold sm:tw-text-2xl md:tw-text-3xl">Consulting</p>
+          <p class="tw-text-xl tw-text-gray-500">Starting at:</p>
+          <h2 class="tw-flex tw-items-center tw-text-4xl tw-font-bold md:tw-text-5xl"><span class="price-amount"> $150</span><span class="tw-text-sm tw-text-gray-500 price-period">/HR</span>
+          </h2>
+        </div>
+        <a href="#" class="tw-mb-4 tw-mt-12 tw-inline-block tw-w-full tw-rounded-md tw-border-black tw-bg-black tw-px-6 tw-py-3 tw-text-center tw-font-semibold tw-text-white hover:tw-bg-white hover:tw-text-black hover:tw-border-2 hover:tw-border-black tw-transition-colors tw-duration-300"> Learn more! </a>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-
-
-
-<section class="tw-w-full tw-flex tw-flex-col md:tw-flex-row tw-items-center tw-justify-center tw-gap-10 tw-px-10 md:tw-px-16 tw-bg-blue-700 tw-overflow-hidden">
-    <div class="tw-flex tw-flex-col tw-items-center tw-gap-4 tw-mt-16 tw-mb-16">
-        <h3 class="tw-text-4xl md:tw-text-6xl tw-font-semibold tw-text-center tw-text-white">
-            YOUR BUSINESS DESERVES MORE, <br> LET'S MAKE IT HAPPEN!
-        </h3>
-        <h3 class="tw-text-xl md:tw-text-3xl tw-text-center tw-text-white">
-            Get Started Quickly And Easily With A FREE Consultation
-        </h3>
-        <a class="tw-px-14 tw-py-4 tw-mt-4 tw-rounded-full tw-text-xl md:tw-text-2xl tw-font-semibold tw-text-black tw-bg-white hover:tw-scale-105 tw-transition-transform tw-duration-300 tw-mb-8"
-           href="https://github.com/PaulleDemon/Django-website-template">
-            LEARN MORE!
-        </a>
-        <div class="tw-flex tw-gap-4 tw-text-3xl">
-            <a href="https://www.facebook.com/profile.php?id=61565984502377" aria-label="Facebook" class="tw-text-blue-700 tw-bg-white tw-h-14 tw-w-14 md:tw-h-16 md:tw-w-16 tw-rounded-full tw-flex tw-items-center tw-justify-center hover:tw-scale-125 tw-transition-transform tw-duration-300 tw-mb-8 hover:tw-text-white hover:tw-bg-blue-700">
-                <i class="bi bi-facebook tw-text-4xl"></i>
-            </a>
-            <a href="https://instagram.com/dunosis.usa" aria-label="Instagram" class="tw-text-blue-700 tw-bg-white tw-h-14 tw-w-14 md:tw-h-16 md:tw-w-16 tw-rounded-full tw-flex tw-items-center tw-justify-center hover:tw-scale-125 tw-transition-transform tw-duration-300 tw-mb-8 hover:tw-text-white hover:tw-bg-blue-700">
-                <i class="bi bi-instagram tw-text-4xl"></i>
-            </a>
-            <a href="https://wa.me/17732022074" aria-label="WhatsApp" class="tw-text-blue-700 tw-bg-white tw-h-14 tw-w-14 md:tw-h-16 md:tw-w-16 tw-rounded-full tw-flex tw-items-center tw-justify-center hover:tw-scale-125 tw-transition-transform tw-duration-300 tw-mb-8 hover:tw-text-white hover:tw-bg-blue-700">
-                <i class="bi bi-whatsapp tw-text-4xl"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/104785338/" aria-label="LinkedIn" class="tw-text-blue-700 tw-bg-white tw-h-14 tw-w-14 md:tw-h-16 md:tw-w-16 tw-rounded-full tw-flex tw-items-center tw-justify-center hover:tw-scale-125 tw-transition-transform tw-duration-300 tw-mb-8 hover:tw-text-white hover:tw-bg-blue-700">
-                <i class="bi bi-linkedin tw-text-4xl"></i>
-            </a>
-        </div>
+<!-- Facts Section -->
+<section class="tw-bg-purple-800">
+  <!-- Container -->
+  <div class="tw-mx-auto tw-w-full tw-max-w-7xl tw-px-5 tw-py-16 md:tw-px-10 md:tw-py-20 tw-text-white">
+    <!-- Title -->
+    <h2 class="tw-mb-8 tw-text-center tw-text-4xl tw-font-bold md:tw-mb-12 md:tw-text-5xl lg:tw-mb-16"> We get results. Here's the proof. </h2>
+    <!-- Content -->
+    <div class="tw-grid tw-gap-5 sm:tw-grid-cols-2 md:tw-grid-cols-3 md:tw-gap-4 lg:tw-gap-6">
+      <!-- Item -->
+      <div class="tw-relative tw-p-8 md:tw-p-10">
+        <h3 class="tw-mb-4 tw-text-3xl tw-font-bold md:tw-text-5xl">1.5M</h3>
+        <p class="tw-text-xl tw-font-light"> Lorem ipsum dolor sit amet, &nbsp;elit ut aliquam, purus sit amet luctus venenatis elit ut aliquam, purus sit amet luctus </p>
+        <div class="tw-absolute tw-right-0 tw-top-[29%] tw-hidden tw-h-2/5 tw-border-r tw-border-gray-300 md:tw-block"></div>
+      </div>
+      <!-- Item -->
+      <div class="tw-relative tw-p-8 md:tw-p-10">
+        <h3 class="tw-mb-4 tw-text-3xl tw-font-bold md:tw-text-5xl">41%</h3>
+        <p class="tw-text-xl tw-font-light"> Lorem ipsum dolor sit amet, &nbsp;elit ut aliquam, purus sit amet luctus venenatis elit ut aliquam, purus sit amet luctus </p>
+        <div class="tw-absolute tw-right-0 tw-top-[29%] tw-hidden tw-h-2/5 tw-border-r tw-border-gray-300 md:tw-block"></div>
+      </div>
+      <!-- Item -->
+      <div class="tw-p-8 md:tw-p-10">
+        <h3 class="tw-mb-4 tw-text-3xl tw-font-bold md:tw-text-5xl">3657+</h3>
+        <p class="tw-text-xl tw-font-light"> Lorem ipsum dolor sit amet, &nbsp;elit ut aliquam, purus sit amet luctus venenatis elit ut aliquam, purus sit amet luctus </p>
+      </div>
     </div>
+  </div>
 </section>
+
+<!-- Testimonials Section -->
+<section class="tw-block">
+  <!-- Container -->
+  <div class="tw-mx-auto tw-w-full tw-max-w-7xl tw-px-5 tw-py-16 md:tw-px-10 md:tw-py-20">
+    <!-- Heading -->
+    <h2 class="tw-mx-auto tw-mb-8 tw-max-w-3xl tw-text-center tw-text-3xl tw-font-bold md:tw-mb-12 md:tw-text-5xl lg:tw-mb-16"> What our clients are saying </h2>
+    <!-- Contents -->
+    <div class="tw-mb-5 tw-grid tw-grid-cols-1 tw-gap-5 sm:tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-mb-8">
+      <!-- Content 1 -->
+      <div class="tw-grid tw-grid-cols-1 tw-gap-6 tw-rounded-2xl tw-shadow-xl tw-border tw-border-solid tw-border-gray-300 tw-bg-white tw-p-8 md:tw-p-10">
+        <div class="tw-flex">
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="tw-mr-1 tw-inline-block tw-w-3.5 tw-flex-none" />
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="tw-mr-1 tw-inline-block tw-w-3.5 tw-flex-none" />
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="tw-mr-1 tw-inline-block tw-w-3.5 tw-flex-none" />
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="tw-mr-1 tw-inline-block tw-w-3.5 tw-flex-none" />
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="tw-mr-1 tw-inline-block tw-w-3.5 tw-flex-none" />
+        </div>
+        <div class="tw-text-gray-500"> “Lorem ipsum dolor sit amet, &nbsp;elit ut aliquam, purus sit amet luctus venenatis elit ut aliquam, purus sit amet luctus venenatis" </div>
+        <div class="tw-flex tw-flex-row tw-items-start">
+          <img src="https://firebasestorage.googleapis.com/v0/b/flowspark-1f3e0.appspot.com/o/Tailspark%20Images%2FPlaceholder%20Image.svg?alt=media&token=375a1ea3-a8b6-4d63-b975-aac8d0174074" alt="" class="tw-mr-4 tw-inline-block tw-h-16 tw-w-16 tw-object-cover tw-rounded-full" />
+          <div class="tw-flex tw-flex-col tw-items-start">
+            <h6 class="tw-text-base tw-font-bold">Laila Bahar</h6>
+            <p class="tw-text-sm tw-text-gray-500">Designer</p>
+          </div>
+        </div>
+      </div>
+      <!-- Content 2 -->
+      <div class="tw-grid tw-grid-cols-1 tw-gap-6 tw-rounded-2xl tw-shadow-xl tw-border tw-border-solid tw-border-gray-300 tw-bg-white tw-p-8 md:tw-p-10">
+        <div class="tw-flex">
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="tw-mr-1 tw-inline-block tw-w-3.5 tw-flex-none" />
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="tw-mr-1 tw-inline-block tw-w-3.5 tw-flex-none" />
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="tw-mr-1 tw-inline-block tw-w-3.5 tw-flex-none" />
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="tw-mr-1 tw-inline-block tw-w-3.5 tw-flex-none" />
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="tw-mr-1 tw-inline-block tw-w-3.5 tw-flex-none" />
+        </div>
+        <div class="tw-text-gray-500"> “Lorem ipsum dolor sit amet, &nbsp;elit ut aliquam, purus sit amet luctus venenatis elit ut aliquam, purus sit amet luctus venenatis" </div>
+        <div class="tw-flex tw-flex-row tw-items-start">
+          <img src="https://firebasestorage.googleapis.com/v0/b/flowspark-1f3e0.appspot.com/o/Tailspark%20Images%2FPlaceholder%20Image.svg?alt=media&token=375a1ea3-a8b6-4d63-b975-aac8d0174074" alt="" class="tw-mr-4 tw-inline-block tw-h-16 tw-w-16 tw-object-cover tw-rounded-full" />
+          <div class="tw-flex tw-flex-col tw-items-start">
+            <h6 class="tw-text-base tw-font-bold">Laila Bahar</h6>
+            <p class="tw-text-sm tw-text-gray-500">Designer</p>
+          </div>
+        </div>
+      </div>
+      <!-- Content 3 -->
+      <div class="tw-grid tw-grid-cols-1 tw-gap-6 tw-rounded-2xl tw-shadow-xl tw-border tw-border-solid tw-border-gray-300 tw-bg-white tw-p-8 md:tw-p-10">
+        <div class="tw-flex">
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="tw-mr-1 tw-inline-block tw-w-3.5 tw-flex-none" />
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="tw-mr-1 tw-inline-block tw-w-3.5 tw-flex-none" />
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="tw-mr-1 tw-inline-block tw-w-3.5 tw-flex-none" />
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="tw-mr-1 tw-inline-block tw-w-3.5 tw-flex-none" />
+          <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a947e84e6cf91_Vector.svg" alt="" class="tw-mr-1 tw-inline-block tw-w-3.5 tw-flex-none" />
+        </div>
+        <div class="tw-text-gray-500"> “Lorem ipsum dolor sit amet, &nbsp;elit ut aliquam, purus sit amet luctus venenatis elit ut aliquam, purus sit amet luctus venenatis" </div>
+        <div class="tw-flex tw-flex-row tw-items-start">
+          <img src="https://firebasestorage.googleapis.com/v0/b/flowspark-1f3e0.appspot.com/o/Tailspark%20Images%2FPlaceholder%20Image.svg?alt=media&token=375a1ea3-a8b6-4d63-b975-aac8d0174074" alt="" class="tw-mr-4 tw-inline-block tw-h-16 tw-w-16 tw-object-cover tw-rounded-full" />
+          <div class="tw-flex tw-flex-col tw-items-start">
+            <h6 class="tw-text-base tw-font-bold">Laila Bahar</h6>
+            <p class="tw-text-sm tw-text-gray-500">Designer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<div class="tw-mb-0 tw-rounded-t-[46px] tw-border-t tw-border-black tw-overflow-hidden" formsappId="6789c5f8d70ec4c113bcd5c3"></div>
+
+<!-- CTA -->
+{% include 'components/cta-footer.html' %}
     
 {% endblock content %}
 
@@ -295,43 +417,5 @@
 
 
     <script src="{% static "./js/home.js" %}"></script>
-
-    <script>
-   // Selecciona todos los elementos con la clase 'poster'
-   const elements = document.querySelectorAll('.poster');
-
-elements.forEach(el => {
-    const height = el.clientHeight;
-    const width = el.clientWidth;
-
-    el.addEventListener('mousemove', (e) => {
-        const { layerX, layerY } = e;
-
-        const yRotation = (
-            (layerX - width / 2) / width
-        ) * 20;
-
-        const xRotation = (
-            (layerY - height / 2) / height
-        ) * 20;
-
-        const string = `
-            perspective(500px)
-            scale(1.08)
-            rotateX(${xRotation}deg)
-            rotateY(${yRotation}deg)`;
-
-        el.style.transform = string;
-    });
-
-    el.addEventListener('mouseout', () => {
-        el.style.transform = `
-        perspective(500px) 
-        scale(1)
-        rotateX(0)
-        rotateY(0)`;
-    });
-});
-
-    </script>
+    
 {% endblock scripts %}
