@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %}Service Details{% endblock title %}
-{% block description %}Description of Service Details{% endblock description %} {% load custom_tags %}
+{% block description %}Description of Service Details{% endblock description %} 
+{% load custom_tags %}
 {%block content %}
 
 
@@ -530,7 +531,8 @@
 
 </div>
 <!-- Incluir el social footer -->
-{% include 'components/pages/cta-footer.html' %}
+{% include 'components/cta-footer.html' %}
+
 {% endblock content %}
 {% block scripts %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
