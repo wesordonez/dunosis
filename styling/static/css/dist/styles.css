@@ -3152,6 +3152,11 @@ input[type="range"]::-ms-fill-lower {
     padding-bottom: 2rem;
   }
 
+  .md\:tw-py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .md\:tw-pb-20 {
     padding-bottom: 5rem;
   }
