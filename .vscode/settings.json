@@ -8,5 +8,8 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[django-html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
     "editor.formatOnSave": true,
 }
