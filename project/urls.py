@@ -45,7 +45,7 @@ urlpatterns = [
 
     # add new path here
 
-    path('', home_view, name='home'),
+    path('', landing_view, name='landing'),
     path('about/', about_view, name='about'),
     path('landing/', landing_view, name='landing'),
     path('services/', services_view, name='services'),
