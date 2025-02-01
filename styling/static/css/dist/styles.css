@@ -2985,6 +2985,10 @@ input[type="range"]::-ms-fill-lower {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
+  .md\:tw-grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .md\:tw-flex-row {
     flex-direction: row;
   }
