@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 					price.querySelector(".price-period").textContent = "";
 				} else {
 					price.querySelector(".price-amount").textContent = monthlyPrice;
-					price.querySelector(".price-period").textContent = "/MO";
+					price.querySelector(".price-period").textContent = "Per month";
 				}
 			});
 		});

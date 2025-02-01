@@ -139,50 +139,345 @@
             <div class="tw-absolute tw-left-2 tw-top-[6px] tw-z-0 tw-h-4/5 tw-w-[45%] tw-rounded-md tw-bg-black tw-transition-all tw-duration-300 slider"></div>
         </div>
         <!-- Prices Container -->
-        <div class="tw-grid tw-grid-cols-1 tw-gap-8 sm:tw-grid-cols-2 md:tw-grid-cols-4 md:tw-gap-4">
-            <!-- Price 1 -->
-            <div class="tw-mx-auto tw-w-full tw-max-w-md tw-rounded-2xl tw-border tw-border-gray-300 tw-bg-white tw-shadow-xl tw-px-8 tw-py-14 price" data-one-time="$500" data-monthly="$100">
-                <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
-                    <p class="tw-text-3xl tw-font-bold sm:tw-text-2xl md:tw-text-3xl"> Lite </p>
-                    <p class="tw-text-xl tw-text-gray-500">Starting at:</p>
-                    <h2 class="tw-flex tw-items-center tw-text-4xl tw-font-bold md:tw-text-5xl"> <span class="price-amount"> $500</span><span class="tw-text-sm tw-text-gray-500 price-period">/MO</span>
-                    </h2>
-                </div>
-                <a href="#" class="tw-mb-4 tw-mt-12 tw-inline-block tw-w-full tw-rounded-md tw-border-black tw-bg-black tw-px-6 tw-py-3 tw-text-center tw-font-semibold tw-text-white hover:tw-bg-white hover:tw-text-black hover:tw-border-2 hover:tw-border-black tw-transition-colors tw-duration-300"> Learn more! </a>
+        <!-- Container -->
+    <div class="tw-mx-auto tw-w-full tw-max-w-7xl tw-px-5 md:tw-px-10">
+        <!-- Contents (Dekstop) -->
+        <div class="tw-hidden tw-text-center md:tw-block">
+          <!-- Plan Type -->
+          <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.2fr_1fr_1fr_1fr_1fr] lg:tw-grid-cols-[1.5fr_1fr_1fr_1fr_1fr]">
+            <div class="tw-py-8"></div>
+            <div class="tw-py-8 price" data-one-time="$500" data-monthly="$100">
+              <div class="tw-text-sm tw-mb-3">Lite</div>
+              <div class="tw-text-3xl tw-font-bold tw-mb-3 price-amount">$500</div>
+              <p class="tw-text-sm tw-font-semibold price-period">Per month</p>
             </div>
-            <!-- Price 2 -->
-            <div class="tw-mx-auto tw-w-full tw-max-w-md tw-rounded-2xl tw-border tw-border-gray-300 tw-bg-white tw-shadow-xl tw-px-8 tw-py-14 price" data-one-time="$1500" data-monthly="$250">
-                <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
-                    <p class="tw-text-3xl tw-font-bold sm:tw-text-2xl md:tw-text-3xl"> Basic </p>
-                    <p class="tw-text-xl tw-text-gray-500">Starting at:</p>
-                    <h2 class="tw-flex tw-items-center tw-text-4xl tw-font-bold md:tw-text-5xl"> <span class="price-amount"> $1500</span><span class="tw-text-sm tw-text-gray-500 price-period">/MO</span>
-                    </h2>
-                </div>
-                <a href="#" class="tw-mb-4 tw-mt-12 tw-inline-block tw-w-full tw-rounded-md tw-border-black tw-bg-black tw-px-6 tw-py-3 tw-text-center tw-font-semibold tw-text-white hover:tw-bg-white hover:tw-text-black hover:tw-border-2 hover:tw-border-black tw-transition-colors tw-duration-300"> Learn more! </a>
+            <div class="tw-py-8 price" data-one-time="$1500" data-monthly="$250">
+              <div class="tw-text-sm tw-mb-3">Basic</div>
+              <div class="tw-text-3xl tw-font-bold tw-mb-3 price-amount">$1500</div>
+              <p class="tw-text-sm tw-font-semibold price-period">Per month</p>
             </div>
-            <!-- Price 3 -->
-            <div class="tw-mx-auto tw-w-full tw-max-w-md tw-rounded-2xl tw-border tw-border-gray-300 tw-bg-white tw-shadow-xl tw-px-8 tw-py-14 price" data-one-time="$2200" data-monthly="$350">
-                <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
-                    <p class="tw-text-3xl tw-font-bold sm:tw-text-2xl md:tw-text-3xl"> Mid </p>
-                    <p class="tw-text-xl tw-text-gray-500">Starting at:</p>
-                    <h2 class="tw-flex tw-items-center tw-text-4xl tw-font-bold md:tw-text-5xl"><span class="price-amount"> $2200</span><span class="tw-text-sm tw-text-gray-500 price-period">/HR</span>
-                    </h2>
-                </div>
-                <a href="#" class="tw-mb-4 tw-mt-12 tw-inline-block tw-w-full tw-rounded-md tw-border-black tw-bg-black tw-px-6 tw-py-3 tw-text-center tw-font-semibold tw-text-white hover:tw-bg-white hover:tw-text-black hover:tw-border-2 hover:tw-border-black tw-transition-colors tw-duration-300"> Learn more! </a>
+            <div class="tw-bg-gray-100 tw-py-8 price" data-one-time="$2200" data-monthly="$350">
+              <div class="tw-text-sm tw-text-red-600 tw-mb-3">Mid</div>
+              <div class="tw-text-3xl tw-font-bold tw-mb-3 price-amount">$2200</div>
+              <p class="tw-text-sm tw-font-semibold price-period">Per month</p>
             </div>
-            <!-- Price 4 -->
-            <div class="tw-mx-auto tw-w-full tw-max-w-md tw-rounded-2xl tw-border tw-border-gray-300 tw-bg-white tw-shadow-xl tw-px-8 tw-py-14 price" data-one-time="$4000" data-monthly="$500">
-                <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
-                    <p class="tw-text-3xl tw-font-bold sm:tw-text-2xl md:tw-text-3xl"> Pro </p>
-                    <p class="tw-text-xl tw-text-gray-500">Starting at:</p>
-                    <h2 class="tw-flex tw-items-center tw-text-4xl tw-font-bold md:tw-text-5xl"><span class="price-amount"> $4000</span><span class="tw-text-sm tw-text-gray-500 price-period">/HR</span>
-                    </h2>
+            <div class="tw-py-8 price" data-one-time="$4000" data-monthly="$500">
+              <div class="tw-text-sm tw-mb-3">Pro</div>
+              <div class="tw-text-3xl tw-font-bold tw-mb-3 price-amount">$4000</div>
+              <p class="tw-text-sm tw-font-semibold price-period">Per month</p>
+            </div>
+          </div>
+          <!-- Row -->
+          <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.2fr_1fr_1fr_1fr_1fr] lg:tw-grid-cols-[1.5fr_1fr_1fr_1fr_1fr]">
+            <div class="tw-flex tw-items-center tw-font-semibold tw-py-8"> Website Number </div>
+            <div class="tw-py-8">01</div>
+            <div class="tw-py-8">10</div>
+            <div class="tw-bg-gray-100 tw-py-8">50</div>
+            <div class="tw-py-8">Unlimited</div>
+          </div>
+          <!-- Row -->
+          <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.2fr_1fr_1fr_1fr_1fr] lg:tw-grid-cols-[1.5fr_1fr_1fr_1fr_1fr]">
+            <div class="tw-flex tw-items-center tw-font-semibold tw-py-8"> Server Storage </div>
+            <div class="tw-py-8">100GB</div>
+            <div class="tw-py-8">200GB</div>
+            <div class="tw-bg-gray-100 tw-py-8">1TB</div>
+            <div class="tw-py-8">Unlimited</div>
+          </div>
+          <!-- Row -->
+          <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.2fr_1fr_1fr_1fr_1fr] lg:tw-grid-cols-[1.5fr_1fr_1fr_1fr_1fr]">
+            <div class="tw-flex tw-items-center tw-font-semibold tw-py-8"> Team Members </div>
+            <div class="tw-py-8">01</div>
+            <div class="tw-py-8">20</div>
+            <div class="tw-bg-gray-100 tw-py-8">50</div>
+            <div class="tw-py-8">Unlimited</div>
+          </div>
+          <!-- Row -->
+          <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.2fr_1fr_1fr_1fr_1fr] lg:tw-grid-cols-[1.5fr_1fr_1fr_1fr_1fr]">
+            <div class="tw-flex tw-py-8 tw-items-center tw-font-semibold"> Access to Email API </div>
+            <div class="tw-py-8">-</div>
+            <div class="tw-py-8">-</div>
+            <div class="tw-bg-gray-100 tw-py-8">
+              <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9453a6e6cf6e_Vector%20(2).svg" alt="" class="tw-inline-block" />
+            </div>
+            <div class="tw-py-8">
+              <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9453a6e6cf6e_Vector%20(2).svg" alt="" class="tw-inline-block" />
+            </div>
+          </div>
+          <!-- Row -->
+          <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.2fr_1fr_1fr_1fr_1fr] lg:tw-grid-cols-[1.5fr_1fr_1fr_1fr_1fr]">
+            <div class="tw-flex tw-py-8 tw-items-center tw-font-semibold"> Access to Storage API </div>
+            <div class="tw-py-8">-</div>
+            <div class="tw-py-8">-</div>
+            <div class="tw-bg-gray-100 tw-py-8">-</div>
+            <div class="tw-py-8">
+              <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9453a6e6cf6e_Vector%20(2).svg" alt="" class="tw-inline-block" />
+            </div>
+          </div>
+          <!-- Buttons -->
+          <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-[1.2fr_1fr_1fr_1fr_1fr] lg:tw-grid-cols-[1.5fr_1fr_1fr_1fr_1fr] tw-gap-8">
+            <div></div>
+            <div>
+              <a href="#" class="tw-inline-block tw-w-full tw-py-8 tw-font-semibold"> Get started </a>
+            </div>
+            <div>
+              <a href="#" class="tw-inline-block tw-w-full tw-py-8 tw-font-semibold"> Get started </a>
+            </div>
+            <div>
+              <a href="#" class="tw-inline-block tw-bg-gray-500 tw-w-full tw-py-8 tw-font-semibold tw-text-white"> Get started </a>
+            </div>
+            <div>
+              <a href="#" class="tw-inline-block tw-w-full tw-py-8 tw-font-semibold"> Get started </a>
+            </div>
+          </div>
+        </div>
+        <!-- Contents (Mobile) -->
+          <div class="tw-block md:tw-hidden">
+            <!-- Plan -->
+            <div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-pb-4 tw-pt-12 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr]">
+              <div class="price" data-one-time="$500" data-monthly="$100">
+              <div class="tw-text-sm">Lite</div>
+              <div class="tw-text-3xl tw-font-bold price-amount">$500</div>
+              <div class="tw-text-sm tw-font-semibold price-period">per month</div>
+              </div>
+            </div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+              <div class="tw-flex tw-items-center">
+              <div class="tw-font-semibold">Website Number</div>
+              <div class="tw-relative tw-ml-2 tw-flex-1">
+                <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-items-center tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
+              </div>
+              </div>
+              <div>01</div>
+            </div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+              <div class="tw-flex tw-items-center">
+              <div class="tw-font-semibold">Server Storage</div>
+              <div class="tw-relative tw-ml-2 tw-flex-1">
+                <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-items-center tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
+              </div>
+              </div>
+              <div>100GB</div>
+            </div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+              <div class="tw-flex tw-items-center">
+              <div class="tw-font-semibold">Team Members</div>
+              <div class="tw-relative tw-ml-2 tw-flex-1">
+                <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
+              </div>
+              </div>
+              <div>01</div>
+            </div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+              <div class="tw-flex tw-items-center">
+              <div class="tw-font-semibold">Access to Email API</div>
+              <div class="tw-relative tw-ml-2 tw-flex-1">
+                <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
+              </div>
+              </div>
+              <div>-</div>
+            </div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+              <div class="tw-flex tw-items-center">
+              <div class="tw-font-semibold">Access to Storage API</div>
+              <div class="tw-relative tw-ml-2 tw-flex-1">
+                <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
+              </div>
+              </div>
+              <div>-</div>
+            </div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-pt-8 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr]">
+              <div>
+              <a href="#" class="tw-inline-block tw-bg-black tw-px-6 tw-py-3 tw-font-semibold tw-text-white"> Get Started </a>
+              </div>
+            </div>
+            </div>
+          <!-- Plan -->
+          <div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-pb-4 tw-pt-12 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr]">
+              <div class="price" data-one-time="$1500" data-monthly="$250">
+                <div class="tw-text-sm">Basic</div>
+                <div class="tw-text-3xl tw-font-bold price-amount">$1500</div>
+                <div class="tw-text-sm tw-font-semibold price-period">per month</div>
+              </div>
+            </div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+              <div class="tw-flex tw-items-center">
+                <div class="tw-font-semibold">Website Number</div>
+                <div class="tw-relative tw-ml-2 tw-flex-1">
+                  <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
                 </div>
-                <a href="#" class="tw-mb-4 tw-mt-12 tw-inline-block tw-w-full tw-rounded-md tw-border-black tw-bg-black tw-px-6 tw-py-3 tw-text-center tw-font-semibold tw-text-white hover:tw-bg-white hover:tw-text-black hover:tw-border-2 hover:tw-border-black tw-transition-colors tw-duration-300"> Learn more! </a>
+              </div>
+              <div>10</div>
+            </div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+              <div class="tw-flex tw-items-center">
+                <div class="tw-font-semibold">Server Storage</div>
+                <div class="tw-relative tw-ml-2 tw-flex-1">
+                  <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
+                </div>
+              </div>
+              <div>200GB</div>
+            </div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+              <div class="tw-flex tw-items-center">
+                <div class="tw-font-semibold">Team Members</div>
+                <div class="tw-relative tw-ml-2 tw-flex-1">
+                  <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
+                </div>
+              </div>
+              <div>10</div>
+            </div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+              <div class="tw-flex tw-items-center">
+                <div class="tw-font-semibold">Access to Email API</div>
+                <div class="tw-relative tw-ml-2 tw-flex-1">
+                  <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
+                </div>
+              </div>
+              <div>-</div>
+            </div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+              <div class="tw-flex tw-items-center">
+                <div class="tw-font-semibold">Access to Storage API</div>
+                <div class="tw-relative tw-ml-2 tw-flex-1">
+                  <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
+                </div>
+              </div>
+              <div>-</div>
+            </div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-pt-8 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr]">
+              <div>
+                <a href="#" class="tw-inline-block tw-bg-black tw-px-6 tw-py-3 tw-font-semibold tw-text-white"> Get Started </a>
+              </div>
+            </div>
+          </div>
+          <!-- Plan -->
+          <div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-pb-4 tw-pt-12 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr]">
+              <div class="price" data-one-time="$2200" data-monthly="$350">
+                <div class="tw-text-sm">Mid</div>
+                <div class="tw-text-3xl tw-font-bold price-amount">$2200</div>
+                <div class="tw-text-sm tw-font-semibold price-period">per month</div>
+              </div>
+            </div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+              <div class="tw-flex tw-items-center">
+                <div class="tw-font-semibold">Website Number</div>
+                <div class="tw-relative tw-ml-2 tw-flex-1">
+                  <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
+                </div>
+              </div>
+              <div>50</div>
+            </div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+              <div class="tw-flex tw-items-center">
+                <div class="tw-font-semibold">Server Storage</div>
+                <div class="tw-relative tw-ml-2 tw-flex-1">
+                  <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
+                </div>
+              </div>
+              <div>1TB</div>
+            </div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+              <div class="tw-flex tw-items-center">
+                <div class="tw-font-semibold">Team Members</div>
+                <div class="tw-relative tw-ml-2 tw-flex-1">
+                  <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
+                </div>
+              </div>
+              <div>20</div>
+            </div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+              <div class="tw-flex tw-items-center">
+                <div class="tw-font-semibold">Access to Email API</div>
+                <div class="tw-relative tw-ml-2 tw-flex-1">
+                  <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
+                </div>
+              </div>
+              <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9453a6e6cf6e_Vector%20(2).svg" alt="" class="tw-inline-block" />
+            </div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+              <div class="tw-flex tw-items-center">
+                <div class="tw-font-semibold">Access to Storage API</div>
+                <div class="tw-relative tw-ml-2 tw-flex-1">
+                  <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
+                </div>
+              </div>
+              <div>-</div>
+            </div>
+            <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-pt-8 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr]">
+              <div>
+                <a href="#" class="tw-inline-block tw-bg-black tw-px-6 tw-py-3 tw-font-semibold tw-text-white"> Get Started </a>
+              </div>
+            </div>
+          </div>
+          <!-- Plan -->
+            <div>
+              <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-pb-4 tw-pt-12 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr]">
+                <div class="price" data-one-time="$4000" data-monthly="$500">
+                    <div class="tw-text-sm">Pro</div>
+                    <div class="tw-text-3xl tw-font-bold price-amount">$4000</div>
+                    <div class="tw-text-sm tw-font-semibold price-period">per month</div>
+                </div>
+              </div>
+              <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+                <div class="tw-flex tw-items-center">
+              <div class="tw-font-semibold">Website Number</div>
+              <div class="tw-relative tw-ml-2 tw-flex-1">
+                <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-items-center tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
+              </div>
+                </div>
+                <div>Unlimited</div>
+              </div>
+              <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+                <div class="tw-flex tw-items-center">
+              <div class="tw-font-semibold">Server Storage</div>
+              <div class="tw-relative tw-ml-2 tw-flex-1">
+                <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-items-center tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
+              </div>
+                </div>
+                <div>Unlimited</div>
+              </div>
+              <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+                <div class="tw-flex tw-items-center">
+              <div class="tw-font-semibold">Team Members</div>
+              <div class="tw-relative tw-ml-2 tw-flex-1">
+                <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-items-center tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
+              </div>
+                </div>
+                <div>Unlimited</div>
+              </div>
+              <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+                <div class="tw-flex tw-items-center">
+              <div class="tw-font-semibold">Access to Email API</div>
+              <div class="tw-relative tw-ml-2 tw-flex-1">
+                <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-items-center tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
+              </div>
+                </div>
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9453a6e6cf6e_Vector%20(2).svg" alt="" class="tw-inline-block" />
+              </div>
+              <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-py-4 tw-border-b tw-border-gray-300 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr] md:tw-py-8">
+                <div class="tw-flex tw-items-center">
+              <div class="tw-font-semibold">Access to Storage API</div>
+              <div class="tw-relative tw-ml-2 tw-flex-1">
+                <div class="tw-flex tw-h-4 tw-w-4 tw-cursor-pointer tw-items-center tw-justify-center tw-rounded-full tw-bg-gray-100 tw-text-xs tw-font-bold tw-text-gray-500"> ? </div>
+              </div>
+                </div>
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9453a6e6cf6e_Vector%20(2).svg" alt="" class="tw-inline-block" />
+              </div>
+              <div class="tw-grid tw-grid-cols-1 tw-gap-8 tw-pt-8 md:tw-grid-cols-[1.5fr_1fr_1fr_1fr]">
+                <div>
+              <a href="#" class="tw-inline-block tw-bg-black tw-px-6 tw-py-3 tw-font-semibold tw-text-white"> Get Started </a>
+                </div>
+              </div>
             </div>
         </div>
+      </div>
     </div>
+    
 </section>
+
 
 <section id="marketing-pricing">
     <!-- Container -->
@@ -272,6 +567,63 @@
           <div class="tw-mt-2 tw-flex tw-items-center">
             <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a94a84be6cf60_check-mark.svg" alt="" class="tw-mr-2 tw-inline-block tw-w-4" />
             <p class="tw-text-base">Customer Support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="consulting-pricing">
+    <!-- Main Container -->
+    <div class="tw-mx-auto tw-w-full tw-max-w-7xl tw-px-5 tw-py-16 md:tw-px-10 md:tw-py-20">
+      <div class="tw-rounded-xl tw-bg-gray-100 tw-px-6 tw-py-12 sm:tw-px-12 sm:tw-py-16 md:tw-py-20">
+        <!-- Heading Container -->
+        <div class="tw-mx-auto tw-mb-8 tw-flex tw-max-w-3xl tw-flex-col tw-text-center md:tw-mb-12 lg:tw-mb-16">
+          <!-- Heading -->
+          <h2 class="tw-text-3xl tw-font-bold md:tw-text-5xl"> Simple &amp; Affordable Pricing </h2>
+          <!-- Subheading -->
+          <div class="tw-mx-auto tw-mt-4 tw-rounded-3xl tw-bg-gray-300 tw-px-6 tw-py-2">
+            <p class="tw-text-sm sm:tw-text-base"> 30 days money-back guarantee </p>
+          </div>
+        </div>
+        <!-- Contents -->
+        <div class="tw-mx-auto tw-grid tw-h-auto tw-w-full tw-gap-4 tw-rounded-md tw-px-0 tw-py-12 lg:tw-grid-cols-2">
+          <!-- Content -->
+          <div class="tw-grid tw-grid-cols-1 tw-gap-4 tw-rounded-md tw-border tw-border-gray-300 tw-bg-gray-300 tw-px-10 tw-py-14 sm:tw-grid-cols-2">
+            <div class="tw-flex tw-items-center tw-gap-2">
+              <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a94a84be6cf60_check-mark.svg" alt="" class="tw-mr-2 tw-w-5" />
+              <p class="tw-text-sm sm:tw-text-base">Premium Designs</p>
+            </div>
+            <div class="tw-flex tw-items-center tw-gap-2">
+              <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a94a84be6cf60_check-mark.svg" alt="" class="tw-mr-2 tw-w-5" />
+              <p class="tw-text-sm sm:tw-text-base">Regular updates</p>
+            </div>
+            <div class="tw-flex tw-items-center tw-gap-2">
+              <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a94a84be6cf60_check-mark.svg" alt="" class="tw-mr-2 tw-w-5" />
+              <p class="tw-text-sm sm:tw-text-base">Copy &amp; Paste</p>
+            </div>
+            <div class="tw-flex tw-items-center tw-gap-2">
+              <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a94a84be6cf60_check-mark.svg" alt="" class="tw-mr-2 tw-w-5" />
+              <p class="tw-text-sm sm:tw-text-base">Lifetime Access</p>
+            </div>
+            <div class="tw-flex tw-items-center tw-gap-2">
+              <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a94a84be6cf60_check-mark.svg" alt="" class="tw-mr-2 tw-w-5" />
+              <p class="tw-text-sm sm:tw-text-base">Early bird price</p>
+            </div>
+            <div class="tw-flex tw-items-center tw-gap-2">
+              <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a94a84be6cf60_check-mark.svg" alt="" class="tw-mr-2 tw-w-5" />
+              <p class="tw-text-sm sm:tw-text-base">Premium Support</p>
+            </div>
+          </div>
+          <!-- Content -->
+          <div class="tw-flex tw-flex-col tw-rounded-md tw-bg-black tw-px-10 tw-py-12 tw-text-white">
+            <div class="tw-flex tw-w-full tw-flex-col tw-items-center tw-justify-between sm:tw-flex-row sm:tw-items-center">
+              <h2 class="tw-text-3xl tw-font-bold md:tw-text-5xl"> $149 <span class="tw-text-sm tw-font-light sm:tw-text-sm">/month</span>
+              </h2>
+              <a href="#" class="tw-mt-4 tw-rounded-md tw-bg-white tw-px-6 tw-py-3 tw-text-center tw-font-semibold tw-text-black md:tw-mt-0"> Get started </a>
+            </div>
+            <div class="tw-mb-6 tw-mt-6 tw-border tw-border-gray-100"></div>
+            <p class="tw-text-white tw-text-sm sm:tw-text-base"> Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit amet luctus magna fringilla urna </p>
           </div>
         </div>
       </div>
