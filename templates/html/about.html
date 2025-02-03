@@ -4,142 +4,8 @@
 {% block description %}Learn more about the Dunosis Team{% endblock description %} 
 {% load custom_tags %} {%block content %}
 
-<!-- About Section -->
-<section
-	class="tw-flex tw-flex-col tw-w-full md:tw-min-h-screen tw-justify-center"
-	id="hero-section">
-	<div
-		class="tw-w-full tw-h-full tw-p-[4%] tw-flex tw-justify-around tw-items-center tw-gap-y-16 max-md:tw-flex-col"
-	>
-		<div
-			class="tw-gap-4 tw-place-content-center tw-place-items-center xl:tw-flex xl:tw-flex-row"
-		>
-			<div
-				class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] lg:tw-h-[700px] hover:tw-shadow-2xl tw-hidden md:tw-flex"
-			>
-				<img
-					src="{% static './assets/images/about/chicago.jpg' %}"
-					alt="dashboard"
-					class="tw-w-[300px] tw-h-full tw-object-cover"
-				/>
-			</div>
-			<div
-				class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px] hover:tw-shadow-2xl hover:tw-duration-150 tw-hidden xl:tw-flex"
-			>
-				<img
-					src="{% static './assets/images/about/wesley.jpeg' %}"
-					alt="dashboard"
-					class="tw-w-[200px] tw-h-full tw-object-cover"
-				/>
-			</div>
-		</div>
-
-		<div class="md:tw-hidden">
-			<!-- Carrusel de imágenes para pantallas pequeñas -->
-			<div class="scroll imgbx" style="--t: 10s">
-				<div class="tw-flex tw-flex-row tw-gap-2">
-					<img
-						src="{% static './assets/images/about/carrusel/photos1.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-					<img
-						src="{% static './assets/images/about/carrusel/photos2.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-					<img
-						src="{% static './assets/images/about/carrusel/photos3.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-					<img
-						src="{% static './assets/images/about/carrusel/photos4.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-					<img
-						src="{% static './assets/images/about/carrusel/photos5.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-					<img
-						src="{% static './assets/images/about/carrusel/photos1.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-					<img
-						src="{% static './assets/images/about/carrusel/photos2.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-					<img
-						src="{% static './assets/images/about/carrusel/photos3.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-					<img
-						src="{% static './assets/images/about/carrusel/photos4.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-					<img
-						src="{% static './assets/images/about/carrusel/photos5.jpg' %}"
-						alt="dashboard"
-						class="tw-max-w-[100px] tw-rounded-xl tw-shadow-lg"
-					/>
-				</div>
-			</div>
-		</div>
-
-		<!-- Contenido Central -->
-		<div class="tw-flex tw-flex-col tw-items-center tw-max-w-[480px] tw-min-w-[300px] tw-mx-4">
-			<h1
-				class="tw-text-4xl lg:tw-text-6xl tw-font-semibold tw-uppercase tw-text-center tw-leading-normal max-md:tw-leading-tight"
-			>
-				Learn About Our Team And Our Business
-			</h1>
-			<p class="tw-mt-5 tw-text-center tw-px-2 tw-text-lg align-center md:tw-text-2lg">
-				Order now and don't forget to subscribe and don't forget to enter the email below to
-				get a voucher right now. 🚀
-			</p>
-			<a
-				href="https://github.com/PaulleDemon/Django-website-template"
-				class="tw-rounded-full tw-mt-5 tw-px-6 tw-py-3 tw-bg-black tw-text-white tw-font-semibold tw-transition-transform tw-duration-300 tw-ease-in-out tw-flex tw-items-center tw-justify-center hover:tw-scale-110 hover:tw-shadow-xl"
-			>
-				Contact Us Now!
-			</a>
-		</div>
-
-		<div
-			class="tw-gap-4 tw-place-content-center tw-place-items-center xl:tw-flex xl:tw-flex-row"
-		>
-			<div
-				class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px] hover:tw-shadow-2xl hover:tw-scale-105 hover:tw-duration-150 tw-hidden xl:tw-flex"
-			>
-				<img
-					src="{% static './assets/images/about/tayo.jpeg' %}"
-					alt="dashboard"
-					class="tw-w-[200px] tw-h-full tw-object-cover"
-				/>
-			</div>
-			<div
-				class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] lg:tw-h-[800px] hover:tw-shadow-2xl hover:tw-scale-105 tw-hidden md:tw-flex"
-			>
-				<img
-					src="{% static './assets/images/about/santacruz.jpg' %}"
-					alt="dashboard"
-					class="tw-w-[300px] tw-h-full tw-object-cover"
-				/>
-			</div>
-		</div>
-	</div>
-</section>
-
 <!-- Who are we section -->
 <section class="tw-w-full md:tw-min-h-screen tw-justify-center tw-flex tw-flex-col">
-	<!-- Barra roja -->
-	<div class="tw-absolute tw-left-0 tw-h-full tw-w-5 tw-bg-red-700 tw-hidden md:tw-block"></div>
 
 	<div class="tw-items-start tw-gap-3 tw-text-left tw-p-20 tw-px-20">
 		<!-- header -->
@@ -323,7 +189,7 @@
 </section>
 
 <!-- Incluir el social footer -->
-{% include 'components/pages/cta-footer.html' %}
+{% include 'components/cta-footer.html' %}
 
 {% endblock content %} 
 {% block scripts %}
