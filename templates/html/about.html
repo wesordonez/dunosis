@@ -8,78 +8,56 @@
 <section class="tw-w-full md:tw-min-h-screen tw-justify-center tw-flex tw-flex-col">
 
 	<div class="tw-items-start tw-gap-3 tw-text-left tw-p-20 tw-px-20">
-		<!-- header -->
+		<!-- Title -->
 		<h3 class="tw-text-xl md:tw-text-3xl tw-font-bold">Who Are We?</h3>
-		<div
-			class="tw-items-start tw-flex tw-flex-col md:tw-flex-row tw-w-full tw-justify-between tw-gap-y-8 tw-mb-28"
-		>
+		<div class="tw-items-start tw-flex tw-flex-col md:tw-flex-row tw-w-full tw-justify-between tw-gap-y-8 tw-mb-28">
 			<h2 class="tw-text-3xl md:tw-text-5xl tw-font-bold">
 				Meet Our Professional <br />
 				Team Members
 			</h2>
 			<div class="tw-flex tw-items-center tw-gap-2 tw-group tw-ml-auto">
-				<a
-					href="https://github.com/PaulleDemon/Django-website-template"
-					class="tw-bg-black tw-text-white tw-uppercase tw-rounded-full tw-flex tw-items-center tw-gap-2 tw-h-14 tw-px-6 group-hover:tw-bg-red-700 group-hover:tw-text-white"
-				>
+				<a href="#" class="tw-bg-black tw-text-white tw-uppercase tw-rounded-full tw-flex tw-items-center tw-gap-2 tw-h-14 tw-px-6 group-hover:tw-bg-red-700 group-hover:tw-text-white">
 					view all members
 				</a>
-				<a
-					href="https://github.com/PaulleDemon/Django-website-template"
-					class="tw-rounded-full tw-h-14 tw-w-14 tw-flex tw-items-center tw-justify-center tw-bg-black tw-text-white group-hover:tw-bg-red-700 group-hover:tw-text-white"
-				>
+				<a href="#" class="tw-rounded-full tw-h-14 tw-w-14 tw-flex tw-items-center tw-justify-center tw-bg-black tw-text-white group-hover:tw-bg-red-700 group-hover:tw-text-white">
 					<i class="bi bi-arrow-up-right"></i>
 				</a>
 			</div>
 		</div>
-		<!-- images -->
-		<div
-			class="tw-flex tw-flex-col md:tw-flex-row tw-w-full tw-justify-center tw-items-center tw-gap-10 tw-gap-y-28 tw-px-10 tw-mt-24"
-		>
-			<!-- card template -->
-			<div
-				class="tw-bg-red-500 tw-w-[200px] tw-h-[200px] md:tw-w-[300px] md:tw-h-[200px] lg:tw-w-[400px] lg:tw-h-[300px] tw-p-10 tw-rounded-[4rem] tw-relative hover:tw-scale-105 hover:-tw-translate-y-9 xl:tw-opacity-[70%] hover:tw-opacity-100 hover:tw-shadow-[0_-15px_0_rgba(172,5,5,0.5)]"
-			>
+
+		<!-- Team Member Cards -->
+		<div class="tw-flex tw-flex-col md:tw-flex-row tw-w-full tw-justify-center tw-items-center tw-gap-10 tw-gap-y-28 tw-px-10 tw-mt-24">
+			<!-- Wesley Card -->
+			<div class="tw-bg-red-500 tw-w-[200px] tw-h-[200px] md:tw-w-[300px] md:tw-h-[200px] lg:tw-w-[400px] lg:tw-h-[300px] tw-p-10 tw-rounded-[4rem] tw-relative hover:tw-scale-105 hover:-tw-translate-y-9 xl:tw-opacity-[70%] hover:tw-opacity-100 hover:tw-shadow-[0_-15px_0_rgba(172,5,5,0.5)]">
 				<img
 					src="{% static './assets/images/about/Wesley-transparent.png' %}"
-					alt="profile"
-					class="tw-w-48 md:tw-w-64 tw-absolute -tw-top-5 tw-left-1/2 tw-transform -tw-translate-x-1/2 -tw-translate-y-[30%] tw-duration-500"
-				/>
-				<div
-					class="tw-absolute tw-bg-white tw-p-4 tw-text-center tw-rounded-2xl lg:tw-rounded-full tw-top-[70%] tw-shadow-lg tw-w-[100%] lg:tw-w-[90%] tw-left-1/2 tw-transform -tw-translate-x-1/2"
-				>
+					alt="Wesley Ordoñez, Co-Founder and Lead Software Engineer of Dunosis LLC"
+					class="tw-w-48 md:tw-w-64 tw-absolute -tw-top-5 tw-left-1/2 tw-transform -tw-translate-x-1/2 -tw-translate-y-[30%] tw-duration-500"/>
+				<div class="tw-absolute tw-bg-white tw-p-4 tw-text-center tw-rounded-2xl lg:tw-rounded-full tw-top-[70%] tw-shadow-lg tw-w-[100%] lg:tw-w-[90%] tw-left-1/2 tw-transform -tw-translate-x-1/2">
 					<h3 class="tw-text-xl tw-font-bold">Wesley Ordoñez</h3>
 					<h4 class="tw-text-md">Lead Developer</h4>
 				</div>
 			</div>
 
-			<div
-				class="tw-bg-yellow-500 tw-w-[200px] tw-h-[200px] md:tw-w-[300px] md:tw-h-[200px] lg:tw-w-[400px] lg:tw-h-[300px] tw-p-10 tw-rounded-[4rem] tw-relative hover:tw-scale-105 hover:-tw-translate-y-9 xl:tw-opacity-[70%] hover:tw-opacity-100 hover:tw-shadow-[0_-15px_0_rgba(255,215,0,0.5)]"
-			>
+			<!-- Tayo Card -->
+			<div class="tw-bg-yellow-500 tw-w-[200px] tw-h-[200px] md:tw-w-[300px] md:tw-h-[200px] lg:tw-w-[400px] lg:tw-h-[300px] tw-p-10 tw-rounded-[4rem] tw-relative hover:tw-scale-105 hover:-tw-translate-y-9 xl:tw-opacity-[70%] hover:tw-opacity-100 hover:tw-shadow-[0_-15px_0_rgba(255,215,0,0.5)]">
 				<img
 					src="{% static './assets/images/about/Tayo-transparent.png' %}"
-					alt="profile"
-					class="tw-w-48 md:tw-w-64 tw-absolute -tw-top-5 tw-left-1/2 tw-transform -tw-translate-x-1/2 -tw-translate-y-[30%] tw-duration-500"
-				/>
-				<div
-					class="tw-absolute tw-bg-white tw-p-4 tw-text-center tw-rounded-2xl lg:tw-rounded-full tw-top-[70%] tw-shadow-lg tw-w-[100%] lg:tw-w-[90%] tw-left-1/2 tw-transform -tw-translate-x-1/2"
-				>
+					alt="Tayo Zabala, Marketing"
+					class="tw-w-48 md:tw-w-64 tw-absolute -tw-top-5 tw-left-1/2 tw-transform -tw-translate-x-1/2 -tw-translate-y-[30%] tw-duration-500"/>
+				<div class="tw-absolute tw-bg-white tw-p-4 tw-text-center tw-rounded-2xl lg:tw-rounded-full tw-top-[70%] tw-shadow-lg tw-w-[100%] lg:tw-w-[90%] tw-left-1/2 tw-transform -tw-translate-x-1/2">
 					<h3 class="tw-text-xl tw-font-bold">Tayo Zabala</h3>
 					<h4 class="tw-text-md">Marketing</h4>
 				</div>
 			</div>
 
-			<div
-				class="tw-bg-green-500 tw-w-[200px] tw-h-[200px] md:tw-w-[300px] md:tw-h-[200px] lg:tw-w-[400px] lg:tw-h-[300px] tw-p-10 tw-rounded-[4rem] tw-relative hover:tw-scale-105 hover:-tw-translate-y-9 xl:tw-opacity-[70%] hover:tw-opacity-100 hover:tw-shadow-[0_-15px_0_rgba(31,198,0,0.5)]"
-			>
+			<!-- Timo Card -->
+			<div class="tw-bg-green-500 tw-w-[200px] tw-h-[200px] md:tw-w-[300px] md:tw-h-[200px] lg:tw-w-[400px] lg:tw-h-[300px] tw-p-10 tw-rounded-[4rem] tw-relative hover:tw-scale-105 hover:-tw-translate-y-9 xl:tw-opacity-[70%] hover:tw-opacity-100 hover:tw-shadow-[0_-15px_0_rgba(31,198,0,0.5)]">
 				<img
 					src="{% static './assets/images/about/Timo-transparent.png' %}"
-					alt="profile"
-					class="tw-w-48 md:tw-w-64 tw-absolute -tw-top-5 tw-left-1/2 tw-transform -tw-translate-x-1/2 -tw-translate-y-[30%] tw-duration-500"
-				/>
-				<div
-					class="tw-absolute tw-bg-white tw-p-4 tw-text-center tw-rounded-2xl lg:tw-rounded-full tw-top-[70%] tw-shadow-lg tw-w-[100%] lg:tw-w-[90%] tw-left-1/2 tw-transform -tw-translate-x-1/2"
-				>
+					alt="Timo Ordoñez, Sales"
+					class="tw-w-48 md:tw-w-64 tw-absolute -tw-top-5 tw-left-1/2 tw-transform -tw-translate-x-1/2 -tw-translate-y-[30%] tw-duration-500"/>
+				<div class="tw-absolute tw-bg-white tw-p-4 tw-text-center tw-rounded-2xl lg:tw-rounded-full tw-top-[70%] tw-shadow-lg tw-w-[100%] lg:tw-w-[90%] tw-left-1/2 tw-transform -tw-translate-x-1/2">
 					<h3 class="tw-text-xl tw-font-bold">Timo Ordoñez</h3>
 					<h4 class="tw-text-md">Sales</h4>
 				</div>
