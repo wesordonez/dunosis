@@ -43,6 +43,9 @@ def services_view(request):
 def webdev_service_view(request):
     return render(request, './services/web-development.html', status=200)
 
+def socialmedia_service_view(request):
+    return render(request, './services/social-media.html', status=200)
+
 def portfolio_view(request):
     return render(request, 'portfolio-overview.html', status=200)
 
