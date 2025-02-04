@@ -1388,6 +1388,10 @@ input[type="range"]::-ms-fill-lower {
   min-height: 80px;
 }
 
+.tw-min-h-\[200px\] {
+  min-height: 200px;
+}
+
 .tw-w-1 {
   width: 0.25rem;
 }
