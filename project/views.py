@@ -31,6 +31,9 @@ def home_view(request):
 def about_view(request):
     return render(request, 'about.html', status=200)
 
+def about_details_view(request):
+    return render(request, 'about-details.html', status=200)
+
 def landing_view(request):
     return render(request, 'landing.html', status=200)
   
