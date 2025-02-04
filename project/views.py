@@ -40,8 +40,8 @@ def landing_view(request):
 def services_view(request):
     return render(request, './services/services.html', status=200)
   
-def service_details_view(request):
-    return render(request, './services/service-details.html', status=200)
+def webdev_service_view(request):
+    return render(request, './services/web-development.html', status=200)
 
 def portfolio_view(request):
     return render(request, 'portfolio-overview.html', status=200)
