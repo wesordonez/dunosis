@@ -50,7 +50,7 @@ urlpatterns = [
     path('about-details/', about_details_view, name='about-details'),
     path('landing/', landing_view, name='landing'),
     path('services/', services_view, name='services'),
-    path('service/', service_details_view, name='service-details'),
+    path('service-details/', service_details_view, name='service-details'),
     path('portfolio/', portfolio_view, name='portfolio'),
     path('portfolio-details/', portfolio_details_view, name='portfolio-details'),
 
