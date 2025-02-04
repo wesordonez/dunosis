@@ -1493,6 +1493,10 @@ input[type="range"]::-ms-fill-lower {
   width: 520px;
 }
 
+.tw-w-\[500px\] {
+  width: 500px;
+}
+
 .tw-min-w-\[10\%\] {
   min-width: 10%;
 }
@@ -1511,6 +1515,10 @@ input[type="range"]::-ms-fill-lower {
 
 .tw-min-w-\[450px\] {
   min-width: 450px;
+}
+
+.tw-min-w-\[500px\] {
+  min-width: 500px;
 }
 
 .tw-max-w-2xl {
