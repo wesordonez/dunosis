@@ -2126,6 +2126,18 @@ input[type="range"]::-ms-fill-lower {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.tw-from-du-green\/50 {
+  --tw-gradient-from: rgb(2 154 77 / 0.5) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(2 154 77 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.tw-from-du-green\/60 {
+  --tw-gradient-from: rgb(2 154 77 / 0.6) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(2 154 77 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .tw-via-green-200 {
   --tw-gradient-to: rgb(188 240 218 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #BCF0DA var(--tw-gradient-via-position), var(--tw-gradient-to);
@@ -2145,6 +2157,14 @@ input[type="range"]::-ms-fill-lower {
 
 .tw-to-\[rgba\(2\,154\,77\,0\.5\)\] {
   --tw-gradient-to: rgba(2,154,77,0.5) var(--tw-gradient-to-position);
+}
+
+.tw-to-du-green {
+  --tw-gradient-to: #029A4D var(--tw-gradient-to-position);
+}
+
+.tw-to-du-green\/50 {
+  --tw-gradient-to: rgb(2 154 77 / 0.5) var(--tw-gradient-to-position);
 }
 
 .tw-object-contain {
