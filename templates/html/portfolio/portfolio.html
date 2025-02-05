@@ -54,16 +54,16 @@
 
     <!-- Portfolio Item 3 -->
     <div class="tw-relative tw-bg-gray-200 tw-break-inside-avoid tw-rounded-2xl tw-group">
-        <img src="{% static './assets/images/portfolio/h-002.jpg' %}" alt="" class="tw-rounded-2xl">
+        <img src="{% static './assets/images/portfolio/prcc-dashboard.png' %}" alt="" class="tw-rounded-2xl">
         <!-- Degradado en hover -->
-        <a href=""
+        <a href="{% url 'prcc-dashboard' %}"
             class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-flex tw-items-end tw-justify-center tw-bg-gradient-to-t tw-from-black/70 tw-to-transparent tw-rounded-2xl -tw-bottom-0 group-hover:tw-bottom-0 tw-opacity-0 group-hover:tw-opacity-100 tw-transition-all tw-duration-300">
             <div class="tw-flex tw-gap-4 tw-w-full tw-p-10 tw-justify-between tw-text-start tw-text-white">
                 <div class="tw-flex tw-flex-col">
                     <h2 class="tw-text-xl tw-font-bold">
-                        Generation Of Wealth
+                        Business Advising Dashboard
                     </h2>
-                    <p class="tw-mt-2">Marketing</p>
+                    <p class="tw-mt-2">Consulting</p>
                 </div>
                 <div
                     class="tw-rounded-full tw-h-10 tw-w-10 tw-items-center tw-bg-white tw-text-black tw-border-2 hover:tw-scale-110">
@@ -73,6 +73,8 @@
             </div>
         </a>
     </div>
+
+    <!-- Portfolio Item 4 -->
     <div class="tw-relative tw-bg-gray-200 tw-break-inside-avoid tw-rounded-2xl tw-group">
         <img src="{% static './assets/images/portfolio/v-002.jpg' %}" alt="" class="tw-rounded-2xl">
         <!-- Degradado en hover -->

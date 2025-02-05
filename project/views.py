@@ -66,3 +66,6 @@ def cpanda_portfolio_details_view(request):
 
 def kneadsweets_portfolio_details_view(request):
     return render(request, './portfolio/kneadsweets-website.html', status=200)
+
+def prcc_portfolio_details_view(request):
+    return render(request, './portfolio/prcc-dashboard.html', status=200)
