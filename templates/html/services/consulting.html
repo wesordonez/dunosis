@@ -1,0 +1,231 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %}Consulting - {% endblock title %} 
+{% block description %}Consulting{% endblock description %} {% load custom_tags %}
+{%block content %}
+
+<div class="tw-flex tw-flex-col tw-items-center tw-p-10">
+	<div class="tw-flex tw-flex-col md:tw-flex-row tw-justify-center tw-items-center md:tw-items-start tw-gap-8">
+
+		<!-- Sidebar Navs-->
+		{% include 'components/services-sidecar.html' with litePrice='250' basicPrice='450' midPrice='900' proPrice='1250' %}
+
+		<!-- Container -->
+		<div class="tw-flex tw-flex-col tw-gap-4 tw-justify-center md:tw-ml-10 tw-min-w-[350px] tw-max-w-[900px] tw-order-1 md:tw-order-2">
+			<!-- Hero Image -->
+			<div class="tw-flex tw-w-[100%] tw-h-[400px] tw-bg-gray-500 tw-rounded-3xl hover:tw-shadow-2xl tw-mb-4">
+				<img
+					src="{% static './assets/images/services/details/marketing-strategy-stock.jpg' %}"
+					alt="digital-marketing"
+					class="tw-flex tw-w-[100%] tw-h-[100%] tw-rounded-3xl tw-object-cover"
+				/>
+			</div>
+			<h2 class="tw-text-4xl tw-font-bold tw-mb-4">Consulting</h2>
+			<p class="tw-text-xl tw-mb-4 tw-font-light">
+                In the competitive world of business, a well-thought-out marketing and sales strategy is the key to standing out and driving growth. At Dunosis, we specialize in crafting custom strategies tailored to your goals. From brand positioning and audience analysis to multi-channel campaigns, we help you navigate the ever-changing digital landscape with confidence and success.
+			</p>
+			<h2 class="tw-text-4xl tw-font-bold tw-mb-4">What We Provide</h2>
+			<p class="tw-text-xl tw-mb-4 tw-font-light">
+				At Dunosis, we don’t just market your business—we position it for sustainable growth. Our approach starts with understanding your unique goals and challenges. From there, we design personalized strategies that target your ideal audience, maximize ROI, and ensure your brand’s message resonates.  
+                <br><br />
+                Whether it’s creating a campaign from scratch, optimizing your sales funnel, or building a complete go-to-market strategy, we’re here to help. You’ll have full ownership of all assets and plans we develop, and we’ll always provide actionable insights and recommendations to ensure long-term success.
+            </p>
+			<div class="tw-flex tw-flex-col md:tw-flex-row tw-justify-center tw-items-center tw-gap-4 tw-mb-4">
+				<!-- Photo Left -->
+				<div class="tw-relative tw-w-full tw-h-[400px] tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden tw-min-w-[300px]">
+					<img
+						src="{% static './assets/images/services/details/social-media-stock-1.jpg' %}"
+						alt="brand"
+						class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl"
+					/>
+
+                    <!-- Text Overlay -->
+                    <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-justify-end tw-items-center tw-text-center tw-bg-gradient-to-t tw-from-du-green/90 tw-to-transparent tw-p-4 tw-pb-18 tw-opacity-0 hover:tw-opacity-100 tw-transition-opacity tw-duration-300">
+                        <h2 class="tw-text-xl tw-font-bold tw-text-white">
+                            Increase Your Engagment
+                        </h2>
+                        <p class="tw-text-white tw-mt-2">Craftfully designed to increase traffic and engagement on your platforms</p>
+                    </div>
+				</div>
+
+				<!-- Photo Right -->
+				<div class="tw-relative tw-w-full tw-h-[400px] tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden">
+					<img
+						src="{% static './assets/images/services/details/marketing.jpg' %}"
+						alt="brand"
+						class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl"
+					/>
+
+                    <!-- Text Overlay -->
+                    <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-justify-end tw-items-center tw-text-center tw-bg-gradient-to-t tw-from-du-green/90 tw-to-transparent tw-p-4 tw-pb-18 tw-opacity-0 hover:tw-opacity-100 tw-transition-opacity tw-duration-300">
+                        <h2 class="tw-text-xl tw-font-bold tw-text-white">
+                            Customized Content
+                        </h2>
+                        <p class="tw-text-white tw-mt-2">Strategically customized for your businesses brands</p>
+                    </div>
+				</div>
+			</div>
+			<h2 class="tw-text-4xl tw-font-bold tw-mb-4">The Features</h2>
+			<p class="tw-text-xl tw-mb-4 tw-font-light">
+				Our Marketing and Strategy services are designed to empower your business with data-driven decisions and creative campaigns. We focus on delivering strategies that are as effective as they are innovative, ensuring your brand stands out in a crowded market.  
+                <br><br />
+                Whether it’s enhancing your online presence, refining your messaging, or developing multi-channel strategies, we’re committed to helping you reach your business objectives.
+            </p>
+
+            <!-- Features -->
+			<div class="tw-flex tw-flex-wrap tw-gap-10 tw-justify-between tw-mb-4">
+				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+					<i
+						class="tw-flex bi bi-check tw-bg-du-green tw-text-white tw-rounded-full tw-h-8 tw-min-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"
+					></i>
+					<h2 class="tw-font-normal">Audience Targeting:</h2>
+                    <p class="tw-text-gray-500 tw-font-light tw-text-sm">Pinpoint your ideal customers with data-backed strategies</p>
+				</span>
+				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+					<i
+						class="tw-flex bi bi-check tw-bg-du-green tw-text-white tw-rounded-full tw-h-8 tw-min-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"
+					></i>
+					<h2>Brand Positioning:</h2>
+                    <p class="tw-text-gray-500 tw-font-light tw-text-sm">Build a unique and compelling brand identity that stands out</p>
+				</span>
+				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+					<i
+						class="tw-flex bi bi-check tw-bg-du-green tw-text-white tw-rounded-full tw-h-8 tw-min-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"
+					></i>
+					<h2>Multi-Channel Campaigns:</h2>
+                    <p class="tw-text-gray-500 tw-font-light tw-text-sm">Leverage social media, email, and paid ads for maximum impact</p>
+				</span>
+				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+					<i
+						class="tw-flex bi bi-check tw-bg-du-green tw-text-white tw-rounded-full tw-h-8 tw-min-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"
+					></i>
+					<h2>Sales Funnels:</h2>
+                    <p class="tw-text-gray-500 tw-font-light tw-text-sm">Streamline the customer journey to increase conversions</p>
+				</span>
+			</div>
+
+            <!-- FAQ Section -->
+			<div id="accordion-color" data-accordion="collapse" data-active-classes="tw-bg-green-200 tw-text-green-500">
+                <!-- Question 1 -->
+				<h2 id="accordion-color-heading-1">
+				  <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-b-0 tw-border-gray-200 tw-rounded-t-xl hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
+					<span>What's included in the marketing and strategy service?</span>
+					<svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+					  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+					</svg>
+				  </button>
+				</h2>
+				<div id="accordion-color-body-1" class="tw-hidden" aria-labelledby="accordion-color-heading-1">
+				  <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-b-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
+					<p class="tw-mb-2">
+                        Our service includes audience research, brand strategy, campaign planning, multi-channel marketing execution, and analytics. We’ll work with you to create a customized strategy that drives results for your business.
+                    </p>
+				  </div>
+				</div>
+                <!-- Question 2 -->
+				<h2 id="accordion-color-heading-2">
+				  <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-b-0 tw-border-gray-200 hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-2">
+					<span>Do you handle paid advertising?</span>
+					<svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+					  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+					</svg>
+				  </button>
+				</h2>
+				<div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+				  <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-b-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
+					<p class="tw-mb-2">
+                        Yes, we manage paid advertising campaigns across platforms like Google Ads, Facebook, Instagram, and LinkedIn. We’ll ensure your ads reach the right audience and deliver measurable ROI.
+                    </p>
+				  </div>
+				</div>
+                <!-- Question 3 -->
+				<h2 id="accordion-color-heading-3">
+				  <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-gray-200 hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-3" aria-expanded="false" aria-controls="accordion-color-body-3">
+					<span>How do you measure success?</span>
+					<svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+					  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+					</svg>
+				  </button>
+				</h2>
+				<div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+				  <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-t-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
+                    <p class="tw-mb-2">
+                        We use key performance indicators (KPIs) like engagement, conversion rates, and ROI to track the success of your campaigns. Regular reports keep you informed and allow us to make data-driven adjustments.
+                    </p>
+				  </div>
+				</div>
+                <!-- Question 4 -->
+				<h2 id="accordion-color-heading-4">
+                    <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-b-0 tw-border-gray-200 hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-4" aria-expanded="false" aria-controls="accordion-color-body-4">
+                      <span>Can you help with branding and messaging?</span>
+                      <svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                      </svg>
+                    </button>
+                  </h2>
+                  <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
+                    <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-b-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
+                        <p class="tw-mb-2">
+                            Absolutely. We’ll work with you to refine your brand identity and messaging to ensure consistency and clarity across all platforms. Strong branding is the foundation of any effective marketing strategy.
+                        </p>
+                    </div>
+                  </div>
+                <!-- Question 5 -->
+				<h2 id="accordion-color-heading-5">
+                    <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-b-0 tw-border-gray-200 hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-5" aria-expanded="false" aria-controls="accordion-color-body-5">
+                      <span>Is this service suitable for small businesses?</span>
+                      <svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                      </svg>
+                    </button>
+                </h2>
+                <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
+                    <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-b-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
+                        <p class="tw-mb-2">
+                            Yes! Our services are scalable and tailored to businesses of all sizes. Whether you’re a startup or an established company, we can craft strategies that align with your goals and budget.
+                        </p>
+                    </div>
+                </div>
+			  </div>
+		</div>
+	</div>
+	
+    {% include 'components/pre-footer-cta.html' with title="Service" %} 
+</div>
+
+<!-- Incluir el social footer -->
+{% include 'components/cta-footer.html' %} 
+{% endblock content %} 
+{% block scripts %}
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+	integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+></script>
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+	integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+/>
+<script>
+    document.querySelectorAll(".toggle-container").forEach(container => {
+        container.addEventListener("click", function() {
+            const toggleId = container.getAttribute("data-toggle");
+            const whiteContent = document.getElementById(`white-content-${toggleId}`);
+            const greenContent = document.getElementById(`green-content-${toggleId}`);
+
+            // Alternar visibilidad entre contenido blanco y verde
+            whiteContent.classList.toggle("tw-hidden");
+            greenContent.classList.toggle("tw-hidden");
+        });
+    });
+</script>
+
+{% endblock scripts %}
