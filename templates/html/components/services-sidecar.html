@@ -11,26 +11,22 @@
         </div>
         <!-- Navigation Buttons -->
         <div class="tw-flex tw-flex-col tw-gap-4 tw-mt-4">
-            <div class="tw-flex tw-items-center tw-justify-between tw-bg-white hover:tw-bg-du-green hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group tw-transition-colors tw-duration-300">
+            <a href="{% url 'web-development' %}" class="tw-flex tw-items-center tw-justify-between tw-bg-white hover:tw-bg-du-green hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group tw-transition-colors tw-duration-300">
                 <h2 class="tw-text-xl">Web Development</h2>
                 <i class="bi bi-arrow-right tw-text-xl tw-text-du-green group-hover:tw-text-white"></i>
-            </div>
-            <div class="tw-flex tw-items-center tw-justify-between tw-bg-white hover:tw-bg-du-green hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group tw-transition-colors tw-duration-300">
-                <h2 class="tw-text-xl">Content Marketing</h2>
+            </a>
+            <a href="{% url 'social-media' %}" class="tw-flex tw-items-center tw-justify-between tw-bg-white hover:tw-bg-du-green hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group tw-transition-colors tw-duration-300">
+                <h2 class="tw-text-xl">Social Media</h2>
                 <i class="bi bi-arrow-right tw-text-xl tw-text-du-green group-hover:tw-text-white"></i>
-            </div>
-            <div class="tw-flex tw-items-center tw-justify-between tw-bg-white hover:tw-bg-du-green hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group tw-transition-colors tw-duration-300">
-                <h2 class="tw-text-xl">Social Media Marketing</h2>
+            </a>
+            <a href="{% url 'marketing' %}" class="tw-flex tw-items-center tw-justify-between tw-bg-white hover:tw-bg-du-green hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group tw-transition-colors tw-duration-300">
+                <h2 class="tw-text-xl">Marketing and Strategy</h2>
                 <i class="bi bi-arrow-right tw-text-xl tw-text-du-green group-hover:tw-text-white"></i>
-            </div>
-            <div class="tw-flex tw-items-center tw-justify-between tw-bg-white hover:tw-bg-du-green hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group tw-transition-colors tw-duration-300">
-                <h2 class="tw-text-xl">Content Production</h2>
+            </a>
+            <a href="{% url 'consulting' %}" class="tw-flex tw-items-center tw-justify-between tw-bg-white hover:tw-bg-du-green hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group tw-transition-colors tw-duration-300">
+                <h2 class="tw-text-xl">Consulting</h2>
                 <i class="bi bi-arrow-right tw-text-xl tw-text-du-green group-hover:tw-text-white"></i>
-            </div>
-            <div class="tw-flex tw-items-center tw-justify-between tw-bg-white hover:tw-bg-du-green hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group tw-transition-colors tw-duration-300">
-                <h2 class="tw-text-xl">Sales Strategy</h2>
-                <i class="bi bi-arrow-right tw-text-xl tw-text-du-green group-hover:tw-text-white"></i>
-            </div>
+            </a>
         </div>
     </div>
     <!-- Card 2 -->
@@ -45,19 +41,19 @@
         <div class="tw-flex tw-flex-col tw-gap-4 tw-mt-4">
             <div class="tw-flex tw-items-center tw-justify-start tw-gap-6 tw-bg-white hover:tw-bg-du-green hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group tw-transition-colors tw-duration-300">
                 <i class="bi bi-currency-dollar tw-text-xl tw-text-du-green group-hover:tw-text-white"></i>
-                <h2 class="tw-text-xl">Lite Package - ${{litePrice}}/month</h2>
+                <h2 class="tw-text-xl">Lite Package - ${{litePrice}}/{{frequency}}</h2>
             </div>
             <div class="tw-flex tw-items-center tw-justify-start tw-gap-6 tw-bg-white hover:tw-bg-du-green hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group tw-transition-colors tw-duration-300">
                 <i class="bi bi-currency-dollar tw-text-xl tw-text-du-green group-hover:tw-text-white"></i>
-                <h2 class="tw-text-xl">Basic Package - ${{basicPrice}}/month</h2>
+                <h2 class="tw-text-xl">Basic Package - ${{basicPrice}}/{{frequency}}</h2>
             </div>
             <div class="tw-flex tw-items-center tw-justify-start tw-gap-6 tw-bg-white hover:tw-bg-du-green hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group tw-transition-colors tw-duration-300">
                 <i class="bi bi-currency-dollar tw-text-xl tw-text-du-green group-hover:tw-text-white"></i>
-                <h2 class="tw-text-xl">Mid Package - ${{midPrice}}/month</h2>
+                <h2 class="tw-text-xl">Mid Package - ${{midPrice}}/{{frequency}}</h2>
             </div>
             <div class="tw-flex tw-items-center tw-justify-start tw-gap-6 tw-bg-white hover:tw-bg-du-green hover:tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group tw-transition-colors tw-duration-300">
                 <i class="bi bi-currency-dollar tw-text-xl tw-text-du-green group-hover:tw-text-white"></i>
-                <h2 class="tw-text-xl">Pro Package - ${{proPrice}}/month</h2>
+                <h2 class="tw-text-xl">Pro Package - ${{proPrice}}/{{frequency}}</h2>
             </div>
             <div class="tw-flex tw-items-center tw-justify-center tw-gap-4 hover:tw-bg-du-green tw-bg-green-800 tw-text-white tw-rounded-xl tw-py-6 tw-px-8 tw-group hover:tw-shadow-xl tw-transition-colors tw-duration-300">
                 <h2 class="tw-text-xl">Schedule a FREE Appointment</h2>
