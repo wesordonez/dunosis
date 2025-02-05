@@ -52,6 +52,9 @@ def marketing_service_view(request):
 def consulting_service_view(request):
     return render(request, './services/consulting.html', status=200)
 
+def maintenance_service_view(request):
+    return render(request, './services/maintenance.html', status=200)
+
 def portfolio_view(request):
     return render(request, 'portfolio-overview.html', status=200)
 
