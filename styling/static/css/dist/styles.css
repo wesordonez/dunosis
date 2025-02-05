@@ -2721,6 +2721,11 @@ input[type="range"]::-ms-fill-lower {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.hover\:tw-text-du-green:hover {
+  --tw-text-opacity: 1;
+  color: rgb(2 154 77 / var(--tw-text-opacity, 1));
+}
+
 .hover\:tw-underline:hover {
   text-decoration-line: underline;
 }
@@ -2788,6 +2793,11 @@ input[type="range"]::-ms-fill-lower {
   border-color: rgb(14 159 110 / var(--tw-border-opacity, 1));
 }
 
+.tw-group:hover .group-hover\:tw-border-du-green {
+  --tw-border-opacity: 1;
+  border-color: rgb(2 154 77 / var(--tw-border-opacity, 1));
+}
+
 .tw-group:hover .group-hover\:tw-bg-green-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(14 159 110 / var(--tw-bg-opacity, 1));
@@ -2803,6 +2813,11 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(200 30 30 / var(--tw-bg-opacity, 1));
 }
 
+.tw-group:hover .group-hover\:tw-bg-du-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 154 77 / var(--tw-bg-opacity, 1));
+}
+
 .tw-group:hover .group-hover\:tw-text-green-500 {
   --tw-text-opacity: 1;
   color: rgb(14 159 110 / var(--tw-text-opacity, 1));
@@ -2811,6 +2826,11 @@ input[type="range"]::-ms-fill-lower {
 .tw-group:hover .group-hover\:tw-text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.tw-group:hover .group-hover\:tw-text-du-green {
+  --tw-text-opacity: 1;
+  color: rgb(2 154 77 / var(--tw-text-opacity, 1));
 }
 
 .tw-group:hover .group-hover\:tw-opacity-100 {
