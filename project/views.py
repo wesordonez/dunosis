@@ -63,3 +63,6 @@ def portfolio_view(request):
 
 def cpanda_portfolio_details_view(request):
     return render(request, './portfolio/cpanda-website.html', status=200)
+
+def kneadsweets_portfolio_details_view(request):
+    return render(request, './portfolio/kneadsweets-website.html', status=200)
