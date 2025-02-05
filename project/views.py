@@ -59,7 +59,7 @@ def graphic_design_service_view(request):
     return render(request, './services/graphic-design.html', status=200)
 
 def portfolio_view(request):
-    return render(request, 'portfolio-overview.html', status=200)
+    return render(request, './portfolio/portfolio.html', status=200)
 
 def portfolio_details_view(request):
     return render(request, 'portfolio-details.html', status=200)
