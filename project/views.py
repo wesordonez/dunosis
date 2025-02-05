@@ -61,5 +61,5 @@ def graphic_design_service_view(request):
 def portfolio_view(request):
     return render(request, './portfolio/portfolio.html', status=200)
 
-def portfolio_details_view(request):
-    return render(request, 'portfolio-details.html', status=200)
+def cpanda_portfolio_details_view(request):
+    return render(request, './portfolio/cpanda-website.html', status=200)
