@@ -69,3 +69,15 @@ def kneadsweets_portfolio_details_view(request):
 
 def prcc_portfolio_details_view(request):
     return render(request, './portfolio/prcc-dashboard.html', status=200)
+
+def cafe_ignacio_portfolio_details_view(request):
+    return render(request, './portfolio/cafe-ignacio.html', status=200)
+
+def guayaba_portfolio_details_view(request):
+    return render(request, './portfolio/guayaba.html', status=200)
+
+def jardin_portfolio_details_view(request):
+    return render(request, './portfolio/colonia-jardin.html', status=200)
+
+def metaltela_portfolio_details_view(request):
+    return render(request, './portfolio/metaltela.html', status=200)
