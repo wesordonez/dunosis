@@ -13,15 +13,15 @@
         <!-- Left Photos -->
         <div class="tw-gap-4 tw-place-content-center tw-place-items-center xl:tw-flex xl:tw-flex-row">
             <div class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] lg:tw-h-[700px] hover:tw-shadow-2xl tw-hidden md:tw-flex">
-                <img src="{% static './assets/images/about/chicago.jpg' %}" alt="chicago" class="tw-w-[300px] tw-h-full tw-object-cover" />
+                <img src="{% static './assets/images/home/du-chicago-stock.jpg' %}" alt="Chicago - Willis Tower - Sears Tower" class="tw-w-[300px] tw-h-full tw-object-cover" />
             </div>
             <div class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px] hover:tw-shadow-2xl hover:tw-duration-150 tw-hidden xl:tw-flex">
-                <img src="{% static './assets/images/about/wesley.jpeg' %}" alt="dashboard" class="tw-w-[200px] tw-h-full tw-object-cover" />
+                <img src="{% static './assets/images/home/du-wesley-profile-3.png' %}" alt="Wesley Ordonez, Co Founder and Lead Engineer at Dunosis LLC" class="tw-w-[200px] tw-h-full tw-object-cover" />
             </div>
         </div>
 
 		<!-- Center Content -->
-		<div class="tw-flex tw-flex-col tw-items-center tw-max-w-[480px] tw-min-w-[300px] tw-mx-4">
+		<div class="tw-flex tw-flex-col tw-items-center tw-max-w-[480px] tw-min-w-[300px] tw-px-[5%] tw-mx-4">
 			<div class="tw-w-full tw-flex tw-flex-col tw-items-center">
                 <img src="{% static 'assets/logos/dunosis-logo-bg.png' %}" alt="Dunosis Logo" class="tw-mb-1">
                 <h1 class="tw-text-3xl max-md:tw-text-3xl max-sm:tw-text-2xl tw-font-light tw-text-center tw-lowercase">
@@ -40,10 +40,10 @@
         <!-- Right Photos -->
         <div class="tw-gap-4 tw-place-content-center tw-place-items-center xl:tw-flex xl:tw-flex-row">
             <div class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] max-lg:tw-h-[300px] max-md:tw-h-[250px] hover:tw-shadow-2xl hover:tw-scale-105 hover:tw-duration-150 tw-hidden xl:tw-flex">
-                <img src="{% static './assets/images/about/tayo.jpeg' %}" alt="dashboard" class="tw-w-[200px] tw-h-full tw-object-cover" />
+                <img src="{% static './assets/images/home/du-tayo-profile.png' %}" alt="Tayo Zabala, Co Founder and Marketing at Dunosis" class="tw-w-[200px] tw-h-full tw-object-cover" />
             </div>
             <div class="poster tw-rounded-2xl tw-overflow-hidden tw-shadow-xl tw-h-[500px] lg:tw-h-[700px] hover:tw-shadow-2xl hover:tw-scale-105 tw-hidden md:tw-flex">
-                <img src="{% static './assets/images/about/santacruz.jpg' %}" alt="dashboard" class="tw-w-[300px] tw-h-full tw-object-cover" />
+                <img src="{% static './assets/images/home/du-santa-cruz-stock.jpg' %}" alt="Santa Cruz de la Sierra, Plaza 24 de Septiempre, La Catedral" class="tw-w-[300px] tw-h-full tw-object-cover" />
             </div>
         </div>
         
@@ -80,7 +80,7 @@
               <div class="image-container tw-w-full md:tw-w-[50%] md:tw-block tw-order-1 md:tw-order-2">
               <div class="tw-right-0 tw-top-0 tw-w-full md:tw-h-full">
                 <a href="{% url 'web-development' %}">
-                <img src="{% static './assets/images/home/du-webdev-stock.jpg' %}" alt="Web Development" class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
+                <img src="{% static './assets/images/home/du-webdev-stock.jpg' %}" alt="Web Development" class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl" lazy="loading">
                 </a>
               </div>
           </div>
@@ -105,7 +105,7 @@
           <div class="image-container tw-w-full md:tw-w-[50%] md:tw-hidden tw-order-1 md:tw-order-2">
             <div class="tw-right-0 tw-top-0 tw-w-full md:tw-h-full">
               <a href="{% url 'social-media' %}">
-                <img src="{% static './assets/images/home/du-socialmedia-stock.jpg' %}" alt="Social Media" class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
+                <img src="{% static './assets/images/home/du-socialmedia-stock.jpg' %}" alt="Social Media" class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl" lazy="loading">
               </a>
             </div>
           </div>
@@ -134,7 +134,7 @@
           <div class="image-container tw-w-full md:tw-w-[50%] md:tw-hidden tw-order-1 md:tw-order-2">
             <div class="tw-right-0 tw-top-0 tw-w-full md:tw-h-full">
               <a href="{% url 'marketing' %}">
-                <img src="{% static './assets/images/home/du-marketing-stock.jpg' %}" alt="Marketing & Strategy" class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
+                <img src="{% static './assets/images/home/du-marketing-stock.jpg' %}" alt="Marketing & Strategy" class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl" lazy="loading">
               </a>
             </div>
           </div>
@@ -159,7 +159,7 @@
               <div class="image-container tw-w-full md:tw-w-[50%] md:tw-block tw-order-1 md:tw-order-2">
                 <div class="tw-right-0 tw-top-0 tw-w-full md:tw-h-full">
                   <a href="{% url 'consulting' %}">
-                    <img src="{% static './assets/images/home/du-consulting-stock.jpg' %}" alt="Consulting" class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
+                    <img src="{% static './assets/images/home/du-consulting-stock.jpg' %}" alt="Consulting" class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl" lazy="loading">
                   </a>
                 </div>
             </div>
