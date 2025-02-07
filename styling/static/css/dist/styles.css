@@ -1921,6 +1921,11 @@ input[type="range"]::-ms-fill-lower {
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
+.tw-border-du-green {
+  --tw-border-opacity: 1;
+  border-color: rgb(2 154 77 / var(--tw-border-opacity, 1));
+}
+
 .tw-bg-\[\#029A4D\] {
   --tw-bg-opacity: 1;
   background-color: rgb(2 154 77 / var(--tw-bg-opacity, 1));
@@ -2644,6 +2649,11 @@ input[type="range"]::-ms-fill-lower {
 .hover\:tw-border-green-500:hover {
   --tw-border-opacity: 1;
   border-color: rgb(14 159 110 / var(--tw-border-opacity, 1));
+}
+
+.hover\:tw-border-du-green:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(2 154 77 / var(--tw-border-opacity, 1));
 }
 
 .hover\:tw-bg-\[rgba\(104\2c 0\2c 138\2c 0\.6\)\]:hover {
