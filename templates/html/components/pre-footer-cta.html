@@ -2,26 +2,21 @@
 <div
 	class="tw-flex tw-flex-col md:tw-flex-row tw-bg-du-green tw-py-10 tw-mt-4 tw-rounded-lg tw-text-white tw-justify-center tw-items-center tw-w-full tw-gap-4 tw-max-w-[900px] md:tw-min-w-[740px] md:tw-max-w-[1440px]">
 	<div class="tw-flex">
-		<!-- Circle Avatar 1 -->
-		<div class="tw-w-16 tw-h-16 tw-rounded-full tw-overflow-hidden tw-border-2 tw-border-white tw-shadow-md">
-			<img src="{% static './assets/images/happy-clients/avatar1.jpg' %}" alt="Avatar 1"
-				class="tw-w-full tw-h-full tw-object-cover" />
-		</div>
-		<!-- Circle Avatar 2 -->
-		<div
-			class="tw-w-16 tw-h-16 tw-rounded-full tw-overflow-hidden tw-border-2 tw-border-white tw-shadow-md tw--ml-4">
-			<img src="{% static './assets/images/happy-clients/avatar2.jpg' %}" alt="Avatar 2"
-				class="tw-w-full tw-h-full tw-object-cover" />
-		</div>
-		<!-- Circle Avatar 3 -->
-		<div
-			class="tw-w-16 tw-h-16 tw-rounded-full tw-overflow-hidden tw-border-2 tw-border-white tw-shadow-md tw--ml-4">
-			<img src="{% static './assets/images/happy-clients/avatar3.jpg' %}" alt="Avatar 3"
-				class="tw-w-full tw-h-full tw-object-cover" />
-		</div>
+		<!-- Phone Icon -->
+		<a href="tel:+17732022074" class="tw-w-16 tw-h-16 tw-rounded-full tw-flex tw-items-center tw-justify-center tw-bg-white tw-shadow-md tw-border-2 tw-border-white">
+			<i class="bi bi-telephone-fill tw-text-du-green tw-text-2xl"></i>
+		</a>
+		<!-- Mail Icon -->
+		<a href="mailto:info@dunosis.com" class="tw-w-16 tw-h-16 tw-rounded-full tw-flex tw-items-center tw-justify-center tw-bg-white tw-shadow-md tw-border-2 tw-border-white tw--ml-4">
+			<i class="bi bi-envelope-fill tw-text-du-green tw-text-2xl"></i>
+		</a>
+		<!-- WhatsApp Icon -->
+		<a href="https://wa.me/17732022074" class="tw-w-16 tw-h-16 tw-rounded-full tw-flex tw-items-center tw-justify-center tw-bg-white tw-shadow-md tw-border-2 tw-border-white tw--ml-4">
+			<i class="bi bi-whatsapp tw-text-du-green tw-text-2xl"></i>
+		</a>
 	</div>
 
-	<h2 class="tw-flex tw-text-2xl tw-font-semibold">1.5 K Happy Clients</h2>
+	<h2 class="tw-flex tw-text-2xl tw-font-semibold">Questions? We are happy to help</h2>
 	<div class="tw-flex tw-items-center tw-gap-2 tw-group lg:tw-ml-8">
 		{% if link_type == 'services' %}
 			<a href="{% url 'services' %}"
