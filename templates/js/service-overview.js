@@ -13,6 +13,8 @@ cardRows.forEach((row, rowIndex) => {
 		cards[0].classList.add("active");
 	} else if (rowIndex === 1 && cards.length > 1) {
 		cards[1].classList.add("active");
+	} else if (rowIndex === 2 && cards.length > 0) {
+		cards[0].classList.add("active");
 	}
 
 	cards.forEach(card => {

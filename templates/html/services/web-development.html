@@ -1,0 +1,242 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %}Web Development - {% endblock title %} 
+{% block description %}Web Development{% endblock description %} {% load custom_tags %}
+{%block content %}
+
+<div class="tw-flex tw-flex-col tw-items-center tw-p-10">
+	<div class="tw-flex tw-flex-col md:tw-flex-row tw-justify-center tw-items-center md:tw-items-start tw-gap-8">
+
+		<!-- Sidebar Navs-->
+		{% include 'components/services-sidecar.html' with litePrice='100' basicPrice='250' midPrice='350' proPrice='500' frequency='month' %}
+
+		<!-- Container -->
+		<div class="tw-flex tw-flex-col tw-gap-4 tw-justify-center md:tw-ml-10 tw-min-w-[350px] tw-max-w-[900px] tw-order-1 md:tw-order-2">
+			<!-- Hero Image -->
+			<div class="tw-flex tw-w-[100%] tw-h-[400px] tw-bg-gray-500 tw-rounded-3xl hover:tw-shadow-2xl tw-mb-4">
+				<img
+					src="{% static './assets/images/services/details/du-webdev-2.jpg' %}"
+					alt="digital-marketing"
+					class="tw-flex tw-w-[100%] tw-h-[100%] tw-rounded-3xl tw-object-cover"
+				/>
+			</div>
+			<h2 class="tw-text-4xl tw-font-bold tw-mb-4">Web Development</h2>
+			<p class="tw-text-xl tw-mb-4 tw-font-light">
+                We specialize in creating custom websites tailored to your business’s unique needs. Unlike AI builders or generic templates, we handcraft every site with clean, efficient code to ensure it’s fast, scalable, and perfectly aligned with your brand. Our approach puts your goals at the forefront, delivering functionality and design that work seamlessly together.
+                <br><br />  
+                Why is this important? A truly custom website sets your business apart, offering a unique user experience that templates can’t replicate. With optimized performance, intuitive navigation, and a design built specifically for your audience, your website becomes a powerful tool to attract and engage customers, elevate your brand, and drive growth.
+			</p>
+			<h2 class="tw-text-4xl tw-font-bold tw-mb-4">What We Provide</h2>
+			<p class="tw-text-xl tw-mb-4 tw-font-light">
+				When you work with us, you’re not just getting a website—you’re getting a fully customized digital solution designed to grow with your business. We believe in complete transparency, which is why the code we develop is yours to own. You paid for it, and you should have the freedom to deploy it anywhere you choose.  
+                <br><br />
+                Of course, we’d love to continue supporting you through our maintenance and optimization services, but we’ll never hold your website hostage. Whether you stay with us or take your site elsewhere, you can feel confident knowing it’s built to perform, scale, and adapt to your needs.  
+                <br><br />
+                Our services include clean, efficient code, seamless integrations, responsive designs, and a commitment to your long-term success. With Dunosis, you don’t just get a website—you get peace of mind and a partner invested in your growth.
+			</p>
+			<div class="tw-flex tw-flex-col md:tw-flex-row tw-justify-center tw-items-center tw-gap-4 tw-mb-4">
+				<!-- Photo Left -->
+				<div class="tw-relative tw-w-full tw-h-[400px] tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden tw-min-w-[300px]">
+					<img
+						src="{% static './assets/images/services/details/du-webdev-1.png' %}"
+						alt="Performance optimized web development"
+						class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl"
+					/>
+
+                    <!-- Text Overlay -->
+                    <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-justify-end tw-items-center tw-text-center tw-bg-gradient-to-t tw-from-du-green/90 tw-to-transparent tw-p-4 tw-pb-18 tw-opacity-0 hover:tw-opacity-100 tw-transition-opacity tw-duration-300">
+                        <h2 class="tw-text-xl tw-font-bold tw-text-white">
+                            SEO and Optimization
+                        </h2>
+                        <p class="tw-text-white tw-mt-2">Designed to deliver speed and performance</p>
+                    </div>
+				</div>
+
+				<!-- Photo Right -->
+				<div class="tw-relative tw-w-full tw-h-[400px] tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden">
+					<img
+						src="{% static './assets/images/services/details/du-webdev-3.jpg' %}"
+						alt="Responsive design web development"
+						class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl"
+					/>
+
+                    <!-- Text Overlay -->
+                    <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-justify-end tw-items-center tw-text-center tw-bg-gradient-to-t tw-from-du-green/90 tw-to-transparent tw-p-4 tw-pb-18 tw-opacity-0 hover:tw-opacity-100 tw-transition-opacity tw-duration-300">
+                        <h2 class="tw-text-xl tw-font-bold tw-text-white">
+                            Responsive Design
+                        </h2>
+                        <p class="tw-text-white tw-mt-2">Beautiful designs that fit all screen sizes</p>
+                    </div>
+				</div>
+			</div>
+			<h2 class="tw-text-4xl tw-font-bold tw-mb-4">The Features</h2>
+			<p class="tw-text-xl tw-mb-4 tw-font-light">
+				Our web development process is built on delivering features that drive performance, usability, and results. Every website we create is optimized for speed, responsiveness, and user experience, ensuring seamless interactions across all devices. We focus on integrating cutting-edge technologies and customizable solutions that align with your business needs and goals.  
+                <br><br />
+                From secure, scalable code to intuitive interfaces, our features are designed to help your business stand out and grow. Whether it’s custom integrations, e-commerce functionality, or advanced analytics, we prioritize solutions that empower you to succeed in the digital world.
+			</p>
+
+            <!-- Features -->
+			<div class="tw-flex tw-flex-wrap tw-gap-10 tw-justify-between tw-mb-4">
+				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+					<i
+						class="tw-flex bi bi-check tw-bg-du-green tw-text-white tw-rounded-full tw-h-8 tw-min-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"
+					></i>
+					<h2 class="tw-font-normal">Speed and Performance:</h2>
+                    <p class="tw-text-gray-500 tw-font-light tw-text-sm">Optimized for fast load times and smooth interactions</p>
+				</span>
+				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+					<i
+						class="tw-flex bi bi-check tw-bg-du-green tw-text-white tw-rounded-full tw-h-8 tw-min-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"
+					></i>
+					<h2>Fully Responsive Design:</h2>
+                    <p class="tw-text-gray-500 tw-font-light tw-text-sm">Seamless user experience across desktops, tablets, and smartphones</p>
+				</span>
+				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+					<i
+						class="tw-flex bi bi-check tw-bg-du-green tw-text-white tw-rounded-full tw-h-8 tw-min-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"
+					></i>
+					<h2>Custom Integrations:</h2>
+                    <p class="tw-text-gray-500 tw-font-light tw-text-sm">Tailored features like e-commerce, analytics, or third-party tools</p>
+				</span>
+				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+					<i
+						class="tw-flex bi bi-check tw-bg-du-green tw-text-white tw-rounded-full tw-h-8 tw-min-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"
+					></i>
+					<h2>Scalable & Secure Code:</h2>
+                    <p class="tw-text-gray-500 tw-font-light tw-text-sm">Future-proof development with robust security and room to grow</p>
+				</span>
+			</div>
+
+            <!-- FAQ Section -->
+			<div id="accordion-color" data-accordion="collapse" data-active-classes="tw-bg-green-200 tw-text-green-500">
+                <!-- Question 1 -->
+				<h2 id="accordion-color-heading-1">
+				  <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-b-0 tw-border-gray-200 tw-rounded-t-xl hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
+					<span>Who owns the website once it's completed?</span>
+					<svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+					  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+					</svg>
+				  </button>
+				</h2>
+				<div id="accordion-color-body-1" class="tw-hidden" aria-labelledby="accordion-color-heading-1">
+				  <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-b-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
+					<p class="tw-mb-2">You do! At Dunosis, we believe in full transparency and client empowerment. The code and assets we create are 100% yours, giving you the freedom to host or deploy your website wherever you like.</p>
+				  </div>
+				</div>
+                <!-- Question 2 -->
+				<h2 id="accordion-color-heading-2">
+				  <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-b-0 tw-border-gray-200 hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-2">
+					<span>Do you use templates or website builders?</span>
+					<svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+					  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+					</svg>
+				  </button>
+				</h2>
+				<div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+				  <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-b-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
+					<p class="tw-mb-2">No, we don’t use pre-made templates or AI website builders. Every website we develop is custom-built from the ground up to ensure it meets your unique needs, reflects your brand, and performs optimally.</p>
+				  </div>
+				</div>
+                <!-- Question 3 -->
+				<h2 id="accordion-color-heading-3">
+				  <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-gray-200 hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-3" aria-expanded="false" aria-controls="accordion-color-body-3">
+					<span>How long does it take to build a website?</span>
+					<svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+					  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+					</svg>
+				  </button>
+				</h2>
+				<div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+				  <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-t-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
+                    <p class="tw-mb-2">
+                        The timeline for building a website depends on the complexity of the project and the specific requirements. 
+                        However, most websites are completed within 4-8 weeks.
+                    </p>
+                    <p class="tw-mb-2">
+                        During the initial planning phase, we’ll provide a detailed timeline that includes milestones, 
+                        giving you clear expectations and ensuring a smooth development process.
+                    </p>
+                    <p class="tw-mb-2">
+                        For larger or more complex websites, additional time may be needed to ensure the highest quality. 
+                        Here’s what the process typically involves:
+                    </p>
+                    <ul class="tw-ps-5 tw-text-gray-500 tw-list-disc dark:tw-text-gray-400">
+                        <li>Discovery and planning</li>
+                        <li>Custom design and development</li>
+                        <li>Implementation and rigorous testing</li>
+                        <li>Launch and post-launch support</li>
+                    </ul>
+				  </div>
+				</div>
+                <!-- Question 4 -->
+				<h2 id="accordion-color-heading-4">
+                    <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-b-0 tw-border-gray-200 hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-4" aria-expanded="false" aria-controls="accordion-color-body-4">
+                      <span>Do you offer maintenance and support after launch?</span>
+                      <svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                      </svg>
+                    </button>
+                  </h2>
+                  <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
+                    <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-b-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
+                      <p class="tw-mb-2">Yes, we provide maintenance and support to ensure your website remains updated, secure, and running smoothly. Maintenance is included for the first year at no additional cost. After that, you can choose an affordable plan tailored to your needs, giving you peace of mind as your business grows. While you’re free to manage the website yourself, our team is always here to assist with any updates or technical needs.</p>
+                    </div>
+                  </div>
+                <!-- Question 5 -->
+				<h2 id="accordion-color-heading-5">
+                    <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-b-0 tw-border-gray-200 hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-5" aria-expanded="false" aria-controls="accordion-color-body-5">
+                      <span>Can you help with SEO and website performance?</span>
+                      <svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                      </svg>
+                    </button>
+                </h2>
+                <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
+                    <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-b-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
+                      <p class="tw-mb-2">Yes, all of our websites are built with SEO best practices in mind. We optimize for fast loading times, mobile responsiveness, and search engine visibility. We also provide a goolge search console and analytics dashboard so you can monitor the performance of your website in real-time!</p>
+                    </div>
+                </div>
+			  </div>
+		</div>
+	</div>
+	
+    {% include 'components/pre-footer-cta.html' with title="Service" link_type='services' %} 
+</div>
+
+<!-- Incluir el social footer -->
+{% include 'components/cta-footer.html' %} 
+{% endblock content %} 
+{% block scripts %}
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+	integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+></script>
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+	integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+/>
+<script>
+    document.querySelectorAll(".toggle-container").forEach(container => {
+        container.addEventListener("click", function() {
+            const toggleId = container.getAttribute("data-toggle");
+            const whiteContent = document.getElementById(`white-content-${toggleId}`);
+            const greenContent = document.getElementById(`green-content-${toggleId}`);
+
+            // Alternar visibilidad entre contenido blanco y verde
+            whiteContent.classList.toggle("tw-hidden");
+            greenContent.classList.toggle("tw-hidden");
+        });
+    });
+</script>
+
+{% endblock scripts %}

@@ -74,7 +74,7 @@ ALLOWED_HOSTS = [host.strip() for host in ALLOWED_HOSTS]
 #     CSRF_TRUSTED_ORIGINS = os.environ.get('ALLOWED_CORS').replace(' ', '').split(',')
 
 
-PROJECT_TITLE = 'Dunosis Website'  # name of the project
+PROJECT_TITLE = 'Dunosis'  # name of the project
 
 if DEBUG:
     DOMAIN = "http://localhost:8000"

@@ -13,7 +13,11 @@ from django.urls import path
 from django.urls import path, include, re_path
 
 from .views import (rate_limiter_view, view_404, 
-                        handler_403, home_view, about_view, landing_view, services_view, service_details_view, portfolio_view, portfolio_details_view) #subscribe_view
+                        handler_403, home_view, about_view, about_details_view, landing_view, services_view,
+                        webdev_service_view, socialmedia_service_view, marketing_service_view, consulting_service_view,
+                        maintenance_service_view, graphic_design_service_view, portfolio_view, cpanda_portfolio_details_view,
+                        kneadsweets_portfolio_details_view, prcc_portfolio_details_view, cafe_ignacio_portfolio_details_view,
+                        guayaba_portfolio_details_view, jardin_portfolio_details_view, metaltela_portfolio_details_view) #subscribe_view
 
 from .sitemaps import StaticSitemap
 from blog.sitemaps import BlogSitemap
@@ -45,13 +49,29 @@ urlpatterns = [
 
     # add new path here
 
-    path('', landing_view, name='landing'),
+    path('', home_view, name='home'),
+    
     path('about/', about_view, name='about'),
+    path('about-details/', about_details_view, name='about-details'),
+    
     path('landing/', landing_view, name='landing'),
+    
     path('services/', services_view, name='services'),
-    path('service/', service_details_view, name='service-details'),
+    path('services/web-development/', webdev_service_view, name='web-development'),
+    path('services/social-media/', socialmedia_service_view, name='social-media'),
+    path('services/marketing/', marketing_service_view, name='marketing'),
+    path('services/consulting/', consulting_service_view, name='consulting'),
+    path('services/maintenance/', maintenance_service_view, name='maintenance'),
+    path('services/graphic-design/', graphic_design_service_view, name='graphic-design'),
+    
     path('portfolio/', portfolio_view, name='portfolio'),
-    path('portfolio-details/', portfolio_details_view, name='portfolio-details'),
+    path('portfolio/cpanda-website/', cpanda_portfolio_details_view, name='cpanda-website'),
+    path('portfolio/kneadsweets-website/', kneadsweets_portfolio_details_view, name='kneadsweets-website'),
+    path('portfolio/prcc-dashboard/', prcc_portfolio_details_view, name='prcc-dashboard'),
+    path('portfolio/cafe-ignacio/', cafe_ignacio_portfolio_details_view, name='cafe-ignacio'),
+    path('portfolio/guayaba/', guayaba_portfolio_details_view, name='guayaba'),
+    path('portfolio/colonia-jardin/', jardin_portfolio_details_view, name='jardin'),
+    path('portfolio/metaltela/', metaltela_portfolio_details_view, name='metaltela'),
 
     path("__reload__/", include("django_browser_reload.urls")),
 ]

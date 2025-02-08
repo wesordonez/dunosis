@@ -111,18 +111,14 @@
                 <a class="header-links" href="{% url "about" %}">
                     About
                 </a>
-                <a class="header-links" href="{% url "service-details" %}"
-                        rel="noreferrer"
-                        >
+                <a class="header-links" href="{% url "services" %}">
                     Services
                 </a>
-                <a class="header-links" href="{% url "portfolio-details" %}"
-                        rel="noreferrer"
-                        >
+                <a class="header-links" href="{% url "portfolio" %}">
                     Portfolio
                 </a>
             </div>
-            <a href="https://github.com/PaulleDemon/Django-website-template" 
+            <a href="https://dunosis.forms.app/contact-form" 
             class="btn tw-rounded-full tw-flex tw-items-center tw-gap-2 tw-h-10 tw-px-6 hover:tw-blue-red-700 hover:tw-text-white hover:tw-bg-blue-500 tw-justify-center tw-mt-6">
                         <span>Contact Us!</span>
                     </a>
@@ -149,15 +145,17 @@
         <div class="tw-h-full tw-w-full tw-flex tw-flex-row max-md:tw-flex-col
                     tw-gap-6 tw-place-items-center max-md:tw-w-full tw-justify-between">
             
-            <img src="{% static "assets/logos/dunosis-logo-sq.png" %}" 
-                alt="logo"  class="tw-max-w-[120px] max-md:tw-max-w-[100px] tw-rounded-full">
+            <a href="#top">
+                <img src="{% static "assets/logos/dunosis-logo-sq.png" %}" 
+                    alt="logo"  class="tw-max-w-[120px] max-md:tw-max-w-[100px] tw-rounded-full">
+            </a>
 
             <div class="tw-h-full tw-w-auto tw-flex tw-flex-col tw-gap-4">
                 <div class=" tw-flex tw-flex-row tw-gap-3 max-md:tw-text-sm">
                     <a href="{% url "home" %}" class="footer-link">Home</a>
-                    <a href="" class="footer-link">About Us</a>
-                    <a href="{% url "contact-us" %}" class="footer-link">Services</a>
-                    <a href="" class="footer-link">Portfolio</a>
+                    <a href="{% url "about" %}" class="footer-link">About Us</a>
+                    <a href="{% url "services" %}" class="footer-link">Services</a>
+                    <a href="{% url "portfolio" %}" class="footer-link">Portfolio</a>
                 </div>
             </div>
 

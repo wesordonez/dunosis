@@ -1,0 +1,234 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %}Graphic Design - {% endblock title %} 
+{% block description %}Graphic Design{% endblock description %} {% load custom_tags %}
+{%block content %}
+
+<div class="tw-flex tw-flex-col tw-items-center tw-p-10">
+	<div class="tw-flex tw-flex-col md:tw-flex-row tw-justify-center tw-items-center md:tw-items-start tw-gap-8">
+
+		<!-- Sidebar Navs-->
+		{% include 'components/services-sidecar.html' with litePrice='20' basicPrice='50' midPrice='100' proPrice='175' frequency='project' %}
+
+		<!-- Container -->
+		<div class="tw-flex tw-flex-col tw-gap-4 tw-justify-center md:tw-ml-10 tw-min-w-[350px] tw-max-w-[900px] tw-order-1 md:tw-order-2">
+			<!-- Hero Image -->
+			<div class="tw-flex tw-w-[100%] tw-h-[400px] tw-bg-gray-500 tw-rounded-3xl hover:tw-shadow-2xl tw-mb-4">
+				<img
+					src="{% static './assets/images/services/details/du-graphic-design-1.jpg' %}"
+					alt="graphic design"
+					class="tw-flex tw-w-[100%] tw-h-[100%] tw-rounded-3xl tw-object-cover"
+				/>
+			</div>
+			<h2 class="tw-text-4xl tw-font-bold tw-mb-4">Graphic Design</h2>
+			<p class="tw-text-xl tw-mb-4 tw-font-light">
+                In today’s visually driven world, impactful graphic design is essential to standing out. At Dunosis, we specialize in creating captivating visuals that tell your brand’s story, connect with your audience, and leave a lasting impression. From logos and branding to digital assets and print materials, we provide professional design solutions tailored to your needs.
+			</p>
+			<h2 class="tw-text-4xl tw-font-bold tw-mb-4">What We Provide</h2>
+			<p class="tw-text-xl tw-mb-4 tw-font-light">
+				Our graphic design services are comprehensive and designed to bring your vision to life. Whether you need a complete brand identity, marketing materials, or social media graphics, our team ensures every design reflects your values and resonates with your audience.  
+                <br><br />
+                We combine creativity with strategic thinking, ensuring your designs not only look stunning but also drive results. Each project is a collaboration, and we provide you with full ownership of all assets, ready to be used across digital and print platforms.
+            </p>
+			<div class="tw-flex tw-flex-col md:tw-flex-row tw-justify-center tw-items-center tw-gap-4 tw-mb-4">
+				<!-- Photo Left -->
+				<div class="tw-relative tw-w-full tw-h-[400px] tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden tw-min-w-[300px]">
+					<img
+						src="{% static './assets/images/services/details/du-graphic-design-2.jpg' %}"
+						alt="graphic design"
+						class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl"
+					/>
+
+                    <!-- Text Overlay -->
+                    <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-justify-end tw-items-center tw-text-center tw-bg-gradient-to-t tw-from-du-green/90 tw-to-transparent tw-p-4 tw-pb-18 tw-opacity-0 hover:tw-opacity-100 tw-transition-opacity tw-duration-300">
+                        <h2 class="tw-text-xl tw-font-bold tw-text-white">
+                            Innovative Solutions, Tailored for You
+                        </h2>
+                        <p class="tw-text-white tw-mt-2">Empower your business to grow and thrive</p>
+                    </div>
+				</div>
+
+				<!-- Photo Right -->
+				<div class="tw-relative tw-w-full tw-h-[400px] tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden">
+					<img
+						src="{% static './assets/images/services/details/du-graphic-design-3.jpg' %}"
+						alt="graphic design"
+						class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl"
+					/>
+
+                    <!-- Text Overlay -->
+                    <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-justify-end tw-items-center tw-text-center tw-bg-gradient-to-t tw-from-du-green/90 tw-to-transparent tw-p-4 tw-pb-18 tw-opacity-0 hover:tw-opacity-100 tw-transition-opacity tw-duration-300">
+                        <h2 class="tw-text-xl tw-font-bold tw-text-white">
+                            Expert Guidance, Every Step of the way
+                        </h2>
+                        <p class="tw-text-white tw-mt-2">Our team delivers practical solutions for real-world challenges</p>
+                    </div>
+				</div>
+			</div>
+			<h2 class="tw-text-4xl tw-font-bold tw-mb-4">The Features</h2>
+			<p class="tw-text-xl tw-mb-4 tw-font-light">
+                Our design process is built to deliver high-quality, impactful visuals that enhance your brand’s presence. From initial concept to final delivery, we prioritize creativity, functionality, and professionalism in every project.
+            </p>
+
+            <!-- Features -->
+			<div class="tw-flex tw-flex-wrap tw-gap-10 tw-justify-between tw-mb-4">
+				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+					<i
+						class="tw-flex bi bi-check tw-bg-du-green tw-text-white tw-rounded-full tw-h-8 tw-min-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"
+					></i>
+					<h2 class="tw-font-normal">Custom Branding:</h2>
+                    <p class="tw-text-gray-500 tw-font-light tw-text-sm">Unique logos, color palettes, and visual identities tailored to your brand</p>
+				</span>
+				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+					<i
+						class="tw-flex bi bi-check tw-bg-du-green tw-text-white tw-rounded-full tw-h-8 tw-min-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"
+					></i>
+					<h2>Marketing Materials:</h2>
+                    <p class="tw-text-gray-500 tw-font-light tw-text-sm">Professionally designed flyers, brochures, and banners for print or digital use</p>
+				</span>
+				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+					<i
+						class="tw-flex bi bi-check tw-bg-du-green tw-text-white tw-rounded-full tw-h-8 tw-min-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"
+					></i>
+					<h2>Social Media Graphics:</h2>
+                    <p class="tw-text-gray-500 tw-font-light tw-text-sm">Scroll-stopping visuals optimized for engagement on all platforms</p>
+				</span>
+				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+					<i
+						class="tw-flex bi bi-check tw-bg-du-green tw-text-white tw-rounded-full tw-h-8 tw-min-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						aria-hidden="true"
+					></i>
+					<h2>Creative Collaboration:</h2>
+                    <p class="tw-text-gray-500 tw-font-light tw-text-sm">A hands-on process to ensure every design aligns with your vision and goals</p>
+				</span>
+			</div>
+
+            <!-- FAQ Section -->
+			<div id="accordion-color" data-accordion="collapse" data-active-classes="tw-bg-green-200 tw-text-green-500">
+                <!-- Question 1 -->
+				<h2 id="accordion-color-heading-1">
+				  <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-b-0 tw-border-gray-200 tw-rounded-t-xl hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
+					<span>What type of graphic design services do you offer?</span>
+					<svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+					  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+					</svg>
+				  </button>
+				</h2>
+				<div id="accordion-color-body-1" class="tw-hidden" aria-labelledby="accordion-color-heading-1">
+				  <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-b-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
+                        <p class="tw-mb-2">
+                            We provide a wide range of design services, including branding, logo creation, marketing materials, social media graphics, and 
+                            custom designs for digital and print. Our goal is to meet all your creative needs in one place.
+                        </p>
+                    </div>
+				</div>
+                <!-- Question 2 -->
+				<h2 id="accordion-color-heading-2">
+				  <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-b-0 tw-border-gray-200 hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-2">
+					<span>Can you create a complete brand identity?</span>
+					<svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+					  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+					</svg>
+				  </button>
+				</h2>
+				<div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+				  <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-b-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
+					<p class="tw-mb-2">
+                        Absolutely. We specialize in building cohesive brand identities, including logos, color schemes, typography, and brand 
+                        guidelines, to ensure consistency across all platforms.
+                    </p>
+				  </div>
+				</div>
+                <!-- Question 3 -->
+				<h2 id="accordion-color-heading-3">
+				  <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-gray-200 hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-3" aria-expanded="false" aria-controls="accordion-color-body-3">
+					<span>Do I own the designs after they are completed?</span>
+					<svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+					  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+					</svg>
+				  </button>
+				</h2>
+				<div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+				  <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-t-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
+                    <p class="tw-mb-2">
+                        Yes, all designs we create for you are yours to own. We’ll provide the final assets in the required formats, ready for use 
+                        across digital and print mediums.
+                    </p>
+				  </div>
+				</div>
+                <!-- Question 4 -->
+				<h2 id="accordion-color-heading-4">
+                    <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-b-0 tw-border-gray-200 hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-4" aria-expanded="false" aria-controls="accordion-color-body-4">
+                      <span>Can you design for both print and digital use?</span>
+                      <svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                      </svg>
+                    </button>
+                  </h2>
+                  <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
+                    <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-b-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
+                        <p class="tw-mb-2">
+                            Yes, our designs are created to work seamlessly across both print and digital platforms. Whether you need a poster, business 
+                            card, or social media graphic, we’ve got you covered.
+                        </p>
+                    </div>
+                  </div>
+                <!-- Question 5 -->
+				<h2 id="accordion-color-heading-5">
+                    <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-b-0 tw-border-gray-200 hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-5" aria-expanded="false" aria-controls="accordion-color-body-5">
+                      <span>What's your typical design process?</span>
+                      <svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                      </svg>
+                    </button>
+                </h2>
+                <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
+                    <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-b-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
+                        <p class="tw-mb-2">
+                            Our process starts with understanding your vision and goals. We’ll then create initial concepts for your review, refine the 
+                            designs based on feedback, and deliver the final assets in a timely manner.
+                        </p>
+                    </div>
+                </div>
+			  </div>
+		</div>
+	</div>
+	
+    {% include 'components/pre-footer-cta.html' with title="Service" link_type='services' %} 
+</div>
+
+<!-- Incluir el social footer -->
+{% include 'components/cta-footer.html' %} 
+{% endblock content %} 
+{% block scripts %}
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+	integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+></script>
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+	integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+/>
+<script>
+    document.querySelectorAll(".toggle-container").forEach(container => {
+        container.addEventListener("click", function() {
+            const toggleId = container.getAttribute("data-toggle");
+            const whiteContent = document.getElementById(`white-content-${toggleId}`);
+            const greenContent = document.getElementById(`green-content-${toggleId}`);
+
+            // Alternar visibilidad entre contenido blanco y verde
+            whiteContent.classList.toggle("tw-hidden");
+            greenContent.classList.toggle("tw-hidden");
+        });
+    });
+</script>
+
+{% endblock scripts %}

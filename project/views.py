@@ -29,22 +29,55 @@ def home_view(request):
     return render(request, 'home.html', status=200)
 
 def about_view(request):
-    return render(request, 'about.html', status=200)
+    return render(request, './about/about.html', status=200)
+
+def about_details_view(request):
+    return render(request, './about/about-details.html', status=200)
 
 def landing_view(request):
     return render(request, 'landing.html', status=200)
+
+def services_view(request):
+    return render(request, './services/services.html', status=200)
   
-def service_details_view(request):
-    return render(request, 'service-details.html', status=200)
+def webdev_service_view(request):
+    return render(request, './services/web-development.html', status=200)
 
-def services_view(request):
-    return render(request, 'services.html', status=200)
+def socialmedia_service_view(request):
+    return render(request, './services/social-media.html', status=200)
 
-def services_view(request):
-    return render(request, 'services.html', status=200)
+def marketing_service_view(request):
+    return render(request, './services/marketing.html', status=200)
+
+def consulting_service_view(request):
+    return render(request, './services/consulting.html', status=200)
+
+def maintenance_service_view(request):
+    return render(request, './services/maintenance.html', status=200)
+
+def graphic_design_service_view(request):
+    return render(request, './services/graphic-design.html', status=200)
 
 def portfolio_view(request):
-    return render(request, 'portfolio-overview.html', status=200)
+    return render(request, './portfolio/portfolio.html', status=200)
 
-def portfolio_details_view(request):
-    return render(request, 'portfolio-details.html', status=200)
+def cpanda_portfolio_details_view(request):
+    return render(request, './portfolio/cpanda-website.html', status=200)
+
+def kneadsweets_portfolio_details_view(request):
+    return render(request, './portfolio/kneadsweets-website.html', status=200)
+
+def prcc_portfolio_details_view(request):
+    return render(request, './portfolio/prcc-dashboard.html', status=200)
+
+def cafe_ignacio_portfolio_details_view(request):
+    return render(request, './portfolio/cafe-ignacio.html', status=200)
+
+def guayaba_portfolio_details_view(request):
+    return render(request, './portfolio/guayaba.html', status=200)
+
+def jardin_portfolio_details_view(request):
+    return render(request, './portfolio/colonia-jardin.html', status=200)
+
+def metaltela_portfolio_details_view(request):
+    return render(request, './portfolio/metaltela.html', status=200)
