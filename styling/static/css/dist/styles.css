@@ -2107,6 +2107,11 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(224 36 36 / var(--tw-bg-opacity, 1));
 }
 
+.tw-bg-du-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 183 49 / var(--tw-bg-opacity, 1));
+}
+
 .tw-bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
