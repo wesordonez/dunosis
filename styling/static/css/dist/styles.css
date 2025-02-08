@@ -2375,6 +2375,11 @@ input[type="range"]::-ms-fill-lower {
   padding-bottom: 0.25rem;
 }
 
+.tw-px-\[2\%\] {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
 .tw-pb-16 {
   padding-bottom: 4rem;
 }
