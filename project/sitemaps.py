@@ -14,7 +14,27 @@ class StaticSitemap(Sitemap):
 
     def items(self):
         # Define a list of your static URLs
-        return ["home", "list-blogs"]
+        return [
+            "home",
+            "about",
+            "about-details",
+            "landing",
+            "services",
+            "web-development",
+            "social-media",
+            "marketing",
+            "consulting",
+            "maintenance",
+            "graphic-design",
+            "portfolio",
+            "cpanda-website",
+            "kneadsweets-website",
+            "prcc-dashboard",
+            "cafe-ignacio",
+            "guayaba",
+            "jardin",
+            "metaltela",
+        ]
 
     def location(self, item):
         return reverse(item)
