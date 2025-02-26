@@ -1373,10 +1373,6 @@ input[type="range"]::-ms-fill-lower {
   height: 2px;
 }
 
-.h-\[300px\] {
-  height: 300px;
-}
-
 .h-\[400px\] {
   height: 400px;
 }
@@ -1506,16 +1502,16 @@ input[type="range"]::-ms-fill-lower {
   width: 200px;
 }
 
+.w-\[250px\] {
+  width: 250px;
+}
+
 .w-\[30\%\] {
   width: 30%;
 }
 
 .w-\[300px\] {
   width: 300px;
-}
-
-.w-\[320px\] {
-  width: 320px;
 }
 
 .w-\[40\%\] {
@@ -1570,10 +1566,6 @@ input[type="range"]::-ms-fill-lower {
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-\[250px\] {
-  width: 250px;
 }
 
 .min-w-8 {
@@ -2122,11 +2114,6 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(2 154 77 / var(--tw-bg-opacity, 1));
 }
 
-.bg-du-purple {
-  --tw-bg-opacity: 1;
-  background-color: rgb(104 0 138 / var(--tw-bg-opacity, 1));
-}
-
 .bg-du-yellow {
   --tw-bg-opacity: 1;
   background-color: rgb(236 183 49 / var(--tw-bg-opacity, 1));
@@ -2655,6 +2642,11 @@ input[type="range"]::-ms-fill-lower {
   color: rgb(2 154 77 / var(--tw-text-opacity, 1));
 }
 
+.text-du-purple {
+  --tw-text-opacity: 1;
+  color: rgb(104 0 138 / var(--tw-text-opacity, 1));
+}
+
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
@@ -2688,11 +2680,6 @@ input[type="range"]::-ms-fill-lower {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-du-purple {
-  --tw-text-opacity: 1;
-  color: rgb(104 0 138 / var(--tw-text-opacity, 1));
 }
 
 .opacity-0 {
@@ -3331,16 +3318,12 @@ input[type="range"]::-ms-fill-lower {
     height: 200px;
   }
 
-  .md\:h-full {
-    height: 100%;
-  }
-
-  .md\:h-\[300px\] {
-    height: 300px;
-  }
-
   .md\:h-\[400px\] {
     height: 400px;
+  }
+
+  .md\:h-full {
+    height: 100%;
   }
 
   .md\:max-h-\[450px\] {
@@ -3375,24 +3358,12 @@ input[type="range"]::-ms-fill-lower {
     width: 300px;
   }
 
-  .md\:w-\[50\%\] {
-    width: 50%;
-  }
-
-  .md\:w-\[320px\] {
-    width: 320px;
-  }
-
-  .md\:w-\[420px\] {
-    width: 420px;
-  }
-
-  .md\:w-\[520px\] {
-    width: 520px;
-  }
-
   .md\:w-\[480px\] {
     width: 480px;
+  }
+
+  .md\:w-\[50\%\] {
+    width: 50%;
   }
 
   .md\:min-w-\[740px\] {
