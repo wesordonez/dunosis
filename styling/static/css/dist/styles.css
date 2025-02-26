@@ -3050,6 +3050,10 @@ input[type="range"]::-ms-fill-lower {
   opacity: 1;
 }
 
+.group:hover .group-hover\:\!opacity-100 {
+  opacity: 1 !important;
+}
+
 .dark\:border-gray-600:is(.dark *) {
   --tw-border-opacity: 1;
   border-color: rgb(75 85 99 / var(--tw-border-opacity, 1));
