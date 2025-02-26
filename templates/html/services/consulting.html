@@ -4,142 +4,142 @@
 {% block description %}Consulting{% endblock description %} {% load custom_tags %}
 {%block content %}
 
-<div class="tw-flex tw-flex-col tw-items-center tw-p-10">
-	<div class="tw-flex tw-flex-col md:tw-flex-row tw-justify-center tw-items-center md:tw-items-start tw-gap-8">
+<div class="flex flex-col items-center p-10">
+	<div class="flex flex-col md:flex-row justify-center items-center md:items-start gap-8">
 
 		<!-- Sidebar Navs-->
 		{% include 'components/services-sidecar.html' with litePrice='50' basicPrice='100' midPrice='120' proPrice='150' frequency='hour' %}
 
 		<!-- Container -->
-		<div class="tw-flex tw-flex-col tw-gap-4 tw-justify-center md:tw-ml-10 tw-min-w-[350px] tw-max-w-[900px] tw-order-1 md:tw-order-2">
+		<div class="flex flex-col gap-4 justify-center md:ml-10 min-w-[350px] max-w-[900px] order-1 md:order-2">
 			<!-- Hero Image -->
-			<div class="tw-flex tw-w-[100%] tw-h-[400px] tw-bg-gray-500 tw-rounded-3xl hover:tw-shadow-2xl tw-mb-4">
+			<div class="flex w-[100%] h-[400px] bg-gray-500 rounded-3xl hover:shadow-2xl mb-4">
 				<img
 					src="{% static './assets/images/services/details/du-consulting-1.jpg' %}"
 					alt="consulting"
-					class="tw-flex tw-w-[100%] tw-h-[100%] tw-rounded-3xl tw-object-cover"
+					class="flex w-[100%] h-[100%] rounded-3xl object-cover"
 				/>
 			</div>
-			<h2 class="tw-text-4xl tw-font-bold tw-mb-4">Consulting</h2>
-			<p class="tw-text-xl tw-mb-4 tw-font-light">
+			<h2 class="text-4xl font-bold mb-4">Consulting</h2>
+			<p class="text-xl mb-4 font-light">
                 At Dunosis, our consulting services are as versatile as they are impactful. From marketing strategies and social media management to technical and engineering solutions, we’re here to provide expert advice and actionable insights tailored to your goals. With a unique combination of technical expertise, business acumen, and creative problem-solving, we empower businesses and individuals to overcome challenges and achieve success.
 			</p>
-			<h2 class="tw-text-4xl tw-font-bold tw-mb-4">What We Provide</h2>
-			<p class="tw-text-xl tw-mb-4 tw-font-light">
+			<h2 class="text-4xl font-bold mb-4">What We Provide</h2>
+			<p class="text-xl mb-4 font-light">
 				Our consulting service is designed to cover a wide range of areas, ensuring that you have the expert guidance you need to succeed. Whether it’s refining your marketing efforts, optimizing social media strategies, developing custom websites, or tackling complex engineering challenges, we’ve got you covered.  
                 <br><br />
                 As a mechanical engineer, Wesley offers hands-on support in 3D modeling, prototyping, and product development, while Tayo brings expertise in business management and administration. Together, we provide a comprehensive approach to consulting, ensuring your unique needs are met with innovative, practical solutions.
             </p>
-			<div class="tw-flex tw-flex-col md:tw-flex-row tw-justify-center tw-items-center tw-gap-4 tw-mb-4">
+			<div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-4">
 				<!-- Photo Left -->
-				<div class="tw-relative tw-w-full tw-h-[400px] tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden tw-min-w-[300px]">
+				<div class="relative w-full h-[400px] bg-gray-200 rounded-2xl overflow-hidden min-w-[300px]">
 					<img
 						src="{% static './assets/images/services/details/du-consulting-2.jpg' %}"
 						alt="consulting"
-						class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl"
+						class="w-full h-full object-cover rounded-2xl"
 					/>
 
                     <!-- Text Overlay -->
-                    <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-justify-end tw-items-center tw-text-center tw-bg-gradient-to-t tw-from-du-green/90 tw-to-transparent tw-p-4 tw-pb-18 tw-opacity-0 hover:tw-opacity-100 tw-transition-opacity tw-duration-300">
-                        <h2 class="tw-text-xl tw-font-bold tw-text-white">
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-du-green/90 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+                        <h2 class="text-xl font-bold text-white">
                             Innovative Solutions, Tailored for You
                         </h2>
-                        <p class="tw-text-white tw-mt-2">Empower your business to grow and thrive</p>
+                        <p class="text-white mt-2">Empower your business to grow and thrive</p>
                     </div>
 				</div>
 
 				<!-- Photo Right -->
-				<div class="tw-relative tw-w-full tw-h-[400px] tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden">
+				<div class="relative w-full h-[400px] bg-gray-200 rounded-2xl overflow-hidden">
 					<img
 						src="{% static './assets/images/services/details/du-consulting-3.jpg' %}"
 						alt="consulting"
-						class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl"
+						class="w-full h-full object-cover rounded-2xl"
 					/>
 
                     <!-- Text Overlay -->
-                    <div class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-justify-end tw-items-center tw-text-center tw-bg-gradient-to-t tw-from-du-green/90 tw-to-transparent tw-p-4 tw-pb-18 tw-opacity-0 hover:tw-opacity-100 tw-transition-opacity tw-duration-300">
-                        <h2 class="tw-text-xl tw-font-bold tw-text-white">
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-du-green/90 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+                        <h2 class="text-xl font-bold text-white">
                             Expert Guidance, Every Step of the way
                         </h2>
-                        <p class="tw-text-white tw-mt-2">Our team delivers practical solutions for real-world challenges</p>
+                        <p class="text-white mt-2">Our team delivers practical solutions for real-world challenges</p>
                     </div>
 				</div>
 			</div>
-			<h2 class="tw-text-4xl tw-font-bold tw-mb-4">The Features</h2>
-			<p class="tw-text-xl tw-mb-4 tw-font-light">
+			<h2 class="text-4xl font-bold mb-4">The Features</h2>
+			<p class="text-xl mb-4 font-light">
                 Our consulting services are built to adapt to your specific goals and challenges. We bring together diverse expertise to ensure your projects are successful, efficient, and impactful. Whether you’re looking for marketing advice, technical solutions, or strategic business guidance, our team is ready to help you take the next step.
             </p>
 
             <!-- Features -->
-			<div class="tw-flex tw-flex-wrap tw-gap-10 tw-justify-between tw-mb-4">
-				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+			<div class="flex flex-wrap gap-10 justify-between mb-4">
+				<span class="flex items-center justify-center gap-4">
 					<i
-						class="tw-flex bi bi-check tw-bg-du-green tw-text-white tw-rounded-full tw-h-8 tw-min-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 						aria-hidden="true"
 					></i>
-					<h2 class="tw-font-normal">Customized Strategies:</h2>
-                    <p class="tw-text-gray-500 tw-font-light tw-text-sm">Tailored solutions for every business and technical challenge</p>
+					<h2 class="font-normal">Customized Strategies:</h2>
+                    <p class="text-gray-500 font-light text-sm">Tailored solutions for every business and technical challenge</p>
 				</span>
-				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+				<span class="flex items-center justify-center gap-4">
 					<i
-						class="tw-flex bi bi-check tw-bg-du-green tw-text-white tw-rounded-full tw-h-8 tw-min-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 						aria-hidden="true"
 					></i>
 					<h2>Multidisciplinary Expertise:</h2>
-                    <p class="tw-text-gray-500 tw-font-light tw-text-sm">From marketing to engineering, we offer wide-ranging consulting services</p>
+                    <p class="text-gray-500 font-light text-sm">From marketing to engineering, we offer wide-ranging consulting services</p>
 				</span>
-				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+				<span class="flex items-center justify-center gap-4">
 					<i
-						class="tw-flex bi bi-check tw-bg-du-green tw-text-white tw-rounded-full tw-h-8 tw-min-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 						aria-hidden="true"
 					></i>
 					<h2>Hands-On Support:</h2>
-                    <p class="tw-text-gray-500 tw-font-light tw-text-sm">Get help with prototyping, 3D modeling, and process optimization</p>
+                    <p class="text-gray-500 font-light text-sm">Get help with prototyping, 3D modeling, and process optimization</p>
 				</span>
-				<span class="tw-flex tw-items-center tw-justify-center tw-gap-4">
+				<span class="flex items-center justify-center gap-4">
 					<i
-						class="tw-flex bi bi-check tw-bg-du-green tw-text-white tw-rounded-full tw-h-8 tw-min-w-8 tw-text-2xl tw-items-center tw-justify-center"
+						class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 						aria-hidden="true"
 					></i>
 					<h2>Leadership Guidance:</h2>
-                    <p class="tw-text-gray-500 tw-font-light tw-text-sm">Business management and administrative insights to steamline operations</p>
+                    <p class="text-gray-500 font-light text-sm">Business management and administrative insights to steamline operations</p>
 				</span>
 			</div>
 
             <!-- FAQ Section -->
-			<div id="accordion-color" data-accordion="collapse" data-active-classes="tw-bg-green-200 tw-text-green-500">
+			<div id="accordion-color" data-accordion="collapse" data-active-classes="bg-green-200 text-green-500">
                 <!-- Question 1 -->
 				<h2 id="accordion-color-heading-1">
-				  <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-b-0 tw-border-gray-200 tw-rounded-t-xl hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
+				  <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl hover:bg-du-green hover:text-white gap-3" data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
 					<span>What consulting services do you offer?</span>
-					<svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+					<svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
 					  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
 					</svg>
 				  </button>
 				</h2>
 				<div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
-				  <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-b-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
-					<p class="tw-mb-2">
+				  <div class="p-5 bg-green-100 border border-b-0 border-gray-200 font-light text-gray-800">
+					<p class="mb-2">
                         Our consulting services are designed to address a wide range of challenges, from business strategy and marketing 
                         to technical problem-solving and engineering solutions. We tailor our approach to meet the specific needs of your 
                         business, ensuring you receive actionable advice and results-driven solutions.
                     </p>
-                    <p class="tw-mb-2">
+                    <p class="mb-2">
                         In the marketing and sales domain, we provide strategies that enhance your brand's visibility, streamline sales 
                         processes, and improve ROI. Our expertise in social media management ensures your online presence is optimized 
                         to engage your target audience effectively.
                     </p>
-                    <p class="tw-mb-2">
+                    <p class="mb-2">
                         On the technical side, our services include web development consultation, helping you create scalable, secure, 
                         and high-performing digital platforms. For clients in need of engineering expertise, we offer support in 
                         3D modeling, prototyping, and product development, leveraging years of mechanical engineering experience.
                     </p>
-                    <p class="tw-mb-2">
+                    <p class="mb-2">
                         For business management and operations, we provide guidance in administrative processes, workflow optimization, 
                         and leadership strategies. Our goal is to empower you with the tools and knowledge needed to streamline your 
                         operations and drive sustainable growth.
                     </p>
-                    <ul class="tw-ps-5 tw-text-gray-500 tw-list-disc dark:tw-text-gray-400">
+                    <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
                         <li>Customized marketing and sales strategies</li>
                         <li>Comprehensive social media consulting and management</li>
                         <li>Expert guidance on web development and technical projects</li>
@@ -150,64 +150,64 @@
 				</div>
                 <!-- Question 2 -->
 				<h2 id="accordion-color-heading-2">
-				  <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-b-0 tw-border-gray-200 hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-2">
+				  <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 hover:bg-du-green hover:text-white gap-3" data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-2">
 					<span>Can you help with technical and engineering challenges?</span>
-					<svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+					<svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
 					  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
 					</svg>
 				  </button>
 				</h2>
 				<div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
-				  <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-b-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
-					<p class="tw-mb-2">
+				  <div class="p-5 bg-green-100 border border-b-0 border-gray-200 font-light text-gray-800">
+					<p class="mb-2">
                         Yes, Wesley specializes in mechanical engineering services, including 3D modeling, prototyping, and product development. We offer innovative solutions to technical challenges in various industries.
                     </p>
 				  </div>
 				</div>
                 <!-- Question 3 -->
 				<h2 id="accordion-color-heading-3">
-				  <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-gray-200 hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-3" aria-expanded="false" aria-controls="accordion-color-body-3">
+				  <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 hover:bg-du-green hover:text-white gap-3" data-accordion-target="#accordion-color-body-3" aria-expanded="false" aria-controls="accordion-color-body-3">
 					<span>Do you offer consulting for business management?</span>
-					<svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+					<svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
 					  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
 					</svg>
 				  </button>
 				</h2>
 				<div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
-				  <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-t-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
-                    <p class="tw-mb-2">
+				  <div class="p-5 bg-green-100 border border-t-0 border-gray-200 font-light text-gray-800">
+                    <p class="mb-2">
                         Absolutely! Tayo provides expert guidance in management and business administration, helping you streamline operations, improve efficiency, and make data-driven decisions.
                     </p>
 				  </div>
 				</div>
                 <!-- Question 4 -->
 				<h2 id="accordion-color-heading-4">
-                    <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-b-0 tw-border-gray-200 hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-4" aria-expanded="false" aria-controls="accordion-color-body-4">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 hover:bg-du-green hover:text-white gap-3" data-accordion-target="#accordion-color-body-4" aria-expanded="false" aria-controls="accordion-color-body-4">
                       <span>How do you approach consulting projects?</span>
-                      <svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                      <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
                       </svg>
                     </button>
                   </h2>
                   <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
-                    <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-b-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
-                        <p class="tw-mb-2">
+                    <div class="p-5 bg-green-100 border border-b-0 border-gray-200 font-light text-gray-800">
+                        <p class="mb-2">
                             We start by understanding your goals, challenges, and needs. From there, we develop tailored strategies and actionable solutions. Our approach is collaborative, ensuring the final outcome aligns with your vision.
                         </p>
                     </div>
                   </div>
                 <!-- Question 5 -->
 				<h2 id="accordion-color-heading-5">
-                    <button type="button" class="tw-flex tw-items-center tw-justify-between tw-w-full tw-p-5 tw-font-medium rtl:tw-text-right tw-text-gray-500 tw-border tw-border-b-0 tw-border-gray-200 hover:tw-bg-du-green hover:tw-text-white tw-gap-3" data-accordion-target="#accordion-color-body-5" aria-expanded="false" aria-controls="accordion-color-body-5">
+                    <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 hover:bg-du-green hover:text-white gap-3" data-accordion-target="#accordion-color-body-5" aria-expanded="false" aria-controls="accordion-color-body-5">
                       <span>Is consulting available for startups and small businesses?</span>
-                      <svg data-accordion-icon class="tw-w-3 tw-h-3 tw-rotate-180 tw-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                      <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
                       </svg>
                     </button>
                 </h2>
                 <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
-                    <div class="tw-p-5 tw-bg-green-100 tw-border tw-border-b-0 tw-border-gray-200 tw-font-light tw-text-gray-800">
-                        <p class="tw-mb-2">
+                    <div class="p-5 bg-green-100 border border-b-0 border-gray-200 font-light text-gray-800">
+                        <p class="mb-2">
                             Yes! We work with businesses of all sizes, including startups and small businesses. Our services are scalable and designed to meet your specific budget and goals.
                         </p>
                     </div>
@@ -244,8 +244,8 @@
             const greenContent = document.getElementById(`green-content-${toggleId}`);
 
             // Alternar visibilidad entre contenido blanco y verde
-            whiteContent.classList.toggle("tw-hidden");
-            greenContent.classList.toggle("tw-hidden");
+            whiteContent.classList.toggle("hidden");
+            greenContent.classList.toggle("hidden");
         });
     });
 </script>

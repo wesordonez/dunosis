@@ -66,48 +66,48 @@
 
 </head>
     
-{% comment %} <body class="tw-min-h-[100vh]" data-bs-theme="dark"> {% endcomment %}
-<body class="tw-min-h-[100vh] tw-w-full tw-bg-[#f5f5f5] tw-flex tw-flex-col">
+{% comment %} <body class="min-h-[100vh]" data-bs-theme="dark"> {% endcomment %}
+<body class="min-h-[100vh] w-full bg-[#f5f5f5] flex flex-col">
     
-    <div id="toast" class="tw-p-2 tw-px-4 tw-bg-black tw-h-max tw-z-[5000] tw-fixed 
-                            tw-top-[5%] tw-left-[50%] tw-translate-x-[-50%] 
-                            tw-place-items-center
-                            tw-hidden tw-rounded-md
-                            tw-border-0 tw-text-white" 
+    <div id="toast" class="p-2 px-4 bg-black h-max z-[5000] fixed 
+                            top-[5%] left-[50%] translate-x-[-50%] 
+                            place-items-center
+                            hidden rounded-md
+                            border-0 text-white" 
                     role="alert">
-        <div class="tw-flex tw-gap-1">
+        <div class="flex gap-1">
           <div class="toast-body" id="toast-body">
            
           </div>
-          <button type="button" class="bi bi-x tw-text-lg" aria-label="Close"></button>
+          <button type="button" class="bi bi-x text-lg" aria-label="Close"></button>
         </div>
     </div>
 
-    <header class="tw-flex tw-w-full tw-z-20
-                    tw-h-[80px]  
-                    lg:tw-justify-around
-                    tw-absolute tw-top-0 tw-px-[10%]
-                    max-lg:tw-mr-auto
-                    tw-bg-[#f5f5f5]
-                    tw-text-black
+    <header class="flex w-full z-20
+                    h-[80px]  
+                    lg:justify-around
+                    absolute top-0 px-[10%]
+                    max-lg:mr-auto
+                    bg-[#f5f5f5]
+                    text-black
                     ">
 
-        <a class="tw-w-[80px] tw-h-[80px] tw-p-[4px]" href="{% url "home" %}">
+        <a class="w-[80px] h-[80px] p-[4px]" href="{% url "home" %}">
             <img src="{% static "assets/logos/dunosis-logo-bg.png" %}" 
-                  alt="dunosis-logo" class="tw-w-full tw-h-full tw-object-contain">
+                  alt="dunosis-logo" class="w-full h-full object-contain">
         </a>
-        <div class="collapsable-header animated-collapse max-lg:tw-shadow-md"
+        <div class="collapsable-header animated-collapse max-lg:shadow-md"
                     id="collapsed-header-items"
                     >
-            <div class=" tw-w-max
-                            tw-text-base 
-                            tw-flex tw-gap-5 tw-h-full lg:tw-mx-auto
-                            lg:tw-place-items-center 
-                            max-lg:tw-place-items-end
-                            max-lg:tw-flex-col
-                            max-lg:tw-mt-[50px]
-                            max-lg:tw-gap-5
-                            tw-text-black
+            <div class=" w-max
+                            text-base 
+                            flex gap-5 h-full lg:mx-auto
+                            lg:place-items-center 
+                            max-lg:place-items-end
+                            max-lg:flex-col
+                            max-lg:mt-[50px]
+                            max-lg:gap-5
+                            text-black
                         ">
                     
                 <a class="header-links" href="{% url "about" %}">
@@ -121,39 +121,39 @@
                 </a>
             </div>
             <a href="https://dunosis.forms.app/contact-form" 
-            class="btn tw-rounded-full tw-flex tw-items-center tw-gap-2 tw-h-10 tw-px-6 hover:tw-blue-red-700 hover:tw-text-white hover:tw-bg-blue-500 tw-justify-center tw-mt-6">
+            class="btn rounded-full flex items-center gap-2 h-10 px-6 hover:blue-red-700 hover:text-white hover:bg-blue-500 justify-center mt-6">
                         <span>Contact Us!</span>
                     </a>
         </div>
-        <button class="tw-absolute tw-text-black tw-z-50 
-                        tw-right-3
-                        tw-top-3
+        <button class="absolute text-black z-50 
+                        right-3
+                        top-3
                         
-                         tw-text-3xl  bi bi-list lg:tw-hidden" 
+                         text-3xl  bi bi-list lg:hidden" 
                 onclick="toggleHeader()" aria-label="menu" id="collapse-btn">
             <!-- <i class="bi bi-list"></i> -->
         </button>
     </header>
 
-    <div class="tw-w-full tw-h-full tw-mt-[50px]">
+    <div class="w-full h-full mt-[50px]">
         {% block content %}{% endblock content %}
     </div>
-    <footer class="tw-flex max-md:tw-flex-col tw-w-full tw-p-[5%]
-                    tw-px-[5%] tw-place-content-around tw-gap-3 
-                    tw-bg-black
-                    tw-text-[#f5f5f5]
-                    tw-mt-auto
+    <footer class="flex max-md:flex-col w-full p-[5%]
+                    px-[5%] place-content-around gap-3 
+                    bg-black
+                    text-[#f5f5f5]
+                    mt-auto
                     ">
-        <div class="tw-h-full tw-w-full tw-flex tw-flex-row max-md:tw-flex-col
-                    tw-gap-6 tw-place-items-center max-md:tw-w-full tw-justify-between">
+        <div class="h-full w-full flex flex-row max-md:flex-col
+                    gap-6 place-items-center max-md:w-full justify-between">
             
             <a href="#top">
                 <img src="{% static "assets/logos/dunosis-logo-sq.png" %}" 
-                    alt="logo"  class="tw-max-w-[120px] max-md:tw-max-w-[100px] tw-rounded-full">
+                    alt="logo"  class="max-w-[120px] max-md:max-w-[100px] rounded-full">
             </a>
 
-            <div class="tw-h-full tw-w-auto tw-flex tw-flex-col tw-gap-4">
-                <div class=" tw-flex tw-flex-row tw-gap-3 max-md:tw-text-sm">
+            <div class="h-full w-auto flex flex-col gap-4">
+                <div class=" flex flex-row gap-3 max-md:text-sm">
                     <a href="{% url "home" %}" class="footer-link">Home</a>
                     <a href="{% url "about" %}" class="footer-link">About Us</a>
                     <a href="{% url "services" %}" class="footer-link">Services</a>
@@ -161,11 +161,11 @@
                 </div>
             </div>
 
-            <div class="tw-h-full tw-w-auto tw-flex tw-flex-col tw-gap-4">
-                <div class="tw-font-semibold tw-text-lg tw-text-center">
+            <div class="h-full w-auto flex flex-col gap-4">
+                <div class="font-semibold text-lg text-center">
                     Follow us
                 </div>
-                <div class="tw-flex tw-gap-4 tw-text-2xl">
+                <div class="flex gap-4 text-2xl">
                     <a href="https://www.facebook.com/profile.php?id=61565984502377" aria-label="Facebook">
                         <i class="bi bi-facebook"></i>
                     </a>
@@ -187,18 +187,18 @@
                 </div>
             </div>
 
-            <div class="tw-h-full tw-w-auto tw-flex tw-flex-col tw-gap-4">
-                <div class="tw-font-semibold tw-text-lg tw-text-center">
+            <div class="h-full w-auto flex flex-col gap-4">
+                <div class="font-semibold text-lg text-center">
                     Contact us
                 </div>
-                <div class="tw-flex tw-gap-2 max-md:tw-text-sm">
-                    <i class="bi bi-geo-alt"></i><span class="tw-ml-2">Chicago, IL 60622</span>
+                <div class="flex gap-2 max-md:text-sm">
+                    <i class="bi bi-geo-alt"></i><span class="ml-2">Chicago, IL 60622</span>
                 </div>
-                <div class="tw-flex tw-gap-2 max-md:tw-text-sm">
-                    <i class="bi bi-telephone"></i><span class="tw-ml-2">+1 (773)-202-2074</span>
+                <div class="flex gap-2 max-md:text-sm">
+                    <i class="bi bi-telephone"></i><span class="ml-2">+1 (773)-202-2074</span>
                 </div>
-                <div class="tw-flex tw-gap-2 max-md:tw-text-sm">
-                    <i class="bi bi-envelope"></i><span class="tw-ml-2"><a href="mailto:info@dunosis.com">info@dunosis.com</a></span>
+                <div class="flex gap-2 max-md:text-sm">
+                    <i class="bi bi-envelope"></i><span class="ml-2"><a href="mailto:info@dunosis.com">info@dunosis.com</a></span>
                 </div>
             </div>
         </div>
@@ -207,7 +207,6 @@
         {% endblock footer %}
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 {% comment %} <script src="{% static "./js/base.js" %}"></script> {% endcomment %}

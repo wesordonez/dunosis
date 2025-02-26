@@ -1,52 +1,52 @@
 {% load static %}
 <div
-	class="tw-flex tw-flex-col md:tw-flex-row tw-bg-du-green tw-py-10 tw-mt-4 tw-rounded-lg tw-text-white tw-justify-center tw-items-center tw-w-full tw-gap-4 tw-max-w-[900px] md:tw-min-w-[740px] md:tw-max-w-[1440px]">
-	<div class="tw-flex">
+	class="flex flex-col md:flex-row bg-du-green py-10 mt-4 rounded-lg text-white justify-center items-center w-full gap-4 max-w-[900px] md:min-w-[740px] md:max-w-[1440px]">
+	<div class="flex">
 		<!-- Phone Icon -->
-		<a href="tel:+17732022074" class="tw-w-16 tw-h-16 tw-rounded-full tw-flex tw-items-center tw-justify-center tw-bg-white tw-shadow-md tw-border-2 tw-border-white">
-			<i class="bi bi-telephone-fill tw-text-du-green tw-text-2xl"></i>
+		<a href="tel:+17732022074" class="w-16 h-16 rounded-full flex items-center justify-center bg-white shadow-md border-2 border-white">
+			<i class="bi bi-telephone-fill text-du-green text-2xl"></i>
 		</a>
 		<!-- Mail Icon -->
-		<a href="mailto:info@dunosis.com" class="tw-w-16 tw-h-16 tw-rounded-full tw-flex tw-items-center tw-justify-center tw-bg-white tw-shadow-md tw-border-2 tw-border-white tw--ml-4">
-			<i class="bi bi-envelope-fill tw-text-du-green tw-text-2xl"></i>
+		<a href="mailto:info@dunosis.com" class="w-16 h-16 rounded-full flex items-center justify-center bg-white shadow-md border-2 border-white -ml-4">
+			<i class="bi bi-envelope-fill text-du-green text-2xl"></i>
 		</a>
 		<!-- WhatsApp Icon -->
-		<a href="https://wa.me/17732022074" class="tw-w-16 tw-h-16 tw-rounded-full tw-flex tw-items-center tw-justify-center tw-bg-white tw-shadow-md tw-border-2 tw-border-white tw--ml-4">
-			<i class="bi bi-whatsapp tw-text-du-green tw-text-2xl"></i>
+		<a href="https://wa.me/17732022074" class="w-16 h-16 rounded-full flex items-center justify-center bg-white shadow-md border-2 border-white -ml-4">
+			<i class="bi bi-whatsapp text-du-green text-2xl"></i>
 		</a>
 	</div>
 
-	<h2 class="tw-flex tw-text-2xl tw-font-semibold">Questions? We are happy to help</h2>
-	<div class="tw-flex tw-items-center tw-gap-2 tw-group lg:tw-ml-8">
+	<h2 class="flex text-xl md:text-2xl font-semibold">Questions? We are happy to help</h2>
+	<div class="flex items-center gap-2 group lg:ml-8">
 		{% if link_type == 'services' %}
 			<a href="{% url 'services' %}"
-				class="tw-flex tw-h-14 tw-bg-green-800 tw-text-sm tw-text-white tw-uppercase tw-rounded-full tw-items-center tw-gap-2 tw-px-6 group-hover:tw-bg-green-900 group-hover:tw-text-white">
+				class="flex h-14 bg-green-800 text-sm text-white uppercase rounded-full items-center gap-2 px-6 group-hover:bg-green-900 group-hover:text-white">
 				view all {{title}}
 			</a>
 		{% elif link_type == 'portfolio' %}
 			<a href="{% url 'portfolio' %}"
-				class="tw-flex tw-h-14 tw-bg-green-800 tw-text-sm tw-text-white tw-uppercase tw-rounded-full tw-items-center tw-gap-2 tw-px-6 group-hover:tw-bg-green-900 group-hover:tw-text-white">
+				class="flex h-14 bg-green-800 text-sm text-white uppercase rounded-full items-center gap-2 px-6 group-hover:bg-green-900 group-hover:text-white">
 				view all {{title}}
 			</a>
 		{% else %}
 			<a href="#"
-				class="tw-flex tw-h-14 tw-bg-green-800 tw-text-sm tw-text-white tw-uppercase tw-rounded-full tw-items-center tw-gap-2 tw-px-6 group-hover:tw-bg-green-900 group-hover:tw-text-white">
+				class="flex h-14 bg-green-800 text-sm text-white uppercase rounded-full items-center gap-2 px-6 group-hover:bg-green-900 group-hover:text-white">
 				view all {{title}}
 			</a>
 		{% endif %}
 		{% if link_type == 'services' %}
 			<a href="{% url 'services' %}"
-				class="tw-rounded-full tw-h-14 tw-w-14 tw-flex tw-items-center tw-justify-center tw-bg-green-800 tw-text-white group-hover:tw-bg-green-900 group-hover:tw-text-white">
+				class="rounded-full h-14 w-14 flex items-center justify-center bg-green-800 text-white group-hover:bg-green-900 group-hover:text-white">
 				<i class="bi bi-arrow-up-right"></i>
 			</a>
 		{% elif link_type == 'portfolio' %}
 			<a href="{% url 'portfolio' %}"
-				class="tw-rounded-full tw-h-14 tw-w-14 tw-flex tw-items-center tw-justify-center tw-bg-green-800 tw-text-white group-hover:tw-bg-green-900 group-hover:tw-text-white">
+				class="rounded-full h-14 w-14 flex items-center justify-center bg-green-800 text-white group-hover:bg-green-900 group-hover:text-white">
 				<i class="bi bi-arrow-up-right"></i>
 			</a>
 		{% else %}
 			<a href="#"
-				class="tw-rounded-full tw-h-14 tw-w-14 tw-flex tw-items-center tw-justify-center tw-bg-green-800 tw-text-white group-hover:tw-bg-green-900 group-hover:tw-text-white">
+				class="rounded-full h-14 w-14 flex items-center justify-center bg-green-800 text-white group-hover:bg-green-900 group-hover:text-white">
 				<i class="bi bi-arrow-up-right"></i>
 			</a>
 		{% endif %}

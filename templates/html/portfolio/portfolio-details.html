@@ -4,17 +4,17 @@
 {% block description %}Description of Portfolio Details{% endblock description %} {% load custom_tags %}
 {%block content %}
 
-<div class="tw-flex tw-flex-col tw-p-10 md:tw-max-w-[1440px] tw-mx-auto tw-gap-4">
+<div class="flex flex-col p-10 md:max-w-[1440px] mx-auto gap-4">
 	<!-- image -->
 	<div
-		class="tw-flex tw-w-full tw-h-[400px] lg:tw-h-[700px] tw-bg-gray-500 tw-rounded-3xl hover:tw-shadow-2xl tw-mb-4 tw-justify-center">
+		class="flex w-full h-[400px] lg:h-[700px] bg-gray-500 rounded-3xl hover:shadow-2xl mb-4 justify-center">
 		<img src="{% static './assets/images/portfolio/details/marketing.jpg' %}" alt="digital-marketing"
-			class="tw-flex tw-w-full tw-h-[100%] tw-rounded-3xl tw-object-cover tw-mb-4" />
+			class="flex w-full h-[100%] rounded-3xl object-cover mb-4" />
 	</div>
-	<div class="tw-flex tw-flex-col lg:tw-flex-row tw-items-center lg:tw-items-start tw-justify-between tw-gap-8">
-		<div class="tw-flex tw-flex-col tw-max-w-[800px] tw-order-2 lg:tw-order-1">
-			<h2 class="tw-text-4xl tw-font-bold tw-mb-4">Digital Marketing</h2>
-			<p class="tw-text-xl tw-mb-4 tw-font-light">
+	<div class="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8">
+		<div class="flex flex-col max-w-[800px] order-2 lg:order-1">
+			<h2 class="text-4xl font-bold mb-4">Digital Marketing</h2>
+			<p class="text-xl mb-4 font-light">
 				At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam
 				augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra
 				consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per
@@ -27,74 +27,74 @@
 				placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex enim gravida
 				cras congue
 			</p>
-			<h2 class="tw-text-4xl tw-font-bold tw-mb-4">What We Provide</h2>
-			<p class="tw-text-xl tw-font-light">
+			<h2 class="text-4xl font-bold mb-4">What We Provide</h2>
+			<p class="text-xl font-light">
 				At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam
 				augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra
 				consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per
 				placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex enim gravida
 				cras congue.
 			</p>
-			<div class="tw-flex tw-flex-col tw-gap-4 md:tw-flex-row tw-justify-between tw-my-10">
-				<div class="tw-flex tw-flex-col tw-gap-4">
-					<span class="tw-flex tw-items-center tw-justify-start tw-gap-4">
-						<i class="tw-flex bi bi-check tw-bg-green-600 tw-text-white tw-rounded-full tw-h-8 tw-w-8 tw-text-2xl tw-items-center tw-justify-center"
+			<div class="flex flex-col gap-4 md:flex-row justify-between my-10">
+				<div class="flex flex-col gap-4">
+					<span class="flex items-center justify-start gap-4">
+						<i class="flex bi bi-check bg-green-600 text-white rounded-full h-8 w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
 						<h2>Various analysis options.</h2>
 					</span>
-					<span class="tw-flex tw-items-center tw-justify-start tw-gap-4">
-						<i class="tw-flex bi bi-check tw-bg-green-600 tw-text-white tw-rounded-full tw-h-8 tw-w-8 tw-text-2xl tw-items-center tw-justify-center"
+					<span class="flex items-center justify-start gap-4">
+						<i class="flex bi bi-check bg-green-600 text-white rounded-full h-8 w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
 						<h2>Advance Data analysis operations.</h2>
 					</span>
 
 				</div>
-				<div class="tw-flex tw-flex-col tw-gap-4">
-					<span class="tw-flex tw-items-center tw-justify-start tw-gap-4">
-						<i class="tw-flex bi bi-check tw-bg-green-600 tw-text-white tw-rounded-full tw-h-8 tw-w-8 tw-text-2xl tw-items-center tw-justify-center"
+				<div class="flex flex-col gap-4">
+					<span class="flex items-center justify-start gap-4">
+						<i class="flex bi bi-check bg-green-600 text-white rounded-full h-8 w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
 						<h2>Page Load(time, size,etc).</h2>
 					</span>
-					<span class="tw-flex tw-items-center tw-justify-start tw-gap-4">
-						<i class="tw-flex bi bi-check tw-bg-green-600 tw-text-white tw-rounded-full tw-h-8 tw-w-8 tw-text-2xl tw-items-center tw-justify-center"
+					<span class="flex items-center justify-start gap-4">
+						<i class="flex bi bi-check bg-green-600 text-white rounded-full h-8 w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
 						<h2>Advance Data analysis operations.</h2>
 					</span>
 				</div>
 			</div>
-			<div class="tw-flex tw-flex-col md:tw-flex-row tw-justify-center tw-items-center tw-gap-4 tw-mb-4">
+			<div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-4">
 				<!-- card left -->
 				<div
-					class="tw-relative tw-w-full tw-h-[400px] tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden tw-min-w-[300px]">
+					class="relative w-full h-[400px] bg-gray-200 rounded-2xl overflow-hidden min-w-[300px]">
 					<img src="{% static './assets/images/portfolio/details/brand.png' %}" alt="brand"
-						class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl" />
+						class="w-full h-full object-cover rounded-2xl" />
 
 					<!-- Texto superpuesto -->
 					<div
-						class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-justify-end tw-items-center tw-text-center tw-bg-gradient-to-t tw-from-black/60 tw-to-transparent tw-p-4 tw-pb-18">
-						<h2 class="tw-text-xl tw-font-bold tw-text-white">
+						class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/60 to-transparent p-4 pb-18">
+						<h2 class="text-xl font-bold text-white">
 							Brand Design<br />Identity
 						</h2>
-						<p class="tw-text-white tw-mt-2">In Order To Scale New Customer</p>
+						<p class="text-white mt-2">In Order To Scale New Customer</p>
 					</div>
 				</div>
 
 				<!-- card right -->
-				<div class="tw-relative tw-w-full tw-h-[400px] tw-bg-gray-200 tw-rounded-2xl tw-overflow-hidden">
+				<div class="relative w-full h-[400px] bg-gray-200 rounded-2xl overflow-hidden">
 					<img src="{% static './assets/images/portfolio/details/brand.png' %}" alt="brand"
-						class="tw-w-full tw-h-full tw-object-cover tw-rounded-2xl" />
+						class="w-full h-full object-cover rounded-2xl" />
 
 					<!-- Texto superpuesto -->
 					<div
-						class="tw-absolute tw-inset-0 tw-flex tw-flex-col tw-justify-end tw-items-center tw-text-center tw-bg-gradient-to-t tw-from-black/60 tw-to-transparent tw-p-4 tw-pb-18">
-						<h2 class="tw-text-xl tw-font-bold tw-text-white">
+						class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/60 to-transparent p-4 pb-18">
+						<h2 class="text-xl font-bold text-white">
 							Video Search<br />Optimization
 						</h2>
-						<p class="tw-text-white tw-mt-2">In Order To Scale New Customer</p>
+						<p class="text-white mt-2">In Order To Scale New Customer</p>
 					</div>
 				</div>
 			</div>
-			<p class="tw-text-xl tw-my-4 tw-font-light">
+			<p class="text-xl my-4 font-light">
 				At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam
 				augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra
 				consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per
@@ -104,72 +104,72 @@
 		</div>
 		<!-- card nav -->
 		<div
-			class="tw-flex tw-flex-col tw-w-full tw-gap-y-4 tw-min-w-[350px] lg:tw-max-w-[500px] md:tw-justify-start tw-order-1 lg:tw-order-2">
+			class="flex flex-col w-full gap-y-4 min-w-[350px] lg:max-w-[500px] md:justify-start order-1 lg:order-2">
 			<!-- card 2 -->
 			<div
-				class="tw-flex tw-flex-col tw-bg-gradient-to-t tw-from-green-300 tw-to-green-600 tw-p-8 tw-rounded-xl tw-text-white">
+				class="flex flex-col bg-gradient-to-t from-green-300 to-green-600 p-8 rounded-xl text-white">
 				<!-- Contenido colapsable -->
 				<button id="toggleButton"
-					class=" tw-flex tw-justify-between tw-text-white tw-font-bold tw-rounded-lg tw-transition-colors tw-duration-300"
+					class=" flex justify-between text-white font-bold rounded-lg transition-colors duration-300"
 					onclick="toggleCollapse()">
 
-					<h1 class="tw-text-2xl tw-font-bold tw-text-white">Project Information</h1>
+					<h1 class="text-2xl font-bold text-white">Project Information</h1>
 					<i id="arrowIcon"
-						class="tw-text-2xl tw-transition-transform tw-duration-300 bi bi-chevron-right"></i>
+						class="text-2xl transition-transform duration-300 bi bi-chevron-right"></i>
 
 				</button>
 
-				<div id="collapsibleContent" class="tw-hidden lg:tw-block">
-					<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-8 tw-mb-4"></div>
+				<div id="collapsibleContent" class="hidden lg:block">
+					<div class="h-[2px] w-full bg-white opacity-50 mt-8 mb-4"></div>
 
-					<div class="tw-flex tw-flex-col tw-gap-4">
-						<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
-							<h2 class="tw-text-xl">Client:</h2>
-							<h2 class="tw-text-xl tw-font-extralight">Jhon Son Smith</h2>
-							<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
+					<div class="flex flex-col gap-4">
+						<div class="flex flex-col items-start justify-start">
+							<h2 class="text-xl">Client:</h2>
+							<h2 class="text-xl font-extralight">Jhon Son Smith</h2>
+							<div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
 						</div>
 
-						<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
-							<h2 class="tw-text-xl">Category:</h2>
-							<h2 class="tw-text-xl tw-font-extralight">Build Constractions</h2>
-							<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
+						<div class="flex flex-col items-start justify-start">
+							<h2 class="text-xl">Category:</h2>
+							<h2 class="text-xl font-extralight">Build Constractions</h2>
+							<div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
 						</div>
 
-						<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
-							<h2 class="tw-text-xl">Start Date:</h2>
-							<h2 class="tw-text-xl tw-font-extralight">10 June, 2023</h2>
-							<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
+						<div class="flex flex-col items-start justify-start">
+							<h2 class="text-xl">Start Date:</h2>
+							<h2 class="text-xl font-extralight">10 June, 2023</h2>
+							<div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
 						</div>
 
-						<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
-							<h2 class="tw-text-xl">End Date:</h2>
-							<h2 class="tw-text-xl tw-font-extralight">10 October, 2023</h2>
-							<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
+						<div class="flex flex-col items-start justify-start">
+							<h2 class="text-xl">End Date:</h2>
+							<h2 class="text-xl font-extralight">10 October, 2023</h2>
+							<div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
 						</div>
 
-						<div class="tw-flex tw-flex-col tw-items-start tw-justify-start">
-							<h2 class="tw-text-xl">Project Budget:</h2>
-							<h2 class="tw-text-xl tw-font-extralight">$25.800,99</h2>
-							<div class="tw-h-[2px] tw-w-full tw-bg-white tw-opacity-50 tw-mt-2"></div>
+						<div class="flex flex-col items-start justify-start">
+							<h2 class="text-xl">Project Budget:</h2>
+							<h2 class="text-xl font-extralight">$25.800,99</h2>
+							<div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
 						</div>
-						<div class="tw-flex tw-justify-center tw-gap-x-4">
-							<p class="tw-text-xl">Follow on:</p>
-							<div class="tw-flex tw-gap-4 tw-text-xl tw-justify-center tw-items-center">
+						<div class="flex justify-center gap-x-4">
+							<p class="text-xl">Follow on:</p>
+							<div class="flex gap-4 text-xl justify-center items-center">
 								<a href="https://www.facebook.com/profile.php?id=61565984502377" aria-label="Facebook"
-									class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center">
-									<i class="bi bi-facebook tw-text-2xl"></i>
+									class="flex text-white h-8 w-8 items-center justify-center">
+									<i class="bi bi-facebook text-2xl"></i>
 								</a>
 								<a href="https://instagram.com/dunosis.usa" aria-label="Instagram"
-									class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center">
-									<i class="bi bi-twitter tw-text-2xl"></i>
+									class="flex text-white h-8 w-8 items-center justify-center">
+									<i class="bi bi-twitter text-2xl"></i>
 								</a>
 								<a href="https://www.linkedin.com/company/104785338/" aria-label="LinkedIn"
-									class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center">
-									<i class="bi bi-linkedin tw-text-2xl"></i>
+									class="flex text-white h-8 w-8 items-center justify-center">
+									<i class="bi bi-linkedin text-2xl"></i>
 								</a>
 								<a href="https://wa.me/17732022074" aria-label="Youtube"
-									class="tw-flex tw-text-white tw-h-8 tw-w-8 tw-items-center tw-justify-center">
-									<i class="bi bi-youtube tw-text-2xl"></i>
+									class="flex text-white h-8 w-8 items-center justify-center">
+									<i class="bi bi-youtube text-2xl"></i>
 								</a>
 							</div>
 						</div>
@@ -178,46 +178,46 @@
 			</div>
 			<!-- card 3 -->
 			<div
-				class="tw-flex tw-flex-col tw-bg-gradient-to-t tw-from-green-500 tw-to-green-300 tw-p-8 tw-rounded-xl tw-justify-center tw-items-center tw-text-center ">
+				class="flex flex-col bg-gradient-to-t from-green-500 to-green-300 p-8 rounded-xl justify-center items-center text-center ">
 				<div
-					class="tw-flex tw-rounded-full tw-shadow-xl tw-p-2 tw-w-20 tw-justify-center tw-bg-green-500 tw-border-4 tw-border-white">
+					class="flex rounded-full shadow-xl p-2 w-20 justify-center bg-green-500 border-4 border-white">
 					<img src="{% static './assets/images/portfolio/details/phone-call.png' %}"
-						alt="Customer Support Icon" class="tw-object-cover tw-p-2 tw-invert" />
+						alt="Customer Support Icon" class="object-cover p-2 invert" />
 				</div>
 
-				<h1 class="tw-text-2xl tw-font-bold tw-text-white tw-mt-4">Need Help? Call Here</h1>
-				<h2 class="tw-text-xl tw-text-white">+208-555-0112</h2>
+				<h1 class="text-2xl font-bold text-white mt-4">Need Help? Call Here</h1>
+				<h2 class="text-xl text-white">+208-555-0112</h2>
 			</div>
 		</div>
 	</div>
 
 	{% include 'components/pages/pre-footer-cta.html' with title='projects' %}
 
-	<div class="tw-h-[2px] tw-w-full tw-bg-gray-400 tw-my-5 md:tw-my-10 tw-opacity-40"></div>
-	<div class="tw-flex tw-justify-between tw-items-center">
-		<a href="" class="tw-flex tw-justify-center tw-items-center tw-gap-2 md:tw-gap-4 tw-group">
+	<div class="h-[2px] w-full bg-gray-400 my-5 md:my-10 opacity-40"></div>
+	<div class="flex justify-between items-center">
+		<a href="" class="flex justify-center items-center gap-2 md:gap-4 group">
 			<div
-				class="tw-rounded-full tw-h-10 tw-w-10 tw-items-center tw-text-gray-500 group-hover:tw-bg-green-500 group-hover:tw-text-white tw-border-2 tw-border-gray-500 group-hover:tw-border-green-500">
-				<i class="tw-flex bi bi-arrow-left tw-h-full tw-text-2xl tw-justify-center tw-items-center"
+				class="rounded-full h-10 w-10 items-center text-gray-500 group-hover:bg-green-500 group-hover:text-white border-2 border-gray-500 group-hover:border-green-500">
+				<i class="flex bi bi-arrow-left h-full text-2xl justify-center items-center"
 					aria-hidden="true"></i>
 			</div>
 			<h1
-				class="tw-text-lg md:tw-text-2xl tw-font-bold tw-text-gray-500 hover:tw-text-green-500 group-hover:tw-text-green-500">
+				class="text-lg md:text-2xl font-bold text-gray-500 hover:text-green-500 group-hover:text-green-500">
 				Previous</h1>
 		</a>
-		<a href="" class="tw-flex tw-justify-center tw-items-center tw-gap-2 md:tw-gap-4 tw-group">
+		<a href="" class="flex justify-center items-center gap-2 md:gap-4 group">
 			<h1
-				class="tw-text-lg md:tw-text-2xl tw-font-bold tw-text-gray-500 hover:tw-text-green-500 group-hover:tw-text-green-500">
+				class="text-lg md:text-2xl font-bold text-gray-500 hover:text-green-500 group-hover:text-green-500">
 				Next</h1>
 			<div
-				class="tw-rounded-full tw-h-10 tw-w-10 tw-items-center tw-text-gray-500 group-hover:tw-bg-green-500 group-hover:tw-text-white tw-border-2 tw-border-gray-500 group-hover:tw-border-green-500">
-				<i class="tw-flex bi bi-arrow-right tw-h-full tw-text-2xl tw-justify-center tw-items-center"
+				class="rounded-full h-10 w-10 items-center text-gray-500 group-hover:bg-green-500 group-hover:text-white border-2 border-gray-500 group-hover:border-green-500">
+				<i class="flex bi bi-arrow-right h-full text-2xl justify-center items-center"
 					aria-hidden="true"></i>
 			</div>
 		</a>
 	</div>
 
-	<div class="tw-h-[2px] tw-w-full tw-bg-gray-400 tw-my-5 md:tw-my-10 tw-opacity-40"></div>
+	<div class="h-[2px] w-full bg-gray-400 my-5 md:my-10 opacity-40"></div>
 
 
 </div>
