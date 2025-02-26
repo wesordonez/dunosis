@@ -1410,6 +1410,10 @@ input[type="range"]::-ms-fill-lower {
   height: 0.75rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .max-h-4 {
   max-height: 1rem;
 }
@@ -1570,6 +1574,10 @@ input[type="range"]::-ms-fill-lower {
 
 .w-3 {
   width: 0.75rem;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .min-w-\[300px\] {
