@@ -3089,6 +3089,10 @@ input[type="range"]::-ms-fill-lower {
 }
 
 @media not all and (min-width: 1024px) {
+  .max-lg\:fixed {
+    position: fixed;
+  }
+
   .max-lg\:mr-auto {
     margin-right: auto;
   }
@@ -3164,6 +3168,10 @@ input[type="range"]::-ms-fill-lower {
   .max-md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .max-md\:opacity-0 {
+    opacity: 0;
   }
 }
 
