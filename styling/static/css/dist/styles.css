@@ -1091,6 +1091,10 @@ input[type="range"]::-ms-fill-lower {
   z-index: 5000;
 }
 
+.z-30 {
+  z-index: 30;
+}
+
 .order-1 {
   order: 1;
 }
