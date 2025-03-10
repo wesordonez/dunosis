@@ -1146,6 +1146,11 @@ input[type="range"]::-ms-fill-lower {
   margin-bottom: 1.5rem;
 }
 
+.mx-\[10\%\] {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .-ml-4 {
   margin-left: -1rem;
 }
@@ -2469,6 +2474,11 @@ input[type="range"]::-ms-fill-lower {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .pb-16 {
