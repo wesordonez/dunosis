@@ -479,6 +479,15 @@ header > .collapsable-header {
 	opacity: 1;
 }
 
+.final {
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.final.active {
+	opacity: 1;
+}
+
 /* Style for step-ball */
 .step-ball {
 	transition: background-color 0.5s ease;

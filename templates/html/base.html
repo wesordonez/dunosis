@@ -138,75 +138,101 @@
     <div class="w-full h-full mt-[50px]">
         {% block content %}{% endblock content %}
     </div>
-    <footer class="flex max-md:flex-col w-full p-[5%]
-                    px-[5%] place-content-around gap-3 
-                    bg-black
-                    text-[#f5f5f5]
-                    mt-auto
-                    ">
-        <div class="h-full w-full flex flex-row max-md:flex-col
-                    gap-6 place-items-center max-md:w-full justify-between">
-            
-            <a href="#top">
-                <img src="{% static "assets/logos/dunosis-logo-sq.png" %}" 
-                    alt="logo"  class="max-w-[120px] max-md:max-w-[100px] rounded-full">
-            </a>
 
-            <div class="h-full w-auto flex flex-col gap-4">
-                <div class=" flex flex-row gap-3 max-md:text-sm">
-                    <a href="{% url "home" %}" class="footer-link">Home</a>
-                    <a href="{% url "about" %}" class="footer-link">About Us</a>
-                    <a href="{% url "services" %}" class="footer-link">Services</a>
-                    <a href="{% url "portfolio" %}" class="footer-link">Portfolio</a>
-                </div>
+
+    <footer class="bg-black">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+                <a href="#top" class="flex items-center">
+                    <img src="{% static "assets/logos/dunosis-logo-sq.png" %}" class="h-10 me-3 rounded-full" alt="Dunosis Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white"></span>
+                </a>
             </div>
-
-            <div class="h-full w-auto flex flex-col gap-4">
-                <div class="font-semibold text-lg text-center">
-                    Follow us
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold uppercase text-white">Navigation</h2>
+                    <ul class="text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a href="{% url "home" %}" class="hover:underline">Home</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="{% url "landing" %}" class="hover:underline">Landing</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="{% url "about" %}" class="hover:underline">About Us</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="{% url "services" %}" class="hover:underline">Services</a>
+                        </li>
+                        <li>
+                            <a href="{% url "portfolio" %}" class="hover:underline">Portfolio</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="flex gap-4 text-2xl">
-                    <a href="https://www.facebook.com/profile.php?id=61565984502377" aria-label="Facebook">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="https://instagram.com/dunosis.usa" aria-label="Instagram">
-                    <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="https://wa.me/17732022074" aria-label="WhatsApp">
-                        <i class="bi bi-whatsapp"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/dunosis/" aria-label="LinkedIn">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href="https://youtube.com/@dunosis" aria-label="YouTube">
-                        <i class="bi bi-youtube"></i>
-                    </a>
-                    <a href="https://www.tiktok.com/@dunosis.usa" aria-label="TikTok">
-                        <i class="bi bi-tiktok"></i>
-                    </a>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold uppercase text-white">Services</h2>
+                    <ul class="text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a href="{% url "web-development" %}" class="hover:underline ">Web Development</a>
+                        </li>
+                        <li class="mb-4"> 
+                            <a href="{% url "social-media" %}" class="hover:underline">Social Media</a>
+                        </li>
+                        <li class="mb-4"> 
+                            <a href="{% url "marketing" %}" class="hover:underline">Marketing</a>
+                        </li>
+                        <li class="mb-4"> 
+                            <a href="{% url "consulting" %}" class="hover:underline">Consulting</a>
+                        </li>
+                        <li> 
+                            <a href="{% url "maintenance" %}" class="hover:underline">Maintenance</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-
-            <div class="h-full w-auto flex flex-col gap-4">
-                <div class="font-semibold text-lg text-center">
-                    Contact us
-                </div>
-                <div class="flex gap-2 max-md:text-sm">
-                    <i class="bi bi-geo-alt"></i><span class="ml-2">Chicago, IL 60622</span>
-                </div>
-                <div class="flex gap-2 max-md:text-sm">
-                    <i class="bi bi-telephone"></i><span class="ml-2">+1 (773)-202-2074</span>
-                </div>
-                <div class="flex gap-2 max-md:text-sm">
-                    <i class="bi bi-envelope"></i><span class="ml-2"><a href="mailto:info@dunosis.com">info@dunosis.com</a></span>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold uppercase text-white">Contact</h2>
+                    <ul class="text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <i class="bi bi-geo-alt"></i><span class="ml-2">Chicago, IL 60622</span>
+                        </li>
+                        <li class="mb-4">
+                            <i class="bi bi-telephone"></i><span class="ml-2">+1 (773)-202-2074</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope"></i><span class="ml-2"><a href="mailto:info@dunosis.com">info@dunosis.com</a></span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-
-        {% block footer %}
-        {% endblock footer %}
-
-    </footer>
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="#top" class="hover:underline">Dunosis™</a>. All Rights Reserved.
+            </span>
+            <div class="flex mt-4 sm:justify-center sm:mt-0 gap-4">
+                <a href="https://www.facebook.com/profile.php?id=61565984502377" class="text-gray-500 hover:text-white" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://instagram.com/dunosis.usa" class="text-gray-500 hover:text-white" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://wa.me/17732022074" class="text-gray-500 hover:text-white" aria-label="WhatsApp">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/dunosis/" class="text-gray-500 hover:text-white" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://youtube.com/@dunosis" class="text-gray-500 hover:text-white" aria-label="YouTube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+                <a href="https://www.tiktok.com/@dunosis.usa" class="text-gray-500 hover:text-white" aria-label="TikTok">
+                    <i class="bi bi-tiktok"></i>
+                </a>
+            </div>
+        </div>
+        </div>
+    </footer>    
 </body>
 
 {% comment %} <script src="{% static "./js/base.js" %}"></script> {% endcomment %}
