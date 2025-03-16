@@ -26,17 +26,17 @@
 		</div>
 
 		<!-- Team Member Cards -->
-		<div class="flex flex-col md:flex-row w-full justify-center items-center gap-10 gap-y-28 px-10 mt-24">
+		<div class="flex flex-col md:flex-row w-full justify-center items-center gap-10 gap-y-28 px-10 mt-36">
 			<!-- Wesley Card -->
 			<div class="bg-[rgba(198,42,44,0.3)] w-[200px] h-[200px] md:w-[300px] md:h-[200px] lg:w-[400px] lg:h-[300px] p-10 rounded-[4rem] relative hover:scale-105 hover:-translate-y-9 hover:bg-[rgba(198,42,44,0.6)] hover:shadow-[0_-15px_0_rgba(198,42,44,0.9)] transition-all duration-500">
 				<img
 					src="{% static './assets/images/about/about-details/du-wesley-profile.png' %}"
 					alt="Wesley Ordoñez, Co-Founder and Lead Software Engineer of Dunosis LLC"
 					class="w-48 md:w-64 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-[30%] duration-500"/>
-				<div class="absolute bg-white p-4 text-center rounded-2xl lg:rounded-full top-[70%] shadow-lg w-[100%] lg:w-[90%] left-1/2 transform -translate-x-1/2 transition-all duration-500">
+				<a href="{% url 'about-details' %}#Wesley" class="absolute bg-white p-4 text-center rounded-2xl lg:rounded-full top-[70%] shadow-lg w-[100%] lg:w-[90%] left-1/2 transform -translate-x-1/2 transition-all duration-500">
 					<h3 class="text-xl font-bold">Wesley Ordoñez</h3>
 					<h4 class="text-md">Co-Founder - Engineering</h4>
-				</div>
+				</a>
 			</div>
 
 			<!-- Tayo Card -->
@@ -45,10 +45,10 @@
 					src="{% static './assets/images/about/about-details/du-tayo-profile-2.png' %}"
 					alt="Tayo Zabala, Co-Founder and Marketing Specialist of Dunosis LLC"
 					class="w-48 md:w-64 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-[30%] duration-500"/>
-				<div class="absolute bg-white p-4 text-center rounded-2xl lg:rounded-full top-[70%] shadow-lg w-[100%] lg:w-[90%] left-1/2 transform -translate-x-1/2 transition-all duration-500">
+				<a href="{% url 'about-details' %}#Tayo" class="absolute bg-white p-4 text-center rounded-2xl lg:rounded-full top-[70%] shadow-lg w-[100%] lg:w-[90%] left-1/2 transform -translate-x-1/2 transition-all duration-500">
 					<h3 class="text-xl font-bold">Tayo Zabala</h3>
 					<h4 class="text-md">Co-Founder - Marketing</h4>
-				</div>
+				</a>
 			</div>
 
 			<!-- Jona Card -->
@@ -57,10 +57,10 @@
 					src="{% static './assets/images/about/about-details/du-jona-profile.png' %}"
 					alt="Jonathan Justiniano, Graphic Designer of Dunosis LLC"
 					class="w-48 md:w-64 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-[30%] duration-500"/>
-				<div class="absolute bg-white p-4 text-center rounded-2xl lg:rounded-full top-[70%] shadow-lg w-[100%] lg:w-[90%] left-1/2 transform -translate-x-1/2 transition-all duration-500">
+				<a href="{% url 'about-details' %}#Jona" class="absolute bg-white p-4 text-center rounded-2xl lg:rounded-full top-[70%] shadow-lg w-[100%] lg:w-[90%] left-1/2 transform -translate-x-1/2 transition-all duration-500">
 					<h3 class="text-xl font-bold">Jona Justiniano</h3>
 					<h4 class="text-md">Graphic Design</h4>
-				</div>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -92,9 +92,10 @@
 		<div class="flex flex-col items-center w-full lg:w-[60%] xl:mx-24">
 			<h2 class="text-3xl md:text-5xl font-bold mb-8 w-full text-left">Why Choose Us?</h2>
 			<p class="text-xl mb-8 text-center md:text-left font-light">
-				At Dunosis, we don’t just deliver services—we deliver solutions that empower your business to thrive. With a blend of expertise, innovation, and personalized attention, we’re committed to helping you achieve your goals seamlessly. Our team’s dedication, flexibility, and diverse skillset set us apart, making us the ideal partner for your success.
+				At Dunosis, we offer more than just services—we provide high-quality, custom-built solutions tailored to your business needs. What sets us apart? We combine top-tier expertise with unbeatable value. Our team consists of highly skilled Bolivian professionals, allowing us to deliver world-class digital solutions at the most competitive prices in the market. Unlike agencies that rely on templates or AI-built websites, we take a hands-on, personalized approach, ensuring every project is crafted with care, strategy, and innovation.
+				<br /><br />
+				When you choose Dunosis, you’re not just hiring a service — you’re gaining a dedicated partner committed to your long-term success.
 			</p>
-
 			<!-- Características -->
 			<div class="w-full flex flex-col justify-center gap-4">
 				<div class="flex flex-col md:flex-row gap-8">
@@ -105,7 +106,7 @@
 							alt="Business Growth Icon"
 							class="bg-white shadow-xl p-4 rounded-xl w-20"
 						/>
-						<h2 class="text-2xl">Proven Expertise</h2>
+						<h2 class="text-xl font-bold">Proven Expertise</h2>
 					</div>
 					<!-- Feature 2 -->
 					<div class="flex items-center gap-4 w-full md:w-1/2 m-4">
@@ -114,7 +115,7 @@
 							alt="Technology Consultancy Icon"
 							class="bg-white shadow-xl p-4 rounded-xl w-20"
 						/>
-						<h2 class="text-2xl z-10">Personalized Solutions</h2>
+						<h2 class="text-xl font-bold z-10">Personalized Solutions</h2>
 					</div>
 				</div>
 				<div class="flex flex-col md:flex-row gap-8">
@@ -125,7 +126,7 @@
 							alt="Innovation Solutions Icon"
 							class="bg-white shadow-xl p-4 rounded-xl w-20"
 						/>
-						<h2 class="text-2xl">Exceptional Support</h2>
+						<h2 class="text-xl font-bold">Exceptional Support</h2>
 					</div>
 					<!-- Feature 4 -->
 					<div class="flex items-center gap-4 w-full md:w-1/2 m-4">
@@ -134,7 +135,7 @@
 							alt="Customer Support Icon"
 							class="bg-white shadow-xl p-4 rounded-xl w-20"
 						/>
-						<h2 class="text-2xl z-10">Billingual Excellence</h2>
+						<h2 class="text-xl font-bold z-10">Billingual Service</h2>
 					</div>
 				</div>
 			</div>
