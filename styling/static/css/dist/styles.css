@@ -1251,6 +1251,10 @@ input[type="range"]::-ms-fill-lower {
   margin-right: 1.5rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-16 {
   margin-top: 4rem;
 }
@@ -1297,10 +1301,6 @@ input[type="range"]::-ms-fill-lower {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
 }
 
 .block {
@@ -1913,32 +1913,12 @@ input[type="range"]::-ms-fill-lower {
   align-self: center;
 }
 
-.overflow-auto {
-  overflow: auto;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
 
-.overflow-scroll {
-  overflow: scroll;
-}
-
 .overflow-x-auto {
   overflow-x: auto;
-}
-
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-
-.overflow-x-scroll {
-  overflow-x: scroll;
-}
-
-.whitespace-normal {
-  white-space: normal;
 }
 
 .whitespace-nowrap {

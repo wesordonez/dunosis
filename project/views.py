@@ -81,3 +81,15 @@ def jardin_portfolio_details_view(request):
 
 def metaltela_portfolio_details_view(request):
     return render(request, './portfolio/metaltela.html', status=200)
+
+def metalmalla_portfolio_details_view(request):
+    return render(request, './portfolio/metalmallas.html', status=200)
+
+def pantanal_portfolio_details_view(request):
+    return render(request, './portfolio/pantanal.html', status=200)
+
+def ciudad_productiva_portfolio_details_view(request):
+    return render(request, './portfolio/ciudad-productiva.html', status=200)
+
+def bosque_buenavista_portfolio_details_view(request):
+    return render(request, './portfolio/bosque-buenavista.html', status=200)
