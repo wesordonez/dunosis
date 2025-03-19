@@ -1099,6 +1099,14 @@ input[type="range"]::-ms-fill-lower {
   order: 2;
 }
 
+.order-11 {
+  order: 11;
+}
+
+.-order-1 {
+  order: -1;
+}
+
 .m-2 {
   margin: 0.5rem;
 }
