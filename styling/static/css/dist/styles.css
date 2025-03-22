@@ -1099,18 +1099,6 @@ input[type="range"]::-ms-fill-lower {
   order: 2;
 }
 
-.order-11 {
-  order: 11;
-}
-
-.-order-1 {
-  order: -1;
-}
-
-.order-6 {
-  order: 6;
-}
-
 .order-first {
   order: -9999;
 }
@@ -1684,14 +1672,6 @@ input[type="range"]::-ms-fill-lower {
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-\[400px\] {
-  max-width: 400px;
-}
-
-.max-w-\[300px\] {
-  max-width: 300px;
 }
 
 .flex-1 {
@@ -2283,6 +2263,30 @@ input[type="range"]::-ms-fill-lower {
 .from-green-500 {
   --tw-gradient-from: #0E9F6E var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(14 159 110 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-black\/90 {
+  --tw-gradient-from: rgb(0 0 0 / 0.9) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-black\/10 {
+  --tw-gradient-from: rgb(0 0 0 / 0.1) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-black\/100 {
+  --tw-gradient-from: rgb(0 0 0 / 1) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-du-blue\/100 {
+  --tw-gradient-from: rgb(77 64 240 / 1) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(77 64 240 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -3513,20 +3517,8 @@ input[type="range"]::-ms-fill-lower {
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:flex-wrap {
-    flex-wrap: wrap;
-  }
-
-  .md\:flex-wrap-reverse {
-    flex-wrap: wrap-reverse;
   }
 
   .md\:items-start {
@@ -3740,10 +3732,6 @@ input[type="range"]::-ms-fill-lower {
 
   .lg\:grid-cols-\[1\.5fr_1fr_1fr_1fr_1fr\] {
     grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
-  }
-
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
