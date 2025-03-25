@@ -1428,6 +1428,10 @@ input[type="range"]::-ms-fill-lower {
   height: 100vh;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .max-h-4 {
   max-height: 1rem;
 }
