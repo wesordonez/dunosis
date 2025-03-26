@@ -1,54 +1,54 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}Café Don Ignacio - {% endblock title %}
-{% block description %}Cafe Don Ignacio Portfolio Details{% endblock description %} {% load custom_tags %}
+{% block title %}Ciudad Productiva - {% endblock title %}
+{% block description %}Ciudad Productiva Portfolio Details{% endblock description %} {% load custom_tags %}
 {%block content %}
 
 <div class="flex flex-col p-10 md:max-w-[1440px] mx-auto gap-4">
 	<!-- image -->
 	<div
 		class="flex w-full h-[400px] lg:h-[700px] bg-gray-500 rounded-3xl hover:shadow-2xl mb-4 justify-center">
-		<img src="{% static './assets/images/portfolio/du-portfolio-cover-cafe.jpg' %}" alt="Cafe San Ignacio marketing elements"
+		<img src="{% static './assets/images/portfolio/du-portfolio-cover-productiva.jpg' %}" alt="portfolio cover for ciudad productiva"
 			class="flex w-full h-[100%] rounded-3xl object-cover mb-4" />
 	</div>
 	<div class="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8">
 		<div class="flex flex-col max-w-[800px] order-2 lg:order-1">
 
             <!-- Portfolio Title and Overview -->
-			<h2 class="text-4xl font-bold mb-4">Café Don Ignacio</h2>
+			<h2 class="text-4xl font-bold mb-4">Ciudad Productiva</h2>
 			<p class="text-xl mb-4 font-light">
-				Café Don Ignacio is a Bolivian coffee brand rooted in family, tradition, and a deep passion for coffee. Named in honor of the family’s patriarch, this brand represents more than just a beverage—it tells a story of legacy, care, and craftsmanship. From growing and harvesting the beans to roasting them in-house, Café Don Ignacio is a true seed-to-cup experience that reflects generations of dedication and love for quality coffee.
+				Ciudad Productiva was a one-of-a-kind real estate development in Bolivia designed to promote a lifestyle centered around self-sufficiency, agriculture, and community. Unlike typical housing developments, this project offered larger-than-average plots of land meant for both living and working the soil. Each land purchase came with a selection of plants and crops, encouraging residents to cultivate their own food and contribute to a productive, sustainable community. Over the course of five years, the project successfully brought this vision to life, creating a thriving rural neighborhood of modern-day farmers.
             </p>
             
             <!-- What We Provided Details -->
 			<h2 class="text-4xl font-bold mb-4">What We Provided</h2>
 			<p class="text-xl font-light">
-				We worked closely with the family to build their brand from scratch—starting with the name, logo, and overall identity. Our team led the creative direction, producing photography and video content that highlighted their story and values. We also developed a tailored sales strategy and launched their social media presence, positioning Café Don Ignacio to connect authentically with its target audience and stand out in the market.
+				We partnered with Ciudad Productiva from launch to completion, providing full-cycle marketing and communication support. Our work included creating seasonal sales campaigns tailored to market demand, managing their social media, and producing compelling photo and video content. We also developed audio-based tools—such as radio jingles and event-specific voiceovers—to boost visibility and engagement at key sales moments.
             </p>
 			<div class="flex flex-col gap-4 md:flex-row justify-between my-10">
 				<div class="flex flex-col gap-4">
 					<span class="flex items-center justify-start gap-4">
 						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
-                            <h2>Branding & Logo Design</h2>
-                        </span>
+						<h2>Sales Campaign Strategy & Execution</h2>
+					</span>
 					<span class="flex items-center justify-start gap-4">
 						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
-                            <h2>Sales Strategy & Launch Plan</h2>
-                        </span>
+						<h2>Social Media Management</h2>
+					</span>
 
 				</div>
 				<div class="flex flex-col gap-4">
 					<span class="flex items-center justify-start gap-4">
 						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
-						<h2>Content Creation (Photo & Video)</h2>
+						<h2>Audio Production (Jingles & Voiceovers)</h2>
 					</span>
 					<span class="flex items-center justify-start gap-4">
 						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
-						<h2>Brand Positioning</h2>
+						<h2>Visual Content Creation (Photo & Video)</h2>
 					</span>
 				</div>
 			</div>
@@ -58,49 +58,7 @@
 				<!-- Photo 1 -->
 				<div
 					class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
-					<img src="{% static './assets/images/portfolio/details/cafe/du-portfolio-cafe-1.jpg' %}" alt="bag of cafe san ignacio"
-						class="w-full h-full object-scale-down rounded-2xl" />
-
-					<!-- Text Overlay -->
-                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
-						<h2 class="text-xl font-bold text-white">
-							Branding Redesign
-						</h2>
-						<p class="text-white mt-2">Enhanced visual identity and messaging.</p>
-					</div>
-				</div>
-
-				<!-- Photo 2 -->
-				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
-					<img src="{% static './assets/images/portfolio/details/cafe/du-portfolio-cafe-2.jpg' %}" alt="social media graphic for cafe san ignacio"
-						class="w-full h-full object-scale-down rounded-2xl" />
-
-					<!-- Text Overlay -->
-                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
-						<h2 class="text-xl font-bold text-white">
-							Social Media Graphics
-						</h2>
-						<p class="text-white mt-2">Custom visuals to boost engagement.</p>
-					</div>
-				</div>
-
-				<!-- Photo 3 -->
-				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
-					<img src="{% static './assets/images/portfolio/details/cafe/du-portfolio-cafe-3.jpg' %}" alt="blurry social media graphic for cafe san ignacio"
-						class="w-full h-full object-scale-down rounded-2xl" />
-
-					<!-- Text Overlay -->
-                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
-						<h2 class="text-xl font-bold text-white">
-							Social Media Graphics
-						</h2>
-						<p class="text-white mt-2">Custom visuals to boost engagement.</p>
-					</div>
-				</div>
-
-				<!-- Photo 4 -->
-				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
-					<img src="{% static './assets/images/portfolio/details/cafe/du-portfolio-cafe-4.jpg' %}" alt="photography and social media post for cafe san ignacio"
+					<img src="{% static './assets/images/portfolio/details/productiva/du-portfolio-productiva-1.jpg' %}" alt="graphic design for ciudad productiva social media"
 						class="w-full h-full object-scale-down rounded-2xl" />
 
 					<!-- Text Overlay -->
@@ -108,7 +66,99 @@
 						<h2 class="text-xl font-bold text-white">
 							Product Photography
 						</h2>
-						<p class="text-white mt-2">High quality product photos to showcase.</p>
+						<p class="text-white mt-2">Showcasing quality and versatility.</p>
+					</div>
+				</div>
+
+				<!-- Photo 2 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/productiva/du-portfolio-productiva-2.jpg' %}" alt="graphic design for ciudad productiva social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 3 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/productiva/du-portfolio-productiva-3.jpg' %}" alt="graphic design for ciudad productiva social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Drone Photography
+						</h2>
+						<p class="text-white mt-2">Capturing the beauty of development-ready land.</p>
+					</div>
+				</div>
+
+				<!-- Photo 4 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/productiva/du-portfolio-productiva-4.jpg' %}" alt="graphic design for ciudad productiva social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Drone Photography
+						</h2>
+						<p class="text-white mt-2">Capturing the beauty of development-ready land.</p>
+					</div>
+				</div>
+
+				<!-- Photo 5 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/productiva/du-portfolio-productiva-5.jpg' %}" alt="graphic design for ciudad productiva social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 6 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/productiva/du-portfolio-productiva-6.jpg' %}" alt="graphic design for ciudad productiva social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 6 -->
+				<div class="relative w-full h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<!-- Audio Section -->
+					<div class="flex flex-col gap-8 p-10">
+						<h2 class="text-4xl font-bold mb-4 text-center">Audio Advertisements</h2>
+						<p class="text-xl font-light mb-4">
+							Listen to the radio jingles and audio advertisements we created for Ciudad Productiva. These were designed to engage the audience and boost visibility during key sales campaigns.
+						</p>
+
+						<!-- Audio Item 1 -->
+						<div class="flex items-center gap-4 bg-gray-100 p-4 rounded-lg shadow-md">
+							<div class="flex flex-col">
+								<h3 class="text-lg font-semibold">Ciudad Productiva Radio Advertisement</h3>
+								<audio controls class="w-full">
+									<source src="{% static './assets/images/portfolio/details/productiva/audio/du-portfolio-productiva-audio.mp3' %}" type="audio/mpeg">
+									Your browser does not support the audio element.
+								</audio>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -116,7 +166,7 @@
             <!-- Portfolio Results -->
             <h2 class="text-4xl font-bold mb-4">Results</h2>
 			<p class="text-xl my-4 font-light">
-				Thanks to a clear vision and consistent execution, Café Don Ignacio successfully launched and established itself within its target market. The brand saw a steady increase in sales and engagement as awareness grew, and our client expressed full satisfaction with the brand’s positioning and market reception. The project remains a beautiful example of how storytelling, strategy, and design can bring a meaningful product to life.
+				Ciudad Productiva is a perfect example of a campaign that matched creativity with mission. Our team responded to every shift in sales needs with impactful campaigns that kept momentum high. As a result, <strong> the entire inventory of land was sold </strong>, meeting the client’s goal of establishing a self-sustaining, productive community. We’re proud to have been involved in this project from beginning to end, helping bring a truly innovative idea to life.
             </p>
 		</div>
 
@@ -140,13 +190,13 @@
 					<div class="flex flex-col gap-4">
 						<div class="flex flex-col items-start justify-start">
 							<h2 class="text-xl">Client:</h2>
-							<h2 class="text-xl font-extralight">Café Don Ignacio</h2>
+							<h2 class="text-xl font-extralight">Ciudad Productiva</h2>
 							<div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
 						</div>
 
 						<div class="flex flex-col items-start justify-start">
 							<h2 class="text-xl">Category:</h2>
-							<h2 class="text-xl font-extralight">Social Media, Graphic Design</h2>
+							<h2 class="text-xl font-extralight">Social Media, Graphic Design, Audio Advertisments, Marketing Strategy</h2>
 							<div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
 						</div>
 
@@ -163,6 +213,7 @@
 						</div>
 
 						<div class="flex justify-center gap-x-4">
+							
 						</div>
 					</div>
 				</div>

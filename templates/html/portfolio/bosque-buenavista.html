@@ -1,54 +1,53 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}Café Don Ignacio - {% endblock title %}
-{% block description %}Cafe Don Ignacio Portfolio Details{% endblock description %} {% load custom_tags %}
+{% block title %}Bosques de Buena Vista - {% endblock title %}
+{% block description %}Bosques de Buena Vista Portfolio Details{% endblock description %} {% load custom_tags %}
 {%block content %}
 
 <div class="flex flex-col p-10 md:max-w-[1440px] mx-auto gap-4">
 	<!-- image -->
 	<div
 		class="flex w-full h-[400px] lg:h-[700px] bg-gray-500 rounded-3xl hover:shadow-2xl mb-4 justify-center">
-		<img src="{% static './assets/images/portfolio/du-portfolio-cover-cafe.jpg' %}" alt="Cafe San Ignacio marketing elements"
+		<img src="{% static './assets/images/portfolio/du-portfolio-cover-bosques.jpg' %}" alt="portfolio cover for bosques de buena vista"
 			class="flex w-full h-[100%] rounded-3xl object-cover mb-4" />
 	</div>
 	<div class="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8">
 		<div class="flex flex-col max-w-[800px] order-2 lg:order-1">
 
             <!-- Portfolio Title and Overview -->
-			<h2 class="text-4xl font-bold mb-4">Café Don Ignacio</h2>
+			<h2 class="text-4xl font-bold mb-4">Bosques de Buena Vista</h2>
 			<p class="text-xl mb-4 font-light">
-				Café Don Ignacio is a Bolivian coffee brand rooted in family, tradition, and a deep passion for coffee. Named in honor of the family’s patriarch, this brand represents more than just a beverage—it tells a story of legacy, care, and craftsmanship. From growing and harvesting the beans to roasting them in-house, Café Don Ignacio is a true seed-to-cup experience that reflects generations of dedication and love for quality coffee.
-            </p>
+				Bosques de Buena Vista is a real estate development located in a one-of-a-kind area of Bolivia, near a state park and in a town rich with history and regional significance. Surrounded by lush nature, unique landscapes, and access to traditional restaurants, trekking trails, and local biodiversity, it’s the perfect place to slow down and enjoy everything the region has to offer. Designed as an ideal location for a second home, Bosques de Buena Vista offers a peaceful escape with authentic charm and growing appeal.            </p>
             
             <!-- What We Provided Details -->
 			<h2 class="text-4xl font-bold mb-4">What We Provided</h2>
 			<p class="text-xl font-light">
-				We worked closely with the family to build their brand from scratch—starting with the name, logo, and overall identity. Our team led the creative direction, producing photography and video content that highlighted their story and values. We also developed a tailored sales strategy and launched their social media presence, positioning Café Don Ignacio to connect authentically with its target audience and stand out in the market.
+				Our team partnered with the client to bring their vision to life from the ground up. We developed a full visual identity for the brand, created engaging content, and established a strong digital presence through targeted social media management. Every piece—from the logo to photo and video production—was carefully crafted to reflect the project’s natural beauty and lifestyle appeal.
             </p>
 			<div class="flex flex-col gap-4 md:flex-row justify-between my-10">
 				<div class="flex flex-col gap-4">
 					<span class="flex items-center justify-start gap-4">
 						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
-                            <h2>Branding & Logo Design</h2>
-                        </span>
+						<h2>Branding & Visual Identity</h2>
+					</span>
 					<span class="flex items-center justify-start gap-4">
 						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
-                            <h2>Sales Strategy & Launch Plan</h2>
-                        </span>
+						<h2>Content Creation (Photo & Video)</h2>
+					</span>
 
 				</div>
 				<div class="flex flex-col gap-4">
 					<span class="flex items-center justify-start gap-4">
 						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
-						<h2>Content Creation (Photo & Video)</h2>
+						<h2>Social Media Management</h2>
 					</span>
 					<span class="flex items-center justify-start gap-4">
 						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
-						<h2>Brand Positioning</h2>
+						<h2>Brand Positioning & Messaging</h2>
 					</span>
 				</div>
 			</div>
@@ -58,49 +57,7 @@
 				<!-- Photo 1 -->
 				<div
 					class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
-					<img src="{% static './assets/images/portfolio/details/cafe/du-portfolio-cafe-1.jpg' %}" alt="bag of cafe san ignacio"
-						class="w-full h-full object-scale-down rounded-2xl" />
-
-					<!-- Text Overlay -->
-                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
-						<h2 class="text-xl font-bold text-white">
-							Branding Redesign
-						</h2>
-						<p class="text-white mt-2">Enhanced visual identity and messaging.</p>
-					</div>
-				</div>
-
-				<!-- Photo 2 -->
-				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
-					<img src="{% static './assets/images/portfolio/details/cafe/du-portfolio-cafe-2.jpg' %}" alt="social media graphic for cafe san ignacio"
-						class="w-full h-full object-scale-down rounded-2xl" />
-
-					<!-- Text Overlay -->
-                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
-						<h2 class="text-xl font-bold text-white">
-							Social Media Graphics
-						</h2>
-						<p class="text-white mt-2">Custom visuals to boost engagement.</p>
-					</div>
-				</div>
-
-				<!-- Photo 3 -->
-				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
-					<img src="{% static './assets/images/portfolio/details/cafe/du-portfolio-cafe-3.jpg' %}" alt="blurry social media graphic for cafe san ignacio"
-						class="w-full h-full object-scale-down rounded-2xl" />
-
-					<!-- Text Overlay -->
-                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
-						<h2 class="text-xl font-bold text-white">
-							Social Media Graphics
-						</h2>
-						<p class="text-white mt-2">Custom visuals to boost engagement.</p>
-					</div>
-				</div>
-
-				<!-- Photo 4 -->
-				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
-					<img src="{% static './assets/images/portfolio/details/cafe/du-portfolio-cafe-4.jpg' %}" alt="photography and social media post for cafe san ignacio"
+					<img src="{% static './assets/images/portfolio/details/bosques/du-portfolio-buenavista-1.jpg' %}" alt="graphic design for bosques de buenavista social media"
 						class="w-full h-full object-scale-down rounded-2xl" />
 
 					<!-- Text Overlay -->
@@ -108,7 +65,105 @@
 						<h2 class="text-xl font-bold text-white">
 							Product Photography
 						</h2>
-						<p class="text-white mt-2">High quality product photos to showcase.</p>
+						<p class="text-white mt-2">Showcasing quality and versatility.</p>
+					</div>
+				</div>
+
+				<!-- Photo 2 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/bosques/du-portfolio-buenavista-2.jpg' %}" alt="graphic design for bosques de buenavista social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 3 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/bosques/du-portfolio-buenavista-3.jpg' %}" alt="graphic design for bosques de buenavista social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 4 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/bosques/du-portfolio-buenavista-4.jpg' %}" alt="graphic design for bosques de buenavista social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 5 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/bosques/du-portfolio-buenavista-5.jpg' %}" alt="graphic design for bosques de buenavista social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 6 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/bosques/du-portfolio-buenavista-6.jpg' %}" alt="graphic design for bosques de buenavista social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 7 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/bosques/du-portfolio-buenavista-7.jpg' %}" alt="graphic design for bosques de buenavista social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 8 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/bosques/du-portfolio-buenavista-8.jpg' %}" alt="graphic design for bosques de buenavista social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
 					</div>
 				</div>
 			</div>
@@ -116,7 +171,7 @@
             <!-- Portfolio Results -->
             <h2 class="text-4xl font-bold mb-4">Results</h2>
 			<p class="text-xl my-4 font-light">
-				Thanks to a clear vision and consistent execution, Café Don Ignacio successfully launched and established itself within its target market. The brand saw a steady increase in sales and engagement as awareness grew, and our client expressed full satisfaction with the brand’s positioning and market reception. The project remains a beautiful example of how storytelling, strategy, and design can bring a meaningful product to life.
+				Although the project is still ongoing, our efforts have already helped Bosques de Buena Vista achieve strong regional recognition—becoming the most visible and talked-about real estate development in its area. With a clear strategy and consistent branding, <strong> the project exceeded its sales targets by nearly 50%</strong>, and has now entered the cabin construction phase ahead of schedule. The brand is well on its way to becoming a landmark development in the region.
             </p>
 		</div>
 
@@ -140,13 +195,13 @@
 					<div class="flex flex-col gap-4">
 						<div class="flex flex-col items-start justify-start">
 							<h2 class="text-xl">Client:</h2>
-							<h2 class="text-xl font-extralight">Café Don Ignacio</h2>
+							<h2 class="text-xl font-extralight">Bosques de Buena Vista</h2>
 							<div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
 						</div>
 
 						<div class="flex flex-col items-start justify-start">
 							<h2 class="text-xl">Category:</h2>
-							<h2 class="text-xl font-extralight">Social Media, Graphic Design</h2>
+							<h2 class="text-xl font-extralight">Social Media, Graphic Design, Branding</h2>
 							<div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
 						</div>
 
@@ -163,6 +218,21 @@
 						</div>
 
 						<div class="flex justify-center gap-x-4">
+							<p class="text-xl">Follow on:</p>
+							<div class="flex gap-4 text-xl justify-center items-center">
+								<a href="https://www.instagram.com/bosquesdebuenavista/" aria-label="Instagram"
+									class="flex text-white h-8 w-8 items-center justify-center">
+									<i class="bi bi-instagram text-2xl"></i>
+								</a>
+								<a href="https://www.facebook.com/profile.php?id=61567822358249" aria-label="Facebook"
+									class="flex text-white h-8 w-8 items-center justify-center">
+									<i class="bi bi-facebook text-2xl"></i>
+								</a>
+								<a href="https://wa.me/59175656962" aria-label="WhatsApp"
+									class="flex text-white h-8 w-8 items-center justify-center">
+									<i class="bi bi-whatsapp text-2xl"></i>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>

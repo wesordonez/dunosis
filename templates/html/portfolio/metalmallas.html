@@ -1,54 +1,53 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}Café Don Ignacio - {% endblock title %}
-{% block description %}Cafe Don Ignacio Portfolio Details{% endblock description %} {% load custom_tags %}
+{% block title %}Metal Mallas - {% endblock title %}
+{% block description %}Metal Mallas Portfolio Details{% endblock description %} {% load custom_tags %}
 {%block content %}
 
 <div class="flex flex-col p-10 md:max-w-[1440px] mx-auto gap-4">
 	<!-- image -->
 	<div
 		class="flex w-full h-[400px] lg:h-[700px] bg-gray-500 rounded-3xl hover:shadow-2xl mb-4 justify-center">
-		<img src="{% static './assets/images/portfolio/du-portfolio-cover-cafe.jpg' %}" alt="Cafe San Ignacio marketing elements"
+		<img src="{% static './assets/images/portfolio/du-portfolio-cover-metalmallas.jpg' %}" alt="portfolio cover image for metalmallas"
 			class="flex w-full h-[100%] rounded-3xl object-cover mb-4" />
 	</div>
 	<div class="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8">
 		<div class="flex flex-col max-w-[800px] order-2 lg:order-1">
 
             <!-- Portfolio Title and Overview -->
-			<h2 class="text-4xl font-bold mb-4">Café Don Ignacio</h2>
+			<h2 class="text-4xl font-bold mb-4">Metal Mallas</h2>
 			<p class="text-xl mb-4 font-light">
-				Café Don Ignacio is a Bolivian coffee brand rooted in family, tradition, and a deep passion for coffee. Named in honor of the family’s patriarch, this brand represents more than just a beverage—it tells a story of legacy, care, and craftsmanship. From growing and harvesting the beans to roasting them in-house, Café Don Ignacio is a true seed-to-cup experience that reflects generations of dedication and love for quality coffee.
-            </p>
+				Metal Mallas is a Santa Cruz-based company specializing in wire mesh, perforated sheets, woven mesh, and their newest offering—expanded metal manufactured locally in Bolivia. Known for its wide range of durable, industrial-grade products, Metal Mallas recently transitioned from being a reseller to becoming a full-fledged expanded metal factory, launching a line of “Made in Bolivia” materials that mark a major milestone in national production and innovation in the sector.            </p>
             
             <!-- What We Provided Details -->
 			<h2 class="text-4xl font-bold mb-4">What We Provided</h2>
 			<p class="text-xl font-light">
-				We worked closely with the family to build their brand from scratch—starting with the name, logo, and overall identity. Our team led the creative direction, producing photography and video content that highlighted their story and values. We also developed a tailored sales strategy and launched their social media presence, positioning Café Don Ignacio to connect authentically with its target audience and stand out in the market.
+				Our team supported Metal Mallas through a brand evolution, refreshing their visual identity and helping reposition them as both a seller and manufacturer. We led the creative direction for various seasonal and product-specific campaigns, produced magazine-ready ads, and managed their Meta advertising. In addition to photo and video production, we handled community engagement, content editing, and sales strategy, ensuring a cohesive and effective presence across platforms.
             </p>
 			<div class="flex flex-col gap-4 md:flex-row justify-between my-10">
 				<div class="flex flex-col gap-4">
 					<span class="flex items-center justify-start gap-4">
 						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
-                            <h2>Branding & Logo Design</h2>
-                        </span>
+						<h2>Logo Refresh & Brand Enhancement</h2>
+					</span>
 					<span class="flex items-center justify-start gap-4">
 						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
-                            <h2>Sales Strategy & Launch Plan</h2>
-                        </span>
+						<h2>Social Media & Community Management</h2>
+					</span>
 
 				</div>
 				<div class="flex flex-col gap-4">
 					<span class="flex items-center justify-start gap-4">
 						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
-						<h2>Content Creation (Photo & Video)</h2>
+						<h2>Photo & Video Production & Editing</h2>
 					</span>
 					<span class="flex items-center justify-start gap-4">
 						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
-						<h2>Brand Positioning</h2>
+						<h2>Magazine Ad & Graphic Design</h2>
 					</span>
 				</div>
 			</div>
@@ -58,49 +57,7 @@
 				<!-- Photo 1 -->
 				<div
 					class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
-					<img src="{% static './assets/images/portfolio/details/cafe/du-portfolio-cafe-1.jpg' %}" alt="bag of cafe san ignacio"
-						class="w-full h-full object-scale-down rounded-2xl" />
-
-					<!-- Text Overlay -->
-                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
-						<h2 class="text-xl font-bold text-white">
-							Branding Redesign
-						</h2>
-						<p class="text-white mt-2">Enhanced visual identity and messaging.</p>
-					</div>
-				</div>
-
-				<!-- Photo 2 -->
-				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
-					<img src="{% static './assets/images/portfolio/details/cafe/du-portfolio-cafe-2.jpg' %}" alt="social media graphic for cafe san ignacio"
-						class="w-full h-full object-scale-down rounded-2xl" />
-
-					<!-- Text Overlay -->
-                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
-						<h2 class="text-xl font-bold text-white">
-							Social Media Graphics
-						</h2>
-						<p class="text-white mt-2">Custom visuals to boost engagement.</p>
-					</div>
-				</div>
-
-				<!-- Photo 3 -->
-				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
-					<img src="{% static './assets/images/portfolio/details/cafe/du-portfolio-cafe-3.jpg' %}" alt="blurry social media graphic for cafe san ignacio"
-						class="w-full h-full object-scale-down rounded-2xl" />
-
-					<!-- Text Overlay -->
-                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
-						<h2 class="text-xl font-bold text-white">
-							Social Media Graphics
-						</h2>
-						<p class="text-white mt-2">Custom visuals to boost engagement.</p>
-					</div>
-				</div>
-
-				<!-- Photo 4 -->
-				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
-					<img src="{% static './assets/images/portfolio/details/cafe/du-portfolio-cafe-4.jpg' %}" alt="photography and social media post for cafe san ignacio"
+					<img src="{% static './assets/images/portfolio/details/metalmallas/du-portfolio-metalmallas-1.jpg' %}" alt="graphic design for metalmallas social media"
 						class="w-full h-full object-scale-down rounded-2xl" />
 
 					<!-- Text Overlay -->
@@ -108,7 +65,119 @@
 						<h2 class="text-xl font-bold text-white">
 							Product Photography
 						</h2>
-						<p class="text-white mt-2">High quality product photos to showcase.</p>
+						<p class="text-white mt-2">Showcasing quality and versatility.</p>
+					</div>
+				</div>
+
+				<!-- Photo 2 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/metalmallas/du-portfolio-metalmallas-2.jpg' %}" alt="graphic design for metalmallas social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 3 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/metalmallas/du-portfolio-metalmallas-3.jpg' %}" alt="graphic design for metalmallas social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 4 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/metalmallas/du-portfolio-metalmallas-4.jpg' %}" alt="graphic design for metalmallas social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 5 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/metalmallas/du-portfolio-metalmallas-5.jpg' %}" alt="graphic design for metalmallas social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 6 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/metalmallas/du-portfolio-metalmallas-6.jpg' %}" alt="graphic design for metalmallas social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 7 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/metalmallas/du-portfolio-metalmallas-7.jpg' %}" alt="graphic design for metalmallas social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 8 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/metalmallas/du-portfolio-metalmallas-8.jpg' %}" alt="graphic design for metalmallas social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 9 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/metalmallas/du-portfolio-metalmallas-9.jpg' %}" alt="graphic design for metalmallas social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
 					</div>
 				</div>
 			</div>
@@ -116,8 +185,7 @@
             <!-- Portfolio Results -->
             <h2 class="text-4xl font-bold mb-4">Results</h2>
 			<p class="text-xl my-4 font-light">
-				Thanks to a clear vision and consistent execution, Café Don Ignacio successfully launched and established itself within its target market. The brand saw a steady increase in sales and engagement as awareness grew, and our client expressed full satisfaction with the brand’s positioning and market reception. The project remains a beautiful example of how storytelling, strategy, and design can bring a meaningful product to life.
-            </p>
+				Through consistent messaging and strong content, we helped foster a <strong> loyal customer base </strong> that now views Metal Mallas as not just a distributor, but a <strong> national manufacturer of industrial products. </strong> The company’s reputation has grown alongside its sales, with performance climbing steadily across campaigns. The brand continues to gain traction in both B2B and B2C segments, setting the standard for locally produced industrial mesh solutions.            </p>
 		</div>
 
 		<!-- Project Information -->
@@ -140,13 +208,13 @@
 					<div class="flex flex-col gap-4">
 						<div class="flex flex-col items-start justify-start">
 							<h2 class="text-xl">Client:</h2>
-							<h2 class="text-xl font-extralight">Café Don Ignacio</h2>
+							<h2 class="text-xl font-extralight">Metal Mallas</h2>
 							<div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
 						</div>
 
 						<div class="flex flex-col items-start justify-start">
 							<h2 class="text-xl">Category:</h2>
-							<h2 class="text-xl font-extralight">Social Media, Graphic Design</h2>
+							<h2 class="text-xl font-extralight">Social Media, Graphic Designs, Print Advertising, Marketing Strategy</h2>
 							<div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
 						</div>
 
@@ -163,6 +231,21 @@
 						</div>
 
 						<div class="flex justify-center gap-x-4">
+							<p class="text-xl">Follow on:</p>
+							<div class="flex gap-4 text-xl justify-center items-center">
+								<a href="https://www.instagram.com/metalmallassrl/" aria-label="Instagram"
+									class="flex text-white h-8 w-8 items-center justify-center">
+									<i class="bi bi-instagram text-2xl"></i>
+								</a>
+								<a href="https://www.facebook.com/metalmallasrl" aria-label="FaceBook"
+									class="flex text-white h-8 w-8 items-center justify-center">
+									<i class="bi bi-facebook text-2xl"></i>
+								</a>
+								<a href="https://www.tiktok.com/@metalmallasrl" aria-label="TikTok"
+									class="flex text-white h-8 w-8 items-center justify-center">
+									<i class="bi bi-tiktok text-2xl"></i>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>

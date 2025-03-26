@@ -17,7 +17,9 @@ from .views import (rate_limiter_view, view_404,
                         webdev_service_view, socialmedia_service_view, marketing_service_view, consulting_service_view,
                         maintenance_service_view, graphic_design_service_view, portfolio_view, cpanda_portfolio_details_view,
                         kneadsweets_portfolio_details_view, prcc_portfolio_details_view, cafe_ignacio_portfolio_details_view,
-                        guayaba_portfolio_details_view, jardin_portfolio_details_view, metaltela_portfolio_details_view) #subscribe_view
+                        guayaba_portfolio_details_view, jardin_portfolio_details_view, metaltela_portfolio_details_view,
+                        metalmalla_portfolio_details_view, pantanal_portfolio_details_view, ciudad_productiva_portfolio_details_view,
+                        bosque_buenavista_portfolio_details_view) #subscribe_view
 
 from .sitemaps import StaticSitemap
 from blog.sitemaps import BlogSitemap
@@ -72,6 +74,10 @@ urlpatterns = [
     path('portfolio/guayaba/', guayaba_portfolio_details_view, name='guayaba'),
     path('portfolio/colonia-jardin/', jardin_portfolio_details_view, name='jardin'),
     path('portfolio/metaltela/', metaltela_portfolio_details_view, name='metaltela'),
+    path('portfolio/metalmallas/', metalmalla_portfolio_details_view, name='metalmallas'),
+    path('portfolio/pantanal/', pantanal_portfolio_details_view, name='pantanal'),
+    path('portfolio/ciudad-productiva/', ciudad_productiva_portfolio_details_view, name='ciudad-productiva'),
+    path('portfolio/bosque-buenavista/', bosque_buenavista_portfolio_details_view, name='bosque-buenavista'),
 
     path("__reload__/", include("django_browser_reload.urls")),
 ]

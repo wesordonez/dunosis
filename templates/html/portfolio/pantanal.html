@@ -1,49 +1,41 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}Knead Sweets - {% endblock title %}
-{% block description %}Knead Sweets Chicago Website Portfolio Details{% endblock description %} {% load custom_tags %}
+{% block title %}El Pantanal - {% endblock title %}
+{% block description %}El Pantanal Portfolio Details{% endblock description %} {% load custom_tags %}
 {%block content %}
 
 <div class="flex flex-col p-10 md:max-w-[1440px] mx-auto gap-4">
 	<!-- image -->
 	<div
 		class="flex w-full h-[400px] lg:h-[700px] bg-gray-500 rounded-3xl hover:shadow-2xl mb-4 justify-center">
-		<img src="{% static './assets/images/portfolio/du-portfolio-cover-kneadsweets.png' %}" alt="Kneadsweets chicago website"
+		<img src="{% static './assets/images/portfolio/du-portfolio-cover-pantanal.jpg' %}" alt="portfolio cover for el pantanal project"
 			class="flex w-full h-[100%] rounded-3xl object-cover mb-4" />
 	</div>
 	<div class="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8">
 		<div class="flex flex-col max-w-[800px] order-2 lg:order-1">
 
             <!-- Portfolio Title and Overview -->
-			<h2 class="text-4xl font-bold mb-4">Knead Sweets Chicago Mobile Website Design</h2>
+			<h2 class="text-4xl font-bold mb-4">El Pantanal</h2>
 			<p class="text-xl mb-4 font-light">
-                Kneadsweets Chicago, a premier chef and baker specializing in desserts and custom cakes, needed a 
-                mobile-first website that reflects their artistry and creativity. The project focused on creating a 
-                visually captivating platform that not only showcases their stunning cakes but also provides an 
-                intuitive experience for potential customers. By prioritizing mobile usability, the site ensures 
-                easy navigation and ordering for customers on the go.
+				El Pantanal is a strategically located real estate project in Santa Cruz, Bolivia, near the border with Brazil. Positioned along the key transportation corridor that connects Bolivia to El Mutún—home to one of the world’s largest iron reserves—this development is designed to house the growing workforce expected in the area. Located directly across from a major bus terminal and adjacent to the regional railroad, El Pantanal offers a unique and high-potential location for residential growth in a rapidly developing economic zone.
             </p>
             
             <!-- What We Provided Details -->
 			<h2 class="text-4xl font-bold mb-4">What We Provided</h2>
 			<p class="text-xl font-light">
-                We delivered a fully custom, mobile-first website tailored to Kneadsweets Chicago's unique identity 
-                and offerings. From the ground up, we built a platform that highlights their high-quality desserts 
-                and cakes with sleek visual elements and seamless navigation. The site features an integrated 
-                ordering system, responsive design, and search-engine-optimized content to drive visibility and 
-                conversions.
+				We integrated seamlessly with El Pantanal’s existing branding and marketing efforts to elevate their outreach. Building on the foundation already in place, we refreshed and expanded their campaigns with new graphic design assets, engaging content, and targeted social media management. We also created impactful signage and banners to support both digital promotions and on-the-ground sales efforts—ensuring a cohesive and effective brand presence across all platforms.
             </p>
 			<div class="flex flex-col gap-4 md:flex-row justify-between my-10">
 				<div class="flex flex-col gap-4">
 					<span class="flex items-center justify-start gap-4">
 						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
-						<h2>Custom mobile-first design.</h2>
+						<h2>Graphic Design & Visual Asset Creation</h2>
 					</span>
 					<span class="flex items-center justify-start gap-4">
 						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
-						<h2>SEO-optimized content for increased visibility.</h2>
+						<h2>Campaign-Specific Content Creation</h2>
 					</span>
 
 				</div>
@@ -51,44 +43,72 @@
 					<span class="flex items-center justify-start gap-4">
 						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
-						<h2>Integrated order inquiry and contact system.</h2>
+						<h2>Brand-Aligned Marketing Collateral</h2>
 					</span>
 					<span class="flex items-center justify-start gap-4">
 						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
 							aria-hidden="true"></i>
-						<h2>Seamless navigation and user-friendly interface.</h2>
+						<h2>Social Media Management</h2>
 					</span>
 				</div>
 			</div>
 
             <!-- Portfolio Images -->
-			<div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-8">
+			<div class="flex flex-wrap justify-center items-center gap-4 mb-8">
 				<!-- Photo 1 -->
 				<div
-					class="relative w-full h-[400px] bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
-					<img src="{% static './assets/images/portfolio/details/kneadsweets/du-portfolio-kneadsweets-1.png' %}" alt="Customized ordering system"
-						class="w-full h-full object-cover rounded-2xl" />
+					class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/pantanal/du-portfolio-pantanal-1.jpg' %}" alt="graphic design for el pantanal social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
 
 					<!-- Text Overlay -->
                     <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
 						<h2 class="text-xl font-bold text-white">
-							Order Inquiry System
+							Product Photography
 						</h2>
-						<p class="text-white mt-2">Streamlined ordering process for desserts and cakes.</p>
+						<p class="text-white mt-2">Showcasing quality and versatility.</p>
 					</div>
 				</div>
 
 				<!-- Photo 2 -->
-				<div class="relative w-full h-[400px] bg-gray-200 rounded-2xl overflow-hidden">
-					<img src="{% static './assets/images/portfolio/details/kneadsweets/du-portfolio-kneadsweets-3.png' %}" alt="beautiful gallery showcase"
-						class="w-full h-full object-cover rounded-2xl" />
+				<div class="relative w-full h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300 order-first">
+					<img src="{% static './assets/images/portfolio/details/pantanal/du-portfolio-pantanal-2.jpg' %}" alt="graphic design for el pantanal social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
 
 					<!-- Text Overlay -->
                     <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
 						<h2 class="text-xl font-bold text-white">
-							Custom Gallery Showcase
+							Graphic Design
 						</h2>
-						<p class="text-white mt-2">Designed to highlight Kneadsweets' stunning creations.</p>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 3 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/pantanal/du-portfolio-pantanal-3.jpg' %}" alt="graphic design for el pantanal social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 4 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/pantanal/du-portfolio-pantanal-4.jpg' %}" alt="graphic design for el pantanal social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
 					</div>
 				</div>
 			</div>
@@ -96,20 +116,7 @@
             <!-- Portfolio Results -->
             <h2 class="text-4xl font-bold mb-4">Results</h2>
 			<p class="text-xl my-4 font-light">
-                The Kneadsweets Chicago website delivered outstanding results, establishing a strong online presence 
-                with a sleek, mobile-first design. By optimizing for local SEO, the website increased the business’s 
-                visibility to nearby customers and attracted new orders.
-            </p>
-            <p class="text-xl my-4 font-light">
-                The intuitive gallery showcase and inquiry system simplified the customer journey, leading to an 
-                increase in inquiries and conversions. The website’s professional design aligned perfectly with the 
-                brand’s identity, creating a lasting impression on visitors and turning potential customers into 
-                loyal clients.
-            </p>
-            <p class="text-xl my-4 font-light">
-                This project exemplifies the power of combining custom web design with strategic functionality, 
-                ensuring the Kneadsweets brand stands out in a competitive market.
-            </p>
+				We successfully built upon the existing brand identity and helped scale the project’s reach at key sales moments. Our targeted campaigns and consistent visual storytelling <strong> increased online engagement, boosted social media presence, and helped generate new qualified leads </strong> for the sales team. El Pantanal remains a project on the rise, and our creative contributions continue to support its momentum.            </p>
 		</div>
 
 		<!-- Project Information -->
@@ -132,48 +139,30 @@
 					<div class="flex flex-col gap-4">
 						<div class="flex flex-col items-start justify-start">
 							<h2 class="text-xl">Client:</h2>
-							<h2 class="text-xl font-extralight">Mayela Bezares - Owner</h2>
+							<h2 class="text-xl font-extralight">El Pantanal</h2>
 							<div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
 						</div>
 
 						<div class="flex flex-col items-start justify-start">
 							<h2 class="text-xl">Category:</h2>
-							<h2 class="text-xl font-extralight">Web Development</h2>
+							<h2 class="text-xl font-extralight">Social Media, Graphic Design</h2>
 							<div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
 						</div>
 
 						<div class="flex flex-col items-start justify-start">
 							<h2 class="text-xl">Location:</h2>
-							<h2 class="text-xl font-extralight">Chicago, Illinois</h2>
+							<h2 class="text-xl font-extralight">Santa Cruz, Bolivia</h2>
 							<div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
 						</div>
 
 						<div class="flex flex-col items-start justify-start">
 							<h2 class="text-xl">Project Lead:</h2>
-							<h2 class="text-xl font-extralight">Wesley Ordoñez</h2>
+							<h2 class="text-xl font-extralight">Tayo Zabala</h2>
 							<div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
 						</div>
 
 						<div class="flex justify-center gap-x-4">
-							<p class="text-xl">Follow on:</p>
-							<div class="flex gap-4 text-xl justify-center items-center">
-								<a href="https://www.kneadsweetschicago.com" aria-label="Website"
-									class="flex text-white h-8 w-8 items-center justify-center">
-                                    <i class="bi bi-globe text-2xl"></i>
-								</a>
-								<a href="https://www.instagram.com/keadsweetschicago/" aria-label="Instagram"
-									class="flex text-white h-8 w-8 items-center justify-center">
-									<i class="bi bi-instagram text-2xl"></i>
-								</a>
-								<a href="https://www.facebook.com/kneadsweetsbymayela" aria-label="Facebook"
-									class="flex text-white h-8 w-8 items-center justify-center">
-									<i class="bi bi-facebook text-2xl"></i>
-								</a>
-								<a href="https://wa.me/17874690979" aria-label="WhatsApp"
-									class="flex text-white h-8 w-8 items-center justify-center">
-									<i class="bi bi-whatsapp text-2xl"></i>
-								</a>
-							</div>
+							
 						</div>
 					</div>
 				</div>
