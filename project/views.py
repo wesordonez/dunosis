@@ -61,35 +61,100 @@ def graphic_design_service_view(request):
 def portfolio_view(request):
     return render(request, './portfolio/portfolio.html', status=200)
 
+portfolio_projects = [
+    {"slug": "bosque-buenavista", "url_name": "bosque-buenavista", "title": "Bosques de Buena Vista"},
+    {"slug": "ciudad-productiva", "url_name": "ciudad-productiva", "title": "Ciudad Productiva"},
+    {"slug": "metaltela", "url_name": "metaltela", "title": "Metaltela"},
+    {"slug": "cpanda-website", "url_name": "cpanda-website", "title": "CPanda Website"},
+    {"slug": "kneadsweets-website", "url_name": "kneadsweets-website", "title": "Knead Sweets Website"},
+    {"slug": "prcc-dashboard", "url_name": "prcc-dashboard", "title": "PRCC Dashboard"},
+    {"slug": "cafe-ignacio", "url_name": "cafe-ignacio", "title": "Café Ignacio"},
+    {"slug": "guayaba", "url_name": "guayaba", "title": "Guayaba"},
+    {"slug": "colonia-jardin", "url_name": "jardin", "title": "Colonia Jardín"},
+    {"slug": "metalmallas", "url_name": "metalmallas", "title": "Metalmallas"},
+    {"slug": "pantanal", "url_name": "pantanal", "title": "Pantanal"},
+    # Add more projects here as needed
+]
+
+def get_navigation_context(slug):
+    current_index = next((i for i, p in enumerate(portfolio_projects) if p["slug"] == slug), None)
+    previous_project = portfolio_projects[current_index - 1] if current_index > 0 else None
+    next_project = portfolio_projects[current_index + 1] if current_index < len(portfolio_projects) - 1 else None
+    return previous_project, next_project
+
 def cpanda_portfolio_details_view(request):
-    return render(request, './portfolio/cpanda-website.html', status=200)
+    previous_project, next_project = get_navigation_context("cpanda-website")
+    return render(request, './portfolio/cpanda-website.html', {
+        "previous_project": previous_project,
+        "next_project": next_project,
+    }, status=200)
 
 def kneadsweets_portfolio_details_view(request):
-    return render(request, './portfolio/kneadsweets-website.html', status=200)
+    previous_project, next_project = get_navigation_context("kneadsweets-website")
+    return render(request, './portfolio/kneadsweets-website.html', {
+        "previous_project": previous_project,
+        "next_project": next_project,
+    }, status=200)
 
 def prcc_portfolio_details_view(request):
-    return render(request, './portfolio/prcc-dashboard.html', status=200)
+    previous_project, next_project = get_navigation_context("prcc-dashboard")
+    return render(request, './portfolio/prcc-dashboard.html', {
+        "previous_project": previous_project,
+        "next_project": next_project,
+    }, status=200)
 
 def cafe_ignacio_portfolio_details_view(request):
-    return render(request, './portfolio/cafe-ignacio.html', status=200)
+    previous_project, next_project = get_navigation_context("cafe-ignacio")
+    return render(request, './portfolio/cafe-ignacio.html', {
+        "previous_project": previous_project,
+        "next_project": next_project,
+    }, status=200)
 
 def guayaba_portfolio_details_view(request):
-    return render(request, './portfolio/guayaba.html', status=200)
+    previous_project, next_project = get_navigation_context("guayaba")
+    return render(request, './portfolio/guayaba.html', {
+        "previous_project": previous_project,
+        "next_project": next_project,
+    }, status=200)
 
 def jardin_portfolio_details_view(request):
-    return render(request, './portfolio/colonia-jardin.html', status=200)
+    previous_project, next_project = get_navigation_context("colonia-jardin")
+    return render(request, './portfolio/colonia-jardin.html', {
+        "previous_project": previous_project,
+        "next_project": next_project,
+    }, status=200)
 
 def metaltela_portfolio_details_view(request):
-    return render(request, './portfolio/metaltela.html', status=200)
+    previous_project, next_project = get_navigation_context("metaltela")
+    return render(request, './portfolio/metaltela.html', {
+        "previous_project": previous_project,
+        "next_project": next_project,
+    }, status=200)
 
 def metalmalla_portfolio_details_view(request):
-    return render(request, './portfolio/metalmallas.html', status=200)
+    previous_project, next_project = get_navigation_context("metalmallas")
+    return render(request, './portfolio/metalmallas.html', {
+        "previous_project": previous_project,
+        "next_project": next_project,
+    }, status=200)
 
 def pantanal_portfolio_details_view(request):
-    return render(request, './portfolio/pantanal.html', status=200)
+    previous_project, next_project = get_navigation_context("pantanal")
+    return render(request, './portfolio/pantanal.html', {
+        "previous_project": previous_project,
+        "next_project": next_project,
+    }, status=200)
 
 def ciudad_productiva_portfolio_details_view(request):
-    return render(request, './portfolio/ciudad-productiva.html', status=200)
+    previous_project, next_project = get_navigation_context("ciudad-productiva")
+    return render(request, './portfolio/ciudad-productiva.html', {
+        "previous_project": previous_project,
+        "next_project": next_project,
+    }, status=200)
 
 def bosque_buenavista_portfolio_details_view(request):
-    return render(request, './portfolio/bosque-buenavista.html', status=200)
+    previous_project, next_project = get_navigation_context("bosque-buenavista")
+    return render(request, './portfolio/bosque-buenavista.html', {
+        "previous_project": previous_project,
+        "next_project": next_project,
+    }, status=200)
