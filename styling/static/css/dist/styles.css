@@ -1428,10 +1428,6 @@ input[type="range"]::-ms-fill-lower {
   height: 100vh;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .max-h-4 {
   max-height: 1rem;
 }
@@ -1540,6 +1536,10 @@ input[type="range"]::-ms-fill-lower {
   width: 300px;
 }
 
+.w-\[350px\] {
+  width: 350px;
+}
+
 .w-\[40\%\] {
   width: 40%;
 }
@@ -1592,10 +1592,6 @@ input[type="range"]::-ms-fill-lower {
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-\[350px\] {
-  width: 350px;
 }
 
 .min-w-8 {
@@ -1680,10 +1676,6 @@ input[type="range"]::-ms-fill-lower {
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-\[450px\] {
-  max-width: 450px;
 }
 
 .flex-1 {
@@ -3294,12 +3286,12 @@ input[type="range"]::-ms-fill-lower {
     height: 500px;
   }
 
-  .sm\:w-\[520px\] {
-    width: 520px;
-  }
-
   .sm\:w-\[500px\] {
     width: 500px;
+  }
+
+  .sm\:w-\[520px\] {
+    width: 520px;
   }
 
   .sm\:max-w-\[500px\] {
