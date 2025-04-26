@@ -1155,11 +1155,6 @@ input[type="range"]::-ms-fill-lower {
   margin-bottom: 1.5rem;
 }
 
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .-ml-4 {
   margin-left: -1rem;
 }
@@ -1687,10 +1682,6 @@ input[type="range"]::-ms-fill-lower {
   max-width: 36rem;
 }
 
-.max-w-\[200px\] {
-  max-width: 200px;
-}
-
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -2006,6 +1997,11 @@ input[type="range"]::-ms-fill-lower {
 .rounded-t-xl {
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
+}
+
+.rounded-b-xl {
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
 }
 
 .rounded-tl-\[350px\] {
@@ -2351,10 +2347,6 @@ input[type="range"]::-ms-fill-lower {
 
 .p-2\.5 {
   padding: 0.625rem;
-}
-
-.p-20 {
-  padding: 5rem;
 }
 
 .p-3 {
@@ -3355,6 +3347,11 @@ input[type="range"]::-ms-fill-lower {
     border-radius: 0.5rem;
   }
 
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .sm\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -3368,11 +3365,6 @@ input[type="range"]::-ms-fill-lower {
   .sm\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
-  }
-
-  .sm\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .sm\:text-center {
