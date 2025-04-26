@@ -1,100 +1,248 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}Feast - Portfolio{% endblock title %}
-{% block description %}Feast Portfolio Project{% endblock description %}
-{% load custom_tags %}
+{% block title %}Feast - {% endblock title %}
+{% block description %}Feast Portfolio Details{% endblock description %} {% load custom_tags %}
 {%block content %}
 
 <div class="flex flex-col p-10 md:max-w-[1440px] mx-auto gap-4">
-    <!-- Hero Image -->
-    <div class="flex w-full h-[400px] lg:h-[700px] bg-gray-500 rounded-3xl hover:shadow-2xl mb-4 justify-center">
-        <img src="{% static './assets/images/portfolio/details/feast/du-portfolio-feast-hero.jpg' %}" alt="feast"
-            class="flex w-full h-[100%] rounded-3xl object-cover mb-4" />
-    </div>
+	<!-- image -->
+	<div
+		class="flex w-full h-[400px] lg:h-[700px] bg-gray-500 rounded-3xl hover:shadow-2xl mb-4 justify-center">
+		<img src="{% static './assets/images/portfolio/du-portfolio-cover-feast.jpg' %}" alt="Colonia Jardin portfolio cover"
+			class="flex w-full h-[100%] rounded-3xl object-cover mb-4" />
+	</div>
+	<div class="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8">
+		<div class="flex flex-col max-w-[800px] order-2 lg:order-1">
 
-    <div class="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8">
-        <!-- Main Content -->
-        <div class="flex flex-col max-w-[800px] order-2 lg:order-1">
-            <h2 class="text-4xl font-bold mb-4">Feast</h2>
-            <p class="text-xl mb-4 font-light">
-                [Project description will be added later]
+            <!-- Portfolio Title and Overview -->
+			<h2 class="text-4xl font-bold mb-4">Feast</h2>
+			<p class="text-xl mb-4 font-light">
+				Colonia Jardín is a real estate development located on the east side of Santa Cruz, Bolivia, in a growing residential zone. The project offered land lots with flexible payment options—including one-time payments and monthly installment plans—making it accessible to a wide range of buyers. A portion of the project included a gated neighborhood, adding security and value to the offering. Its appeal lay in both its location and its practical, community-centered approach to home ownership.
             </p>
+            
+            <!-- What We Provided Details -->
+			<h2 class="text-4xl font-bold mb-4">What We Provided</h2>
+			<p class="text-xl font-light">
+				Our work with Colonia Jardín focused heavily on visual communication and promotional strategy. We delivered a range of graphic design materials, managed their social media presence, and created targeted campaigns tailored to the client’s evolving needs. This included everything from digital ads and branded posts to physical signage and banners. We worked closely with their sales goals and budget to ensure every piece of design work had strategic purpose and impact.
+            </p>
+			<div class="flex flex-col gap-4 md:flex-row justify-between my-10">
+				<div class="flex flex-col gap-4">
+					<span class="flex items-center justify-start gap-4">
+						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
+							aria-hidden="true"></i>
+						<h2>Graphic Design for Print & Digital</h2>
+					</span>
+					<span class="flex items-center justify-start gap-4">
+						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
+							aria-hidden="true"></i>
+						<h2>Social Media Management</h2>
+					</span>
 
-            <h2 class="text-4xl font-bold mb-4">What We Provided</h2>
-            <p class="text-xl mb-4 font-light">
-                [Services and solutions description will be added later]
-            </p>
+				</div>
+				<div class="flex flex-col gap-4">
+					<span class="flex items-center justify-start gap-4">
+						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
+							aria-hidden="true"></i>
+						<h2>Ad Campaign Strategy & Execution</h2>
+					</span>
+					<span class="flex items-center justify-start gap-4">
+						<i class="flex bi bi-check bg-du-green text-white rounded-full h-8 min-w-8 text-2xl items-center justify-center"
+							aria-hidden="true"></i>
+						<h2>Multiplatform Ads Management</h2>
+					</span>
+				</div>
+			</div>
 
             <!-- Portfolio Images -->
-            <div class="flex flex-wrap justify-center items-center gap-4 mb-8">
-                <!-- Photo 1 -->
-                <div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
-                    <img src="{% static './assets/images/portfolio/details/feast/du-portfolio-feast-1.jpg' %}" alt="feast project"
-                        class="w-full h-full object-scale-down rounded-2xl" />
+			<div class="flex flex-wrap justify-center items-center gap-4 mb-8">
+				<!-- Photo 1 -->
+				<div
+					class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/jardin/du-portfolio-jardin-1.jpg' %}" alt="graphic design for colonia jardin social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
 
-                    <!-- Text Overlay -->
+					<!-- Text Overlay -->
                     <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
-                        <h2 class="text-xl font-bold text-white">
-                            [Feature Title]
-                        </h2>
-                        <p class="text-white mt-2">[Feature Description]</p>
-                    </div>
-                </div>
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
 
-                <!-- Photo 2 -->
-                <div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
-                    <img src="{% static './assets/images/portfolio/details/feast/du-portfolio-feast-2.jpg' %}" alt="feast project"
-                        class="w-full h-full object-scale-down rounded-2xl" />
+				<!-- Photo 2 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/jardin/du-portfolio-jardin-2.jpg' %}" alt="graphic design for colonia jardin social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
 
-                    <!-- Text Overlay -->
+					<!-- Text Overlay -->
                     <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
-                        <h2 class="text-xl font-bold text-white">
-                            [Feature Title]
-                        </h2>
-                        <p class="text-white mt-2">[Feature Description]</p>
-                    </div>
-                </div>
-            </div>
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 3 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/jardin/du-portfolio-jardin-3.jpg' %}" alt="graphic design for colonia jardin social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 4 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/jardin/du-portfolio-jardin-4.jpg' %}" alt="graphic design for colonia jardin social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 5 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/jardin/du-portfolio-jardin-5.jpg' %}" alt="graphic design for colonia jardin social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+
+				<!-- Photo 6 -->
+				<div class="relative max-w-[350px] h-auto bg-gray-200 rounded-2xl overflow-hidden hover:shadow-xl duration-300">
+					<img src="{% static './assets/images/portfolio/details/jardin/du-portfolio-jardin-6.jpg' %}" alt="graphic design for colonia jardin social media"
+						class="w-full h-full object-scale-down rounded-2xl" />
+
+					<!-- Text Overlay -->
+                    <div class="absolute inset-0 flex flex-col justify-end items-center text-center bg-gradient-to-t from-black/100 to-transparent p-4 pb-18 opacity-0 hover:!opacity-100 transition-opacity duration-300">
+						<h2 class="text-xl font-bold text-white">
+							Graphic Design
+						</h2>
+						<p class="text-white mt-2">Creative campaigns to engage clients.</p>
+					</div>
+				</div>
+			</div>
 
             <!-- Portfolio Results -->
             <h2 class="text-4xl font-bold mb-4">Results</h2>
-            <p class="text-xl mb-4 font-light">
-                [Project results and impact will be added later]
-            </p>
-        </div>
+			<p class="text-xl my-4 font-light">
+				We met and exceeded the client’s expectations by delivering design-driven campaigns that supported their sales efforts effectively. Our work helped optimize both their ad spend and visual identity, maximizing the tools they prioritized while staying within budget. The project reached its sales goals and concluded successfully, with all deliverables completed on time and aligned with their brand vision.            </p>
+            <p class="text-xl my-4 font-light">
+		</div>
 
-        <!-- Sidebar -->
-        <div class="flex flex-col w-full lg:w-[320px] order-1 lg:order-2 bg-black text-white rounded-3xl p-8">
-            <div class="flex flex-col gap-4">
-                <div class="flex flex-col items-start justify-start">
-                    <h2 class="text-xl">Client:</h2>
-                    <h2 class="text-xl font-extralight">Feast</h2>
-                    <div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
-                </div>
+		<!-- Project Information -->
+		<div
+			class="flex flex-col w-full gap-y-4 min-w-[350px] lg:max-w-[500px] md:justify-start order-1 lg:order-2">
+			<!-- Details -->
+			<div class="flex flex-col bg-gradient-to-t from-du-green/50 to-du-green p-8 rounded-xl text-white">
+				<button id="toggleButton"
+					class=" flex justify-between text-white font-bold rounded-lg transition-colors duration-300"
+					onclick="toggleCollapse()">
 
-                <div class="flex flex-col items-start justify-start">
-                    <h2 class="text-xl">Category:</h2>
-                    <h2 class="text-xl font-extralight">[Categories will be added]</h2>
-                    <div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
-                </div>
+					<h1 class="text-2xl font-bold text-white">Project Information</h1>
+					<i id="arrowIcon"
+						class="text-2xl transition-transform duration-300 bi bi-chevron-right"></i>
+				</button>
 
-                <div class="flex flex-col items-start justify-start">
-                    <h2 class="text-xl">Location:</h2>
-                    <h2 class="text-xl font-extralight">[Location will be added]</h2>
-                    <div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
-                </div>
+				<div id="collapsibleContent" class="hidden lg:block">
+					<div class="h-[2px] w-full bg-white opacity-50 mt-8 mb-4"></div>
 
-                <div class="flex flex-col items-start justify-start">
-                    <h2 class="text-xl">Project Lead:</h2>
-                    <h2 class="text-xl font-extralight">[Project lead will be added]</h2>
-                    <div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
+					<div class="flex flex-col gap-4">
+						<div class="flex flex-col items-start justify-start">
+							<h2 class="text-xl">Client:</h2>
+							<h2 class="text-xl font-extralight">Colonia Jardín</h2>
+							<div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
+						</div>
+
+						<div class="flex flex-col items-start justify-start">
+							<h2 class="text-xl">Category:</h2>
+							<h2 class="text-xl font-extralight">Social Media, Graphic Design, Online Ads</h2>
+							<div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
+						</div>
+
+						<div class="flex flex-col items-start justify-start">
+							<h2 class="text-xl">Location:</h2>
+							<h2 class="text-xl font-extralight">Montero, Bolivia</h2>
+							<div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
+						</div>
+
+						<div class="flex flex-col items-start justify-start">
+							<h2 class="text-xl">Project Lead:</h2>
+							<h2 class="text-xl font-extralight">Tayo Zabala</h2>
+							<div class="h-[2px] w-full bg-white opacity-50 mt-2"></div>
+						</div>
+
+						<div class="flex justify-center gap-x-4">
+							<p class="text-xl">Follow on:</p>
+							<div class="flex gap-4 text-xl justify-center items-center">
+								<a href="https://www.instagram.com/coloniajardin/" aria-label="Instagram"
+									class="flex text-white h-8 w-8 items-center justify-center">
+									<i class="bi bi-instagram text-2xl"></i>
+								</a>
+								<a href="https://wa.me/59175656962" aria-label="WhatsApp"
+									class="flex text-white h-8 w-8 items-center justify-center">
+									<i class="bi bi-whatsapp text-2xl"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- CTA -->
+			<div class="flex flex-col bg-gradient-to-t from-du-green to-du-green/50 p-8 rounded-xl justify-center items-center text-center">
+                <div class="flex rounded-full shadow-xl p-2 w-20 justify-center bg-du-green border-4 border-white">
+                    <img src="{% static './assets/images/services/details/phone-call.png' %}" alt="Customer Support Icon" class="object-cover p-2 invert" />
                 </div>
+				<a class="px-14 py-4 mt-4 rounded-full text-xl md:text-2xl font-semibold text-black bg-white hover:scale-105 transition-transform duration-300 mb-8" href="https://dunosis.forms.app/contact-form"> 
+					Reach us!
+				</a>
+                <h2 class="text-xl mb-2 text-white">+1 (773) 202-2074</h2>
+                <h2 class="text-xl mb-2 text-white">info@dunosis.com</h2>
             </div>
-        </div>
-    </div>
+		</div>
+	</div>
 
-    {% include 'components/pre-footer-cta.html' with title="Portfolio" link_type='portfolio' %}
+	{% include 'components/pre-footer-cta.html' with title='projects' link_type='portfolio' %}
+
+	<div class="h-[2px] w-full bg-gray-400 my-5 md:my-10 opacity-40"></div>
+
+	{% include 'components/portfolio-navigation.html' %}
+
+	<div class="h-[2px] w-full bg-gray-400 my-5 md:my-10 opacity-40"></div>
+
+
 </div>
 
+<!-- Incluir el social footer -->
 {% include 'components/cta-footer.html' %}
-{% endblock content %} 
+{% endblock content %}
+{% block scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+	integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+	integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script src="{% static './js/portfolio-details.js' %}"></script>
+
+{% endblock scripts %}
