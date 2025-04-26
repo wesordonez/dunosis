@@ -1,4 +1,3 @@
-
 from django.conf import settings
 
 from django.shortcuts import redirect
@@ -19,7 +18,7 @@ from .views import (rate_limiter_view, view_404,
                         kneadsweets_portfolio_details_view, prcc_portfolio_details_view, cafe_ignacio_portfolio_details_view,
                         guayaba_portfolio_details_view, jardin_portfolio_details_view, metaltela_portfolio_details_view,
                         metalmalla_portfolio_details_view, pantanal_portfolio_details_view, ciudad_productiva_portfolio_details_view,
-                        bosque_buenavista_portfolio_details_view) #subscribe_view
+                        bosque_buenavista_portfolio_details_view, feast_portfolio_details_view) #subscribe_view
 
 from .sitemaps import StaticSitemap
 from blog.sitemaps import BlogSitemap
@@ -67,6 +66,7 @@ urlpatterns = [
     path('services/graphic-design/', graphic_design_service_view, name='graphic-design'),
     
     path('portfolio/', portfolio_view, name='portfolio'),
+    path('portfolio/feast/', feast_portfolio_details_view, name='feast'),
     path('portfolio/cpanda-website/', cpanda_portfolio_details_view, name='cpanda-website'),
     path('portfolio/kneadsweets-website/', kneadsweets_portfolio_details_view, name='kneadsweets-website'),
     path('portfolio/prcc-dashboard/', prcc_portfolio_details_view, name='prcc-dashboard'),

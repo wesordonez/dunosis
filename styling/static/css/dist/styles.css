@@ -3730,6 +3730,10 @@ input[type="range"]::-ms-fill-lower {
     width: 90%;
   }
 
+  .lg\:w-\[320px\] {
+    width: 320px;
+  }
+
   .lg\:max-w-\[500px\] {
     max-width: 500px;
   }
