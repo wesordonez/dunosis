@@ -62,6 +62,7 @@ def portfolio_view(request):
     return render(request, './portfolio/portfolio.html', status=200)
 
 portfolio_projects = [
+    {"slug": "feast", "url_name": "feast", "title": "Feast"},
     {"slug": "bosque-buenavista", "url_name": "bosque-buenavista", "title": "Bosques de Buena Vista"},
     {"slug": "ciudad-productiva", "url_name": "ciudad-productiva", "title": "Ciudad Productiva"},
     {"slug": "metaltela", "url_name": "metaltela", "title": "Metaltela"},
@@ -155,6 +156,13 @@ def ciudad_productiva_portfolio_details_view(request):
 def bosque_buenavista_portfolio_details_view(request):
     previous_project, next_project = get_navigation_context("bosque-buenavista")
     return render(request, './portfolio/bosque-buenavista.html', {
+        "previous_project": previous_project,
+        "next_project": next_project,
+    }, status=200)
+
+def feast_portfolio_details_view(request):
+    previous_project, next_project = get_navigation_context("feast")
+    return render(request, './portfolio/feast.html', {
         "previous_project": previous_project,
         "next_project": next_project,
     }, status=200)
