@@ -1,29 +1,58 @@
-#editor h1, #editor h2, #editor h3{
-    font-weight: 600;
+#editor h1,
+#editor h2,
+#editor h3 {
+	font-weight: 600;
 }
 
-#editor > *+*{
-    margin-bottom: 5px;
+#editor > * + * {
+	margin-bottom: 5px;
 }
 
-#editor h1{
-    font-size: 35px;
+#editor h1 {
+	font-size: 35px;
 }
 
-#editor h2{
-    font-size: 30px;
+#editor h2 {
+	font-size: 30px;
 }
 
-#editor h3{
-    font-size: 26px;
+#editor h3 {
+	font-size: 26px;
 }
 
-#editor pre{
-    padding: 10px;
-    background-color: #f4f4f5;
-    overflow-x: auto;
+#editor pre {
+	padding: 10px;
+	background-color: #f4f4f5;
+	overflow-x: auto;
 }
 
-#editor a{
-    color: #0985c3;
+#editor a {
+	color: #0985c3;
+}
+
+#copy-link {
+	transition: background 0.2s, color 0.2s;
+	border-radius: 9999px;
+}
+#copy-link.copied {
+	color: #22c55e; /* du-green or similar */
+}
+#copy-link.copied i {
+	color: #22c55e;
+}
+
+#editor figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 2rem 0;
+}
+
+#editor figure img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
 }
