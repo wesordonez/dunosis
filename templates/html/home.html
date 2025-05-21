@@ -6,49 +6,38 @@
 {% block content %}
 
 <!-- Hero Section -->
-<section class="flex flex-col w-full md:min-h-screen justify-center" id="hero-section">
+<section class="w-full min-h-screen flex items-center justify-center px-4 py-8" id="hero-section">
+  <div class="flex flex-col md:flex-row w-full max-w-7xl items-center justify-between gap-8">
 
-	<div class="w-full h-full p-[4%] flex justify-around items-center gap-y-16 max-md:flex-col">
+    <!-- Left Content -->
+    <div class="w-full md:w-[40%] flex flex-col gap-4">
+      <h1 class="text-6xl lg:text-7xl font-semibold uppercase text-left">
+        Get your own<br /> personalized website
+      </h1>
+      <h2 class="text-4xl md:text-5xl font-normal lowercase text-left">
+        starting at $500
+      </h2>
+      <p class="text-2xl font-light text-gray-500 lowercase text-left">
+        check our monthly plans
+      </p>
+      <div class="mt-6">
+        <a href="https://dunosis.forms.app/contact-form"
+          class="inline-block rounded-md bg-black px-8 py-4 text-white font-semibold hover:bg-gray-800 transition">
+          Get Started
+        </a>
+      </div>
+    </div>
 
-        <!-- Left Photos -->
-        <div class="gap-4 place-content-center place-items-center xl:flex xl:flex-row">
-            <div class="poster rounded-2xl overflow-hidden shadow-xl h-[500px] lg:h-[700px] hover:shadow-2xl hidden md:flex">
-                <img src="{% static './assets/images/home/du-chicago-stock.jpg' %}" alt="Chicago - Willis Tower - Sears Tower" class="w-[300px] h-full object-cover" />
-            </div>
-            <div class="poster rounded-2xl overflow-hidden shadow-xl h-[500px] max-lg:h-[300px] max-md:h-[250px] hover:shadow-2xl hover:duration-150 hidden xl:flex">
-                <img src="{% static './assets/images/home/du-wesley-profile-3.png' %}" alt="Wesley Ordonez, Co Founder and Lead Engineer at Dunosis LLC" class="w-[200px] h-full object-cover" />
-            </div>
-        </div>
+    <!-- Right Image -->
+    <div class="w-full md:w-[60%] h-[300px] md:h-[500px] lg:h-[600px] ">
+      <img src="{% static './assets/images/home/du-stock-social.jpg' %}" 
+           alt="Santa Cruz de la Sierra, Plaza 24 de Septiempre, La Catedral"
+           class="w-full h-full object-cover md:[clip-path:polygon(30%_0%,100%_0%,100%_100%,0%_100%)]" />
+    </div>
 
-		<!-- Center Content -->
-		<div class="flex flex-col items-center max-w-[480px] min-w-[300px] px-[2%] mx-4">
-			<div class="w-full flex flex-col items-center">
-                <img src="{% static 'assets/logos/dunosis-logo-bg.png' %}" alt="Dunosis Logo" class="mb-1">
-                <h1 class="text-3xl max-md:text-3xl max-sm:text-2xl font-light text-center lowercase">
-                  Where Knowledge Meets Power
-                </h1>
-              </div>
-              <div class="flex items-center justify-center mt-6">
-                <a href="https://dunosis.forms.app/contact-form" class="mr-6 rounded-md bg-black px-4 py-4 text-center font-semibold text-white lg:mr-8"> Get Started </a>
-                <a href="#service-overview" class="flex items-center justify-center rounded-md border border-solid border-black bg-white px-4 py-3 font-bold">
-                  <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a94d411e6cf99_Vector%20(6).svg" alt="" class="mr-2 max-h-4 w-5" />
-                  <p>Learn More</p>
-                </a>
-              </div>
-		</div>
-
-        <!-- Right Photos -->
-        <div class="gap-4 place-content-center place-items-center xl:flex xl:flex-row">
-            <div class="poster rounded-2xl overflow-hidden shadow-xl h-[500px] max-lg:h-[300px] max-md:h-[250px] hover:shadow-2xl hover:scale-105 hover:duration-150 hidden xl:flex">
-                <img src="{% static './assets/images/home/du-tayo-profile.png' %}" alt="Tayo Zabala, Co Founder and Marketing at Dunosis" class="w-[200px] h-full object-cover" />
-            </div>
-            <div class="poster rounded-2xl overflow-hidden shadow-xl h-[500px] lg:h-[700px] hover:shadow-2xl hover:scale-105 hidden md:flex">
-                <img src="{% static './assets/images/home/du-santa-cruz-stock.jpg' %}" alt="Santa Cruz de la Sierra, Plaza 24 de Septiempre, La Catedral" class="w-[300px] h-full object-cover" />
-            </div>
-        </div>
-        
-	</div>
+  </div>
 </section>
+
 
 <!-- Service Overview Hero Section -->
 <section id="service-overview">
